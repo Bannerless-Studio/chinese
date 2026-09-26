@@ -49,4 +49,4 @@ record migrated byte-identically to the old build's result with the .bak key kep
 scripts: .cache/live/ (gitignored).
 
 ## Org move (2026-09-26)
-New site: https://bannerless-studio.github.io/hsk/ (repo Bannerless-Studio/hsk, same commits). Old site https://ishmum123.github.io/hsk/ (repo ishmum123/hsk, local remote `legacy`) is FROZEN and kept live until the user confirms progress migrated on every device via Progress → Export (old) / Import (new). Never push to `legacy`. Retire the old repo only on the user's say-so.
+Site: https://bannerless-studio.github.io/hsk/ (repo Bannerless-Studio/hsk). The user migrated progress by Export/Import and confirmed it; the old repo ishmum123/hsk is archived with Pages disabled (old URL dead). It is not deleted (token lacks delete_repo); delete only on the user's say-so. Local remote `legacy` may be removed.
