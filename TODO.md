@@ -69,3 +69,20 @@ Site: https://bannerless-studio.github.io/chinese/ (repo Bannerless-Studio/chine
 Renamed 2026-09-26: repo and path are now Bannerless-Studio/chinese, live https://bannerless-studio.github.io/chinese/ (same origin, so localStorage progress vocab_zh carries over; the old /hsk/ path is dead). Local checkout: ~/Programming/Voluntary/chinese.
 
 Migration proof 2026-09-26 (engine 122d88a, commit 0109f91): PASS, KEEP. Browser proof in .cache/live/proof-122d88a/ — vocab_zh byte-equal after boot, legacy hsk_pinyin → vocab_zh + .bak identical to the d612e63 proof, Progress numbers match, pinyin item silent + tone-optional ("ge" for gè accepted with note), characters item speaks once on mount, below-tier words never get the characters item (3 sessions, 0/24), offline boot OK, 0 console errors. Rollback 254c035 not needed.
+
+Migration proof 2026-09-26 for the dec16e8 republish (engine 122d88a -> dec16e8, Today Read stage,
+Replay buttons + TTS reliability driver, cue lines in ink): storage/migration diff audit
+(`git -C engine diff 122d88a..dec16e8 -- engine/core.js engine/app.html engine/sw.js`, 741 lines)
+found the app.html/core.js diff adds `nextReadItem`/`isoDayNumber` (Today's Read-stage picker),
+the `ttsDriver`/`clipStartWatch` Replay/reliability helpers, and cue-line rendering/classes — all
+additive. The only reads of stored shape are `prog.read.done[id]` fields `sc`/`n`/`d` (existing
+`{sc,n,d,x}` shape, unchanged) via `isObj`/typeof guards; no write path, no new top-level key, no
+renamed key, no `storageKey`/`migrateLegacy`/`parseStored`/`defaultProg`/`validateProgShape`/
+`normalizeProg` touched, no `localStorage`/`vocab_`/`hsk_pinyin` string touched, and `engine/sw.js`
+is unchanged (0 diff lines). `tests/migration_checks.js` (270 passed, 0 skipped) green at dec16e8
+in vocab-engine (tree already at dec16e8, clean, read-only — not modified). Rollback hash
+(pre-republish HEAD): 045ef3f45ae9434f9aba22f1bdc95258651468bd. Pre-republish live/local md5s:
+index.html 6436898b16d495e3b76bd9f910e3199a, sw.js 1be2fa87920165896a8cfce08a47f613 (live and
+local checkout matched before the build). `./check.sh` green (0 errors) after the build; only
+`engine`, `index.html`, `sw.js` changed in the working tree, so the `pack/` files are unchanged.
+A browser worker runs the live snapshot-diff proof (progress intact, no console errors) separately.

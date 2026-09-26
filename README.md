@@ -9,6 +9,8 @@ A self-contained trainer for HSK 1–4 Mandarin: ~1200 words, ~880 short sentenc
 - **Pinyin first.** Words and sentences are taught by sound and pinyin first, as before. Typing answers are pinyin.
 - **Characters stage.** A 字 stage teaches recognition of the characters of words already known by sound. Characters are composed into sentences as they are learned.
 - **Reading passages.** A Read tab adds 60 short passages with comprehension questions.
+- **Today Read stage.** Today offers one passage per session when one is available (skippable; a missed passage is re-offered for spaced re-reading after 7 days).
+- **Replay.** Autoplay/reveal cards get a Replay button, backed by a more reliable TTS driver.
 - **Progress carries over.** At first load the page imports existing `hsk_pinyin` progress into the engine's `vocab_zh` record. It keeps a raw copy under `hsk_pinyin.bak` and never modifies `hsk_pinyin`. If the import fails, Today says why and nothing is saved until the learner chooses.
 - **Old bookmarks work.** `hsk_pinyin.html` is now a redirect stub to the site root. It is same-origin, so stored progress is preserved.
 - **Samsung Internet** has no working speech synthesis. The app shows a notice and text-based drills still work, but audio doesn't play.
