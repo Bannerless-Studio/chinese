@@ -47,3 +47,6 @@ from d612e63 (39 word records, 4 sets, 2 lessons, 3 sessions, theme, showPron) l
 build with 0 field diffs after a full UI walk, offline boot and two reloads; a legacy hsk_pinyin
 record migrated byte-identically to the old build's result with the .bak key kept. Inputs and
 scripts: .cache/live/ (gitignored).
+
+## Org move (2026-09-26)
+New site: https://bannerless-studio.github.io/hsk/ (repo Bannerless-Studio/hsk, same commits). Old site https://ishmum123.github.io/hsk/ (repo ishmum123/hsk, local remote `legacy`) is FROZEN and kept live until the user confirms progress migrated on every device via Progress → Export (old) / Import (new). Never push to `legacy`. Retire the old repo only on the user's say-so.

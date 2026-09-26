@@ -1,6 +1,6 @@
 # HSK 1–4 Mandarin trainer
 
-Live: https://ishmum123.github.io/hsk/
+Live: https://bannerless-studio.github.io/hsk/
 
 A self-contained trainer for HSK 1–4 Mandarin: ~1200 words, ~880 short sentences and 60 short reading passages. The site is now built by [`vocab-engine`](https://github.com/ishmum123/vocab-engine), included as a git submodule at `engine/`. The Chinese data lives in `pack/`. The live URL is unchanged.
 
