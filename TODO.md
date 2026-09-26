@@ -48,6 +48,21 @@ build with 0 field diffs after a full UI walk, offline boot and two reloads; a l
 record migrated byte-identically to the old build's result with the .bak key kept. Inputs and
 scripts: .cache/live/ (gitignored).
 
+Migration proof 2026-09-26 for the 122d88a republish (engine 3fd45bf → 122d88a, typed pinyin +
+typed characters items, lenient folds + collision guard): storage/migration diff audit found the
+engine.js diff (`git -C engine diff 3fd45bf..122d88a -- engine/core.js engine/app.html engine/sw.js`,
+217 lines) touches only the compare-time API export list — additive names
+`foldLenientLetters`, `LENIENT_LETTERS`, `pointingKey`, `listenPlanCount`, `kanaFold`,
+`plainPronKey`, `affixBare`, `typeSlotKind` — with no changes to `parseStored`, `migrateLegacy`,
+`storageKey`, `defaultProg`, `validateProgShape`, or `normalizeProg`, no `localStorage` calls
+touched, no `vocab_`/`hsk_pinyin` key strings touched, and `engine/sw.js` unchanged (0 diff lines).
+No progress-record field changes. `tests/migration_checks.js` (270 passed) and
+`tests/characters_app_checks.js` (177 passed) both green at 122d88a in vocab-engine. Rollback hash
+(pre-republish HEAD): 254c035d13d0b0556e1a4d3a1d7e9f9c44ad66be. Pre-republish live/local md5s:
+index.html e055d7959592a0d62a3c43134957a19c, sw.js b6f206a94a0d52ce230e7f90743b04a4 (live and
+local checkout matched before the build). A browser worker runs the live snapshot-diff proof
+(progress intact, no console errors) separately.
+
 ## Org move (2026-09-26)
 Site: https://bannerless-studio.github.io/chinese/ (repo Bannerless-Studio/chinese). The user migrated progress by Export/Import and confirmed it; the old repo ishmum123/hsk is archived with Pages disabled (old URL dead). It is not deleted (token lacks delete_repo); delete only on the user's say-so. Local remote `legacy` may be removed.
 
