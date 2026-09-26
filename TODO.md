@@ -86,4 +86,33 @@ in vocab-engine (tree already at dec16e8, clean, read-only — not modified). Ro
 index.html 6436898b16d495e3b76bd9f910e3199a, sw.js 1be2fa87920165896a8cfce08a47f613 (live and
 local checkout matched before the build). `./check.sh` green (0 errors) after the build; only
 `engine`, `index.html`, `sw.js` changed in the working tree, so the `pack/` files are unchanged.
+
+Migration proof 2026-09-27 for the e370698 republish (engine dec16e8 -> e370698, passage questions
+spoken + Replay, source sentence played on reveal, question translation behind "Show translation",
+speech stopped on every screen transition, LISTENING PASS: a Today spaced re-read becomes a
+listening pass when audio is available): storage/migration diff audit (`git -C engine diff
+dec16e8..e370698 -- engine/core.js engine/app.html engine/sw.js`, 232 changed lines across
+app.html/core.js) found exactly ONE stored-shape change: `markPassageDone(prog, pid, sc, n, d,
+listen)` gains an optional `listen` arg and, when set, writes `st.done[pid].l = 1` on the whole
+replaced `{sc,n,d,x}` record (a later reading pass replaces the record and drops `l`, since the
+record is written whole each time, not merged). `validateReadShape` extends its numeric-field
+check from `["sc","n","x"]` to `["sc","n","x","l"]`, so an absent `l` is accepted (undefined skips
+the typeof check) and a non-number `l` is rejected exactly like a bad `sc`/`n`/`x` today (rejection
+routes through the existing `validateProgShape` -> `bootProg` path, which keeps a `.bak` and starts
+fresh, unchanged from before). No new top-level key, no renamed key, no other field touched; no
+`storageKey`/`migrateLegacy`/`parseStored`/`defaultProg`/`normalizeProg` touched, no
+`localStorage`/`vocab_`/`hsk_pinyin` string touched, and `engine/sw.js` is unchanged (0 diff
+lines). `tests/migration_checks.js` (279 passed, 0 skipped, including a new `[read.done.l]`
+listening-pass-marker suite covering: pre-listen records boot unchanged, a listening pass writes
+l:1 on that record only, parseStored/validateProgShape accept a record with l, l survives
+save/boot and export/import round trips, a later reading pass replaces the record without l, and a
+non-number l is rejected with a kept backup) green at e370698 in vocab-engine (tree already at
+e370698, clean, read-only — not modified). Rollback hash (pre-republish HEAD):
+baf8905071835aa7791738de166dcf23eddd1aba. Pre-republish live/local md5s: index.html
+d7c07ce9f96ee5295bacf81b4d6b8850, sw.js db88f8c18841af51ce74f791360de144 (live and local checkout
+matched before the build). `./check.sh` green (0 errors, `validate_pack.py` 1193 words, 882
+sentences, 12 lessons, 60 passages, 1193 character units, 0 warnings) after the build; only
+`engine`, `index.html`, `sw.js` changed in the working tree (pack files md5 unchanged:
+8c181c3a1bfc12b1ec50ac88c993b9e4 before and after). A browser worker runs the live snapshot-diff
+proof (progress intact, no console errors) separately.
 A browser worker runs the live snapshot-diff proof (progress intact, no console errors) separately.
