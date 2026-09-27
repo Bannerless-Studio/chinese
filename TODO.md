@@ -3,6 +3,10 @@
 Reviewed 2026-09-26 after the engine-submodule switch (89eb7cf) and republish
 on 3fd45bf.
 
+**Rollback to the pre-engine-switch build:** reset `main` to `3aeecc4` and
+republish. `hsk_pinyin` progress is never modified, so the old build resumes
+at its pre-switch state; progress made after the switch stays in `vocab_zh`.
+
 The 2026-09-25 list below was written before hsk moved onto the engine
 submodule to track features to port from `../vocab-engine`. That switch
 (89eb7cf) landed all of them: reading passages, the gap-drill/overflow/speak
