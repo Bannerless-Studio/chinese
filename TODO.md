@@ -121,3 +121,29 @@ sentences, 12 lessons, 60 passages, 1193 character units, 0 warnings) after the 
 8c181c3a1bfc12b1ec50ac88c993b9e4 before and after). A browser worker runs the live snapshot-diff
 proof (progress intact, no console errors) separately.
 A browser worker runs the live snapshot-diff proof (progress intact, no console errors) separately.
+
+Migration proof 2026-09-27 for the 0e2bb0c republish (engine e370698 -> 0e2bb0c, new optional word
+field `forms` (inflected surfaces locate a word in text, never typed), `textForms` helper at every
+locate-in-text site, a cloze distractor guard so no option's spelling equals the blanked text):
+storage/migration diff audit (`git -C engine diff e370698..0e2bb0c -- engine/core.js engine/app.html
+engine/sw.js`, 59 changed lines, core.js only; engine/app.html and engine/sw.js unchanged, 0 diff
+lines) found ZERO stored-shape changes. The diff adds a `textForms(e)` helper (w + alt + forms) used
+at every locate-in-text call site (`locateWord`, `packSurfaces`, `gapMatch`, `exampleSentences`,
+`highlightParts`, `searchFields`, `passageSegments`) and a `gapChoices` distractor guard (`fits`)
+that drops any pool word whose own w/alt surface equals the blanked text; both are read-time-only
+over pack word data, not stored progress. Grep of the diff for `storageKey`/`migrateLegacy`/
+`localStorage`/`vocab_`/`hsk_pinyin`/`prog.read`/`parseStored`/`defaultProg`/`validateProgShape`/
+`normalizeProg`/`bootProg` hits only the unchanged `API` export list (one line adds `textForms` to
+that list; no other match). No new top-level key, no renamed key, no stored progress-record field
+touched. The zh pack has no `forms` field and was not rebuilt: `pack/*.js` md5s identical before and
+after `./build.sh`. `validateReadShape` (accepts absent `l`, rejects a non-number `l`, unchanged from
+the e370698 wave) and `bootProg` (keeps `.bak` and starts fresh on a validation failure) were
+re-read at 0e2bb0c and confirmed unchanged by this diff. `tests/migration_checks.js` (279 passed, 0
+skipped, including the `[read.done.l]` suite) green at 0e2bb0c in vocab-engine (tree already at
+0e2bb0c, clean except the untracked, unrelated `langs/sw.py`; read-only, not modified). Rollback
+hash (pre-republish HEAD): 9e8e927cdd1a3c319abc2ebc1dc9f91841e4d135. Pre-republish live/local md5s:
+index.html ea0fe40912c4b3950bddc9a6ebb14d8b, sw.js 159917cf742cc8aac2cfcf9379e2e8d1 (live and local
+checkout matched before the build). `./check.sh` green (`validate_pack.py` 1193 words, 882
+sentences, 12 lessons, 60 passages, 1193 character units, 0 errors, 0 warnings) after the build;
+only `engine`, `index.html`, `sw.js` changed in the working tree (pack files md5 unchanged). A
+browser worker runs the live snapshot-diff proof (progress intact, no console errors) separately.
