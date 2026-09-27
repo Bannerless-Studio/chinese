@@ -145,5 +145,4 @@ hash (pre-republish HEAD): 9e8e927cdd1a3c319abc2ebc1dc9f91841e4d135. Pre-republi
 index.html ea0fe40912c4b3950bddc9a6ebb14d8b, sw.js 159917cf742cc8aac2cfcf9379e2e8d1 (live and local
 checkout matched before the build). `./check.sh` green (`validate_pack.py` 1193 words, 882
 sentences, 12 lessons, 60 passages, 1193 character units, 0 errors, 0 warnings) after the build;
-only `engine`, `index.html`, `sw.js` changed in the working tree (pack files md5 unchanged). A
-browser worker runs the live snapshot-diff proof (progress intact, no console errors) separately.
+only `engine`, `index.html`, `sw.js` changed in the working tree (pack files md5 unchanged). Browser proof (Playwright, .cache/live/proof-0e2bb0c/, 2026-09-27 ~11:40): migration seeds byte-equal (vocab_zh, hsk_pinyin + .bak, read.done with/without l), cloze 4 options with no distractor equal to the blank, typed pinyin accepted 7/7, Read tab highlights + gloss, passage audio and listening pass unchanged, no TTS leak on tab switch, offline boot from SW cache, 0 console errors. Verdict KEEP; rollback 9e8e927 not needed.
