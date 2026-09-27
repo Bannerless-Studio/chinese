@@ -71,7 +71,7 @@ alongside the engine build for rollback and history; do not delete it.
   `pack_from_hsk.py` and rebuild.
 - Edit `pack/*.js`, `index.html`, `hsk_pinyin.html` or `sw.js` by hand
   (generated).
-- Delete `sw.js` (use `engine/sw.disable.js`).
+- Delete `sw.js` (use `engine/engine/sw.disable.js`).
 - Delete the legacy pipeline (`src/`, `data/`, `tests/pinyin_checks.js`,
   `build_legacy.sh`, `docs/PINYIN_SPEC.md`) — kept for history and rollback.
 - Add comments that say what the code does; only why, or an external
