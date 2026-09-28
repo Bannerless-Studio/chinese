@@ -146,3 +146,40 @@ index.html ea0fe40912c4b3950bddc9a6ebb14d8b, sw.js 159917cf742cc8aac2cfcf9379e2e
 checkout matched before the build). `./check.sh` green (`validate_pack.py` 1193 words, 882
 sentences, 12 lessons, 60 passages, 1193 character units, 0 errors, 0 warnings) after the build;
 only `engine`, `index.html`, `sw.js` changed in the working tree (pack files md5 unchanged). Browser proof (Playwright, .cache/live/proof-0e2bb0c/, 2026-09-27 ~11:40): migration seeds byte-equal (vocab_zh, hsk_pinyin + .bak, read.done with/without l), cloze 4 options with no distractor equal to the blank, typed pinyin accepted 7/7, Read tab highlights + gloss, passage audio and listening pass unchanged, no TTS leak on tab switch, offline boot from SW cache, 0 console errors. Verdict KEEP; rollback 9e8e927 not needed.
+
+Migration proof 2026-09-28 for the 4230306 republish (engine 0e2bb0c -> 4230306, missed-kind
+reviews: optional word field `k` remembering the item kind (recall/type/hear/read) a word was last
+missed in so the next review asks it the same way, look-back weight `reopened` 2 -> 0 (shown on
+results but no longer weakens a word), Today screen re-entry restore, Test-tab unlock notes, typed
+second-miss fallback, forms-aware articles): storage/migration diff audit (`git -C engine diff
+0e2bb0c..4230306 -- engine/core.js engine/app.html engine/sw.js`, 713 diff lines, app.html 187 +
+core.js 146 changed, `engine/sw.js` unchanged, 0 diff lines) found exactly ONE stored-shape change:
+`markRec(map, key, ok, isWord, kind, reqKind)` calls the new `setMissKind(p, ok, kind, reqKind)`,
+which writes an optional `p.k` (one of `MISS_KINDS`) on a word's `prog.w[id]` record — a miss sets
+`p.k = kind`; a pass in that exact kind, or in `reqKind` (the fallback kind the plan actually
+asked for), deletes `k`. `normalizeProg` gains a `merged.w = dropBadMissKinds(merged.w)` call:
+`dropBadMissKinds` walks `prog.w`, drops any `k` outside `MISS_KINDS` (unknown string, number,
+null, object) and keeps the rest of that record, leaving records without `k`, or with a valid one,
+as the same object (byte-identical round trip). No new top-level key, no renamed key, no other
+field touched; `storageKey`/`migrateLegacy`/`parseStored`/`defaultProg`/`validateProgShape` are
+untouched (grep of the diff for `storageKey|migrateLegacy|localStorage|vocab_|hsk_pinyin|
+validateProgShape|normalizeProg|bootProg|defaultProg|parseStored` hits only the unchanged export
+list, the one new `normalizeProg` line above, and comments). The `reopened` look-back weight
+(`READ_WEIGHT.reopened` 2 -> 0) is a constant change read by `applyWeakWords`, not a stored-shape
+change — the existing `prog.w[id].w` weight field is untouched. `tests/migration_checks.js` (292
+passed, 0 skipped — 279 from the e370698/0e2bb0c baseline plus a new `[w.k]` missed-kind-marker
+suite: records without `k` boot/save/import unchanged, a typed miss writes `k:"type"` on that
+record only, `k` survives save/boot and export/import round trips, a pass in the missed kind
+removes `k`, and each bad `k` shape (string/number/null/object) is dropped on boot and import while
+a valid `k` on another word is kept) and `tests/characters_app_checks.js` (179 passed, 0 failed)
+green at 4230306 in vocab-engine (tree already at 4230306, read-only, not modified; only the
+pre-existing untracked `tools/packbuilder/langs/sw.py` present, unrelated). The zh pack was not
+rebuilt: `pack/*.js` md5s identical before and after `./build.sh` (`b27794f9...` characters,
+`30ed7362...` legacy, `cf734230...` lessons, `2aa874b7...` pack, `52745388...` sentences,
+`080e9903...` words — same before/after). `./check.sh` green (`validate_pack.py` 1193 words, 882
+sentences, 12 lessons, 60 passages, 1193 character units, 0 errors, 0 warnings); only `engine`,
+`index.html`, `sw.js` changed in the working tree. Rollback hash (pre-republish HEAD):
+2dfdc8cbffa574623fb11a647c75b340e3df3ff7. Pre-republish live/local md5s: index.html
+935b59ef31bae72437837a6126fdf8ba, sw.js 5095f7fd29b2ec48a56504fb8890b2c7 (live and local checkout
+matched before the build). A browser worker runs the live snapshot-diff proof (progress intact, no
+console errors) separately.
