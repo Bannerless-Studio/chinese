@@ -182,3 +182,65 @@ sentences, 12 lessons, 60 passages, 1193 character units, 0 errors, 0 warnings);
 2dfdc8cbffa574623fb11a647c75b340e3df3ff7. Pre-republish live/local md5s: index.html
 935b59ef31bae72437837a6126fdf8ba, sw.js 5095f7fd29b2ec48a56504fb8890b2c7 (live and local checkout
 matched before the build). Browser proof (Playwright, .cache/live/proof-4230306/, 2026-09-28 ~22:55): migration seeds byte-equal incl. k kept / bogus k dropped, missed-kind review item shown as hear and k cleared on pass, look-back row without checkbox and no w increment, Read-tab re-entry silent with same option order, Test-tab unlock note, offline boot, 0 console errors; 0e2bb0c regression checks all pass. Verdict KEEP; rollback 2dfdc8c not needed.
+
+Migration proof 2026-09-28 for the 53eb630 republish (engine 4230306 -> 53eb630, learned words
+derived from progress records instead of the level set-counter prefix, plus what-comment
+pruning fa598bc/b63900e, tokens identical): storage/migration diff audit (`git -C engine diff
+4230306..53eb630 -- engine/core.js engine/app.html engine/sw.template.js`, 4247 diff lines)
+found ZERO new/renamed stored fields. Grep of the diff for
+`storageKey|migrateLegacy|localStorage|vocab_|hsk_pinyin|prog\.read|prog\.w\[|PROG_VERSION|
+normalizeProg|bootProg|defaultProg|validateProgShape|parseStored`, filtered to actual +/- lines,
+hits only: (1) comment-only removals (what-comments above `migrateLegacy`, `storageKey`,
+localStorage doc lines etc. — the fa598bc/b63900e prune, zero behaviour change), and (2) the two
+real code changes, both touching `prog.w` writes only: `pinPrefixRecords(prog, words, pack, lv,
+counters)` (new) writes `prog.w[w.id] = {r:1,w:0,s:1,prov:1}` for every word in a records-less
+level's counted prefix that has no record yet, called once before that level's first taught
+record lands; `ensureWordRec(prog, words, pack, id)` (new) returns an existing `prog.w[id]` or
+creates a plain `{r:0,w:0,s:0}` and is now the single entry point `markWord`/`applyWeakWords`/
+the Words-tab d-flag/`applyPlacement` go through before writing a record (the diff removes three
+inline duplicates of this same create-if-missing pattern at app.html `markWord`/Words-tab d-flag
+and core.js `applyWeakWords`, now routed through `ensureWordRec`). The functions
+`storageKey`/`migrateLegacy`/`PROG_VERSION`/`normalizeProg`/`bootProg`/`defaultProg`/
+`validateProgShape`/`parseStored` are themselves byte-unchanged (only comment lines above them
+were touched). No new top-level key, no renamed key, no `PROG_VERSION` bump. `engine/sw.template.js`
+0 diff lines.
+
+`tests/migration_checks.js` 292 passed, 0 skipped, green at 53eb630 in vocab-engine (tree
+already at 53eb630, read-only, not modified; only the pre-existing untracked
+`tools/packbuilder/langs/sw.py`, unrelated). Byte-equal-after-boot check (chinese/.cache/live/
+compare-53eb630.js, comparing `git show 4230306:engine/core.js` vs `53eb630:engine/core.js`):
+`legacy-migrated-d612e63.json` (an already-native `vocab_zh`-shape export, 27 word records) boots
+to an identical `prog` object on both cores — confirms `bootProg`/`normalizeProg`/
+`validateProgShape` are unaffected. `learnedWords` check on `legacy-hsk_pinyin.json` (a real
+pre-engine `hsk_pinyin` export, `sets:{"1":3,...}` i.e. 3 counted sets = 30 words in level 1, but
+only 27 individual `w` records) surfaced an expected, reviewed DIVERGENCE, not a stored-shape
+bug: old core's prefix-counting `learnedWords` reports 30 words learned; new core's
+records-based `learnedWords` reports 27, because level 1 already has some records (`taughtRec`
+true for at least one word), so `pinPrefixRecords`'s "no taught record yet" guard never fires for
+that level and the 3 sets-counted-but-unrecorded words (w0028-w0030) are not credited. This is
+the exact, intended tradeoff of engine commit e757e38 ("a republish that reorders/edits a level
+shifted the counter prefix... a word counted as learned untaught, a learned word taught again" —
+TODO.md-equivalent note in vocab-engine, DONE 2026-09-28 branch engine-learned) and is covered by
+`tests/engine_checks.js` case [29] ("legacy + one set's records written directly -> the records
+rule applies (just those words)"). No progress record is deleted or corrupted: `w0028-w0030`
+simply stop counting as learned until re-taught, at which point Learn/Words-tab/placement writes
+a normal record for them via `ensureWordRec` (confirmed: `ensureWordRec(prog, WORDS, PACK,
+'w0028')` on the migrated prog raises the count from 27 to 28, i.e. that specific word's record
+is created; `pinPrefixRecords` itself is correctly a no-op here per its own "no taught record in
+this level yet" guard, since the level already has 27 taught records — w0029/w0030 stay
+un-recredited until Learn reaches them, same as any other never-answered word). Live-user impact:
+narrow — this path only fires for a learner whose `hsk_pinyin` key was never migrated by an
+earlier republish (0e2bb0c/122d88a/e370698 already migrate most active users to `vocab_zh`) AND
+whose old per-word records lagged their old sets counter; for them, up to a handful of
+previously-"learned" words may resurface as new-to-learn after this republish. Flagging for
+awareness, not blocking: this is upstream, reviewed engine behaviour (not introduced by this
+republish's build step) and the alternative (reverting to the old prefix rule) reintroduces the
+reorder bug e757e38 fixed. The zh pack was not rebuilt: `pack/*.js` md5s identical before and
+after `./build.sh` (`b27794f9...` characters, `30ed7362...` legacy, `cf734230...` lessons,
+`2aa874b7...` pack, `527453a8...` sentences, `080e9903...` words — same before/after). `./check.sh`
+green (`validate_pack.py` 1193 words, 882 sentences, 12 lessons, 60 passages, 1193 character
+units, 0 errors, 0 warnings); only `engine`, `index.html`, `sw.js` changed in the working tree.
+Rollback hash (pre-republish HEAD): ec3282d0547fad9a2461b131061b6b125b03fb27. Pre-republish
+live/local md5s: index.html 053dc8cb60495bdb1ee470c1222bf3ea, sw.js
+1b98802070536800c0b6960fa64beb3f (live and local checkout matched before the build). Browser
+proof pending (separate worker).
