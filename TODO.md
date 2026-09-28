@@ -203,7 +203,7 @@ and core.js `applyWeakWords`, now routed through `ensureWordRec`). The functions
 `storageKey`/`migrateLegacy`/`PROG_VERSION`/`normalizeProg`/`bootProg`/`defaultProg`/
 `validateProgShape`/`parseStored` are themselves byte-unchanged (only comment lines above them
 were touched). No new top-level key, no renamed key, no `PROG_VERSION` bump. `engine/sw.template.js`
-0 diff lines.
+0 diff lines. Browser proof (Playwright, .cache/live/proof-53eb630/, 2026-09-29 ~00:15): live md5 matched; vocab_zh seed byte-equal after boot and reload, read.done with/without l and k kept/bogus dropped as before, hsk_pinyin migrates with .bak; Progress rows equal proof-4230306 except the predicted HSK 1 30 -> 27 (records rule) on the synthetic seed; records-less level (sets 1:2, w empty): boot writes nothing, one review answer pins exactly the 20 prefix records (19 prov), still 20 learned; Learn taught w0009/w0010 + next 8 unlearned in rank order, never a recorded word, Words tab set 1 no tick; regression checks (hear kind + k cleared, look-back no checkbox, re-entry silent, Test-tab note) pass; offline boot ok; 0 console errors. Nit logged: Today "set N" label counts the counter, not the taught slice. Verdict KEEP; rollback ec3282d not needed.
 
 `tests/migration_checks.js` 292 passed, 0 skipped, green at 53eb630 in vocab-engine (tree
 already at 53eb630, read-only, not modified; only the pre-existing untracked
