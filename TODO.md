@@ -181,5 +181,4 @@ sentences, 12 lessons, 60 passages, 1193 character units, 0 errors, 0 warnings);
 `index.html`, `sw.js` changed in the working tree. Rollback hash (pre-republish HEAD):
 2dfdc8cbffa574623fb11a647c75b340e3df3ff7. Pre-republish live/local md5s: index.html
 935b59ef31bae72437837a6126fdf8ba, sw.js 5095f7fd29b2ec48a56504fb8890b2c7 (live and local checkout
-matched before the build). A browser worker runs the live snapshot-diff proof (progress intact, no
-console errors) separately.
+matched before the build). Browser proof (Playwright, .cache/live/proof-4230306/, 2026-09-28 ~22:55): migration seeds byte-equal incl. k kept / bogus k dropped, missed-kind review item shown as hear and k cleared on pass, look-back row without checkbox and no w increment, Read-tab re-entry silent with same option order, Test-tab unlock note, offline boot, 0 console errors; 0e2bb0c regression checks all pass. Verdict KEEP; rollback 2dfdc8c not needed.
