@@ -244,3 +244,36 @@ Rollback hash (pre-republish HEAD): ec3282d0547fad9a2461b131061b6b125b03fb27. Pr
 live/local md5s: index.html 053dc8cb60495bdb1ee470c1222bf3ea, sw.js
 1b98802070536800c0b6960fa64beb3f (live and local checkout matched before the build). Browser
 proof pending (separate worker).
+
+Migration proof 2026-09-29 for the dbbf541 republish (engine 53eb630 -> dbbf541, "set N" labels
+naming the taught slice instead of the sets counter, inline data-URI favicon, cloze blank
+extension over hyphen-joined repeats/clitics, example picker covering forms, meaningOpts pos
+tiering, optional pack fields soundsHint/placementItems/clitics): storage/migration diff audit
+(`git -C engine diff 53eb630..dbbf541 -- engine/core.js engine/app.html engine/sw.template.js`,
+285 diff lines) found ZERO new/renamed stored fields; `engine/sw.template.js` is unchanged (0
+diff lines). Grep of the diff for
+`storageKey|migrateLegacy|localStorage|vocab_|hsk_pinyin|prog\.read|prog\.w\[|prog\.sets|
+PROG_VERSION|normalizeProg|bootProg|defaultProg|validateProgShape|parseStored`, filtered to
+actual +/- lines, hits exactly one real write-path change: the Today Learn drill-completion
+callback, which used to unconditionally write
+`prog.sets[nn.lv] = Math.max(prog.sets[nn.lv]||0, nn.set+1)`, now writes
+`prog.sets[nn.lv] = stillFresh ? Math.max(prog.sets[nn.lv]||0, nn.set+1) : VC.nSets(...)` where
+`stillFresh = VC.levelNewSet(WORDS, PACK, prog, nn.lv)` — a WRITE to the existing `prog.sets[lv]`
+counter (no new field, no renamed key), landing on the level's true total set count instead of
+one below it when a records-less prefix or inserted word makes this teach the level's last
+unlearned set even though the rank-position `nn.set` is short of the total. `storageKey`,
+`migrateLegacy`, `PROG_VERSION`, `normalizeProg`, `bootProg`, `defaultProg`, `validateProgShape`,
+`parseStored` are themselves untouched (no match in the diff besides the one line above and the
+unrelated favicon/soundsHint/clitics/forms/pos-tiering diff noise). No `PROG_VERSION` bump.
+`tests/migration_checks.js` (292 passed, 0 skipped) green at dbbf541 in vocab-engine (tree
+already at dbbf541, clean except the pre-existing untracked `tools/packbuilder/langs/sw.py`,
+unrelated; read-only, not modified). The zh pack was not rebuilt: `pack/*.js` md5s identical
+before and after `./build.sh` (`b27794f9...` characters, `30ed7362...` legacy, `cf734230...`
+lessons, `2aa874b7...` pack, `527453a8...` sentences, `080e9903...` words — same before/after).
+`./check.sh` green (`validate_pack.py` 1193 words, 882 sentences, 12 lessons, 60 passages, 1193
+character units, 0 errors, 0 warnings); only `engine`, `index.html`, `sw.js` changed in the
+working tree. Rollback hash (pre-republish HEAD): 3fa1c0c27fb7499df666b862760009095a6f3dd8.
+Pre-republish live/local md5s: index.html b48d57fda1c40e5138ed6ba33926ce76, sw.js
+06fd11968eb23d3a8c1765ff8a0958d7 (live and local checkout matched before the build). A browser
+worker runs the live snapshot-diff proof (progress intact, "set N" label behaviour, no console
+errors) separately.
