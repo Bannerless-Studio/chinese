@@ -278,3 +278,41 @@ Pre-republish live/local md5s: index.html b48d57fda1c40e5138ed6ba33926ce76, sw.j
 worker runs the live snapshot-diff proof (progress intact, "set N" label behaviour, no console
 errors) separately.
  Browser proof (Playwright, .cache/live/proof-dbbf541/, 2026-09-29 ~06:20): live md5 matched; vocab_zh byte-equal after boot, Progress rows equal proof-53eb630, read.done/k variants and hsk_pinyin .bak as before; plan label "set 1" for a level with records at ranks 1–8/11–12 and the teach covered exactly w0009 w0010 w0013–w0020 (no double teach); favicon served as data: URI, no favicon request, 0 4xx; zh has no pos so distractor tiering N/A (distractors all same level); regression checks (pin, look-back, re-entry, Test note, hear kind) identical; offline boot ok; 0 console errors. Finding: after that teach prog.sets["1"] stayed 1 (counter lags by one; learned count is record-based so nothing lost) — logged as engine follow-up. Verdict KEEP; rollback 3fa1c0c not needed.
+Migration proof 2026-09-30 for the 2f2bf02 republish (engine dbbf541 -> 2f2bf02, typed drills from
+the target side (pack.json `typedFrom: ["written","pron"]`, `glossFocus: true`: chars->pinyin,
+chars->meaning, pinyin->meaning), settleSetCounter (fixes the proof-dbbf541 "counter lags by one"
+finding), no-voice planner (hear items become read with reqKind "hear" when the word cannot be
+played), sentence `spans`, word popover offset): storage/migration diff audit (`git -C engine diff
+dbbf541..2f2bf02 -- engine/core.js engine/app.html engine/sw.template.js`, 407+/67-, core.js +
+app.html; `engine/sw.template.js` 0 diff lines) found ZERO new/renamed stored fields. Grep of the
+diff +/- lines for `storageKey|migrateLegacy|localStorage|vocab_|hsk_pinyin|PROG_VERSION|
+normalizeProg|bootProg|defaultProg|validateProgShape|parseStored|prog.<field> =|sets[` hits only
+`prog.sets[lv]` writes: (1) Today Learn completion: the old
+`prog.sets[nn.lv] = stillFresh ? Math.max(prog.sets[nn.lv]||0, nn.set+1) : VC.nSets(...)` is
+replaced by `VC.settleSetCounter(prog, WORDS, PACK, nn.lv)`; (2) Words-tab set drill: the old
+`if(wordsSet === (prog.sets[wordsLv]||0)){ prog.sets[wordsLv] = wordsSet+1; } else { ...d = 1 }`
+becomes `if(wordsSet !== (prog.sets[wordsLv]||0)) set.forEach(... ensureWordRec(...).d = 1)` then
+`VC.settleSetCounter(prog, WORDS, PACK, wordsLv)` (same existing `d` flag, same condition);
+(3) `applyPlacement` ends with `ids.forEach(lv => settleSetCounter(out, words, pack, lv))`.
+settleSetCounter rule (core.js): n = nSets(level); if the level has no new set left,
+`prog.sets[lv] = n`; else `prog.sets[lv] = max(min(prog.sets[lv]||0, n), lead)` where lead = the
+number of leading sets whose every word has a `prog.w` record. So it never lowers a counter unless
+it exceeds nSets (then clamps to n), and raises it only to the fully-recorded leading-set count. It
+is not called at boot: only on those three write paths. Typed-from items record through the
+existing `markWord(id, ok, "type", reqKind)` -> unchanged `markRec`/`setMissKind`
+(`MISS_KINDS = ["recall","type","hear","read"]`, unchanged); 2nd-miss MC fallbacks record kind
+"recall"/"type". `PROG_VERSION = 1` unchanged; no `localStorage` line touched. `tests/migration_checks.js`
+292 passed, 0 skipped, and `tests/characters_app_checks.js` 179 passed at 2f2bf02 in vocab-engine
+(tree already at 2f2bf02, clean, read-only). The zh pack WAS rebuilt (`pack_from_hsk.py` from an
+`engine` archive at 2f2bf02 into a scratch dir, run twice, byte-identical, equal to
+vocab-engine/packs/zh): only pack.json/pack.js (+`typedFrom`, +`glossFocus`, no other key changed)
+and sentences.json/sentences.js (+`spans` on all 882 sentences, no other field changed) differ;
+words, lessons, characters, legacy, passages, passages_src, gloss_display byte-identical.
+`validate_pack.py pack`: 1193 words, 882 sentences (882 with spans), 12 lessons, 60 passages, 1193
+character units, 0 errors, 1 WARN (138 of 4946 linked words have no span; located by w/alt/forms).
+Build deterministic (two builds: index.html ae28fb37c4199f44ddcdcfd9bc394a61, sw.js
+0b3db60173a3f5c4486a165bfbcca579). Rollback hash (pre-republish HEAD):
+8d76a4a884148c607b3b793050a944b581ea343a. Pre-republish live/local md5s: index.html
+c781bc58a2d638c36ab895d25d384c2d, sw.js 889158cea9b48edcf281ce81b6fda0ee (live and local matched).
+A browser worker runs the live snapshot-diff proof (progress intact, set counter, typed-from drills,
+no console errors) separately.
