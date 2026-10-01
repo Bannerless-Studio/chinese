@@ -48,6 +48,18 @@ The example-sentence corpus has not yet been screened by the shared
 sensitive-content filter used in the other language repos; tracked as an
 open item in `TODO.md`.
 
+## Credits
+
+- **Character hints** (memory hints on teach cards, reveals and word popovers)
+  come from [Make Me a Hanzi](https://github.com/skishore/makemeahanzi)
+  (`dictionary.txt` at commit `bddc96d41bef78427ed0e034e9f7e31d71fd1b92`),
+  © Shaunak Kishore and contributors, licensed LGPL-3.0-or-later. Licence
+  texts: `LICENSES/LGPL-3.0.txt` and `LICENSES/GPL-3.0.txt`. Two hand-written
+  hints (气, 来) also restate English Wiktionary (CC BY-SA 4.0).
+- **English glosses** originate from [CC-CEDICT](https://cc-cedict.org/wiki/)
+  (CC BY-SA 4.0), via complete-hsk-vocabulary (MIT).
+- Full source and licence record: `pack/attribution.json`.
+
 ## Rebuild and publish
 
 This repo holds the Chinese data (`data/`) and a generated copy of the

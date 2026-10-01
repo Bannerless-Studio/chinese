@@ -19,6 +19,13 @@ chips all match). Nothing here needs porting by hand anymore.
 
 ## Still open (hsk-specific)
 
+### TTS carriers for polyphonic characters
+38 words carry a `say` carrier (another character the TTS reads with the
+intended reading; spoken, never displayed). The carrier record and how to
+regenerate it live in vocab-engine `docs/ZH_SAY.md` (`engine/docs/ZH_SAY.md`
+here; `tools/zh_say_scan.py`). Re-check it when the vocabulary or the
+browser voices change.
+
 ### Content-policy screening of the sentence corpus
 The packbuilder's shared sensitive-content filter (`vocab-engine/tools/packbuilder/README.md`
 ~150–200, `langs/base.py` `SENSITIVE_EN`/`SENSITIVE_GLOSS_EN`) has never been
@@ -317,3 +324,40 @@ c781bc58a2d638c36ab895d25d384c2d, sw.js 889158cea9b48edcf281ce81b6fda0ee (live a
 A browser worker runs the live snapshot-diff proof (progress intact, set counter, typed-from drills,
 no console errors) separately.
  Browser proof (Playwright, .cache/live/proof-2f2bf02/, 2026-09-30): live md5 matched (index.html ae28fb37..., sw.js 0b3db601...); vocab_zh byte-equal after boot and reload, Progress rows equal proof-dbbf541, read.done with/without l, k kept/bogus dropped, hsk_pinyin migrates with .bak as before; prog.sets on the synthetic seed {1:3,2:0,3:0,4:0} unchanged by boot (no write; settleSetCounter would also give 3, not called at boot). Set counter: the proof-dbbf541 scenario (records at ranks 1–8/11–12) teaches exactly w0009 w0010 w0013–w0020 once, prog.sets["1"] now 2 (was stuck at 1), Today "set 3" and Words tab "Set 3 / 15" follow. No-voice (getVoices stubbed to en-US only, hasSpeech false): Review plan has 0 hear items (6 read items with reqKind hear), Today Listen row "no items until a voice or recording is available", Test Listen button hidden with the note; seeded k:"hear" on w0001 cleared by a pass of its read stand-in. Typed drills (Test Recall; written kinds need mastered character units, seeded in a second profile): writtenMeaning 27, pronMeaning 16+54, writtenPron 29 seen, 0 leaks (no ruby/pinyin on a characters stimulus, no characters with a pinyin stimulus, no audio before answering, no tap targets or popover); "first" accepted for "first (of multiple parts); ..."; reveal of 谁 shows "also pr. [shuí]" dimmed; 2nd-miss fallbacks ("What does it mean?" x2, "How is it said?") silent until answered, k stays "type". Glosses: Words tab qualifiers dimmed (opacity .6); Read popover qualifiers dimmed, sticky top 14px (rect top 14 when scrolled), 2px border, light and dark. Regressions (cloze 4 options, typed pinyin accepted, Read tab highlight + gloss, passage audio, look-back row, re-entry silent, offline boot) pass; 0 console errors, 0 4xx. Verdict KEEP; rollback 8d76a4a not needed.
+
+Migration proof 2026-10-01 for the 3d66aea republish (engine 2f2bf02 -> 3d66aea: session resume,
+silent characters item for meaning->characters, typed rotation 6:3, `say` TTS carriers, character
+hints): storage/migration diff audit (`git -C engine diff 2f2bf02..3d66aea -- engine/core.js
+engine/app.html engine/sw.template.js build.sh`, 438+/58-; `engine/sw.template.js` 0 diff lines)
+found ZERO new/renamed/differently-written fields in `vocab_zh`. Grep of the diff +/- lines for
+`storageKey|migrateLegacy|localStorage|sessionStorage|vocab_|hsk_pinyin|_session|VE_BUILD|
+PROG_VERSION|normalizeProg|parseStored|defaultProg|validateProgShape|bootProg|prog.<field> =|sets[`:
+no `localStorage` line, no `PROG_VERSION`/`parseStored`/`migrateLegacy`/`storageKey` change. The
+three existing progress writes are moved verbatim into named done-callbacks (`rzTag`) so a resumed
+drill can rebuild them: `todayLearnDone(lv)` = `settleSetCounter(prog, WORDS, PACK, lv); store.save()`
+(was inline with `nn.lv`); `lessonDone(i)` = `prog.lessons[LESSON_LIST[i].id] = 1; store.save()`;
+`wordsSetDone(lv, set, untaught)` = `if(wordsSet !== (prog.sets[wordsLv]||0)) untaught.forEach(id =>
+ensureWordRec(...).d = 1)` + `settleSetCounter` (was `set.forEach(w => if(!got.has(w.id)) ...)`;
+`untaught` = the same `!got.has` filter computed when the drill starts; resume restores
+`wordsLv`/`wordsSet` from the record before calling it). settleSetCounter rule unchanged from
+2f2bf02 (never lowers except clamping above nSets; raises only to the fully-recorded leading-set
+count; not called at boot). New storage: sessionStorage key `vocab_zh_session` only (core.js
+`sessionKey(pack) = storageKey(pack) + "_session"`, app.html `sessStore` with in-memory fallback;
+record `{v, build, t, fp, tab, today?, drill?|rd?}`; dropped on build/fingerprint mismatch, >12 h,
+corrupt JSON; resume and boot never write `prog`). `VE_BUILD` = build.sh cksum of the page sources
+(index.html carries `1625184988-1728638`). `tests/migration_checks.js` 295 passed 0 skipped (incl.
+[session]: key differs from progress/legacy/backup keys, migrated progress has no session field),
+`tests/session_resume_checks.js` 67 passed, `tests/characters_app_checks.js` 201 passed at 3d66aea
+in vocab-engine (tree clean, read-only). The zh pack WAS rebuilt (`pack_from_hsk.py` from an
+`engine` archive at 3d66aea into two scratch dirs, byte-identical, equal to vocab-engine/packs/zh):
+pack.json, sentences, lessons, legacy, passages, passages_src, gloss_display byte-identical vs the
+2f2bf02 pack; words.json +`say` on 38 words, characters.json +`hint` on 1164 units and +`say` on
+38, no other field changed; new pack/attribution.json. `validate_pack.py pack`: 1193 words, 882
+sentences (882 with spans), 12 lessons, 60 passages, 1193 character units, 0 errors, 1 WARN (138
+of 4946 linked words have no span). Build deterministic (two builds: index.html
+69e0292b46085c10f08f21f8678411c6, sw.js 3cabe66a9cf02141543d20b088f0ce00). LICENSES/ (LGPL-3.0,
+GPL-3.0) and a README Credits section added. Rollback hash (pre-republish HEAD):
+2034e744feaaa2c9182dc849facb5e99bbb5a093. Pre-republish live/local md5s: index.html
+ae28fb37c4199f44ddcdcfd9bc394a61, sw.js 0b3db60173a3f5c4486a165bfbcca579 (live and local matched).
+A browser worker runs the live snapshot-diff proof (progress intact, session resume, no console
+errors) separately.
