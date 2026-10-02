@@ -526,3 +526,38 @@ popover 20 s, Session-done recount) ship here. Known open items on 68930bd: next
 choices mixed from learned and not-yet-learned words (no level slotting). A browser worker runs
 the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-68930bd/, fb4 harness against live, 2026-10-02): KEEP, 7/7 PASS. Live md5 matched (index.html 035c143d..., sw.js f51a37c7...; SW cache ve:/chinese/:1611774630-1814274). Migration: proof-36aee02 / proof-590af86 / proof-ea62a45 seeds + snapshot-d612e63 byte-equal after boot/reload/Progress on live and df15d65, keys vocab_zh only, no backup, Progress counts equal; hsk_pinyin migrates with .bak == raw. Owner shape + one df15d65 session (字 set 26) -> live byte-equal, counts equal (字 260/595), 0 lowered, Today unpaused ("字, set 27 of 120"). Rollback: live `pause: 1` + session parked mid-Review -> df15d65 byte-equal, no backup, same counts, session ran (字 set 27, +10 units, pause kept); back on live still paused. Pause: chip on/paused toggles + persists over reload, export/import carry it; paused owner 4 sessions (2 same day): "Review only · new material paused.", Review 40 items, 0 Learn, 0 new words/units/first reads; paused Read results list tapped unlearned duì/yíng without checkbox, learned 595 -> 595; unpause -> 字 set 27 c0261-c0270 = pre-pause plan, only `pause` removed; fresh paused "Nothing to review yet." + "Turn new material on". Lag: fresh W C W C W C, owner 字 27-30 oracle match, owner12/all7/alldone match. Popover open at 19 s, closed by 21 s, × / outside / Escape close at once (passage + sentence). Recount: Session done 3 reopens sessions/sn 4/1 unchanged; k6 sessions 81 -> 82 -> 83 -> 84 (F1 fixed live). fb2 c1-c5 identical to fb4 scratch run; offline boot from SW cache, 0 site hits. 0 console errors / failed requests (offline Google Fonts only). Report: vocab-engine/.cache/briefs/chinese-proof-w13-report.md.
+
+Migration proof 2026-10-03 for the a32c1fc republish (engine 68930bd -> a32c1fc: pack `optsMix`,
+wrong choices from the answer's own stage (new/weak answers: own learn-order set, then adjacent
+sets, then other weak items; known answers: known items; never taught last), placement keeps level
+tiers; Progress under `learn: "lag"` shows one Characters row per level in its own table, CSS
+`table.stats.nw td:last-child{white-space:nowrap}`, display only): storage/migration diff audit
+(`git -C engine diff 68930bd..a32c1fc -- engine/core.js engine/app.html engine/sw.template.js
+build.sh`, 155+/34-, core.js + app.html; `engine/sw.template.js` and `build.sh` 0 diff lines). No
+hunk touches `validateProgShape`, `normalizeProg`, `parseStored`, `bootProg`, `applyImport`,
+`migrateLegacy`, `session*` or the `*_VERSION` constants; no added line calls `localStorage`,
+`sessionStorage` or `store.save` or assigns a `prog.*` field. No new vocab_zh field; boot and
+option building write nothing (mixPick / wordMix / sentMix / charCtx / mixSetOf only read prog).
+Session record `vocab_zh_session`: shape unchanged, no new key; the Today record's existing
+`today.cu` (68930bd app.html:1560/1605, a32c1fc 1608/1653, unchanged lines) now also feeds the
+unit option bucket for the rest of the session (`todayCharSet` reads `todayStepState.snap.cset`).
+Rollback: scratch check, progress booted and written by a32c1fc (owner seed proof-68930bd/k4-owner-
+prev + snapshot-d612e63, plus word and unit answers) boots on 68930bd, 36aee02, 590af86, ea62a45
+and 3d66aea with no backup, byte-equal (10/10 PASS). vocab-engine tests at a32c1fc (main checkout,
+read-only): engine_checks 704, migration_checks 381 (0 skipped), opts_mix_checks 40 (312 s; incl.
+flag-off app session byte-identical to 68930bd), lag_checks 38, pause_checks 49,
+session_resume_checks 117, day_sim_checks 67, 0 failed. The zh pack WAS rebuilt
+(`pack_from_hsk.py --out` at a32c1fc into two scratch dirs, byte-identical; every pack file equal
+to vocab-engine/packs/zh): pack.json gains `"optsMix": true` (`pauseNew: true`, `characters.learn:
+"lag"` kept), pack.js to match; every other pack file byte-identical. Built index.html carries
+`"optsMix":true`, `"pauseNew":true` and `"learn":"lag"`. `validate_pack.py pack`: 1193 words, 882
+sentences (882 with spans), 12 lessons, 60 passages, 1193 character units, 0 errors, 1 WARN (138
+of 4946 linked words have no span). Build deterministic (two builds: index.html
+d927caf572c90ca6cf60fb05d64450ed, sw.js 10c91794f31cc7b882295121a53f06b0; VE_BUILD
+420410691-1824758, ve-build marker 3106599268-1824081). Rollback hash (pre-republish HEAD):
+7fbbf86432d246e16ccbb00747edc1b2149d2f06. Pre-republish live/local md5s: index.html
+035c143d4d14eaf016c13d8ae90e1633, sw.js f51a37c7ee7632de1ac112d9fa493a5b (live and local matched).
+The 68930bd open item (wrong choices mixed from learned and not-yet-learned words) ships here.
+Known open items on a32c1fc: optsMix follow-up — bucket wrong choices by the session an item was
+learned in (new record field `f`), see vocab-engine/TODO.md. A browser worker runs the live
+snapshot-diff proof separately.
