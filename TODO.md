@@ -490,6 +490,38 @@ Build deterministic (two builds: index.html 007e3ad757a83973690d5c337e0797bf, sw
 Pre-republish live/local md5s: index.html e94fe2f9d236a11540a68614d4933559, sw.js
 1ca754fde7d20f637eb4930413068e3f (live and local matched). The 590af86 open item (lag rule;
 also fixes the "with words" turn FAIL above) ships here. Known open items on 36aee02: next
-batch = "New material: paused" toggle, word popover timer 24 s, Session-done reopen recount fix.
+batch = "New material: paused" toggle, word popover timer 20 s, Session-done reopen recount fix.
 A browser worker runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-36aee02/, fb3 harness against live, 2026-10-02): KEEP, 6/6 PASS. Live md5 matched (index.html 007e3ad7..., sw.js 3f481e27...; SW cache ve:/chinese/:949799161-1809594). Migration: proof-ea62a45 seeds + proof-590af86 first-save shapes (chars.order with/first, sn, day) byte-equal after boot/reload/Progress on live and on a3fe564, keys vocab_zh only, no backup, non-字 Progress rows equal, 字 counts equal (live merges 字1-4 into one row); hsk_pinyin migrates with .bak == raw. Owner shape + one a3fe564 session (order first, turn w) -> live byte-equal, 0 backup, counts equal (字1 150 + 字2 110 = 字 260/595); 4 Learn steps 字 sets 27-30, 0 re-taught, 0 lowered, no HSK 4, stored order/turn/defer/choiceSeen untouched. Rollback: live progress + parked Learn-字 session (today.cu c0261-c0270) -> a3fe564 byte-equal, no backup, same counts, 字2 set 12 drill ran (34 answers, units 263 -> 270). Lag: fresh W C W C; 12-untaught -> 字, HSK 4, 字, HSK 4; all taught -> "everything covered", Today runs; every session matched the records oracle. No chips/choice card; one 字 row, one HSK 1-4 strip. Resume at teach screen and mid-drill keeps the same unit ids. fb2 c1-c5 same as fb3 scratch run (c2 176 px scroll as before; c5 c.pass now true); offline boot from SW cache. 0 console errors / failed requests (offline Google Fonts only). Session-done reopen recount (pre-existing) seen again (k6 sessions 81 -> 84 -> 87). Report: vocab-engine/.cache/briefs/chinese-proof-w12-report.md.
+
+Migration proof 2026-10-02 for the 68930bd republish (engine 36aee02 -> 68930bd: pack `pauseNew`
+"New material: on / paused" chip, word popover 20 s, Session done no longer recounts on reopen;
+68930bd = 44db17a + tools/pack_from_hsk.py emitting `pauseNew`, `git -C engine diff
+44db17a..68930bd --stat` touches tools/pack_from_hsk.py only): storage/migration diff audit (`git
+-C engine diff 36aee02..68930bd -- engine/core.js engine/app.html engine/sw.template.js build.sh`,
+78+/30-, core.js + app.html; `engine/sw.template.js` and `build.sh` 0 diff lines). No hunk touches
+`validateProgShape`, `normalizeProg`, `parseStored`, `applyImport`, `migrateLegacy`, `session*` or
+the `*_VERSION` constants; no new `localStorage` or `sessionStorage` call. One new vocab_zh field,
+additive: `prog.pause = 1`, written only by `setPause` (core.js:1071; unpause deletes the field),
+called from the Progress chip (app.html:2926) and the paused-idle Today button "Turn new material
+on" (app.html:2067, delete only). Boot writes nothing. `validateProgShape` ignores unknown keys and
+`normalizeProg` keeps it, so export/import carry it. Session record `vocab_zh_session`: shape
+unchanged (`snap.reviewExtra` is not serialized; resume recomputes it). `todayFinish` now clears
+`rzFin`/`todayStepState` (all packs), no stored-field change. Rollback: migration_checks [pause]
+(engines 36aee02, 590af86, ea62a45, 3d66aea boot paused progress, no backup, field kept) PASS.
+vocab-engine tests at 44db17a (engine/ identical at 68930bd; main checkout, read-only):
+migration_checks 381 passed 0 skipped, pause_checks 49, lag_checks 25, session_resume_checks 117,
+day_sim_checks 67, help_close_checks 41, 0 failed. The zh pack WAS rebuilt (`pack_from_hsk.py`
+from an `engine` archive at 68930bd into two scratch dirs, byte-identical, equal to
+vocab-engine/packs/zh): pack.json gains `"pauseNew": true` (`characters.learn: "lag"` kept),
+pack.js to match; every other pack file byte-identical. Built index.html carries
+`"pauseNew":true` and `"learn":"lag"`. `validate_pack.py pack`: 1193 words, 882 sentences (882
+with spans), 12 lessons, 60 passages, 1193 character units, 0 errors, 1 WARN (138 of 4946 linked
+words have no span). Build deterministic (two builds: index.html 035c143d4d14eaf016c13d8ae90e1633,
+sw.js f51a37c7ee7632de1ac112d9fa493a5b; VE_BUILD 1574599848-1814950, ve-build marker
+1611774630-1814274). Rollback hash (pre-republish HEAD): df15d65519b12f588fbb2f1365698dd2ad5a8368.
+Pre-republish live/local md5s: index.html 007e3ad757a83973690d5c337e0797bf, sw.js
+3f481e27bbc01b5bf356fd10a0d5230e (live and local matched). The 36aee02 open items (paused toggle,
+popover 20 s, Session-done recount) ship here. Known open items on 68930bd: next batch = wrong
+choices mixed from learned and not-yet-learned words (no level slotting). A browser worker runs
+the live snapshot-diff proof separately.
