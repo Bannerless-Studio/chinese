@@ -458,3 +458,37 @@ gloss tidy-ups) ship here. Known open items on 590af86: next batch = a single la
 the three order chips (teach characters when at least one set of learned words lacks its
 characters, else words). A browser worker runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-590af86/, 2026-10-02): KEEP, 7/8 PASS. Live md5 matched (index.html e94fe2f9..., sw.js 1ca754fd...; ve-build marker 201767736-1806282). Migration: proof-ea62a45 seeds byte-equal after boot/reload/offline, no .bak, Progress rows equal; chars.order reaches vocab_zh at the first save (tapping Start today: +chars.order with sn/day, nothing else); 908c528 session -> live and live (order, turn, parked todayChars session) -> 908c528 both byte-equal, no backup, same counts, 0 units lowered, drills run. Owner shape on "first": 4+ Learn steps all 字3 (incl. closing after Learn), one set left -> 字3 then HSK 4. Synonym 两 on 二 no unit move, 二 +1; 0 北京/元/人民币 giveaways over >=41 cards per word per tier, voices on/off; 353 option sets, 0 mixed-script; glosses OK; c1-c7/r3 regressions PASS; 0 console errors / failed requests. FAIL (not a regression, 908c528 worse): on "with words", closing on the Learn results screen without Continue never writes chars.turn, so Learn stays on words (HSK 4 x4, 0 字3); follow-up: flip the turn when Learn results show, or the lag rule. Report: vocab-engine/.cache/briefs/chinese-proof-w11-report.md.
+
+Migration proof 2026-10-02 for the 36aee02 republish (engine 590af86 -> 36aee02: one lag rule for
+Learn, pack `characters.learn: "lag"`): storage/migration diff audit (`git -C engine diff
+590af86..36aee02 -- engine/core.js engine/app.html engine/sw.template.js build.sh`, 41+/7-,
+core.js + app.html; `engine/sw.template.js` and `build.sh` 0 diff lines). No hunk touches
+`validateProgShape`, `validateRecMap`, `parseStored`, `bootProg`, `applyImport`, `migrateLegacy`,
+`normalizeProg`, `defaultProg`, `normalizeCharsProg`, `validateCharsShape`, `ensureChars`,
+`sessionKey`, `sessionStale`, `PROG_VERSION`/`CHARS_PROG_VERSION`/`SESSION_VERSION`; no new
+`store.save`, `localStorage` or `sessionStorage` call. New stored fields in vocab_zh: NONE.
+`charsConfig` sets `withWords` false under `learn: "lag"` (core.js:1834), so `seedCharOrder`
+(core.js:1921, gated on `withWords`) does not run: boot writes nothing, `chars.order` is never
+derived; `learnTurnDone` returns false (no `chars.turn`), `charStages` is empty so
+`charsUnlocked`/`showCharChoice` are false (no order chips, no choice card, no `defer`/
+`choiceSeen` writes). Stored `order`/`turn`/`defer`/`choiceSeen` are left byte-identical. Session
+record only: `vocab_zh_session` `today.cu` (unit ids of the planned lag set, app.html:1555),
+read back by `lagResume` (app.html:1600; an id not in the pack -> plan re-derived). Rollback:
+migration_checks [lag] "engine 590af86 / ea62a45 / 3d66aea boots lag progress: no backup, records
+kept" PASS (and the reverse direction, nothing re-taught). vocab-engine tests at 36aee02 (main
+checkout, tree clean, read-only): migration_checks 371 passed 0 skipped, lag_checks 25,
+session_resume_checks 109, day_sim_checks 59, typed_mastery_checks 77, characters_app_checks 202,
+0 failed. The zh pack WAS rebuilt (`pack_from_hsk.py` from an `engine` archive at 36aee02 into two
+scratch dirs, byte-identical, equal to vocab-engine/packs/zh): pack.json characters `withWords:
+true` -> `learn: "lag"` (withWords dropped; stages 字1-字4 kept, unused under lag), pack.js to
+match; every other pack file byte-identical. Built index.html carries
+`"learn":"lag"`. `validate_pack.py pack`: 1193 words, 882 sentences (882 with spans), 12 lessons,
+60 passages, 1193 character units, 0 errors, 1 WARN (138 of 4946 linked words have no span).
+Build deterministic (two builds: index.html 007e3ad757a83973690d5c337e0797bf, sw.js
+3f481e27bbc01b5bf356fd10a0d5230e; VE_BUILD 1776095305-1810270, ve-build marker
+949799161-1809594). Rollback hash (pre-republish HEAD): a3fe564969a753fc0b2a55155ee2d9a6c02337ce.
+Pre-republish live/local md5s: index.html e94fe2f9d236a11540a68614d4933559, sw.js
+1ca754fde7d20f637eb4930413068e3f (live and local matched). The 590af86 open item (lag rule;
+also fixes the "with words" turn FAIL above) ships here. Known open items on 36aee02: next
+batch = "New material: paused" toggle, word popover timer 24 s, Session-done reopen recount fix.
+A browser worker runs the live snapshot-diff proof separately.
