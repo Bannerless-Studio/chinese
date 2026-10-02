@@ -411,3 +411,49 @@ and local matched). Known open items on ea62a45, carried by a follow-up republis
 turn `chars.turn`, synonym unit credit, 北京-type giveaways, ~45 gloss tidy-ups. A browser worker
 runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-ea62a45/, 2026-10-02): live md5 matched (index.html 96d7b14a..., sw.js b7f17624...). Migration: proof-3d66aea seeds (full vocab_zh, read.done with/without l, k kept/bogus dropped in memory, hsk_pinyin -> .bak) byte-equal after boot and reload, 0 bytes written at boot, no .bak for valid seeds, Progress rows equal proof-3d66aea; old-build (41a6a8f served locally) Today session + mid-session sessionStorage record copied to live: byte-equal after boot and reload, same counts, no backup, 34 mastered units not lowered, old sessionStorage record ignored (Today plan shown, no resume), Today starts. Rollback: live Today session (day, sn 2, t/u on 40 words, typed unit credit on 17 units, localStorage vocab_zh_session) copied to the old build: byte-equal at boot, no backup, same counts, 5-item drill runs. Resume, scheduler (0 same-kind repeats over 3 sessions, misses return as recall/type, sn +1 per session, reload keeps sn), typed mastery (19/19 +1 with dots, miss at 4 -> 3), per-level chars/chips, popover x/outside/8 s, Read answer block, glosses (啊, anxious, 担心 also right, give) all PASS on live; regressions identical to proof-3d66aea (silent characters card 0 pre-audio, 还 -> 孩 hidden carrier, teach hints, set counter, no-voice, offline SW boot); 0 console errors, 0 failed requests. Verdict KEEP; rollback 41a6a8f not needed.
+
+Migration proof 2026-10-02 for the 590af86 republish (engine ea62a45 -> 590af86: characters order
+first / with words / later, Learn turn, synonym-safe unit credit, no reading giveaways,
+one-script word options, gloss tidy-up): storage/migration diff audit (`git -C engine diff
+ea62a45..590af86 -- engine/core.js engine/app.html engine/sw.template.js build.sh`, 92+/30-,
+core.js + app.html; `engine/sw.template.js` and `build.sh` 0 diff lines). `validateProgShape`,
+`validateRecMap`, `parseStored`, `bootProg`, `applyImport`, `migrateLegacy`, `defaultCharsProg`,
+`validateCharsShape`, `normalizeCharsProg`, `ensureChars`, `sessionKey`, `sessionStale`
+byte-identical at 3d66aea, ea62a45 and 590af86; `PROG_VERSION`/`CHARS_PROG_VERSION`/
+`SESSION_VERSION` = 1, `SESSION_MAX_AGE_MS` 12 h, unchanged. New stored fields, both ADDITIVE,
+both inside `prog.chars` and only with pack `characters.withWords`: (1) `chars.order` "first" |
+"with" — core.js:1920 seedCharOrder, called from normalizeProg (core.js:894, every load incl.
+import) and defaultProg (core.js:846); a stored "first"/"with" is kept, otherwise derived:
+any `chars.c` record -> "first", none -> "with". It is set on the in-memory progress at load;
+boot itself calls no store.save, so it reaches vocab_zh with the learner's first save of any
+kind (nothing else in the stored record changes by it; `chars.c`, `defer`, `choiceSeen`, `mix`
+untouched). Also written by the Progress chips (app.html:2965 setCharMode, core.js:1929: "later"
+sets `defer: true` only; "first"/"with" set `order` and `defer: false`); `chars.defer: true`
+keeps its meaning ("later") and wins over `order`. (2) `chars.turn` "c" | "w" — core.js:2027
+learnTurnDone, from app.html:2064 todayLearnDone (words taught -> "c") and app.html:2066
+todayCharsDone (characters taught -> "w"); not written under "later". Session record: same key,
+new resume origin `todayChars` (app.html:1505/1513); a record from another build is dropped as
+before. Runtime-only: a typedSyn hit moves no character unit (app.html:1264-1265), pronInGloss
+words get no reading<->meaning cards (core.js pronMeaning gate), pack.json `optsOneScript`
+(app.html:813) is UI only. Neither new field is checked by validateCharsShape (only `v`, `c`,
+`defer`, `choiceSeen`, `mix`), and normalizeCharsProg's Object.assign keeps unknown fields at
+3d66aea and ea62a45 (byte-identical), so neither can trigger the `.bak` path. Rollback:
+migration_checks [order] "engine ea62a45 / 3d66aea boots chars.order first / with: no backup,
+order, turn and records kept" and [turn] "engine 3d66aea boots progress with chars.turn: no
+backup" PASS. vocab-engine tests at 590af86 (tree clean, read-only): migration_checks 358 passed
+0 skipped, session_resume_checks 109, day_sim_checks 59, typed_mastery_checks 77,
+characters_app_checks 202, 0 failed. The zh pack WAS rebuilt (`pack_from_hsk.py` from an
+`engine` archive at 590af86 into two scratch dirs, byte-identical, equal to vocab-engine/packs/zh):
+pack.json +`optsOneScript: true`; words.json `en` changed on 52 words, `syn` +1/changed 6/
+removed 5, `typedSyn` +2/removed 1, ids/order and every other field unchanged; attribution,
+characters, sentences, lessons, legacy, passages, passages_src, gloss_display, REPORT_passages
+byte-identical. `validate_pack.py pack`: 1193 words, 882 sentences (882 with spans), 12 lessons,
+60 passages, 1193 character units, 0 errors, 1 WARN (138 of 4946 linked words have no span).
+Build deterministic (two builds: index.html e94fe2f9d236a11540a68614d4933559, sw.js
+1ca754fde7d20f637eb4930413068e3f; VE_BUILD 420245799-1806959). Rollback hash (pre-republish
+HEAD): 908c5285fb5559900c3d2749a6f6e2c1e83ea906. Pre-republish live/local md5s: index.html
+96d7b14aef0290517f3f4e178153b663, sw.js b7f176248c18b59816c9681cab8d598e (live and local
+matched). The ea62a45 open items (alternation turn, synonym unit credit, 北京-type giveaways,
+gloss tidy-ups) ship here. Known open items on 590af86: next batch = a single lag rule replacing
+the three order chips (teach characters when at least one set of learned words lacks its
+characters, else words). A browser worker runs the live snapshot-diff proof separately.
