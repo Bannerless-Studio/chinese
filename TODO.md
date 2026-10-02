@@ -362,3 +362,51 @@ ae28fb37c4199f44ddcdcfd9bc394a61, sw.js 0b3db60173a3f5c4486a165bfbcca579 (live a
 A browser worker runs the live snapshot-diff proof (progress intact, session resume, no console
 errors) separately.
  Browser proof (Playwright, .cache/live/proof-3d66aea/, 2026-10-01): live md5 matched (index.html 69e0292b..., sw.js 3cabe66a...); vocab_zh byte-equal after boot and reload, Progress rows equal proof-2f2bf02, read.done with/without l, k kept/bogus dropped, hsk_pinyin migrates with .bak as before; boot writes nothing and sessionStorage stays empty until a drill starts (then only vocab_zh_session). Session resume live: Today Review after 3 answers reloads to the same item/options/score (17 left), tab switch Words->Today same item, Test Recall reload mid-way same item/seen, Read Q1 answered -> reload shows Q1 revealed with the same answer record (no re-mark), Q2 after reload unrevealed; progress unchanged by every reload; a session record planted with a fake build id is dropped on boot (key removed, Today plan shown). Silent meaning->characters card: 21 seen, 0 audio before answering, 1 on reveal. Rotation (Test Recall, units mastered, 60 typed cards): written 21 + writtenMeaning 18 = 39 vs pron 6 + pronMeaning 9 + writtenPron 6 = 21 (1.86x). TTS carriers: 还 -> 孩, 长 -> 常, 老师 -> 老师 (Words row, reveal auto + tap), Read sentence with 还 spoken as written; carrier never visible. Hints: teach cards 你/好/我 show the hint after the gloss; none on question cards or options (charSound/charRead/charPick, learn plan); reveal and written-word popover (叫) show it; pinyin-shown popover (Wǒ) none. Regressions identical to proof-2f2bf02 (set counter teach w0009 w0010 w0013-w0020, sets 1->2, "set 3"; no-voice 0 hear items, 6 reqKind hear, Test Listen hidden; typed drills 0 leaks; popover 2px border, sticky 14px, light and dark; cloze 4 options; offline boot from SW cache); 0 console errors, 0 4xx. Verdict KEEP; rollback 2034e74 not needed.
+
+Migration proof 2026-10-02 for the ea62a45 republish (engine 3d66aea -> ea62a45: session record in
+localStorage with per-tab parking, dayAware planner, typed character mastery, helpClose,
+readAnswerBlock, synonym-safe meanings): storage/migration diff audit (`git -C engine diff
+3d66aea..ea62a45 -- engine/core.js engine/app.html engine/sw.template.js build.sh`, 703+/120-,
+core.js + app.html; `engine/sw.template.js` and `build.sh` 0 diff lines). `storageKey`,
+`defaultProg`, `validateProgShape`, `validateRecMap`, `normalizeProg`, `parseStored`, `bootProg`,
+`dropUnknownSets`, `applyImport`, `migrateLegacy`, `defaultCharsProg`, `validateCharsShape`,
+`normalizeCharsProg`, `ensureChars`, `markRec`, `setMissKind`, `markMissKind`, `validateReadShape`,
+`dropBadMissKinds`, `sessionKey`, `sessionStale`, `sessionHash` byte-identical at both shas;
+`PROG_VERSION`/`CHARS_PROG_VERSION`/`SESSION_VERSION` = 1, `SESSION_MAX_AGE_MS` 12 h, unchanged.
+New stored writes, all ADDITIVE and all gated by pack.json `dayAware: true` or
+`characters.bareBy: "typed"`: core.js:1194 `prog.sn` (session ordinal, daySessionStart);
+core.js:1199/1216 `prog.day = {d, n, a}` (dayStart/noteDay; dayLog never validates it at boot, a
+malformed or other-date log reads as a fresh day); core.js:1218-1232 log entries `a[key].{r, c, u,
+m, mk, ms, ma}`, core.js:1184 carry `ag`; core.js:1238-1239 `t`, `u` on the answered
+`prog.w`/`prog.s`/`prog.chars.c` record (`c:` keys log kind "type" from markUnitTyped,
+app.html:485). Existing field, same meaning: core.js:1877 markChar under bareBy typed keeps a
+mastered unit's miss at `s = mastered` instead of markRec's reset, and a held unit's right choice
+answer adds `r` without `s` (runtime writes only; boot never touches unit records). `chars.defer`
+keeps its meaning ("later"); `choiceSeen` is no longer read with withWords, still written by
+setCharOrder as before. None of the new fields is checked by validateProgShape/validateRecMap
+(`day`/`sn` are unvalidated top-level keys kept by normalizeProg's Object.assign; `t`/`u` are not
+among the checked `r/w/s/prov/d`), so none can trigger the `.bak` path; the backup triggers stay
+parse failure or a shape failure of the existing fields (bootProg), plus the import/reset
+backups. Session record: same key `vocab_zh_session`, moved from sessionStorage to localStorage
+(app.html:1307), new fields `park` (other tabs' records) and `view` ({tab, live}); fingerprint
+re-stamped on every progress save (app.html:1559 sessionRefp via store.save); import and reset
+clear it (app.html:2877, 2909); the old sessionStorage record is never read. Rollback (3d66aea
+reading ea62a45 progress): migration_checks "[day] previous engine 3d66aea boots day + sn + u
+progress with no backup, fields kept" PASS. vocab-engine tests at ea62a45 (tree clean, read-only):
+migration_checks 342 passed 0 skipped, session_resume_checks 109, day_sim_checks 59,
+typed_mastery_checks 56, characters_app_checks 202, 0 failed. The zh pack WAS rebuilt
+(`pack_from_hsk.py` from an `engine` archive at ea62a45 into two scratch dirs, byte-identical,
+equal to vocab-engine/packs/zh): pack.json +`dayAware`, +`helpClose`, +`readAnswerBlock`,
+characters +`bareBy: "typed"`, +`bareWords`, +`withWords`, stages split per level 字1-字4 (was
+after 3: 1-3, after 4: 4); words.json `en` changed on 477 words, +`syn` 612, +`typedSyn` 180,
++`noTypedMeaning` 26, +`pronInGloss` 3, ids/order and every other field unchanged;
+attribution.json +`gloss_overrides` (CC-CEDICT, CC-BY-SA-4.0); characters, sentences, lessons,
+legacy, passages, passages_src, gloss_display, REPORT_passages byte-identical. `validate_pack.py
+pack`: 1193 words, 882 sentences (882 with spans), 12 lessons, 60 passages, 1193 character units,
+0 errors, 1 WARN (138 of 4946 linked words have no span). Build deterministic (two builds:
+index.html 96d7b14aef0290517f3f4e178153b663, sw.js b7f176248c18b59816c9681cab8d598e). Rollback
+hash (pre-republish HEAD): 41a6a8f32d05ecd6d12f0d5c0f48641a08bedc4e. Pre-republish live/local
+md5s: index.html 69e0292b46085c10f08f21f8678411c6, sw.js 3cabe66a9cf02141543d20b088f0ce00 (live
+and local matched). Known open items on ea62a45, carried by a follow-up republish: alternation
+turn `chars.turn`, synonym unit credit, 北京-type giveaways, ~45 gloss tidy-ups. A browser worker
+runs the live snapshot-diff proof separately.
