@@ -761,3 +761,4 @@ sw.js 94cb0a601c9b5eb5d8dbe683e0369038.
 Known open items on a2f2426: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
 record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
 (fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
+Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-a2f2426/, live vs 08149e3 served locally, 2026-10-04): KEEP, all PASS. Live md5s match (index.html 95f78686..., sw.js 5bbe6e67...). 53-seed migration byte-equal (3 seeds differ only by a dropped stale session key), parked prev drill dropped, rollback of a completed and a parked (today.tw) live session boots on 08149e3 byte-equal; Recall row 12; typed/choice streak table and one typed ask per word per session as specified; 0 console errors.
