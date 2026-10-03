@@ -630,3 +630,28 @@ learned in (new record field `f`); dayAware `owns()` is dead code under the new 
 lag/pause/opts_mix controls swallow a day_rules_patch no-match as "control skipped" (fb10 review
 M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-6c067b4/, proof-37f0b08 + fb10 harness against live, prev 2f0a15b served locally, 2026-10-03): KEEP, 5/5 PASS. Live md5 matched at start and end (index.html fe4893be..., sw.js 50d6c53b...; SW cache ve:/chinese/:2955851144-1826670). Migration: owner + 18 earlier seeds (proof-a32c1fc/68930bd/36aee02/37f0b08 records and ls dumps, SEED/SEED2/SK/legacyWith/snapshot) byte-equal after boot/reload/Progress, no backup, every Progress row and 字 per-level taught/total/mastered/bare equal 2f0a15b (stale parked sessions aged out on both builds alike); hsk_pinyin migrates with .bak == raw. Owner + one 2f0a15b session -> live byte-equal, Today ran, 0 lowered. Rollback: live session with listening pass p0010 (l:1) + a unit miss c0058 5->4 -> 2f0a15b byte-equal, no backup, counts equal, session ran (0 lowered), back on live equal. Miss step (Test -> Characters): live 5->4, 4->3, 3->3, 2->0; prev 5->3, 4->3, 3->3, 2->0; typed misses 5->4 (dots 4/5), 4->3 (3/5), 3->3 (3/5); typed right afterwards w0004 4->5 (dots 5/5, bareWord). Choice misses on held units >= 3 show no dots on both builds, as designed. Listening pass: all 5 questions behind Show question, each spoken on mount, Q1 shown before answering -> " · question shown" on Q1 only, answering reveals the text, results "Listening pass", record l:1; prev hides 3 of 5; l:1 seed -> "1 passage to re-read", read mode. Weak floor Review 12/9/8 of 20 words; bare 5, popovers 14.9 s open / 15.01 s closed, toast 3.51 s, Learn label, pause chip, recount, offline boot all as on 37f0b08. 0 console errors / failed requests (offline Google Fonts only). Report: vocab-engine/.cache/briefs/chinese-proof-w16-report.md.
+
+Migration proof 2026-10-03 for the 812511a republish (engine 6c067b4 -> 812511a: pack flag
+`rereadPerfectDays: 30`, a passage read with a perfect score returns as a Today re-read after 30
+days, only when no imperfect re-read (7 days) is due; reason "reread", so the listening alternation,
+paused mode, results and the done record are unchanged; `core.js` `nextReadItem` only): storage/migration
+diff audit (`git -C engine diff 6c067b4..812511a -- engine/core.js engine/app.html engine/sw.template.js
+build.sh`, core.js 16 lines; app.html, `engine/sw.template.js`, `build.sh` 0 diff lines). VERDICT PASS:
+the only hunk is `nextReadItem` (perfect-score branch + `perfDays`); grep of added/removed lines for
+`localStorage`, `sessionStorage`, `store.save`, `prog.* =`, VERSION, backup, `.bak`, storageKey, normalize,
+`vocab_`, migrateLegacy: 0 hits. NO new progress field, NO day-log change, boot writes nothing. vocab-engine
+tests at 812511a (main checkout, clean, read-only): engine_checks 704, migration_checks 384 (0 skipped),
+listen_mode_checks 120, passage_audio_checks 43, pause_checks 49, session_resume_checks 117,
+day_sim_checks 76, 0 failed. The zh pack WAS rebuilt (`pack_from_hsk.py . --out` twice at 812511a,
+byte-identical): the only differing files vs the committed pack are pack.json (`rereadPerfectDays: 30`
+added to the pack flags) and pack.js to match; pack/ equals vocab-engine/packs/zh. Built index.html
+carries `"rereadPerfectDays":30`, `"listenQuestions":"all"`, `"bare":5`, `"optsMix":true`, `"pauseNew":true`,
+`"learn":"lag"`. `validate_pack.py pack`: 0 errors, 1 WARN (138 of 4946 linked words have no span). Build
+deterministic (two builds: index.html 5ba024d314b605b70286edc9b8f0237a, sw.js 07872497aea56a3ce1845237a6cf7e49;
+VE_BUILD 1488100429-1827793, ve-build marker 4261304518-1827117). Rollback hash (pre-republish HEAD, includes
+the 6c067b4 browser-proof line): 686d08b7f521d6664f11c77cf467e08e27e99259. Pre-republish live/local md5s:
+index.html fe4893be4eeb20b7b92a5f3770ed6540, sw.js 50d6c53b46a968d8ddf61d8d983205b7 (live and local matched).
+Known open items on 812511a: optsMix follow-up — bucket wrong choices by the session an item was
+learned in (new record field `f`); dayAware `owns()` is dead code under the new settle rule, and
+lag/pause/opts_mix controls swallow a day_rules_patch no-match as "control skipped" (fb10 review
+M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
