@@ -739,3 +739,25 @@ d8c08a9cd2eb98f25fdefbee20835d45, sw.js 94cb0a601c9b5eb5d8dbe683e0369038; VE_BUI
 Known open items on 2a76e72: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
 record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
 (fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
+
+Migration proof 2026-10-04 for the a2f2426 republish (engine 2a76e72 -> a2f2426: pack flag `wordsBy: "typed"` (zh, needs
+dayAware + typing): from streak 2 a word advances only by a right typed answer, choice/ear rights hold, a miss steps the
+streak down one, no retry credit after such a miss, one typed ask per word per session, Review/Recall ask held words
+typed, Recall stage 12 items instead of 8): storage/migration diff audit (`git -C engine diff 2a76e72..a2f2426 --
+engine/core.js engine/app.html engine/sw.template.js build.sh`: core.js 78 lines, app.html 42, `engine/sw.template.js`
+and `build.sh` 0). VERDICT PASS: `vocab_zh` UNCHANGED (no new field; `markWordRec` only moves existing `r`/`w`/`s`,
+streak never below 1 from the s>=2 hold; boot writes nothing, no backup path touched; byte-equal round trip both ways,
+migration_checks [wordsBy]). Session record `vocab_zh_session` gains optional `today.tw` (word ids typed this session) and
+`drill.dn` (words stepped down this drill), written only under the flag; a parked record from 2a76e72 resumes
+(session_resume_checks). vocab-engine tests at a2f2426 (main checkout, clean, read-only): engine_checks 704,
+migration_checks 395, words_typed_checks 57, day_sim_checks 77, session_resume_checks 125, 0 failed. Pack diff vs
+committed: pack.json/pack.js ONLY (`wordsBy: "typed"` added; every w19 flag present: readRotation, listenQuestions "all",
+characters.bare 5, optsMix, pauseNew, characters.learn "lag", dayAware); vocab-engine packs/zh == pack by `diff -rq`
+after the copy. `validate_pack.py pack`: 0 errors, 1 WARN (138 of 4946 linked words have no span). Build deterministic
+(two builds: index.html 95f78686049ae6ab43d45b1f5b0ec834, sw.js 5bbe6e673599b78f5cee34c1abb1885e; VE_BUILD
+447700362-1929920, ve-build marker 2095466342-1929243). Rollback hash (pre-republish HEAD, includes the 2a76e72 browser-proof
+line): 08149e3a5dbc1720134411b90e58f6b16ba5ea8a. Pre-republish live md5s: index.html d8c08a9cd2eb98f25fdefbee20835d45,
+sw.js 94cb0a601c9b5eb5d8dbe683e0369038.
+Known open items on a2f2426: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
+record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
+(fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
