@@ -562,3 +562,38 @@ Known open items on a32c1fc: optsMix follow-up — bucket wrong choices by the s
 learned in (new record field `f`), see vocab-engine/TODO.md. A browser worker runs the live
 snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-a32c1fc/, fb5 harness against live, prev 7fbbf86 served locally, 2026-10-03): KEEP, 6/6 PASS. Live md5 matched (index.html d927caf5..., sw.js 10c91794...; SW cache ve:/chinese/:3106599268-1824081). Migration: proof-68930bd / proof-36aee02 / proof-590af86 / proof-ea62a45 seeds + snapshot-d612e63 byte-equal after boot/reload/Progress, keys vocab_zh only, no backup, word/sentence/reading rows equal to 7fbbf86, per-level 字 rows sum to 7fbbf86's single row (e.g. 260/1193/166/82); hsk_pinyin migrates with .bak == raw. Owner + one 7fbbf86 session (字 set 26) -> live byte-equal, 4 sessions 字 27-30, 0 lowered. Rollback: live paused + parked Today -> 7fbbf86 byte-equal, no backup, counts equal, session ran. Progress at 390 px (fresh, mid, owner, owner40, all, worst, owner68k4, ownerDf, SEED, 2 paused): 0 word value cells wrap (7fbbf86 wraps only its 字 value), Characters rows one line, docW 390, 0 overflow; fresh (only no-block case) word table text/geometry/pixels identical to 7fbbf86. Wrong choices: Learn-drill set-mates 63/63, 54/54, 57/57, 0 mastered / never-taught; outside-set only where the set has < 3 right-length mates (charPick 鞋/难, How is it said? w0599/w0602); known answers 654/654 known; character drills 0 wrong-length sets (guess 0.25), 1885 sets 0 mixed script, 4 distinct. Placement 120/120 identical. Regressions k1/k6/p2/p8/p7/c1-c5 booleans equal to fb5/w13 runs (random-item diffs only); offline boot from SW cache, 0 site hits. 0 console errors / failed requests (offline Google Fonts only). Report: vocab-engine/.cache/briefs/chinese-proof-w14-report.md.
+
+Migration proof 2026-10-03 for the 37f0b08 republish (engine a32c1fc -> 37f0b08 = ffd506e code + one
+TODO line: 15 s help popovers (`HELP_MS`; audio toast stays 3.5 s), Learn row/card under
+`learn: "lag"` reads "字 HSK n, set k of m" per level (display only), dayAware weak-word floor
+(`DAY_WEAK_FLOOR` 0.4, consolidation keeps ⌈0.15 n⌉, misses pending longest first, a production
+answer settles any miss, a unit pending hear + recall asked in recall, `DAY_TYPED_CONSOLIDATE_SHARE`
+0.35) and pack `characters.bare` 6 -> 5): storage/migration diff audit (`git -C engine diff
+a32c1fc..37f0b08 -- engine/core.js engine/app.html engine/sw.template.js build.sh`, 42+/21-,
+core.js + app.html; `engine/sw.template.js` and `build.sh` 0 diff lines). VERDICT PASS: no hunk
+touches `validateProgShape`, `normalizeProg`, `parseStored`, `bootProg`, `applyImport`,
+`migrateLegacy`, `session*` or the `*_VERSION` constants; grep of added lines for `localStorage`,
+`sessionStorage`, `store.save`, `prog.* =`, VERSION, backup, `.bak`, storageKey, normalize,
+`vocab_`: 0 hits. NO new progress field, NO day-log shape change; boot writes nothing (dayPick /
+dayItemKind / daySettles only choose items; `lagCharSet` adds read-only `lv/lvIndex/lvTotal`).
+Bare-5: stored units at streak 5 read as bare on the new pack (owner has 14 at boot, no write):
+record byte-equal, no backup (migration_checks [bare5]). Older engines (a32c1fc, 68930bd,
+36aee02, 590af86) boot a record written by 37f0b08 with no backup. A parked session from the
+previous build is dropped by `sessionStale` "build" as on every republish. vocab-engine tests at
+37f0b08 (main checkout, read-only): engine_checks 704, migration_checks 384 (0 skipped),
+day_sim_checks 76, typed_mastery_checks 77, lag_checks 45, pause_checks 49, help_close_checks 42,
+session_resume_checks 117, opts_mix_checks 40, 0 failed. The zh pack WAS rebuilt
+(`pack_from_hsk.py . --out` at 37f0b08 into two scratch dirs, byte-identical): the only differing
+file vs the committed pack is pack.json (`characters.bare` 6 -> 5), pack.js to match; every pack
+file equal to vocab-engine/packs/zh. Built index.html carries `"bare":5`, `"optsMix":true`,
+`"pauseNew":true`, `"learn":"lag"`. `validate_pack.py pack`: 1193 words, 882 sentences (882 with
+spans), 12 lessons, 60 passages, 1193 character units, 0 errors, 1 WARN (138 of 4946 linked words
+have no span). Build deterministic (two builds: index.html 251c8634da231b7dc6af98dcb4f8bc85, sw.js
+c574e511c080cd08e499a4e820859e89; VE_BUILD 277737539-1827171, ve-build marker
+3635404196-1826494). Rollback hash (pre-republish HEAD, includes the a32c1fc browser-proof line):
+b84fd960bd35e077a5522c4a360d35c9264fc858. Pre-republish live/local md5s: index.html
+d927caf572c90ca6cf60fb05d64450ed, sw.js 10c91794f31cc7b882295121a53f06b0 (live and local matched).
+Known open items on 37f0b08: optsMix follow-up — bucket wrong choices by the session an item was
+learned in (new record field `f`); dayAware `owns()` is dead code under the new settle rule, and
+lag/pause/opts_mix controls swallow a day_rules_patch no-match as "control skipped" (fb10 review
+M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
