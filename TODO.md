@@ -716,3 +716,25 @@ Known open items on 0ae962d: optsMix follow-up (bucket wrong choices by the sess
 record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
 (fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-0ae962d/, proof-491d470 + fb16 harness against live, prev 868ef90 served locally, 2026-10-03): KEEP, 5/5 PASS. Live md5 matched at start and end (index.html c36196e5..., sw.js 7db0176a...; SW cache ve:/chinese/:4287942796-1920441). Migration: owner + 51 earlier-proof seeds (incl. 16 from proof-491d470) + legacy hsk_pinyin byte-equal after boot/reload/Progress, no backups, every Progress row (reading "15 / 15 passages · avg 94%" etc.) and 字 count equal to 868ef90; prev->live session byte-equal, Today ran (Read p0042 new, 8 questions), 0 lowered; parked Today drill and parked Read-tab passage from 868ef90 both dropped cleanly on live (sessionStale "build", session key removed, Start today, p0042 reopens fresh with 8 shuffled questions); rollback after two live sessions (p0041 {x:1,s:9}, listening p0034 {x:2,l:1,s:10,ls:10}) + Read-tab p0001 parked with qx 1 boots on 868ef90 byte-equal, no backup, counts equal, parked passage dropped ("build"), a session ran (0 lowered), Read tab p0001 opens in pack order (5 q), 0 errors. Rotation on owner: Read p0041 new -> Listen p0034 -> Read p0042 new -> Listen p0019 (never-listened), row stable over 3 tab switches + reload; prev new only. Questions: 8 per pass (read + listen), order differs x0 vs x1, reload/tab park keep order + answers, results in shown order. Regressions (miss step, listening 8/8 by ear, weak floor 9-12 of 20, bare 5, 15 s popovers, Learn label, pause chip aria-pressed false when paused / true when on = prev, recount, offline SW boot) PASS. 0 console errors / failed requests except offline Google Fonts.
+
+Migration proof 2026-10-04 for the 2a76e72 republish (engine 0ae962d -> 2a76e72: under `listenQuestions: "all"` a
+listening-pass question's look-back is "Replay passage" (play rows, Play all/Stop, a plain "Show text" toggle); for
+every pack looking back is no longer tracked or shown: `reopened`/`peekText` never written, results drop " · looked
+back" / "Text shown while listening", `READ_WEIGHT` lost `reopened` (weight 0 before, weak-word outcomes identical)):
+storage/migration diff audit (`git -C engine diff 0ae962d..2a76e72 -- engine/core.js engine/app.html
+engine/sw.template.js build.sh`: core.js 9 lines, app.html 48, `engine/sw.template.js` and `build.sh` 0). VERDICT PASS,
+no storage field change: nothing new is written to `vocab_zh` (boot writes nothing, no backup path touched, no
+day-log change; byte-equal round trip both ways). Only removals of writes (`reopened`, `peekText`); the only
+new state is `rd.qv[i].lkText` (look-back text toggle) inside the parked session record `vocab_zh_session`, restored by
+`sessionResume`; old records carrying `reopened`/`peekText` still resume. vocab-engine tests at 2a76e72 (main checkout,
+clean, read-only): engine_checks 704, migration_checks 390, listen_mode_checks 192, session_resume_checks 125,
+help_close_checks 42, 0 failed. Pack: generator output (`pack_from_hsk.py . --out` twice, byte-identical) matches;
+vocab-engine packs/zh == committed pack (`diff -rq` empty), so the pack diff is EMPTY. `validate_pack.py pack`: 0
+errors, 1 WARN (138 of 4946 linked words have no span). Build deterministic (two builds: index.html
+d8c08a9cd2eb98f25fdefbee20835d45, sw.js 94cb0a601c9b5eb5d8dbe683e0369038; VE_BUILD 541528795-1922373, ve-build marker
+2439318870-1921696). Rollback hash (pre-republish HEAD, includes the 0ae962d browser-proof line):
+1524ea35937c2a1768399d26cd19569560d9c5ae. Pre-republish live md5s: index.html c36196e5d3a8f229e17b590c6329f0f5, sw.js
+7db0176a68b14865df4a3b10107ab7f4.
+Known open items on 2a76e72: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
+record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
+(fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
