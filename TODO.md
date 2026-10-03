@@ -762,3 +762,24 @@ Known open items on a2f2426: optsMix follow-up (bucket wrong choices by the sess
 record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
 (fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
 Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-a2f2426/, live vs 08149e3 served locally, 2026-10-04): KEEP, all PASS. Live md5s match (index.html 95f78686..., sw.js 5bbe6e67...). 53-seed migration byte-equal (3 seeds differ only by a dropped stale session key), parked prev drill dropped, rollback of a completed and a parked (today.tw) live session boots on 08149e3 byte-equal; Recall row 12; typed/choice streak table and one typed ask per word per session as specified; 0 console errors.
+
+Migration proof 2026-10-04 for the 2412992 republish (engine a2f2426 -> 2412992: pack flag `progressMap: true` (zh, needs
+dayAware): Today row `You ▸ [bar] ▸ follow a drama without pausing` + pace line ("pace: — (after 14 sessions)" until 14
+session entries exist, then "≈ N sessions to go"); position = 0.5 known words + 0.25 bare units + 0.25 passages passed by
+listening; tap opens Progress): storage/migration diff audit (`git -C engine diff a2f2426..2412992 -- engine/core.js
+engine/app.html engine/sw.template.js build.sh`: core.js 35 lines, app.html 15, `engine/sw.template.js` and `build.sh` 0).
+VERDICT PASS: ONE NEW OPTIONAL top-level field `prog.pm` = [{sn, p}] (max 14 entries), appended by `recordProgressMap` at
+Session done only under the flag (app.html todayFinish); boot writes nothing, no backup path touched; `validateProgShape`
+accepts `pm`; a2f2426 boots a record carrying `pm` with no backup and keeps it (migration_checks [progressMap], both
+directions). Session record unchanged. vocab-engine tests at 2412992 (main checkout, clean, read-only): engine_checks 704,
+migration_checks 400, progress_map_checks 40, session_resume_checks 125, 0 failed. Pack diff vs committed: pack.json/pack.js
+ONLY (`progressMap: true` added; every w21 flag present: wordsBy "typed", readRotation, listenQuestions "all",
+characters.bare 5, optsMix, pauseNew, characters.learn "lag", dayAware); vocab-engine packs/zh == pack by `diff -rq`.
+`validate_pack.py pack`: 0 errors, 1 WARN (138 of 4946 linked words have no span). Build deterministic (two builds:
+index.html 655babc7284ec9fe0d1b80d2f83476e6, sw.js 73f6037855b388cd0ba6c7e02b42ba1e; VE_BUILD 666862095-1933268, ve-build
+marker 869822592-1932591). Rollback hash (pre-republish HEAD, includes the a2f2426 browser-proof line):
+6fcb7bdb01fb96b2a4d628540b2b6d4ed12c3011. Pre-republish live md5s: index.html 95f78686049ae6ab43d45b1f5b0ec834, sw.js
+5bbe6e673599b78f5cee34c1abb1885e.
+Known open items on 2412992: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
+record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
+(fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
