@@ -683,3 +683,35 @@ learned in (new record field `f`); dayAware `owns()` is dead code under the new 
 lag/pause/opts_mix controls swallow a day_rules_patch no-match as "control skipped" (fb10 review
 M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-491d470/, proof-812511a + fb10 harness against live, prev 54aab87 served locally, 2026-10-03): KEEP, 4/4 PASS. Live md5 matched at start and end (index.html 23558423..., sw.js 2ed8c66f...; SW cache ve:/chinese/:1907031811-1827310). Migration: owner + 35 earlier-proof seeds (incl. 11 from proof-812511a) + legacy hsk_pinyin byte-equal after boot/reload/Progress, no backups, every Progress and 字 count equal to 54aab87; prev->live session byte-equal, Today ran, 0 lowered; rollback after a live Today whose Read was the 30-day perfect re-read of p0010 ({x:2,l:1} -> {sc:5,n:5,d:2026-10-03,x:3}) boots on 54aab87 byte-equal, no backup, counts equal, a session ran (0 lowered). First listening pass: perfect x:1 6 d no Read row; 7 d "Listen | 1 passage to listen to", ran as listening pass, record -> {x:2,l:1}; that record at 7 d no Read row, at 30 d "Read | 1 passage to re-read"; imperfect 9 d beats perfect-once 7 d, perfect-once 9 d beats imperfect 7 d; prev: perfect x:1 7 d no Read row, 30 d listening pass. Regressions (miss step 5->4, listening all by ear, weak floor 8-11 of 20, bare 5, 15 s popovers, Learn label, pause chip, recount, offline SW boot) PASS. 0 console errors / failed requests except offline Google Fonts.
+
+Migration proof 2026-10-03 for the 0ae962d republish (engine 491d470 -> 0ae962d: pack flag `readRotation`
+(zh, needs dayAware): the Today Read stage alternates by session between a new passage and a listening pass of a
+random already-read passage (never-listened first, then listened longest ago in sessions); out of new passages,
+re-reads alternate with listening; every pass shuffles the question order (seeded by passage id + attempt); the
+7/30-day gates no longer apply on zh, `rereadPerfectDays` removed from the zh pack (still supported for other packs);
+content: every passage has 8 questions, 5 mc + 3 tf): storage/migration diff audit (`git -C engine diff
+491d470..0ae962d -- engine/core.js engine/app.html engine/sw.template.js build.sh`: core.js 63 lines, app.html 22,
+`engine/sw.template.js` and `build.sh` 0). VERDICT PASS: three NEW OPTIONAL stored fields, all additive and only
+under the flag: `prog.read.done[id].s` (session number of the latest pass) and `.ls` (session number of the latest
+listening pass), both written only in `markPassageDone` (core.js), and `rd.qx` (question-order seed) in the parked
+session record `vocab_zh_session` (set in `startPassage`, read in `sessionResume`; a record without `qx` resumes in
+pack order). `validateReadShape` accepts `s`/`ls` as numbers. Passage records keep `{sc, n, d, x, l?}`; old records
+with n 4-5 stay valid against the 8-question passages (display only). Boot writes nothing, no backup path touched,
+no day-log change, no changed meaning. vocab-engine tests at 0ae962d (main checkout, clean, read-only):
+engine_checks 704, migration_checks 390 ([rotation-s]: 491d470 boots a record with s/ls with no backup and keeps
+them), listen_mode_checks 169, session_resume_checks 121 (parked session without `qx` resumes in pack order),
+passage_audio_checks 43, pause_checks 49, day_sim_checks 76, sentence_spans_checks 15, 0 failed. Pack: generator
+output (`pack_from_hsk.py . --out` twice, byte-identical) + passages files from vocab-engine packs/zh == packs/zh;
+differs from the committed pack only in pack.json/pack.js (`readRotation: true` added, `rereadPerfectDays: 30`
+removed), passages.json, passages_src.json (question rules and content), sentences.js (embedded PASSAGES) and
+REPORT_passages.md; words, characters, sentences.json, lessons, legacy, attribution, gloss_display identical. Built
+index.html carries `"readRotation":true`, `"listenQuestions":"all"`, `"bare":5`, `"optsMix":true`, `"pauseNew":true`,
+`"learn":"lag"`, `"dayAware":true`, no `rereadPerfectDays` in the pack (the engine code still reads the field); all
+60 passages have 8 questions. `validate_pack.py pack`: 0 errors, 1 WARN (138 of 4946 linked words have no span).
+Build deterministic (two builds: index.html c36196e5d3a8f229e17b590c6329f0f5, sw.js 7db0176a68b14865df4a3b10107ab7f4;
+VE_BUILD 1735442090-1921117, ve-build marker 4287942796-1920441). Rollback hash (pre-republish HEAD, includes the
+491d470 browser-proof line): 868ef907a11f35fc6031beae7906d92b926826f1. Pre-republish live/local md5s: index.html
+2355842378b5e3774f1a67822906aa34, sw.js 2ed8c66fcbd5bffd197fbacf0f267918.
+Known open items on 0ae962d: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
+record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
+(fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
