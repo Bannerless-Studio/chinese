@@ -598,3 +598,34 @@ learned in (new record field `f`); dayAware `owns()` is dead code under the new 
 lag/pause/opts_mix controls swallow a day_rules_patch no-match as "control skipped" (fb10 review
 M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
  Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-37f0b08/, fb10 + w14 harness against live, prev b84fd96 served locally, 2026-10-03): KEEP, 5/5 PASS. Live md5 matched at start and end (index.html 251c8634..., sw.js c574e511...; SW cache ve:/chinese/:3635404196-1826494). Migration: owner + proof-a32c1fc / proof-68930bd / proof-36aee02 seeds + SEED/SEED2/SK/legacyWith/snapshot (16) byte-equal after boot/reload/Progress, keys vocab_zh only, no backup, word/sentence/reading rows equal b84fd96, 字 per level taught/total/mastered equal, bare = prev + streak-5 units (owner +14 = 4/9/1); hsk_pinyin migrates with .bak == raw. Owner + one b84fd96 session -> live byte-equal, Today ran, 0 lowered. Rollback: live session with a settled Listen miss (w0527 hear miss -> type right, day log r:[type], no mk) -> b84fd96 byte-equal, no backup, counts equal, session ran, 0 errors. Weak floor (owner, today / day+1): Review weak 12/9/8 and 11/9/8 of 20 words, Recall 3/3/4 and 3/3/3 of 8; Listen miss w0428 back as type in the same session's Recall, never by ear again; repeats 0/0/0 (prev 4/1 by session 3, 1 hear repeat). Bare 5: 喜欢/做 ruby.bare rt hidden, streak-4 的/人/汉语 keep ruby, 喜欢 drill stimulus no reading. Popovers passage + sentence open 14.9 s, closed 15.02 s; toast closed 3.51 s; Learn row = card header = Progress level row (字 HSK 3, set 18/19 of 30); pause chip, recount, k1/k6 lag oracle, o1/o3 own-set wrong choices as w14. Offline boot from SW cache, 0 site hits. 0 console errors / failed requests (offline Google Fonts only). Report: vocab-engine/.cache/briefs/chinese-proof-w15-report.md.
+
+Migration proof 2026-10-03 for the 6c067b4 republish (engine 37f0b08 -> 6c067b4: (A) under
+`characters.bareBy: "typed"` a unit miss at or above mastered steps the streak down by one (5->4,
+4->3, never below 3; below mastered still 0), core.js `markChar` only; (B) pack flag
+`listenQuestions: "all"`: every question of a listening pass is audio-only, "Show question" tap and
+logging unchanged): storage/migration diff audit (`git -C engine diff 37f0b08..6c067b4 --
+engine/core.js engine/app.html engine/sw.template.js build.sh`, 6+/5-, core.js 9 lines + app.html 2
+lines; `engine/sw.template.js` and `build.sh` 0 diff lines). VERDICT PASS: hunks are `markChar`
+(`p.s = Math.max(m, p.s - 1)` instead of `p.s = m`), `listenAudioOnly` (new `pack` argument) and its
+one caller in `startPassage`; grep of added/removed lines for `localStorage`, `sessionStorage`,
+`store.save`, `prog.* =`, VERSION, backup, `.bak`, storageKey, normalize, `vocab_`, migrateLegacy: 0
+hits. NO new progress field, NO day-log change, boot writes nothing; streak values stay in range
+(>= mastered 3, <= previous), so 37f0b08 reads a record written by 6c067b4 unchanged
+(typed_mastery_checks, migration_checks). vocab-engine tests at 6c067b4 (main checkout, clean,
+read-only): engine_checks 704, migration_checks 384 (0 skipped), typed_mastery_checks 81,
+listen_mode_checks 100, day_sim_checks 76, lag_checks 45, pause_checks 49, session_resume_checks
+117, 0 failed. The zh pack WAS rebuilt (`pack_from_hsk.py . --out` twice at 6c067b4, byte-identical):
+the only differing file vs the committed pack is pack.json (`listenQuestions: "all"` added to the
+pack flags), pack.js to match; pack/ now equals vocab-engine/packs/zh. Built index.html carries
+`"bare":5`, `"optsMix":true`, `"pauseNew":true`, `"learn":"lag"`, `"listenQuestions":"all"`.
+`validate_pack.py pack`: 1193 words, 882 sentences (882 with spans), 12 lessons, 60 passages, 1193
+character units, 0 errors, 1 WARN (138 of 4946 linked words have no span). Build deterministic (two
+builds: index.html fe4893be4eeb20b7b92a5f3770ed6540, sw.js 50d6c53b46a968d8ddf61d8d983205b7;
+VE_BUILD 4225833799-1827346, ve-build marker 2955851144-1826670). Rollback hash (pre-republish HEAD,
+includes the 37f0b08 browser-proof line): 2f0a15b383ff869370f7e623979a249c519b6872. Pre-republish
+live/local md5s: index.html 251c8634da231b7dc6af98dcb4f8bc85, sw.js c574e511c080cd08e499a4e820859e89
+(live and local matched).
+Known open items on 6c067b4: optsMix follow-up — bucket wrong choices by the session an item was
+learned in (new record field `f`); dayAware `owns()` is dead code under the new settle rule, and
+lag/pause/opts_mix controls swallow a day_rules_patch no-match as "control skipped" (fb10 review
+M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
