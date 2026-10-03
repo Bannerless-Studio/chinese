@@ -735,6 +735,7 @@ d8c08a9cd2eb98f25fdefbee20835d45, sw.js 94cb0a601c9b5eb5d8dbe683e0369038; VE_BUI
 2439318870-1921696). Rollback hash (pre-republish HEAD, includes the 0ae962d browser-proof line):
 1524ea35937c2a1768399d26cd19569560d9c5ae. Pre-republish live md5s: index.html c36196e5d3a8f229e17b590c6329f0f5, sw.js
 7db0176a68b14865df4a3b10107ab7f4.
+ Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-2a76e72/, live vs 1524ea3 served locally, 2026-10-04): KEEP, all PASS. Live md5s match; 53 seeds byte-equal after boot/reload/Progress, no backups, Progress counts equal to 1524ea3; parked drill and parked passage from 1524ea3 dropped cleanly on live (stale build), rollback boots byte-equal with 0 errors; listening look-back shows "Replay passage" rows with no hanzi, results lack " · looked back"/"Text shown while listening", weak list same word as 1524ea3; reading pass unchanged; pause chip, 15 s popover, Learn label, offline boot OK.
 Known open items on 2a76e72: optsMix follow-up (bucket wrong choices by the session an item was learned in, new
 record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch no-match
 (fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
