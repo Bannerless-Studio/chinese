@@ -785,3 +785,22 @@ record field `f`); dayAware `owns()` dead code and lag/pause/opts_mix controls s
 (fb10 review M2/M3), see vocab-engine/TODO.md. A browser worker runs the live snapshot-diff proof separately.
 
 Browser proof (Playwright chromium 390x844 mobile, .cache/live/proof-2412992/, live vs 6fcb7bd served locally, 2026-10-04): KEEP, all PASS. Live md5s match (index.html 655babc7..., sw.js 73f60378...). Owner seed byte-equal after boot/reload/Progress, no backup keys, Progress rows equal to 6fcb7bd; parked 6fcb7bd drill dropped at boot; rollback of a live-written record (pm with one entry) boots on 6fcb7bd byte-equal and a session runs. Progress map row one line each (324 px of 390), bar 2/10 from p 0.2039 (479/1193 words, 15/1193 bare units, 0/60 listened), pace "—" until 14 entries, "≈ N sessions to go" matches ceil((1-p)/rate); pm appends per session, trims to 14. Regressions (Recall 12, one typed ask per word, Replay passage, pause chip, 15 s popover, recount, offline boot) equal to 6fcb7bd; 0 console errors.
+
+Migration proof 2026-10-05 for the 1c035f3 republish (engine 2412992 -> 1c035f3: pack flag `progressMap` becomes
+`{ goals: [{upTo, label} x3] }` (upTo "2"/"3"/"4"): the Today row shows ONE goal at a time ("Goal 1 of 3 ▸ [bar] ▸ survive a
+trip: ..."), scoped to levels <= upTo (0.6 words known + 0.2 units mastered + 0.2 passages listened), switches at 90%, pace
+to the 90% point; Progress tab gains a 3-line Goals block): storage/migration diff audit (`git -C engine diff
+2412992..1c035f3 -- engine/core.js engine/app.html engine/sw.template.js build.sh`: core.js 52 lines, app.html 17,
+`engine/sw.template.js` and `build.sh` 0). VERDICT PASS: NO new storage key; `prog.pm` entries gain an optional `g` (goal
+index, number); `validateProgShape` now accepts `{sn, p, g?}`; boot writes nothing, no backup path touched. 2412992 and
+a2f2426 boot a record with `g` entries with no backup, byte-equal, and back (migration_checks 406). Session record
+unchanged. vocab-engine tests at 1c035f3 (main checkout, clean, read-only): engine_checks 704, migration_checks 406,
+progress_map_checks 94, lag_checks 45, 0 failed. Pack diff vs committed: pack.json/pack.js ONLY (progressMap shape);
+every w22 flag present (wordsBy "typed", readRotation, listenQuestions "all", characters.bare 5, optsMix, pauseNew,
+characters.learn "lag", dayAware); generator x2 identical. `validate_pack.py pack`: 0 errors, 1 WARN (138 of 4946 linked
+words have no span). Build deterministic (two builds: index.html 590d4f966ef7d34137d6ebfaee1c954d, sw.js
+91f4496cebf6f1dbe2587d4f2b3c5baf; VE_BUILD 847348977-1937480, ve-build marker 257463149-1936803). Rollback hash
+(pre-republish HEAD, includes the 2412992 browser-proof line): 4acc55d1dd4c30d9dbf231aaf4cf21c27146618a. Pre-republish live
+md5s: index.html 655babc7284ec9fe0d1b80d2f83476e6, sw.js 73f6037855b388cd0ba6c7e02b42ba1e.
+Known open items on 1c035f3 unchanged from 2412992 (optsMix follow-up, dayAware `owns()` dead code, fb10 review M2/M3; see
+vocab-engine/TODO.md). A browser worker runs the live snapshot-diff proof separately.
