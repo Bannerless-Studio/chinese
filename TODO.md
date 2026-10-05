@@ -805,3 +805,26 @@ md5s: index.html 655babc7284ec9fe0d1b80d2f83476e6, sw.js 73f6037855b388cd0ba6c7e
 Known open items on 1c035f3 unchanged from 2412992 (optsMix follow-up, dayAware `owns()` dead code, fb10 review M2/M3; see
 vocab-engine/TODO.md). A browser worker runs the live snapshot-diff proof separately.
 - 2026-10-05 browser proof, live 1c035f3 (32b39f9) vs 4acc55d: KEEP, all PASS. Owner seed byte-equal after boot/reload/Progress, no backup keys, Progress rows equal to prev; fb20-style pm (no g) boots byte-equal (pace "—", entries without g ignored for a 3-goal pack); rollback (live record pm [{sn:9,p:0.762,g:0}]) boots on 4acc55d byte-equal, g kept, no backup, 0 errors, session runs. Goal row 390x844: `Goal 1 of 3 ▸ [■■■■■■■■□□] ▸ survive a trip: …` (76% / 60% / 30%, independently recomputed), no overflow; pace, goal switch (Goal 2 of 3, All goals) and Recall 12 / Replay passage / pause chip / 15 s popover / recount / offline boot pass, 0 console errors. Evidence chinese/.cache/live/proof-1c035f3/.
+
+Migration proof 2026-10-05 for the 0ee3c71 republish (engine 1c035f3 -> 0ee3c71: under `optsMix` (already on zh) wrong
+choices are bucketed by the session a word/unit was learned (new OPTIONAL record field `f` = session number) instead of by
+position; the group filling the last slots rotates its subset per session; `charSound` ranks options by reading syllable
+count; unit-hint pinyin gets per-syllable tone colours under `tones`): storage/migration diff audit (`git -C engine diff
+1c035f3..0ee3c71 -- engine/core.js engine/app.html engine/sw.template.js build.sh`: core.js 33 lines, app.html 52,
+`engine/sw.template.js` and `build.sh` 0). VERDICT PASS: NO new storage key; ONE NEW OPTIONAL numeric field `f` on NEW
+records only: `prog.w[id].f` (app.html markWord, only when the record did not exist) and `prog.chars.c[id].f` (markChar, new
+unit records), written only under optsMix and only when a session number (`prog.sn`) exists; existing records are never
+touched; boot writes nothing, no backup path touched; `validateRecMap` accepts a numeric `f`. 1c035f3 boots a record
+carrying `f` with no backup, byte-equal, and back (migration_checks 412). Session record unchanged. vocab-engine tests at
+0ee3c71 (main checkout, clean, read-only): engine_checks 704, migration_checks 412, characters_app_checks 206,
+progress_map_checks 94, 0 failed. Pack diff vs committed: EMPTY (generator x2 identical, == committed pack and
+vocab-engine packs/zh by `diff -rq`); every w23 flag present (wordsBy "typed", readRotation, listenQuestions "all",
+characters.bare 5, optsMix, pauseNew, characters.learn "lag", dayAware, progressMap goals x3). `validate_pack.py pack`: 0
+errors, 1 WARN (138 of 4946 linked words have no span). Build deterministic (two builds: index.html
+d66bdf14ba137eadf911903c1848c5e7, sw.js aff570050dd2349a2c60a603a5afadd3; VE_BUILD 657590939-1940945, ve-build marker
+352079373-1940268). Rollback hash (pre-republish HEAD, includes the 1c035f3 browser-proof line):
+33cb3665e83ee6af697dd58cd86a10b8f04c5702. Pre-republish live md5s: index.html 590d4f966ef7d34137d6ebfaee1c954d, sw.js
+91f4496cebf6f1dbe2587d4f2b3c5baf.
+Known open items on 0ee3c71: dayAware `owns()` dead code and lag/pause/opts_mix controls swallowing a day_rules_patch
+no-match (fb10 review M2/M3), see vocab-engine/TODO.md (the optsMix `f` follow-up is done by this release). A browser worker
+runs the live snapshot-diff proof separately.
