@@ -42,7 +42,9 @@ dataset (`tools/build_vocab.py` selects one sense and one pronunciation per
 word; see its docstring for the full sense-selection rules and manual
 overrides). Sentences in `data/hsk_sentences.js` are hand-authored for this
 pack and validated against the vocabulary by `tools/check_sentences.py`
-(segmentation, pinyin cross-check, length limits, coverage).
+(segmentation, pinyin cross-check, length limits, coverage). Grammar-pattern
+sentences in `data/hsk_patterns.js` (27 HSK 2-4 patterns, drilled as cloze)
+are hand-authored the same way and checked by `tools/check_patterns.py`.
 
 The example-sentence corpus has not yet been screened by the shared
 sensitive-content filter used in the other language repos; tracked as an
