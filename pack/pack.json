@@ -182,6 +182,14 @@
  },
  "pairs": true,
  "freqTiers": true,
+ "progressView": "v2",
+ "levelGate": 0.7,
+ "levelExam": {
+  "1": "pinyin",
+  "2": "pinyin",
+  "3": "characters",
+  "4": "characters"
+ },
  "patterns": true,
  "patternCue": "after"
 }
