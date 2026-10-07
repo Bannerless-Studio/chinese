@@ -52,6 +52,12 @@ Every engine bump into this repo needs, before merging/pushing:
 3. A live snapshot diff by a browser worker against the previous published
    build (progress intact, no console errors).
 4. The rollback commit hash recorded before pushing.
+5. Scope of step 3 (owner 2026-10-07, "why so long?"): the live proof is the storage round-trip only —
+   owner seed byte-equal after boot/reload/Progress, one session on live, the record boots on the
+   previous build and back, no backup keys, 0 console errors — plus one smoke screenshot (~5 min).
+   Feature checks run once, on the pre-push scratch site (the feature browser check); they are not
+   repeated on live. Drivers: reuse chinese/.cache/live/proof-<prev>/ scripts (browser-playbook: scripted
+   Playwright, no snapshots).
 
 Migration proof 2026-09-26 for 4e5d4dc (engine 63109a7 → 3fd45bf): a real-use vocab_zh snapshot
 from d612e63 (39 word records, 4 sets, 2 lessons, 3 sessions, theme, showPron) loaded into the live
