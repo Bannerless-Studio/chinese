@@ -20,7 +20,7 @@ const PATTERNS=[
   {"zh": "咖啡比茶贵。", "py": "Kāfēi bǐ chá guì.", "en": "Coffee costs more than tea.", "words": ["咖啡", "比", "茶", "贵"], "marks": [[2, 3]]},
   {"zh": "她比我大两岁。", "py": "Tā bǐ wǒ dà liǎng suì.", "en": "She is two years older than me.", "words": ["她", "比", "我", "大", "两", "岁"], "marks": [[1, 2]]}
  ]},
- {"id": "p02", "lv": 2, "label": "正在…呢", "en": "in the middle of (doing)", "note": ["An action going on right now.", "正在 + verb (+ 呢): 他正在睡觉呢。"], "sentences": [
+ {"id": "p02", "lv": 2, "label": "正在…呢", "en": "in the middle of (doing)", "note": ["An action going on right now.", "正在 + verb (+ 呢): 他正在睡觉呢。"], "near": ["p21"], "sentences": [
   {"zh": "我正在看书呢。", "py": "Wǒ zhèngzài kàn shū ne.", "en": "I'm reading right now.", "words": ["我", "正在", "看", "书", "呢"], "marks": [[1, 3], [5, 6]]},
   {"zh": "妈妈正在做菜呢。", "py": "Māma zhèngzài zuò cài ne.", "en": "Mom is cooking right now.", "words": ["妈妈", "正在", "做", "菜", "呢"], "marks": [[2, 4], [6, 7]]},
   {"zh": "他们正在打篮球呢。", "py": "Tāmen zhèngzài dǎlánqiú ne.", "en": "They're playing basketball right now.", "words": ["他们", "正在", "打篮球", "呢"], "marks": [[2, 4], [7, 8]]},
@@ -38,7 +38,7 @@ const PATTERNS=[
   {"zh": "你介绍一下你的朋友。", "py": "Nǐ jièshào yīxià nǐ de péngyou.", "en": "Introduce your friend.", "words": ["你", "介绍", "一下", "你", "的", "朋友"], "marks": [[3, 5]]},
   {"zh": "让我想一下。", "py": "Ràng wǒ xiǎng yīxià.", "en": "Let me think for a second.", "words": ["让", "我", "想", "一下"], "marks": [[3, 5]]}
  ]},
- {"id": "p04", "lv": 2, "label": "因为…所以", "en": "because … so", "note": ["Gives a reason, then the result.", "因为 A，所以 B"], "sentences": [
+ {"id": "p04", "lv": 2, "label": "因为…所以", "en": "because … so", "note": ["Gives a reason, then the result.", "因为 A，所以 B"], "near": ["p13", "p19", "p26"], "sentences": [
   {"zh": "因为下雨，所以我没去。", "py": "Yīnwèi xiàyǔ, suǒyǐ wǒ méi qù.", "en": "Because it rained, I didn't go.", "words": ["因为", "下雨", "所以", "我", "没", "去"], "marks": [[0, 2], [5, 7]]},
   {"zh": "因为他生病了，所以没来。", "py": "Yīnwèi tā shēngbìng le, suǒyǐ méi lái.", "en": "He was sick, so he didn't come.", "words": ["因为", "他", "生病", "了", "所以", "没", "来"], "marks": [[0, 2], [7, 9]]},
   {"zh": "因为太累了，所以我想休息。", "py": "Yīnwèi tài lèi le, suǒyǐ wǒ xiǎng xiūxi.", "en": "I'm too tired, so I want to rest.", "words": ["因为", "太", "累", "了", "所以", "我", "想", "休息"], "marks": [[0, 2], [6, 8]]},
@@ -47,7 +47,7 @@ const PATTERNS=[
   {"zh": "因为有考试，所以他很忙。", "py": "Yīnwèi yǒu kǎoshì, suǒyǐ tā hěn máng.", "en": "He has an exam, so he's busy.", "words": ["因为", "有", "考试", "所以", "他", "很", "忙"], "marks": [[0, 2], [6, 8]]},
   {"zh": "因为我不懂，所以我问了老师。", "py": "Yīnwèi wǒ bù dǒng, suǒyǐ wǒ wèn le lǎoshī.", "en": "I didn't understand, so I asked the teacher.", "words": ["因为", "我", "不", "懂", "所以", "我", "问", "了", "老师"], "marks": [[0, 2], [6, 8]]}
  ]},
- {"id": "p05", "lv": 2, "label": "是…的", "en": "it was … that (when, where, how)", "note": ["Stresses when, where or how a past action happened.", "是 + detail + verb + 的: 我是昨天来的。"], "near": ["p12", "p13", "p14", "p15", "p23"], "sentences": [
+ {"id": "p05", "lv": 2, "label": "是…的", "en": "it was … that (when, where, how)", "note": ["Stresses when, where or how a past action happened.", "是 + detail + verb + 的: 我是昨天来的。"], "near": ["p06", "p12", "p13", "p14", "p15", "p23"], "sentences": [
   {"zh": "我是坐飞机来的。", "py": "Wǒ shì zuò fēijī lái de.", "en": "I came by plane.", "words": ["我", "是", "坐", "飞机", "来", "的"], "marks": [[1, 2], [6, 7]]},
   {"zh": "你是怎么来的？", "py": "Nǐ shì zěnme lái de?", "en": "How did you get here?", "words": ["你", "是", "怎么", "来", "的"], "marks": [[1, 2], [5, 6]]},
   {"zh": "他是昨天来的。", "py": "Tā shì zuótiān lái de.", "en": "He came yesterday.", "words": ["他", "是", "昨天", "来", "的"], "marks": [[1, 2], [5, 6]]},
@@ -59,14 +59,14 @@ const PATTERNS=[
  {"id": "p06", "lv": 2, "label": "了 vs 过", "en": "did vs have ever done", "note": ["了: an action got done. 过: you have done it before.", "去了 went · 去过 have been"], "sentences": [
   {"zh": "我还没去过北京。", "py": "Wǒ hái méi qù guò Běijīng.", "en": "I haven't been to Beijing yet.", "words": ["我", "还", "没", "去", "过", "北京"], "marks": [[4, 5]]},
   {"zh": "我没看过这个电影。", "py": "Wǒ méi kàn guò zhège diànyǐng.", "en": "I've never seen this movie.", "words": ["我", "没", "看", "过", "这个", "电影"], "marks": [[3, 4]]},
-  {"zh": "你吃过中国菜吗？", "py": "Nǐ chī guò Zhōngguó cài ma?", "en": "Have you ever had Chinese food?", "words": ["你", "吃", "过", "中国", "菜", "吗"], "marks": [[2, 3]]},
-  {"zh": "他来过我家。", "py": "Tā lái guò wǒ jiā.", "en": "He has been to my home before.", "words": ["他", "来", "过", "我", "家"], "marks": [[2, 3]]},
-  {"zh": "他已经走了。", "py": "Tā yǐjīng zǒu le.", "en": "He has already left.", "words": ["他", "已经", "走", "了"], "marks": [[4, 5]]},
-  {"zh": "下雨了。", "py": "Xiàyǔ le.", "en": "It's started raining.", "words": ["下雨", "了"], "marks": [[2, 3]]},
+  {"zh": "你没吃过中国菜吗？", "py": "Nǐ méi chī guò Zhōngguó cài ma?", "en": "Haven't you ever had Chinese food?", "words": ["你", "没", "吃", "过", "中国", "菜", "吗"], "marks": [[3, 4]]},
+  {"zh": "他还没来过我家。", "py": "Tā hái méi lái guò wǒ jiā.", "en": "He hasn't been to my home yet.", "words": ["他", "还", "没", "来", "过", "我", "家"], "marks": [[4, 5]]},
+  {"zh": "我们快到了。", "py": "Wǒmen kuài dào le.", "en": "We're almost there.", "words": ["我们", "快", "到", "了"], "marks": [[4, 5]]},
+  {"zh": "快下雨了。", "py": "Kuài xiàyǔ le.", "en": "It's about to rain.", "words": ["快", "下雨", "了"], "marks": [[3, 4]]},
   {"zh": "我到了就给你打电话。", "py": "Wǒ dào le jiù gěi nǐ dǎdiànhuà.", "en": "I'll call you when I get there.", "words": ["我", "到", "了", "就", "给", "你", "打电话"], "marks": [[2, 3]]},
-  {"zh": "我今天买了两本书。", "py": "Wǒ jīntiān mǎi le liǎng běn shū.", "en": "I bought two books today.", "words": ["我", "今天", "买", "了", "两", "本", "书"], "marks": [[4, 5]]}
+  {"zh": "这件衣服太贵了。", "py": "Zhè jiàn yīfu tài guì le.", "en": "This piece of clothing is too expensive.", "words": ["这", "件", "衣服", "太", "贵", "了"], "marks": [[6, 7]]}
  ]},
- {"id": "p07", "lv": 3, "label": "虽然…但是", "en": "although … (but)", "note": ["Admits one fact, then says the other still holds.", "虽然 A，但是 B"], "sentences": [
+ {"id": "p07", "lv": 3, "label": "虽然…但是", "en": "although … (but)", "note": ["Admits one fact, then says the other still holds.", "虽然 A，但是 B"], "near": ["p13", "p20", "p26"], "sentences": [
   {"zh": "虽然很累，但是我很高兴。", "py": "Suīrán hěn lèi, dànshì wǒ hěn gāoxìng.", "en": "Although I'm tired, I'm happy.", "words": ["虽然", "很", "累", "但是", "我", "很", "高兴"], "marks": [[0, 2], [5, 7]]},
   {"zh": "虽然下雨了，但是他还是来了。", "py": "Suīrán xiàyǔ le, dànshì tā háishi lái le.", "en": "It rained, but he still came.", "words": ["虽然", "下雨", "了", "但是", "他", "还是", "来", "了"], "marks": [[0, 2], [6, 8]]},
   {"zh": "虽然很贵，但是很好吃。", "py": "Suīrán hěn guì, dànshì hěn hǎochī.", "en": "It's expensive, but it's delicious.", "words": ["虽然", "很", "贵", "但是", "很", "好吃"], "marks": [[0, 2], [5, 7]]},
@@ -87,7 +87,7 @@ const PATTERNS=[
   {"zh": "我的自行车被朋友借走了。", "py": "Wǒ de zìxíngchē bèi péngyou jiè zǒu le.", "en": "My bike was borrowed by a friend.", "words": ["我", "的", "自行车", "被", "朋友", "借", "走", "了"], "marks": [[5, 6]]},
   {"zh": "蛋糕被弟弟吃完了。", "py": "Dàngāo bèi dìdi chī wán le.", "en": "The cake was eaten up by my little brother.", "words": ["蛋糕", "被", "弟弟", "吃", "完", "了"], "marks": [[2, 3]]},
   {"zh": "鱼被猫吃了。", "py": "Yú bèi māo chī le.", "en": "The fish was eaten by the cat.", "words": ["鱼", "被", "猫", "吃", "了"], "marks": [[1, 2]]},
-  {"zh": "他被妈妈叫回家了。", "py": "Tā bèi māma jiào huí jiā le.", "en": "He was called home by his mom.", "words": ["他", "被", "妈妈", "叫", "回", "家", "了"], "marks": [[1, 2]]},
+  {"zh": "我的钱被他花完了。", "py": "Wǒ de qián bèi tā huā wán le.", "en": "He spent all my money.", "words": ["我", "的", "钱", "被", "他", "花", "完", "了"], "marks": [[3, 4]]},
   {"zh": "我的伞被人拿走了。", "py": "Wǒ de sǎn bèi rén ná zǒu le.", "en": "Someone took my umbrella.", "words": ["我", "的", "伞", "被", "人", "拿", "走", "了"], "marks": [[3, 4]]},
   {"zh": "我的面包被狗吃了。", "py": "Wǒ de miànbāo bèi gǒu chī le.", "en": "The dog ate my bread.", "words": ["我", "的", "面包", "被", "狗", "吃", "了"], "marks": [[4, 5]]}
  ]},
@@ -109,7 +109,7 @@ const PATTERNS=[
   {"zh": "我一边工作一边学习。", "py": "Wǒ yībiān gōngzuò yībiān xuéxí.", "en": "I work and study at the same time.", "words": ["我", "一边", "工作", "一边", "学习"], "marks": [[1, 3], [5, 7]]},
   {"zh": "爸爸一边看报纸一边喝咖啡。", "py": "Bàba yībiān kàn bàozhǐ yībiān hē kāfēi.", "en": "Dad drinks coffee while he reads the paper.", "words": ["爸爸", "一边", "看", "报纸", "一边", "喝", "咖啡"], "marks": [[2, 4], [7, 9]]}
  ]},
- {"id": "p12", "lv": 3, "label": "如果…就", "en": "if … then", "note": ["States a condition and what follows from it.", "如果 A，(subject) 就 B"], "near": ["p04", "p13", "p14", "p16", "p19", "p20", "p25"], "sentences": [
+ {"id": "p12", "lv": 3, "label": "如果…就", "en": "if … then", "note": ["States a condition and what follows from it.", "如果 A，(subject) 就 B"], "near": ["p04", "p13", "p14", "p16", "p19", "p20", "p23", "p25"], "sentences": [
   {"zh": "如果下雨，我就不去了。", "py": "Rúguǒ xiàyǔ, wǒ jiù bù qù le.", "en": "If it rains, I won't go.", "words": ["如果", "下雨", "我", "就", "不", "去", "了"], "marks": [[0, 2], [6, 7]]},
   {"zh": "如果你累了，就休息吧。", "py": "Rúguǒ nǐ lèi le, jiù xiūxi ba.", "en": "If you're tired, have a rest.", "words": ["如果", "你", "累", "了", "就", "休息", "吧"], "marks": [[0, 2], [6, 7]]},
   {"zh": "如果有问题，就问我。", "py": "Rúguǒ yǒu wèntí, jiù wèn wǒ.", "en": "If you have a question, ask me.", "words": ["如果", "有", "问题", "就", "问", "我"], "marks": [[0, 2], [6, 7]]},
@@ -118,7 +118,7 @@ const PATTERNS=[
   {"zh": "如果你饿了，就先吃吧。", "py": "Rúguǒ nǐ è le, jiù xiān chī ba.", "en": "If you're hungry, go ahead and eat.", "words": ["如果", "你", "饿", "了", "就", "先", "吃", "吧"], "marks": [[0, 2], [6, 7]]},
   {"zh": "如果他不来，我就给他打电话。", "py": "Rúguǒ tā bù lái, wǒ jiù gěi tā dǎdiànhuà.", "en": "If he doesn't come, I'll call him.", "words": ["如果", "他", "不", "来", "我", "就", "给", "他", "打电话"], "marks": [[0, 2], [7, 8]]}
  ]},
- {"id": "p13", "lv": 3, "label": "先…然后", "en": "first … then", "note": ["Puts two actions in order.", "先 A，然后 B"], "near": ["p14"], "sentences": [
+ {"id": "p13", "lv": 3, "label": "先…然后", "en": "first … then", "note": ["Puts two actions in order.", "先 A，然后 B"], "near": ["p12", "p14", "p15", "p16", "p19", "p23", "p25"], "sentences": [
   {"zh": "我先洗澡，然后睡觉。", "py": "Wǒ xiān xǐzǎo, ránhòu shuìjiào.", "en": "I'll shower first, then go to bed.", "words": ["我", "先", "洗澡", "然后", "睡觉"], "marks": [[1, 2], [5, 7]]},
   {"zh": "先吃东西，然后去看电影。", "py": "Xiān chī dōngxi, ránhòu qù kàn diànyǐng.", "en": "Let's eat first, then see a movie.", "words": ["先", "吃", "东西", "然后", "去", "看", "电影"], "marks": [[0, 1], [5, 7]]},
   {"zh": "你先休息，然后再工作。", "py": "Nǐ xiān xiūxi, ránhòu zài gōngzuò.", "en": "Rest first, then get back to work.", "words": ["你", "先", "休息", "然后", "再", "工作"], "marks": [[1, 2], [5, 7]]},
@@ -135,7 +135,7 @@ const PATTERNS=[
   {"zh": "这个公园又大又安静。", "py": "Zhège gōngyuán yòu dà yòu ānjìng.", "en": "This park is big and quiet.", "words": ["这个", "公园", "又", "大", "又", "安静"], "marks": [[4, 5], [6, 7]]},
   {"zh": "他又高又瘦。", "py": "Tā yòu gāo yòu shòu.", "en": "He's tall and thin.", "words": ["他", "又", "高", "又", "瘦"], "marks": [[1, 2], [3, 4]]}
  ]},
- {"id": "p15", "lv": 4, "label": "一…就", "en": "as soon as", "note": ["One action follows right after another.", "一 A 就 B"], "near": ["p13", "p14", "p23"], "sentences": [
+ {"id": "p15", "lv": 4, "label": "一…就", "en": "as soon as", "note": ["One action follows right after another.", "一 A 就 B"], "near": ["p13", "p14", "p23", "p25"], "sentences": [
   {"zh": "我一到家就睡觉了。", "py": "Wǒ yī dào jiā jiù shuìjiào le.", "en": "I went to bed as soon as I got home.", "words": ["我", "一", "到", "家", "就", "睡觉", "了"], "marks": [[1, 2], [4, 5]]},
   {"zh": "他一看见我就笑了。", "py": "Tā yī kànjiàn wǒ jiù xiào le.", "en": "He smiled as soon as he saw me.", "words": ["他", "一", "看见", "我", "就", "笑", "了"], "marks": [[1, 2], [5, 6]]},
   {"zh": "她一起床就喝咖啡。", "py": "Tā yī qǐchuáng jiù hē kāfēi.", "en": "She drinks coffee as soon as she gets up.", "words": ["她", "一", "起床", "就", "喝", "咖啡"], "marks": [[1, 2], [4, 5]]},
@@ -159,9 +159,9 @@ const PATTERNS=[
   {"zh": "不管做什么，他都很认真。", "py": "Bùguǎn zuò shénme, tā dōu hěn rènzhēn.", "en": "Whatever he does, he takes it seriously.", "words": ["不管", "做", "什么", "他", "都", "很", "认真"], "marks": [[0, 2]]},
   {"zh": "不管什么时候，你都可以来。", "py": "Bùguǎn shénme shíhou, nǐ dōu kěyǐ lái.", "en": "You can come any time.", "words": ["不管", "什么", "时候", "你", "都", "可以", "来"], "marks": [[0, 2]]}
  ]},
- {"id": "p18", "lv": 4, "label": "连…也/都", "en": "even", "note": ["Stresses an extreme case: even this.", "连 X 也/都 + verb"], "sentences": [
+ {"id": "p18", "lv": 4, "label": "连…也/都", "en": "even", "note": ["Stresses an extreme case: even this.", "连 X 也/都 + verb"], "near": ["p14"], "sentences": [
   {"zh": "我连他的名字都不知道。", "py": "Wǒ lián tā de míngzi dōu bù zhīdào.", "en": "I don't even know his name.", "words": ["我", "连", "他", "的", "名字", "都", "不", "知道"], "marks": [[1, 2]]},
-  {"zh": "他连水都没喝。", "py": "Tā lián shuǐ dōu méi hē.", "en": "He didn't even drink any water.", "words": ["他", "连", "水", "都", "没", "喝"], "marks": [[1, 2]]},
+  {"zh": "我连一分钟也没休息。", "py": "Wǒ lián yī fēnzhōng yě méi xiūxi.", "en": "I haven't rested even for a minute.", "words": ["我", "连", "一", "分钟", "也", "没", "休息"], "marks": [[1, 2]]},
   {"zh": "这个题连老师也不会。", "py": "Zhège tí lián lǎoshī yě bù huì.", "en": "Even the teacher can't do this question.", "words": ["这个", "题", "连", "老师", "也", "不", "会"], "marks": [[3, 4]]},
   {"zh": "她连一个字也不认识。", "py": "Tā lián yī gè zì yě bù rènshi.", "en": "She can't read a single character.", "words": ["她", "连", "一", "个", "字", "也", "不", "认识"], "marks": [[1, 2]]},
   {"zh": "连孩子都知道这个。", "py": "Lián háizi dōu zhīdào zhège.", "en": "Even children know this.", "words": ["连", "孩子", "都", "知道", "这个"], "marks": [[0, 1]]},
@@ -175,7 +175,7 @@ const PATTERNS=[
   {"zh": "既然他不来，我们就先吃吧。", "py": "Jìrán tā bù lái, wǒmen jiù xiān chī ba.", "en": "Since he isn't coming, let's eat.", "words": ["既然", "他", "不", "来", "我们", "就", "先", "吃", "吧"], "marks": [[0, 2]]},
   {"zh": "既然知道错了，就要道歉。", "py": "Jìrán zhīdào cuò le, jiù yào dàoqiàn.", "en": "Since you know you were wrong, apologize.", "words": ["既然", "知道", "错", "了", "就", "要", "道歉"], "marks": [[0, 2]]}
  ]},
- {"id": "p20", "lv": 4, "label": "即使…也", "en": "even if", "note": ["Even in that case, the result stays the same.", "即使 A，也 B"], "near": ["p07", "p12", "p17", "p19"], "sentences": [
+ {"id": "p20", "lv": 4, "label": "即使…也", "en": "even if", "note": ["Even in that case, the result stays the same.", "即使 A，也 B"], "near": ["p04", "p07", "p12", "p16", "p17", "p19"], "sentences": [
   {"zh": "即使下雨，我也要去。", "py": "Jíshǐ xiàyǔ, wǒ yě yào qù.", "en": "Even if it rains, I'm going.", "words": ["即使", "下雨", "我", "也", "要", "去"], "marks": [[0, 2]]},
   {"zh": "即使很累，他也不休息。", "py": "Jíshǐ hěn lèi, tā yě bù xiūxi.", "en": "Even when he's tired, he doesn't rest.", "words": ["即使", "很", "累", "他", "也", "不", "休息"], "marks": [[0, 2]]},
   {"zh": "即使没有钱，我也很快乐。", "py": "Jíshǐ méi yǒu qián, wǒ yě hěn kuàilè.", "en": "Even without money, I'm happy.", "words": ["即使", "没", "有", "钱", "我", "也", "很", "快乐"], "marks": [[0, 2]]},
@@ -200,33 +200,33 @@ const PATTERNS=[
   {"zh": "她越想越生气。", "py": "Tā yuè xiǎng yuè shēngqì.", "en": "The more she thought, the angrier she got.", "words": ["她", "越", "想", "越", "生气"], "marks": [[1, 2], [3, 4]]},
   {"zh": "他越吃越胖。", "py": "Tā yuè chī yuè pàng.", "en": "The more he eats, the fatter he gets.", "words": ["他", "越", "吃", "越", "胖"], "marks": [[1, 2], [3, 4]]}
  ]},
- {"id": "p23", "lv": 4, "label": "才 vs 就", "en": "only then (late) vs already (early)", "note": ["就: sooner or easier than expected. 才: later or harder.", "六点就起床了 · 十点才起床"], "near": ["p14"], "sentences": [
-  {"zh": "他十点才起床。", "py": "Tā shí diǎn cái qǐchuáng.", "en": "He didn't get up until ten.", "words": ["他", "十", "点", "才", "起床"], "marks": [[3, 4]]},
+ {"id": "p23", "lv": 4, "label": "才 vs 就", "en": "only then (late) vs already (early)", "note": ["就: sooner or easier than expected. 才: later or harder.", "六点就起床了 · 十点才起床"], "near": ["p13", "p14", "p25"], "sentences": [
+  {"zh": "都十点了，他才起床。", "py": "Dōu shí diǎn le, tā cái qǐchuáng.", "en": "It was already ten and he only then got up.", "words": ["都", "十", "点", "了", "他", "才", "起床"], "marks": [[6, 7]]},
   {"zh": "我六点就起床了。", "py": "Wǒ liù diǎn jiù qǐchuáng le.", "en": "I was up at six already.", "words": ["我", "六", "点", "就", "起床", "了"], "marks": [[3, 4]]},
-  {"zh": "她十二点才回家。", "py": "Tā shí'èr diǎn cái huí jiā.", "en": "She didn't get home until twelve.", "words": ["她", "十二", "点", "才", "回", "家"], "marks": [[4, 5]]},
+  {"zh": "都十二点了，她才回家。", "py": "Dōu shí'èr diǎn le, tā cái huí jiā.", "en": "It was twelve already when she finally got home.", "words": ["都", "十二", "点", "了", "她", "才", "回", "家"], "marks": [[7, 8]]},
   {"zh": "他五分钟就做完了。", "py": "Tā wǔ fēnzhōng jiù zuò wán le.", "en": "He was done in just five minutes.", "words": ["他", "五", "分钟", "就", "做", "完", "了"], "marks": [[4, 5]]},
   {"zh": "我等了一个小时他才来。", "py": "Wǒ děng le yī gè xiǎoshí tā cái lái.", "en": "I waited an hour before he finally came.", "words": ["我", "等", "了", "一", "个", "小时", "他", "才", "来"], "marks": [[8, 9]]},
-  {"zh": "你怎么现在才来？", "py": "Nǐ zěnme xiànzài cái lái?", "en": "Why are you only coming now?", "words": ["你", "怎么", "现在", "才", "来"], "marks": [[5, 6]]},
+  {"zh": "过了很久，他才说话。", "py": "Guò le hěn jiǔ, tā cái shuōhuà.", "en": "It was a long time before he spoke.", "words": ["过", "了", "很", "久", "他", "才", "说话"], "marks": [[6, 7]]},
   {"zh": "我们很快就到了。", "py": "Wǒmen hěn kuài jiù dào le.", "en": "We got there in no time.", "words": ["我们", "很", "快", "就", "到", "了"], "marks": [[4, 5]]}
  ]},
  {"id": "p24", "lv": 4, "label": "难道", "en": "surely … not? (rhetorical)", "note": ["A rhetorical question: shows surprise or doubt.", "难道 … 吗？"], "sentences": [
-  {"zh": "难道你不知道吗？", "py": "Nándào nǐ bù zhīdào ma?", "en": "Don't tell me you don't know!", "words": ["难道", "你", "不", "知道", "吗"], "marks": [[0, 2]]},
-  {"zh": "难道他是你哥哥吗？", "py": "Nándào tā shì nǐ gēge ma?", "en": "Could he be your older brother?", "words": ["难道", "他", "是", "你", "哥哥", "吗"], "marks": [[0, 2]]},
-  {"zh": "难道你忘记了吗？", "py": "Nándào nǐ wàngjì le ma?", "en": "Did you really forget?", "words": ["难道", "你", "忘记", "了", "吗"], "marks": [[0, 2]]},
-  {"zh": "难道这是真的吗？", "py": "Nándào zhè shì zhēn de ma?", "en": "Can this really be true?", "words": ["难道", "这", "是", "真", "的", "吗"], "marks": [[0, 2]]},
-  {"zh": "难道你不想去吗？", "py": "Nándào nǐ bù xiǎng qù ma?", "en": "Don't you want to go?", "words": ["难道", "你", "不", "想", "去", "吗"], "marks": [[0, 2]]},
-  {"zh": "难道我错了吗？", "py": "Nándào wǒ cuò le ma?", "en": "Was I really wrong?", "words": ["难道", "我", "错", "了", "吗"], "marks": [[0, 2]]}
+  {"zh": "你难道不知道吗？", "py": "Nǐ nándào bù zhīdào ma?", "en": "Don't tell me you don't know!", "words": ["你", "难道", "不", "知道", "吗"], "marks": [[1, 3]]},
+  {"zh": "他难道是你哥哥吗？", "py": "Tā nándào shì nǐ gēge ma?", "en": "Could he be your older brother?", "words": ["他", "难道", "是", "你", "哥哥", "吗"], "marks": [[1, 3]]},
+  {"zh": "你难道忘记了吗？", "py": "Nǐ nándào wàngjì le ma?", "en": "Did you really forget?", "words": ["你", "难道", "忘记", "了", "吗"], "marks": [[1, 3]]},
+  {"zh": "这难道是真的吗？", "py": "Zhè nándào shì zhēn de ma?", "en": "Can this really be true?", "words": ["这", "难道", "是", "真", "的", "吗"], "marks": [[1, 3]]},
+  {"zh": "你难道不想去吗？", "py": "Nǐ nándào bù xiǎng qù ma?", "en": "Don't you want to go?", "words": ["你", "难道", "不", "想", "去", "吗"], "marks": [[1, 3]]},
+  {"zh": "我难道错了吗？", "py": "Wǒ nándào cuò le ma?", "en": "Was I really wrong?", "words": ["我", "难道", "错", "了", "吗"], "marks": [[1, 3]]}
  ]},
- {"id": "p25", "lv": 4, "label": "听得懂 / 听不懂", "en": "can / can't (manage to)", "note": ["Says whether you can manage a result.", "verb + 得/不 + result: 听得懂 · 听不懂"], "sentences": [
+ {"id": "p25", "lv": 4, "label": "听得懂 / 听不懂", "en": "can / can't (manage to)", "note": ["Says whether you can manage a result.", "verb + 得/不 + result: 听得懂 · 听不懂"], "near": ["p12", "p13", "p14", "p15", "p16", "p19", "p23"], "sentences": [
   {"zh": "老师说话很慢，我听得懂。", "py": "Lǎoshī shuōhuà hěn màn, wǒ tīng de dǒng.", "en": "The teacher speaks slowly, so I can understand.", "words": ["老师", "说话", "很", "慢", "我", "听", "得", "懂"], "marks": [[9, 10]]},
   {"zh": "太快了，我听不懂。", "py": "Tài kuài le, wǒ tīng bù dǒng.", "en": "It's too fast, I can't follow.", "words": ["太", "快", "了", "我", "听", "不", "懂"], "marks": [[6, 7]]},
   {"zh": "这个字很简单，我看得懂。", "py": "Zhège zì hěn jiǎndān, wǒ kàn de dǒng.", "en": "This character is easy; I can read it.", "words": ["这个", "字", "很", "简单", "我", "看", "得", "懂"], "marks": [[9, 10]]},
   {"zh": "太远了，我看不清楚。", "py": "Tài yuǎn le, wǒ kàn bù qīngchu.", "en": "It's too far, I can't see clearly.", "words": ["太", "远", "了", "我", "看", "不", "清楚"], "marks": [[6, 7]]},
   {"zh": "菜太多了，我吃不完。", "py": "Cài tài duō le, wǒ chī bù wán.", "en": "There's too much food, I can't finish it.", "words": ["菜", "太", "多", "了", "我", "吃", "不", "完"], "marks": [[7, 8]]},
   {"zh": "作业不多，我做得完。", "py": "Zuòyè bù duō, wǒ zuò de wán.", "en": "There isn't much homework; I can finish it.", "words": ["作业", "不", "多", "我", "做", "得", "完"], "marks": [[7, 8]]},
-  {"zh": "我找不到我的手机。", "py": "Wǒ zhǎo bù dào wǒ de shǒujī.", "en": "I can't find my phone.", "words": ["我", "找", "不", "到", "我", "的", "手机"], "marks": [[2, 3]]}
+  {"zh": "我找了很久，还是找不到。", "py": "Wǒ zhǎo le hěn jiǔ, háishi zhǎo bù dào.", "en": "I looked for ages and still can't find it.", "words": ["我", "找", "了", "很", "久", "还是", "找", "不", "到"], "marks": [[9, 10]]}
  ]},
- {"id": "p26", "lv": 4, "label": "不但…而且", "en": "not only … but also", "note": ["Adds a second, stronger point.", "不但 A，而且 B"], "sentences": [
+ {"id": "p26", "lv": 4, "label": "不但…而且", "en": "not only … but also", "note": ["Adds a second, stronger point.", "不但 A，而且 B"], "near": ["p04", "p07", "p12", "p16", "p17", "p19", "p20"], "sentences": [
   {"zh": "这里不但便宜，而且很方便。", "py": "Zhèlǐ bùdàn piányi, érqiě hěn fāngbiàn.", "en": "It's not only cheap here but convenient too.", "words": ["这里", "不但", "便宜", "而且", "很", "方便"], "marks": [[2, 4], [7, 9]]},
   {"zh": "她不但漂亮，而且很聪明。", "py": "Tā bùdàn piàoliang, érqiě hěn cōngming.", "en": "She's not only pretty but smart too.", "words": ["她", "不但", "漂亮", "而且", "很", "聪明"], "marks": [[1, 3], [6, 8]]},
   {"zh": "他不但会唱歌，而且会跳舞。", "py": "Tā bùdàn huì chànggē, érqiě huì tiàowǔ.", "en": "He can not only sing but dance too.", "words": ["他", "不但", "会", "唱歌", "而且", "会", "跳舞"], "marks": [[1, 3], [7, 9]]},
