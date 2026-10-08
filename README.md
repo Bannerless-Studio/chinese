@@ -62,6 +62,20 @@ open item in `TODO.md`.
   (CC BY-SA 4.0), via complete-hsk-vocabulary (MIT).
 - Full source and licence record: `pack/attribution.json`.
 
+### Sources and licences
+
+| Data | Source | Licence | Used for |
+|---|---|---|---|
+| HSK vocabulary | [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary) | MIT | Word lists and levels |
+| English glosses, zh gloss overrides | [CC-CEDICT](https://cc-cedict.org/wiki/) via complete-hsk-vocabulary | CC BY-SA 4.0 | Meanings |
+| Character hints | [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) (Unihan, CJKlib) | LGPL-3.0-or-later | Teach cards, reveals, popovers |
+| Hint overrides (气, 来) | English Wiktionary | CC BY-SA 4.0 | Two restated glyph origins |
+| Word frequency | [wordfreq](https://github.com/rspeer/wordfreq) 3.1.1 | CC BY-SA 4.0 (code Apache-2.0, not shipped) | Order within level, frequency tiers |
+| Sentences, patterns | Hand-authored for this pack | CC BY-SA 4.0 | Examples and patterns |
+
+Licence: code MIT, pack data CC BY-SA 4.0, see LICENSE. Cross-repo summary:
+`vocab-engine/docs/LICENSING.md`.
+
 ## Rebuild and publish
 
 This repo holds the Chinese data (`data/`) and a generated copy of the
