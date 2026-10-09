@@ -1,0 +1,59 @@
+MIT License
+
+Copyright (c) 2026 Ishmum Khan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+This licence covers the build and app code in this repository: build.sh,
+build_legacy.sh, check.sh, index.html (template and app logic),
+hsk_characters.html, hsk_pinyin.html, sw.js, and the code under src/,
+tools/ and tests/. It does not cover the engine/ submodule, which is a
+separate repository (vocab-engine) with its own MIT licence, or the pack
+data described below.
+
+## Pack data
+
+The data under `pack/` and `data/` (words, sentences, patterns, passages,
+pinyin lessons and character hints) is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0):
+https://creativecommons.org/licenses/by-sa/4.0/
+
+This reflects upstream share-alike terms. The per-source record is in
+`pack/attribution.json`:
+
+- Vocabulary comes from complete-hsk-vocabulary (MIT), the HSK word lists
+  by drkameleon: https://github.com/drkameleon/complete-hsk-vocabulary
+- English glosses originate from CC-CEDICT (CC BY-SA 4.0), via
+  complete-hsk-vocabulary: https://cc-cedict.org/wiki/
+- Frequency data (word order within a level, frequency tiers) comes from
+  wordfreq (data CC BY-SA 4.0; wordfreq code is Apache-2.0 and not shipped):
+  https://github.com/rspeer/wordfreq
+- Character hints come from Make Me a Hanzi (c) Shaunak Kishore and
+  contributors, licensed LGPL-3.0-or-later. This glyph data keeps its own
+  licence; the texts are in `LICENSES/LGPL-3.0.txt` and
+  `LICENSES/GPL-3.0.txt`: https://github.com/skishore/makemeahanzi
+- Two hand-written character hints restate English Wiktionary glyph origins
+  (CC BY-SA 4.0).
+- Example sentences and patterns are hand-authored for this pack and are
+  released under CC BY-SA 4.0.
+
+Build-time tools used to construct this pack are used only while building
+and ship nothing into the built output. They do not affect the licence of
+the shipped code or pack data. See the "Sources and licences" table in
+README.md for the full list of sources used per data type.

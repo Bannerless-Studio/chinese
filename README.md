@@ -42,11 +42,39 @@ dataset (`tools/build_vocab.py` selects one sense and one pronunciation per
 word; see its docstring for the full sense-selection rules and manual
 overrides). Sentences in `data/hsk_sentences.js` are hand-authored for this
 pack and validated against the vocabulary by `tools/check_sentences.py`
-(segmentation, pinyin cross-check, length limits, coverage).
+(segmentation, pinyin cross-check, length limits, coverage). Grammar-pattern
+sentences in `data/hsk_patterns.js` (27 HSK 2-4 patterns, drilled as cloze)
+are hand-authored the same way and checked by `tools/check_patterns.py`.
 
 The example-sentence corpus has not yet been screened by the shared
 sensitive-content filter used in the other language repos; tracked as an
 open item in `TODO.md`.
+
+## Credits
+
+- **Character hints** (memory hints on teach cards, reveals and word popovers)
+  come from [Make Me a Hanzi](https://github.com/skishore/makemeahanzi)
+  (`dictionary.txt` at commit `bddc96d41bef78427ed0e034e9f7e31d71fd1b92`),
+  © Shaunak Kishore and contributors, licensed LGPL-3.0-or-later. Licence
+  texts: `LICENSES/LGPL-3.0.txt` and `LICENSES/GPL-3.0.txt`. Two hand-written
+  hints (气, 来) also restate English Wiktionary (CC BY-SA 4.0).
+- **English glosses** originate from [CC-CEDICT](https://cc-cedict.org/wiki/)
+  (CC BY-SA 4.0), via complete-hsk-vocabulary (MIT).
+- Full source and licence record: `pack/attribution.json`.
+
+### Sources and licences
+
+| Data | Source | Licence | Used for |
+|---|---|---|---|
+| HSK vocabulary | [complete-hsk-vocabulary](https://github.com/drkameleon/complete-hsk-vocabulary) | MIT | Word lists and levels |
+| English glosses, zh gloss overrides | [CC-CEDICT](https://cc-cedict.org/wiki/) via complete-hsk-vocabulary | CC BY-SA 4.0 | Meanings |
+| Character hints | [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) (Unihan, CJKlib) | LGPL-3.0-or-later | Teach cards, reveals, popovers |
+| Hint overrides (气, 来) | English Wiktionary | CC BY-SA 4.0 | Two restated glyph origins |
+| Word frequency | [wordfreq](https://github.com/rspeer/wordfreq) 3.1.1 | CC BY-SA 4.0 (code Apache-2.0, not shipped) | Order within level, frequency tiers |
+| Sentences, patterns | Hand-authored for this pack | CC BY-SA 4.0 | Examples and patterns |
+
+Licence: code MIT, pack data CC BY-SA 4.0, see LICENSE. Cross-repo summary:
+`vocab-engine/docs/LICENSING.md`.
 
 ## Rebuild and publish
 
