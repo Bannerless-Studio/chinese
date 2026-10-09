@@ -6,5 +6,6 @@ shots*/
 .venv/
 .cache/
 .claude/settings.local.json
+*__pycache__/*
 
 EXPLAIN _BN.md
