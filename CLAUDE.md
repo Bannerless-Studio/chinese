@@ -3,6 +3,7 @@
 ```
 complete-hsk-vocabulary dataset --tools/build_vocab.py--> data/hsk_vocab.{json,js}
 data/hsk_sentences.js (hand-authored, tools/check_sentences.py validates)
+data/hsk_patterns.js  (hand-authored grammar patterns, tools/check_patterns.py validates)
         |
         v
 vocab-engine/tools/pack_from_hsk.py (reads this repo's data/)  -->  pack/*.json
@@ -35,6 +36,7 @@ alongside the engine build for rollback and history; do not delete it.
   (add `--source /path/to/complete.json` to use a downloaded snapshot)
   -> `data/hsk_vocab.{json,js}`
 - Validate hand-authored sentences: `python3 tools/check_sentences.py`
+- Validate grammar patterns: `python3 tools/check_patterns.py` (also in `check.sh`)
 - Rebuild the engine pack from `data/`: see `vocab-engine/tools/pack_from_hsk.py`
   (run from vocab-engine, or via engine tooling — this repo's `pack/` is a
   generated copy of `vocab-engine/packs/zh`)

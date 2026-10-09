@@ -8,26 +8,26 @@ a pack lemma can go unlinked when the tagger reads it with another POS).
 words = the builder's word count (the band rule: tokens after segmentation); ws_words =
 linked words, the count the app shows for an unspaced pack (report only).
 
-- **1**: 15 passages; words/passage 64-80 (median 75); ws_words 64-78; coverage min 1.000, median 1.000 (rule >= 0.95); linked min 1.000; questions mc 40, tf 31
-- **2**: 15 passages; words/passage 85-97 (median 92); ws_words 81-92; coverage min 1.000, median 1.000 (rule >= 0.95); linked min 1.000; questions mc 44, tf 31
-- **3**: 15 passages; words/passage 100-115 (median 107); ws_words 92-113; coverage min 0.962, median 1.000 (rule >= 0.95); linked min 0.962; questions mc 45, tf 30
-- **4**: 15 passages; words/passage 118-146 (median 133); ws_words 108-139; coverage min 0.992, median 1.000 (rule >= 0.93); linked min 0.992; questions mc 44, tf 31
+- **1**: 15 passages; words/passage 64-80 (median 75); ws_words 64-78; coverage min 1.000, median 1.000 (rule >= 0.95); linked min 1.000; questions mc 75, tf 45
+- **2**: 15 passages; words/passage 85-97 (median 92); ws_words 81-92; coverage min 1.000, median 1.000 (rule >= 0.95); linked min 1.000; questions mc 75, tf 45
+- **3**: 20 passages; words/passage 100-120 (median 109.0); ws_words 92-115; coverage min 0.962, median 1.000 (rule >= 0.95); linked min 0.962; questions mc 100, tf 60
+- **4**: 25 passages; words/passage 118-149 (median 137); ws_words 108-143; coverage min 0.992, median 1.000 (rule >= 0.93); linked min 0.992; questions mc 125, tf 75
 
 | id | lv | title | words | ws_words | coverage | linked | out-of-pack lemmas (reason) | higher-level lemmas |
 |---|---|---|---|---|---|---|---|---|
 | p0001 | 1 | 我的家 | 76 | 68 | 1.000 | 1.000 | - | - |
-| p0002 | 1 | 在饭馆 | 75 | 64 | 1.000 | 1.000 | - | 2: 服务员 |
+| p0002 | 1 | 在饭馆 | 75 | 64 | 1.000 | 1.000 | - | 2: 晚上, 服务员 |
 | p0003 | 1 | 天气冷了 | 64 | 64 | 1.000 | 1.000 | - | 2: 一起, 穿, 给 |
 | p0004 | 1 | 买衣服 | 72 | 71 | 1.000 | 1.000 | - | 2: 件, 贵, 问 |
 | p0005 | 1 | 明天看电影吗？ | 76 | 64 | 1.000 | 1.000 | - | 2: 一起, 也 |
 | p0006 | 1 | 你在哪儿？ | 79 | 78 | 1.000 | 1.000 | - | 2: 公共汽车, 船 |
-| p0007 | 1 | 我的中国同学 | 80 | 74 | 1.000 | 1.000 | - | 2: 慢 |
+| p0007 | 1 | 我的中国同学 | 80 | 74 | 1.000 | 1.000 | - | 2: 快, 慢 |
 | p0008 | 1 | 火车站的小商店 | 70 | 65 | 1.000 | 1.000 | - | 2: 从, 到, 晚上 |
 | p0009 | 1 | 去北京 | 75 | 71 | 1.000 | 1.000 | - | 2: 一起, 穿, 要 |
 | p0010 | 1 | 我的朋友 | 77 | 66 | 1.000 | 1.000 | - | 2: 好吃, 鱼 |
 | p0011 | 1 | 看医生 | 75 | 68 | 1.000 | 1.000 | - | 2: 再, 生病, 药 |
-| p0012 | 1 | 我的星期日 | 72 | 73 | 1.000 | 1.000 | - | 2: 近 |
-| p0013 | 1 | 我学习汉语 | 72 | 64 | 1.000 | 1.000 | - | 2: 也 |
+| p0012 | 1 | 我的星期日 | 72 | 73 | 1.000 | 1.000 | - | 2: 咖啡, 牛奶, 近 |
+| p0013 | 1 | 我学习汉语 | 72 | 64 | 1.000 | 1.000 | - | 2: 也, 慢 |
 | p0014 | 1 | 这个饭馆怎么样？ | 73 | 65 | 1.000 | 1.000 | - | 2: 也, 好吃, 张 |
 | p0015 | 1 | 我的房间 | 69 | 67 | 1.000 | 1.000 | - | 2: 也, 房间 |
 | p0016 | 2 | 妹妹的生日 | 95 | 92 | 1.000 | 1.000 | - | 3: 蛋糕 |
@@ -51,7 +51,7 @@ linked words, the count the app shows for an unspaced pack (report only).
 | p0034 | 3 | 感冒了 | 105 | 96 | 1.000 | 1.000 | - | - |
 | p0035 | 3 | 图书馆的新要求 | 114 | 104 | 1.000 | 1.000 | - | - |
 | p0036 | 3 | 下班以后去超市 | 115 | 113 | 1.000 | 1.000 | - | 4: 取, 巧克力 |
-| p0037 | 3 | 西红柿鸡蛋面条 | 107 | 99 | 0.990 | 0.990 | 切 x1 (cut; the pack has no verb for cutting, needed in a recipe) | 4: 盐, 西红柿 |
+| p0037 | 3 | 西红柿鸡蛋面条 | 107 | 99 | 0.990 | 0.990 | 切 x1 (cut; the pack has no verb for cutting, needed in a recipe) | 4: 最后, 盐, 西红柿 |
 | p0038 | 3 | 在宾馆 | 112 | 102 | 1.000 | 1.000 | - | - |
 | p0039 | 3 | 我的城市 | 100 | 92 | 1.000 | 1.000 | - | 4: 最好 |
 | p0040 | 3 | 新同事 | 107 | 99 | 1.000 | 1.000 | - | 4: 从来, 修 |
@@ -60,6 +60,11 @@ linked words, the count the app shows for an unspaced pack (report only).
 | p0043 | 3 | 买了一双新鞋 | 107 | 105 | 1.000 | 1.000 | - | 4: 试, 道歉 |
 | p0044 | 3 | 骑自行车 | 111 | 104 | 1.000 | 1.000 | - | 4: 掉 |
 | p0045 | 3 | 中国的节日 | 109 | 95 | 0.962 | 0.962 | 中秋节 x2 (Mid-Autumn Festival; festival name, the pack lacks 节), 春节 x2 (Spring Festival; festival name, the pack lacks 节) | 4: 圆, 饺子 |
+| p0061 | 3 | 弟弟的作业 | 113 | 110 | 1.000 | 1.000 | - | - |
+| p0062 | 3 | 叔叔来了 | 114 | 104 | 1.000 | 1.000 | - | 4: 戴 |
+| p0063 | 3 | 花园里的小鸟 | 120 | 112 | 1.000 | 1.000 | - | - |
+| p0064 | 3 | 我的行李箱 | 119 | 110 | 1.000 | 1.000 | - | 4: 地址 |
+| p0065 | 3 | 爷爷的普通话 | 119 | 115 | 1.000 | 1.000 | - | - |
 | p0046 | 4 | 招聘广告 | 133 | 127 | 1.000 | 1.000 | - | - |
 | p0047 | 4 | 找工作 | 146 | 130 | 1.000 | 1.000 | - | - |
 | p0048 | 4 | 保护环境，从小事情开始 | 119 | 113 | 1.000 | 1.000 | - | - |
@@ -75,6 +80,16 @@ linked words, the count the app shows for an unspaced pack (report only).
 | p0058 | 4 | 好的学习方法 | 130 | 119 | 1.000 | 1.000 | - | - |
 | p0059 | 4 | 航班推迟了 | 143 | 139 | 1.000 | 1.000 | - | - |
 | p0060 | 4 | 健康地减肥 | 140 | 131 | 1.000 | 1.000 | - | - |
+| p0066 | 4 | 第一次去她家 | 144 | 131 | 1.000 | 1.000 | - | - |
+| p0067 | 4 | 钥匙丢了 | 148 | 143 | 1.000 | 1.000 | - | - |
+| p0068 | 4 | 去大使馆 | 149 | 139 | 1.000 | 1.000 | - | - |
+| p0069 | 4 | 奶奶用手机 | 131 | 125 | 1.000 | 1.000 | - | - |
+| p0070 | 4 | 搬到农村 | 129 | 121 | 1.000 | 1.000 | - | - |
+| p0071 | 4 | 输了一场比赛 | 137 | 124 | 1.000 | 1.000 | - | - |
+| p0072 | 4 | 我做的第一个菜 | 148 | 143 | 1.000 | 1.000 | - | - |
+| p0073 | 4 | 寒假 | 126 | 122 | 1.000 | 1.000 | - | - |
+| p0074 | 4 | 哥哥换工作 | 149 | 138 | 1.000 | 1.000 | - | - |
+| p0075 | 4 | 妈妈是护士 | 141 | 134 | 1.000 | 1.000 | - | - |
 
 Title words, and question/option words the budget does not count (a numeral-like
 pack word), that are out of the pack or above the passage's level (report only;
@@ -87,10 +102,11 @@ the budget rule above is unchanged):
 - p0042: s3 '小河': jieba reads a proper noun (nr), linked as 小 + 河; declare it in names if it is one; s4 '河里': jieba reads a proper noun (ns), linked as 河 + 里; declare it in names if it is one; s5 '河里': jieba reads a proper noun (ns), linked as 河 + 里; declare it in names if it is one
 - p0048: s2 '河里': jieba reads a proper noun (ns), linked as 河 + 里; declare it in names if it is one
 - p0060: s6 '太咸': jieba reads a proper noun (nr), linked as 太 + 咸; declare it in names if it is one; s6 '太辣': jieba reads a proper noun (nr), linked as 太 + 辣; declare it in names if it is one
+- p0071: s6 '连水': jieba reads a proper noun (nr), linked as 连 + 水; declare it in names if it is one
 
-Readings (`ruby`, langs/zh.py passage_ruby): 6136 reading tokens over 577 sentences (6017 on a linked word, 119 without one: names, oop words, 过, 第), 4061 in titles, questions and options.
-pypinyin readings with no override: 435 characters, 44 distinct: 周 x27, 婷 x22, 上 x19, 海 x19, 娜 x18, 杰 x17, 王 x17, 陈 x17, 丽 x15, 何 x15, 李 x14, 林 x14, 刘 x13, 孙 x13, 明 x13, 浩 x13, 芳 x13, 静 x13, 强 x12, 赵 x12, 吴 x11, 磊 x11, 安 x10, 节 x9, 郑 x9, 文 x8, 国 x6, 春 x6, 迪 x6, 杨 x5 ....
-Override readings used (SURFACE_READINGS, CHAR_READINGS, 地 rule, aspect 过): 便宜 x10, 过 (aspect) x3, 草地 x2, 长大 x2, 切 x1.
+Readings (`ruby`, langs/zh.py passage_ruby): 8131 reading tokens over 721 sentences (8006 on a linked word, 125 without one: names, oop words, 过, 第), 8245 in titles, questions and options.
+pypinyin readings with no override: 604 characters, 47 distinct: 周 x35, 婷 x29, 娜 x26, 王 x24, 上 x23, 海 x23, 丽 x22, 刘 x21, 李 x21, 芳 x21, 何 x20, 杰 x20, 陈 x20, 孙 x18, 浩 x18, 明 x17, 林 x17, 静 x17, 们 x14, 安 x14, 强 x14, 赵 x14, 吴 x13, 磊 x13, 节 x12, 国 x11, 郑 x11, 文 x9, 法 x9, 玛 x8 ....
+Override readings used (SURFACE_READINGS, CHAR_READINGS, 地 rule, aspect 过): 便宜 x14, 过 (aspect) x11, 长大 x4, 草地 x2, 切 x1.
 
 <!-- manual section: kept across runs -->
 
@@ -104,3 +120,8 @@ Override readings used (SURFACE_READINGS, CHAR_READINGS, 地 rule, aspect 过): 
 - **Level grammar.** No 把/被 at HSK1-2. Experiential 过 appears only at HSK4. HSK1 speech is written as dialogue with speaker labels, since 说 is not a pack word.
 - **Names.** Declared whole (王明, 周婷...). Bare surnames before a title are declared as written (王, 李, 周, 何, 杨). 上海 and 成都 contain the pack characters 上 and 都 and stay one unit as declared names.
 - **Report notes.** The jieba proper-noun notes (班能赢, 太甜, 长大, 小河, 河里, 太咸, 太辣) are false positives, and none is a name. The title notes are 房间 (p0015) and 西红柿 (p0037). Both words are already inside the budget of their own passage.
+
+## fb34 (2026-10-07): p0061-p0075
+
+- 15 hand-written passages (5 HSK 3, 10 HSK 4), then one content-review round (2 HIGH and 12 of 17 LOW applied). Coverage 1.000, no oop. Words a reviewer suggested that are not pack words (动物园, 锁, 女士, 街, 说, 话, 饭) were written around.
+- The jieba note on p0071 '连水' is a false positive (连 + 水, "not even water").
