@@ -184,6 +184,11 @@
  "freqTiers": true,
  "progressView": "v2",
  "appView": "v2",
+ "placementWhole": true,
+ "placementChars": true,
+ "placementEarlyStop": true,
+ "placedRead": true,
+ "placedKnown": true,
  "levelGate": 0.7,
  "levelExam": {
   "1": "pinyin",
