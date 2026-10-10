@@ -17,6 +17,7 @@ pattern fields:
 5. No zh duplicated within the patterns or with data/hsk_sentences.js.
 6. marks: a non-empty, sorted, non-overlapping list of [start, end) ranges inside
    zh, each starting and ending on a word boundary and covering no punctuation.
+7. check_sentences' drop-all and sensitive content tiers, at the pattern's lv.
 
 `--options` prints, per sentence and mark, the wrong-option pool the engine can offer
 (vocab-engine core.js patternOpts): the pattern's other marks, then other patterns'
@@ -29,6 +30,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from check_sentences import EXTRA as SENTENCE_EXTRA, load_sentences, load_vocab, strip_punct, PUNCT_CHARS  # noqa: E402
+from check_sentences import content_error, load_content_filters  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 PATTERNS_PATH = ROOT / "data" / "hsk_patterns.js"
@@ -82,6 +84,7 @@ def main():
     vocab = load_vocab()
     patterns = load_patterns()
     known = {s["zh"] for s in load_sentences()}
+    drop_all_re, sensitive_re, _, _ = load_content_filters()
     errors = []
     pattern_extra = load_pattern_extra()
     for token, info in pattern_extra.items():
@@ -139,6 +142,9 @@ def main():
             where = f"{label} {zh!r}"
             if not isinstance(s.get("en"), str) or not s["en"].strip():
                 errors.append(f"{where}: en must be a non-empty string")
+            err = content_error(zh, s.get("en") or "", lv, drop_all_re, sensitive_re)
+            if err:
+                errors.append(f"{where}: {err}")
             if zh in known:
                 errors.append(f"{where}: duplicates a sentence in hsk_sentences.js")
             if zh in seen_zh:
