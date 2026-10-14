@@ -202,9 +202,9 @@ const PATTERNS=[
  ]},
  {"id": "p23", "lv": 4, "label": "才 vs 就", "en": "only then (late) vs already (early)", "note": ["就: sooner or easier than expected. 才: later or harder.", "六点就起床了 · 十点才起床"], "near": ["p13", "p14", "p25"], "sentences": [
   {"zh": "都十点了，他才起床。", "py": "Dōu shí diǎn le, tā cái qǐchuáng.", "en": "It was already ten and he only then got up.", "words": ["都", "十", "点", "了", "他", "才", "起床"], "marks": [[6, 7]]},
-  {"zh": "我六点就起床了。", "py": "Wǒ liù diǎn jiù qǐchuáng le.", "en": "I was up at six already.", "words": ["我", "六", "点", "就", "起床", "了"], "marks": [[3, 4]]},
+  {"zh": "我六点就已经起床了。", "py": "Wǒ liù diǎn jiù yǐjīng qǐchuáng le.", "en": "I was already up by six.", "words": ["我", "六", "点", "就", "已经", "起床", "了"], "marks": [[3, 4]]},
   {"zh": "都十二点了，她才回家。", "py": "Dōu shí'èr diǎn le, tā cái huí jiā.", "en": "It was twelve already when she finally got home.", "words": ["都", "十二", "点", "了", "她", "才", "回", "家"], "marks": [[7, 8]]},
-  {"zh": "他五分钟就做完了。", "py": "Tā wǔ fēnzhōng jiù zuò wán le.", "en": "He was done in just five minutes.", "words": ["他", "五", "分钟", "就", "做", "完", "了"], "marks": [[4, 5]]},
+  {"zh": "他只用了五分钟就做完了。", "py": "Tā zhǐ yòng le wǔ fēnzhōng jiù zuò wán le.", "en": "He was done in just five minutes.", "words": ["他", "只", "用", "了", "五", "分钟", "就", "做", "完", "了"], "marks": [[7, 8]]},
   {"zh": "我等了一个小时他才来。", "py": "Wǒ děng le yī gè xiǎoshí tā cái lái.", "en": "I waited an hour before he finally came.", "words": ["我", "等", "了", "一", "个", "小时", "他", "才", "来"], "marks": [[8, 9]]},
   {"zh": "过了很久，他才说话。", "py": "Guò le hěn jiǔ, tā cái shuōhuà.", "en": "It was a long time before he spoke.", "words": ["过", "了", "很", "久", "他", "才", "说话"], "marks": [[6, 7]]},
   {"zh": "我们很快就到了。", "py": "Wǒmen hěn kuài jiù dào le.", "en": "We got there in no time.", "words": ["我们", "很", "快", "就", "到", "了"], "marks": [[4, 5]]}
