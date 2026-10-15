@@ -221,7 +221,8 @@
   "hint": [
    "I",
    "(plural): 亻 (people) + 门 (sound mén)"
-  ]
+  ],
+  "hook": "I + plural mark = we"
  },
  {
   "id": "c0026",
@@ -262,7 +263,8 @@
   "hint": [
    "middle: a line 丨 through the middle of a box 口",
    "country: treasure 玉 within a country's borders 囗"
-  ]
+  ],
+  "hook": "middle + country = China"
  },
  {
   "id": "c0100",
@@ -302,7 +304,8 @@
   "hint": [
    "what: a file of ten 十 people 亻",
    "(suffix): simplified from 麼: 麻 (sound má) + 幺 (tiny)"
-  ]
+  ],
+  "hook": "bound pair; neither character means \"what\" alone"
  },
  {
   "id": "c0094",
@@ -460,7 +463,8 @@
   "hint": [
    "now: to see 见 jade 王",
    "at"
-  ]
+  ],
+  "hook": "appear + exist = now"
  },
  {
   "id": "c0145",
@@ -500,7 +504,8 @@
   "hint": [
    "how: 心 (heart) + 乍 (sound zhà)",
    "(suffix): simplified from 麼: 麻 (sound má) + 幺 (tiny)"
-  ]
+  ],
+  "hook": "bound pair; neither character means \"how\" alone"
  },
  {
   "id": "c0111",
@@ -554,7 +559,8 @@
   "hint": [
    "labor: picture of a spade or other workman's tool",
    "to do: a person 亻 making something for the first time 乍"
-  ]
+  ],
+  "hook": "labor + do = work"
  },
  {
   "id": "c0003",
@@ -594,7 +600,8 @@
   "hint": [
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)",
    "period: 亻 (person) + 矦 (sound hóu)"
-  ]
+  ],
+  "hook": "time + period = the time when"
  },
  {
   "id": "c0117",
@@ -660,7 +667,8 @@
   "hint": [
    "north: picture of two people sitting back-to-back",
    "capital city: picture of a capital building on a hill"
-  ]
+  ],
+  "hook": "north + capital = Beijing, the northern capital"
  },
  {
   "id": "c0058",
@@ -674,7 +682,8 @@
   "hint": [
    "to like: singing 口 and beating drums 壴",
    "happy: 又 and + 欠 to lack"
-  ]
+  ],
+  "hook": "happy + fond = like"
  },
  {
   "id": "c0077",
@@ -688,7 +697,8 @@
   "hint": [
    "to study: a building 冖 where children 子 study",
    "pupil: a shoot growing out of the soil 土"
-  ]
+  ],
+  "hook": "study + pupil = student"
  },
  {
   "id": "c0146",
@@ -715,7 +725,8 @@
   "hint": [
    "electricity: lightning 申 from 電 without its storm cloud 雨",
    "image: 彡 (sunlight) + 景 (sound jǐng)"
-  ]
+  ],
+  "hook": "electric + shadow = movie"
  },
  {
   "id": "c0115",
@@ -755,7 +766,8 @@
   "hint": [
    "today: a mouth talking about things",
    "day: the heavens 一 above a man 大"
-  ]
+  ],
+  "hook": "this + day = today"
  },
  {
   "id": "c0047",
@@ -819,9 +831,10 @@
   "reading": "dōngxi",
   "ft": 1,
   "hint": [
-   "east",
-   "west"
-  ]
+   "east: picture of the sun rising behind a tree",
+   "west: picture of a bird settling into its nest, representing sunset"
+  ],
+  "hook": "think: goods from the east and west markets = things"
  },
  {
   "id": "c0086",
@@ -848,7 +861,8 @@
   "hint": [
    "to study: a building 冖 where children 子 study",
    "school: 木 (wood) + 交 (sound jiāo)"
-  ]
+  ],
+  "hook": "study + school building = school"
  },
  {
   "id": "c0102",
@@ -862,7 +876,8 @@
   "hint": [
    "friend: two people 月 walking together",
    "friend: two hands 又 joined, representing friendship"
-  ]
+  ],
+  "hook": "synonym pair: friend + friend"
  },
  {
   "id": "c0035",
@@ -927,8 +942,9 @@
   "ft": 1,
   "hint": [
    "to study: a building 冖 where children 子 study",
-   "to study"
-  ]
+   "to study: think: simplified from 習, wings 羽 flapping to practise"
+  ],
+  "hook": "learn + practise = study"
  },
  {
   "id": "c0136",
@@ -942,7 +958,8 @@
   "hint": [
    "to know: 讠 (speech) + 人 (sound rén)",
    "to recognize: 讠 (speech) + 只 (sound zhī)"
-  ]
+  ],
+  "hook": "recognise + know = be acquainted with"
  },
  {
   "id": "c0066",
@@ -955,8 +972,9 @@
   "ft": 1,
   "hint": [
    "many",
-   "few"
-  ]
+   "few: picture of grains of sand"
+  ],
+  "hook": "many + few = how many?"
  },
  {
   "id": "c0055",
@@ -1035,7 +1053,8 @@
   "hint": [
    "to cure: 矢 (arrow) + 匸 (sound xì)",
    "institution: 阝 (place) + 完 (sound wán)"
-  ]
+  ],
+  "hook": "medicine + institution = hospital"
  },
  {
   "id": "c0089",
@@ -1050,7 +1069,8 @@
    "how: 心 (heart) + 乍 (sound zhà)",
    "(suffix): simplified from 麼: 麻 (sound má) + 幺 (tiny)",
    "manner: 木 (tree) + 羊 (sound yáng)"
-  ]
+  ],
+  "hook": "how + (suffix) + manner = how about?"
  },
  {
   "id": "c0108",
@@ -1075,9 +1095,10 @@
   "reading": "xiānsheng",
   "ft": 1,
   "hint": [
-   "earlier",
+   "earlier: someone stepping in front of another person 儿",
    "born: a shoot growing out of the soil 土"
-  ]
+  ],
+  "hook": "earlier + born = sir, one born before you"
  },
  {
   "id": "c0130",
@@ -1089,9 +1110,10 @@
   "reading": "lǎoshī",
   "ft": 1,
   "hint": [
-   "(respect prefix)",
+   "(respect prefix): picture of a person bent over with long hair and a crutch",
    "teacher: to skillfully wield 帀 a knife 刂"
-  ]
+  ],
+  "hook": "respected + master = teacher"
  },
  {
   "id": "c0030",
@@ -1105,7 +1127,8 @@
   "hint": [
    "son: picture of a child",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "child + noun suffix = son"
  },
  {
   "id": "c0021",
@@ -1132,7 +1155,8 @@
   "hint": [
    "electricity: lightning 申 from 電 without its storm cloud 雨",
    "to look at: 见 (see) + 礻 (sound shì)"
-  ]
+  ],
+  "hook": "electric + sight = television"
  },
  {
   "id": "c0070",
@@ -1146,7 +1170,8 @@
   "hint": [
    "woman: picture of a woman turned to the side",
    "child: picture of a child"
-  ]
+  ],
+  "hook": "female + child = daughter"
  },
  {
   "id": "c0073",
@@ -1160,7 +1185,8 @@
   "hint": [
    "mother: 女 (woman) + 马 (sound mǎ)",
    "mother: 女 (woman) + 马 (sound mǎ)"
-  ]
+  ],
+  "hook": "mum, doubled like baby talk"
  },
  {
   "id": "c0039",
@@ -1172,9 +1198,10 @@
   "reading": "fēnzhōng",
   "ft": 1,
   "hint": [
-   "minute",
+   "minute: pieces 八 being further subdivided with a knife 刀",
    "clock: 钅 (metal) + 中 (sound zhōng)"
-  ]
+  ],
+  "hook": "division + clock = minute"
  },
  {
   "id": "c0049",
@@ -1187,8 +1214,9 @@
   "ft": 1,
   "hint": [
    "name: a name called out 口 to hail someone at night 夕",
-   "character"
-  ]
+   "character: a child 子 in a house 宀"
+  ],
+  "hook": "name + written character = name"
  },
  {
   "id": "c0082",
@@ -1228,7 +1256,8 @@
   "hint": [
    "to fly: picture of a bird flapping its wings",
    "machine: a table 几 made of wood 木; 几 gives the sound"
-  ]
+  ],
+  "hook": "fly + machine = airplane"
  },
  {
   "id": "c0074",
@@ -1268,7 +1297,8 @@
   "hint": [
    "to see",
    "to see: a man 儿 with the eye emphasized"
-  ]
+  ],
+  "hook": "look + see = catch sight of"
  },
  {
   "id": "c0141",
@@ -1282,7 +1312,8 @@
   "hint": [
    "to thank: 讠 (speech) + 射 (sound shè)",
    "to thank: 讠 (speech) + 射 (sound shè)"
-  ]
+  ],
+  "hook": "thank, doubled"
  },
  {
   "id": "c0020",
@@ -1309,7 +1340,8 @@
   "hint": [
    "electricity: lightning 申 from 電 without its storm cloud 雨",
    "brain: ⺼ (flesh) + 亠 + 凶"
-  ]
+  ],
+  "hook": "electric + brain = computer"
  },
  {
   "id": "c0137",
@@ -1323,7 +1355,8 @@
   "hint": [
    "to speak: 讠 (speech) + 兑 (sound duì)",
    "talk: a spoken 讠 tongue 舌"
-  ]
+  ],
+  "hook": "say + speech = talk"
  },
  {
   "id": "c0037",
@@ -1351,7 +1384,8 @@
   "hint": [
    "next: the light of the sun 日 and moon 月",
    "day: the heavens 一 above a man 大"
-  ]
+  ],
+  "hook": "next + day = tomorrow"
  },
  {
   "id": "c0042",
@@ -1365,7 +1399,8 @@
   "hint": [
    "medicine: 矢 (arrow) + 匸 (sound xì)",
    "scholar: a shoot growing out of the soil 土"
-  ]
+  ],
+  "hook": "medicine + scholar = doctor"
  },
  {
   "id": "c0139",
@@ -1391,8 +1426,9 @@
   "ft": 1,
   "hint": [
    "polished (piào): 氵 (water) + 票 (sound piào)",
-   "bright"
-  ]
+   "bright: picture of a lit oil lamp"
+  ],
+  "hook": "polished + bright = pretty"
  },
  {
   "id": "c0007",
@@ -1406,7 +1442,8 @@
   "hint": [
    "later",
    "noon: 丿 + 干 arid"
-  ]
+  ],
+  "hook": "down from + noon = afternoon"
  },
  {
   "id": "c0063",
@@ -1447,7 +1484,8 @@
   "hint": [
    "apple: 艹 (plant) + 平 (sound píng)",
    "fruit: fruit 田 growing on a tree 木"
-  ]
+  ],
+  "hook": "apple + fruit = apple"
  },
  {
   "id": "c0150",
@@ -1459,9 +1497,10 @@
   "reading": "gāoxìng",
   "ft": 1,
   "hint": [
-   "high",
-   "spirits (xìng)"
-  ]
+   "high: picture of a tall palace",
+   "spirits (xìng): think: simplified from 興, many hands lifting together"
+  ],
+  "hook": "high + spirits = happy"
  },
  {
   "id": "c0116",
@@ -1514,7 +1553,8 @@
   "hint": [
    "yesterday: 日 (day) + 乍 (sound zhà)",
    "day: the heavens 一 above a man 大"
-  ]
+  ],
+  "hook": "yesterday + day = yesterday"
  },
  {
   "id": "c0048",
@@ -1528,7 +1568,8 @@
   "hint": [
    "same: sharing a common 凡 tongue 口",
    "to study: a building 冖 where children 子 study"
-  ]
+  ],
+  "hook": "same + study = classmate"
  },
  {
   "id": "c0135",
@@ -1542,7 +1583,8 @@
   "hint": [
    "clothes: picture of a woman's dress",
    "clothes: a person 卩 putting on 又 a coat 月"
-  ]
+  ],
+  "hook": "synonym pair: clothes + clothes"
  },
  {
   "id": "c0081",
@@ -1556,7 +1598,8 @@
   "hint": [
    "small",
    "elder sister: 女 (woman) + 且 (sound qiě)"
-  ]
+  ],
+  "hook": "young + elder sister = young lady"
  },
  {
   "id": "c0118",
@@ -1570,7 +1613,8 @@
   "hint": [
    "father: 父 (father) + 巴 (sound bā)",
    "father: 父 (father) + 巴 (sound bā)"
-  ]
+  ],
+  "hook": "dad, doubled like baby talk"
  },
  {
   "id": "c0050",
@@ -1582,9 +1626,10 @@
   "reading": "hòumian",
   "ft": 1,
   "hint": [
-   "after",
+   "after: think: a ruler giving orders 口, who comes after",
    "side: picture of a person's face"
-  ]
+  ],
+  "hook": "after + side = behind"
  },
  {
   "id": "c0002",
@@ -1611,7 +1656,8 @@
   "hint": [
    "sky: the heavens 一 above a man 大",
    "air: rising vapour"
-  ]
+  ],
+  "hook": "sky + air = weather"
  },
  {
   "id": "c0015",
@@ -1638,7 +1684,8 @@
   "hint": [
    "star: 日 (sun) + 生 (sound shēng)",
    "a period of time: 月 (moon) + 其 (sound qí)"
-  ]
+  ],
+  "hook": "star + period = week"
  },
  {
   "id": "c0128",
@@ -1652,7 +1699,8 @@
   "hint": [
    "to sleep: 目 (eye) + 垂 (sound chuí)",
    "to sleep: 见 (see) + ⺍ (sound)"
-  ]
+  ],
+  "hook": "synonym pair: sleep + sleep"
  },
  {
   "id": "c0044",
@@ -1705,7 +1753,8 @@
   "hint": [
    "in front: 丷 + 一 + 刖",
    "side: picture of a person's face"
-  ]
+  ],
+  "hook": "front + side = ahead"
  },
  {
   "id": "c0005",
@@ -1719,7 +1768,8 @@
   "hint": [
    "first (half)",
    "noon: 丿 + 干 arid"
-  ]
+  ],
+  "hook": "upper + noon = morning"
  },
  {
   "id": "c0093",
@@ -1734,7 +1784,8 @@
    "to make: 扌 (hand) + 丁 (sound dīng)",
    "electricity: lightning 申 from 電 without its storm cloud 雨",
    "talk: a spoken 讠 tongue 舌"
-  ]
+  ],
+  "hook": "make + electric + speech = phone call"
  },
  {
   "id": "c0079",
@@ -1746,10 +1797,11 @@
   "reading": "duìbuqǐ",
   "ft": 1,
   "hint": [
-   "to face",
+   "to face: a pair 又 of hands 寸",
    "no",
    "(able to): 走 (walk) + 己 (sound jǐ)"
-  ]
+  ],
+  "hook": "face + not + able = cannot face you, sorry"
  },
  {
   "id": "c0147",
@@ -1815,7 +1867,8 @@
   "hint": [
    "commerce: 冏 (bright) + 章 (sound zhāng)",
    "shop: 广 (building) + 占 (sound zhàn)"
-  ]
+  ],
+  "hook": "trade + shop = store"
  },
  {
   "id": "c0110",
@@ -1829,7 +1882,8 @@
   "hint": [
    "Chinese people: the Han river 氵",
    "words: 讠 (words) + 吾 (sound wú)"
-  ]
+  ],
+  "hook": "Han + language = Chinese"
  },
  {
   "id": "c0034",
@@ -1841,9 +1895,10 @@
   "reading": "zàijiàn",
   "ft": 1,
   "hint": [
-   "again",
+   "again: picture of two fish caught on a line",
    "to see: a man 儿 with the eye emphasized"
-  ]
+  ],
+  "hook": "again + see = goodbye"
  },
  {
   "id": "c0109",
@@ -1857,7 +1912,8 @@
   "hint": [
    "water",
    "fruit: fruit 田 growing on a tree 木"
-  ]
+  ],
+  "hook": "water + fruit = juicy fruit"
  },
  {
   "id": "c0013",
@@ -1871,7 +1927,8 @@
   "hint": [
    "middle: a line 丨 through the middle of a box 口",
    "noon: 丿 + 干 arid"
-  ]
+  ],
+  "hook": "middle + noon = midday"
  },
  {
   "id": "c0057",
@@ -1898,9 +1955,10 @@
   "ft": 1,
   "hint": [
    "have not",
-   "relation",
+   "relation: simplified from 關, a gate 門",
    "connection: 糸 (thread) + 丿"
-  ]
+  ],
+  "hook": "have not + relation = it doesn't matter"
  },
  {
   "id": "c0114",
@@ -1912,10 +1970,11 @@
   "reading": "huǒchēzhàn",
   "ft": 2,
   "hint": [
-   "fire",
+   "fire: picture of flames",
    "vehicle: picture of a cart with two wheels, seen from above",
-   "station"
-  ]
+   "station: 立 (stand) + 占 (sound zhàn)"
+  ],
+  "hook": "fire + vehicle + station = train station"
  },
  {
   "id": "c0038",
@@ -1927,10 +1986,11 @@
   "reading": "chūzūchē",
   "ft": 2,
   "hint": [
-   "to go out",
-   "to hire",
+   "to go out: a sprout 屮 growing out of a container 凵",
+   "to hire: regularly paid 且 tribute in grain 禾",
    "vehicle: picture of a cart with two wheels, seen from above"
-  ]
+  ],
+  "hook": "go out + for hire + vehicle = taxi"
  },
  {
   "id": "c0008",
@@ -1944,7 +2004,8 @@
   "hint": [
    "to fall",
    "rain: picture of rain drops falling from a cloud"
-  ]
+  ],
+  "hook": "fall + rain = to rain"
  },
  {
   "id": "c0106",
@@ -1958,7 +2019,8 @@
   "hint": [
    "table: 卓 profound + 木 tree",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "table + noun suffix = table"
  },
  {
   "id": "c0107",
@@ -1972,7 +2034,8 @@
   "hint": [
    "chair: 木 (wood) + 奇 (sound qí)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "chair + noun suffix = chair"
  },
  {
   "id": "c0105",
@@ -1986,7 +2049,8 @@
   "hint": [
    "cup: 木 (tree) + 不 (sound bù)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "cup + noun suffix = cup"
  },
  {
   "id": "c0129",
@@ -1998,9 +2062,10 @@
   "reading": "mǐfàn",
   "ft": 2,
   "hint": [
-   "rice",
+   "rice: picture of grains of rice",
    "cooked rice: 饣 (food) + 反 (sound fǎn)"
-  ]
+  ],
+  "hook": "rice + meal = cooked rice"
  },
  {
   "id": "c0010",
@@ -2015,7 +2080,8 @@
    "no",
    "guest: a person 各 welcomed under one's roof 宀",
    "manner: rising vapour"
-  ]
+  ],
+  "hook": "not + guest + manners = no need to be formal"
  },
  {
   "id": "c0149",
@@ -2029,7 +2095,8 @@
   "hint": [
    "meal: 饣 (food) + 反 (sound fǎn)",
    "establishment: a public 官 building where food 饣 is served"
-  ]
+  ],
+  "hook": "meal + hall = restaurant"
  },
  {
   "id": "c0156",
@@ -2123,8 +2190,9 @@
   "ft": 0,
   "hint": [
    "may: 丁 (vigorous) + 口 (sound kǒu)",
-   "by means of"
-  ]
+   "by means of: think: a person 人 using a tool"
+  ],
+  "hook": "can + use = may"
  },
  {
   "id": "c0268",
@@ -2175,9 +2243,10 @@
   "reading": "wèntí",
   "ft": 0,
   "hint": [
-   "to ask",
-   "problem"
-  ]
+   "to ask: 口 (mouth) + 门 (sound mén)",
+   "problem: 页 (head) + 是 (sound shì)"
+  ],
+  "hook": "ask + topic = question"
  },
  {
   "id": "c0259",
@@ -2204,7 +2273,8 @@
   "hint": [
    "cause: 囗 enclosure + 大 big",
    "because of"
-  ]
+  ],
+  "hook": "cause + for = because"
  },
  {
   "id": "c0224",
@@ -2229,9 +2299,10 @@
   "reading": "yǐjīng",
   "ft": 0,
   "hint": [
-   "already",
+   "already: a variant of 巳 (snake), borrowed for \"already\"",
    "to go through: 纟 (thread) + 工 (sound gōng)"
-  ]
+  ],
+  "hook": "already + pass through = already"
  },
  {
   "id": "c0208",
@@ -2258,7 +2329,8 @@
   "hint": [
    "to open",
    "to begin: 女 (woman) + 台 (sound tái)"
-  ]
+  ],
+  "hook": "open + begin = start"
  },
  {
   "id": "c0231",
@@ -2285,7 +2357,8 @@
   "hint": [
    "public: to divide 八 what is private 厶",
    "to manage: a person speaking orders 口 and raising their arm"
-  ]
+  ],
+  "hook": "public + manage = company"
  },
  {
   "id": "c0197",
@@ -2312,7 +2385,8 @@
   "hint": [
    "may: 丁 (vigorous) + 口 (sound kǒu)",
    "can"
-  ]
+  ],
+  "hook": "may + can = possible"
  },
  {
   "id": "c0181",
@@ -2339,7 +2413,8 @@
   "hint": [
    "to know: 口 (mouth) + 矢 (sound shǐ)",
    "the way: 辶 (walk) + 首 (sound shǒu)"
-  ]
+  ],
+  "hook": "know + way = know"
  },
  {
   "id": "c0180",
@@ -2366,7 +2441,8 @@
   "hint": [
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)",
    "interval: the sun 日 shining through a doorway 门"
-  ]
+  ],
+  "hook": "time + interval = period of time"
  },
  {
   "id": "c0170",
@@ -2406,7 +2482,8 @@
   "hint": [
    "but: 亻 + 旦 (sound dàn)",
    "to be"
-  ]
+  ],
+  "hook": "but + is = however"
  },
  {
   "id": "c0179",
@@ -2446,8 +2523,9 @@
   "ft": 1,
   "hint": [
    "(that which): an axe 斤 swung at a door 户",
-   "because of"
-  ]
+   "because of: think: a person 人 using a tool"
+  ],
+  "hook": "that which + by means of = so"
  },
  {
   "id": "c0238",
@@ -2488,7 +2566,8 @@
   "hint": [
    "to feel: 见 (see) + ⺍ (sound)",
    "(verb suffix)"
-  ]
+  ],
+  "hook": "feel + get = feel that"
  },
  {
   "id": "c0294",
@@ -2515,7 +2594,8 @@
   "hint": [
    "to hope: 乂 to govern + 布 cotton",
    "to expect: a king 王 gazing at the moon 月"
-  ]
+  ],
+  "hook": "hope + gaze = hope"
  },
  {
   "id": "c0154",
@@ -2542,7 +2622,8 @@
   "hint": [
    "one",
    "(part of 一起 together): 走 (walk) + 己 (sound jǐ)"
-  ]
+  ],
+  "hook": "one + rise = together"
  },
  {
   "id": "c0271",
@@ -2595,7 +2676,8 @@
   "hint": [
    "child: 子 (child) + 亥 (sound hài)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "child + noun suffix = child"
  },
  {
   "id": "c0189",
@@ -2609,7 +2691,8 @@
   "hint": [
    "big",
    "family"
-  ]
+  ],
+  "hook": "big + family = everyone"
  },
  {
   "id": "c0278",
@@ -2623,7 +2706,8 @@
   "hint": [
    "to run: 辶 (walk) + 云 (sound yún)",
    "to move: 力 (strength) + 云"
-  ]
+  ],
+  "hook": "shift + move = exercise"
  },
  {
   "id": "c0291",
@@ -2637,7 +2721,8 @@
   "hint": [
    "not: two bird's wings opposed; two people back-to-back",
    "ordinary: 巾 (cloth) + 尚 (sound shàng)"
-  ]
+  ],
+  "hook": "not + ordinary = extraordinary, very"
  },
  {
   "id": "c0221",
@@ -2690,7 +2775,8 @@
   "hint": [
    "(part of 准备 prepare): 冫 (water in a spirit level) + 隹 (sound zhuī)",
    "to prepare: to go 夂 to the farm 田 to prepare for a harvest"
-  ]
+  ],
+  "hook": "bound 准 + prepare = get ready"
  },
  {
   "id": "c0248",
@@ -2728,9 +2814,10 @@
   "reading": "shìqing",
   "ft": 1,
   "hint": [
-   "affair",
+   "affair: think: a hand 彐 gripping a staff 亅, busy at work",
    "circumstance: 忄 (heart) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "affair + circumstance = matter"
  },
  {
   "id": "c0237",
@@ -2757,7 +2844,8 @@
   "hint": [
    "just: a foot 止 stopping in the right place 一",
    "(in progress)"
-  ]
+  ],
+  "hook": "just + at = in the middle of"
  },
  {
   "id": "c0234",
@@ -2797,7 +2885,8 @@
   "hint": [
    "woman: picture of a woman turned to the side",
    "person"
-  ]
+  ],
+  "hook": "female + person = woman"
  },
  {
   "id": "c0199",
@@ -2811,7 +2900,8 @@
   "hint": [
    "small",
    "hour: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "small + time = hour"
  },
  {
   "id": "c0274",
@@ -2838,7 +2928,8 @@
   "hint": [
    "to tell: to speak 口 with the force of an ox 牛",
    "to inform: words 讠 of blame 斥"
-  ]
+  ],
+  "hook": "tell + inform = tell"
  },
  {
   "id": "c0218",
@@ -2852,7 +2943,8 @@
   "hint": [
    "hand: picture of a hand with the fingers splayed",
    "machine: a table 几 made of wood 木; 几 gives the sound"
-  ]
+  ],
+  "hook": "hand + machine = mobile phone"
  },
  {
   "id": "c0204",
@@ -2866,7 +2958,8 @@
   "hint": [
    "to help: a nation's 邦 flag 巾",
    "to help: 力 (strength) + 且 (sound qiě)"
-  ]
+  ],
+  "hook": "help + help = help"
  },
  {
   "id": "c0256",
@@ -2880,7 +2973,8 @@
   "hint": [
    "(ordinal prefix): bamboo strips ⺮ arrayed in sequence",
    "one"
-  ]
+  ],
+  "hook": "ordinal prefix + one = first"
  },
  {
   "id": "c0245",
@@ -2894,7 +2988,8 @@
   "hint": [
    "man: someone who can work 力 the farm 田",
    "person"
-  ]
+  ],
+  "hook": "male + person = man"
  },
  {
   "id": "c0171",
@@ -2935,7 +3030,8 @@
   "hint": [
    "to introduce: a border dividing people 人",
    "to connect: 纟 (thread) + 召 (sound zhào)"
-  ]
+  ],
+  "hook": "go-between + connect = introduce"
  },
  {
   "id": "c0213",
@@ -2949,7 +3045,8 @@
   "hint": [
    "meaning: 心 (heart) + 音 (sound yīn)",
    "to think: weighing something with your mind and heart 心"
-  ]
+  ],
+  "hook": "meaning + think = meaning"
  },
  {
   "id": "c0226",
@@ -2963,7 +3060,8 @@
   "hint": [
    "journey: a man 方 traveling with a pack 氏 on his back",
    "to tour: to swim freely 斿 through the seas 氵"
-  ]
+  ],
+  "hook": "journey + tour = travel"
  },
  {
   "id": "c0286",
@@ -3067,8 +3165,9 @@
   "ft": 1,
   "hint": [
    "plane: a table 几 made of wood 木; 几 gives the sound",
-   "field"
-  ]
+   "field: 土 (earth) + 昜 (sound yáng)"
+  ],
+  "hook": "airplane + field = airport"
  },
  {
   "id": "c0235",
@@ -3082,7 +3181,8 @@
   "hint": [
    "happy: 又 and + 欠 to lack",
    "to welcome: 辶 (walk) + 卬 (sound áng)"
-  ]
+  ],
+  "hook": "joyful + greet = welcome"
  },
  {
   "id": "c0297",
@@ -3109,7 +3209,8 @@
   "hint": [
    "body: picture of a pregnant woman",
    "body: 亻 man + 本 root"
-  ]
+  ],
+  "hook": "body + body = body"
  },
  {
   "id": "c0160",
@@ -3136,7 +3237,8 @@
   "hint": [
    "evening: avoiding 免 the sun 日",
    "(suffix)"
-  ]
+  ],
+  "hook": "evening + suffix = evening"
  },
  {
   "id": "c0284",
@@ -3176,7 +3278,8 @@
   "hint": [
    "pleased",
    "cheerful: a musical instrument with wood, strings, and a pick"
-  ]
+  ],
+  "hook": "pleased + joyful = happy"
  },
  {
   "id": "c0193",
@@ -3190,7 +3293,8 @@
   "hint": [
    "wife: a woman 女 holding a broom 十 in her hand 彐",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "wife + noun suffix = wife"
  },
  {
   "id": "c0175",
@@ -3204,7 +3308,8 @@
   "hint": [
    "past",
    "year"
-  ]
+  ],
+  "hook": "past + year = last year"
  },
  {
   "id": "c0215",
@@ -3231,7 +3336,8 @@
   "hint": [
    "to return",
    "answer: ⺮ bamboo + 合 to combine"
-  ]
+  ],
+  "hook": "return + answer = reply"
  },
  {
   "id": "c0253",
@@ -3258,7 +3364,8 @@
   "hint": [
    "eye: 目 (eye) + 艮 (sound gěn)",
    "eyeball: 目 (eye) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "eye + eyeball = eye"
  },
  {
   "id": "c0258",
@@ -3285,7 +3392,8 @@
   "hint": [
    "elder brother: one person talking 可 over another 可",
    "elder brother: one person talking 可 over another 可"
-  ]
+  ],
+  "hook": "older brother, doubled like baby talk"
  },
  {
   "id": "c0227",
@@ -3299,7 +3407,8 @@
   "hint": [
    "morning: the first rays 十 of the sun 日",
    "(suffix)"
-  ]
+  ],
+  "hook": "early + suffix = morning"
  },
  {
   "id": "c0261",
@@ -3312,8 +3421,9 @@
   "ft": 1,
   "hint": [
    "to test: 耂 (old) + 丂 (sound kǎo)",
-   "to test"
-  ]
+   "to test: 讠 (speech) + 式 (sound shì)"
+  ],
+  "hook": "test + try = exam"
  },
  {
   "id": "c0246",
@@ -3353,7 +3463,8 @@
   "hint": [
    "elder sister: 女 (woman) + 且 (sound qiě)",
    "elder sister: 女 (woman) + 且 (sound qiě)"
-  ]
+  ],
+  "hook": "older sister, doubled like baby talk"
  },
  {
   "id": "c0293",
@@ -3367,7 +3478,8 @@
   "hint": [
    "face: 页 (head) + 彦 (sound yàn)",
    "color: what a person ⺈ desires 巴"
-  ]
+  ],
+  "hook": "face + colour = colour"
  },
  {
   "id": "c0152",
@@ -3381,7 +3493,8 @@
   "hint": [
    "gentleman: 一 one + 又 and",
    "man: a man 大 wearing a coming-of-age hairpin 一"
-  ]
+  ],
+  "hook": "think: a full-grown 丈 man = husband"
  },
  {
   "id": "c0222",
@@ -3395,7 +3508,8 @@
   "hint": [
    "report: a hand 扌 cuffing 又 a criminal 卩, representing sentencing",
    "paper: 纟 (silk) + 氏 (sound shì)"
-  ]
+  ],
+  "hook": "report + paper = newspaper"
  },
  {
   "id": "c0295",
@@ -3422,7 +3536,8 @@
   "hint": [
    "younger sister: 女 (woman) + 未 (sound wèi)",
    "younger sister: 女 (woman) + 未 (sound wèi)"
-  ]
+  ],
+  "hook": "younger sister, doubled like baby talk"
  },
  {
   "id": "c0263",
@@ -3462,7 +3577,8 @@
   "hint": [
    "to rest: a person 亻 leaning against a tree 木",
    "pause: to breathe (life, 心) through one's nose 自"
-  ]
+  ],
+  "hook": "rest + breathe = rest"
  },
  {
   "id": "c0216",
@@ -3476,7 +3592,8 @@
   "hint": [
    "house: 户 (door) + 方 (sound fāng)",
    "space: the sun 日 shining through a doorway 门"
-  ]
+  ],
+  "hook": "house + space = room"
  },
  {
   "id": "c0269",
@@ -3529,7 +3646,8 @@
   "hint": [
    "young brother: 丷 + 弓 bow",
    "young brother: 丷 + 弓 bow"
-  ]
+  ],
+  "hook": "younger brother, doubled like baby talk"
  },
  {
   "id": "c0225",
@@ -3543,7 +3661,8 @@
   "hint": [
    "side: 立 (stand) + 方 (sound fāng)",
    "side: 辶 (walk) + 臱 (sound mián)"
-  ]
+  ],
+  "hook": "side + edge = beside"
  },
  {
   "id": "c0183",
@@ -3557,7 +3676,8 @@
   "hint": [
    "coffee: 口 (mouth) + 加 (sound jiā)",
    "coffee: 口 (mouth) + 非 (sound fēi)"
-  ]
+  ],
+  "hook": "think: kāfēi sounds like \"coffee\"; 口 marks a sound"
  },
  {
   "id": "c0243",
@@ -3571,7 +3691,8 @@
   "hint": [
    "birth: a shoot growing out of the soil 土",
    "day"
-  ]
+  ],
+  "hook": "birth + day = birthday"
  },
  {
   "id": "c0270",
@@ -3623,8 +3744,9 @@
   "ft": 1,
   "hint": [
    "to go to",
-   "work shift"
-  ]
+   "work shift: cutting 刂 a piece of jade 王 in two, symbolizing two classes"
+  ],
+  "hook": "go to + shift = go to work"
  },
  {
   "id": "c0163",
@@ -3638,7 +3760,8 @@
   "hint": [
    "cheap (pián): 亻 man + 更 more",
    "(part of 便宜 cheap): a memorial service 且 held in a house 宀"
-  ]
+  ],
+  "hook": "bound pair; neither character means \"cheap\" alone"
  },
  {
   "id": "c0167",
@@ -3652,7 +3775,8 @@
   "hint": [
    "metric: to divide 八 what is private 厶",
    "a catty: 厂 cliff + 下 below"
-  ]
+  ],
+  "hook": "metric + catty = kilogram"
  },
  {
   "id": "c0173",
@@ -3693,7 +3817,8 @@
   "hint": [
    "good",
    "to eat"
-  ]
+  ],
+  "hook": "good + eat = tasty"
  },
  {
   "id": "c0240",
@@ -3707,7 +3832,8 @@
   "hint": [
    "to swim: to swim freely 斿 through the seas 氵",
    "to swim: 氵 (water) + 永 (sound yǒng)"
-  ]
+  ],
+  "hook": "swim + swim = swim"
  },
  {
   "id": "c0247",
@@ -3759,9 +3885,10 @@
   "ft": 2,
   "hint": [
    "self: picture of a nose",
-   "to go",
+   "to go: to take small steps 亍 with one's feet 彳",
    "vehicle: picture of a cart with two wheels, seen from above"
-  ]
+  ],
+  "hook": "self + go + vehicle = bicycle"
  },
  {
   "id": "c0275",
@@ -3775,7 +3902,8 @@
   "hint": [
    "to hop: 足 (foot) + 兆 (sound zhào)",
    "to dance: a hand 舛 holding a fan"
-  ]
+  ],
+  "hook": "jump + dance = dance"
  },
  {
   "id": "c0290",
@@ -3802,7 +3930,8 @@
   "hint": [
    "to sing: 口 (mouth) + 昌 (sound chāng)",
    "song: 欠 (breath) + 哥 (sound gē)"
-  ]
+  ],
+  "hook": "sing + song = sing"
  },
  {
   "id": "c0223",
@@ -3814,9 +3943,10 @@
   "reading": "jiàoshì",
   "ft": 2,
   "hint": [
-   "to teach",
+   "to teach: 攵 (script) + 孝 (sound xiào)",
    "room: 宀 (roof) + 至 (sound zhì)"
-  ]
+  ],
+  "hook": "teach + room = classroom"
  },
  {
   "id": "c0241",
@@ -3830,7 +3960,8 @@
   "hint": [
    "ox: picture of an ox's horned head",
    "milk: 女 (woman) + 乃 (sound nǎi)"
-  ]
+  ],
+  "hook": "ox + milk = cow's milk"
  },
  {
   "id": "c0296",
@@ -3844,7 +3975,8 @@
   "hint": [
    "chicken: another 又 kind of bird 鸟",
    "egg: 虫 (insect) + 延 (sound yán)"
-  ]
+  ],
+  "hook": "chicken + egg = egg"
  },
  {
   "id": "c0272",
@@ -3858,7 +3990,8 @@
   "hint": [
    "to rise: 走 (walk) + 己 (sound jǐ)",
    "bed: a house 广 made out of wood 木"
-  ]
+  ],
+  "hook": "rise + bed = get up"
  },
  {
   "id": "c0244",
@@ -3872,7 +4005,8 @@
   "hint": [
    "to get: a shoot growing out of the soil 土",
    "sickness: 疒 (sickness) + 丙 (sound bǐng)"
-  ]
+  ],
+  "hook": "get + sickness = fall ill"
  },
  {
   "id": "c0289",
@@ -3899,7 +4033,8 @@
   "hint": [
    "left: picture of a left hand",
    "side: 辶 (walk) + 臱 (sound mián)"
-  ]
+  ],
+  "hook": "left + side = left"
  },
  {
   "id": "c0178",
@@ -3911,9 +4046,10 @@
   "reading": "yòubian",
   "ft": 2,
   "hint": [
-   "right",
+   "right: think: a hand 𠂇 bringing food to the mouth 口",
    "side: 辶 (walk) + 臱 (sound mián)"
-  ]
+  ],
+  "hook": "right + side = right"
  },
  {
   "id": "c0219",
@@ -3927,7 +4063,8 @@
   "hint": [
    "hand: picture of a hand with the fingers splayed",
    "watch: fur 毛 clothing 衣; a shawl or wrap"
-  ]
+  ],
+  "hook": "hand + watch = wristwatch"
  },
  {
   "id": "c0232",
@@ -3942,7 +4079,8 @@
    "to serve: a person 卩 putting on 又 a coat 月",
    "duty: 夂 to go + 力 strength",
    "staff: 贝 (money) + 口"
-  ]
+  ],
+  "hook": "serve + duty + staff = waiter"
  },
  {
   "id": "c0265",
@@ -3954,9 +4092,10 @@
   "reading": "xīguā",
   "ft": 2,
   "hint": [
-   "west",
+   "west: picture of a bird settling into its nest, representing sunset",
    "melon: picture of vines growing with a melon at their base"
-  ]
+  ],
+  "hook": "west + melon = watermelon, from the west"
  },
  {
   "id": "c0230",
@@ -3983,7 +4122,8 @@
   "hint": [
    "to run: 足 (foot) + 包 (sound bāo)",
    "pace: putting one foot 止 in front of the other"
-  ]
+  ],
+  "hook": "run + step = jog"
  },
  {
   "id": "c0260",
@@ -3997,7 +4137,8 @@
   "hint": [
    "sheep: picture of a sheep's head with horns",
    "meat: picture of meat on the ribs of an animal"
-  ]
+  ],
+  "hook": "sheep + meat = mutton"
  },
  {
   "id": "c0165",
@@ -4013,7 +4154,8 @@
    "shared: two hands 八 holding one object 廾",
    "steam: liquid 氵 gas 气",
    "vehicle: picture of a cart with two wheels, seen from above"
-  ]
+  ],
+  "hook": "public + shared + steam + vehicle = bus"
  },
  {
   "id": "c0220",
@@ -4028,7 +4170,8 @@
    "to play: 扌 (hand) + 丁 (sound dīng)",
    "basket: ⺮ (bamboo) + 监 (sound jiān)",
    "ball: 王 (jade) + 求 (sound qiú)"
-  ]
+  ],
+  "hook": "hit + basket + ball = play basketball"
  },
  {
   "id": "c0549",
