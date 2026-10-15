@@ -544,7 +544,7 @@
   "reading": "nà",
   "ft": 0,
   "hint": [
-   "mnemonic, no source etymology: 阝 (town) is over there: that"
+   "think: 阝 (town) is over there: that"
   ]
  },
  {
@@ -1398,9 +1398,9 @@
   "ft": 1,
   "hint": [
    "medicine: 矢 (arrow) + 匸 (sound xì)",
-   "scholar: a shoot growing out of the soil 土"
+   "person: a shoot growing out of the soil 土"
   ],
-  "hook": "medicine + scholar = doctor"
+  "hook": "medicine + person = doctor"
  },
  {
   "id": "c0139",
@@ -1482,10 +1482,10 @@
   "reading": "píngguǒ",
   "ft": 1,
   "hint": [
-   "apple: 艹 (plant) + 平 (sound píng)",
+   "(part of 苹果 apple): 艹 (plant) + 平 (sound píng)",
    "fruit: fruit 田 growing on a tree 木"
   ],
-  "hook": "apple + fruit = apple"
+  "hook": "bound 苹 + fruit = apple"
  },
  {
   "id": "c0150",
@@ -2108,7 +2108,7 @@
   "reading": "yě",
   "ft": 0,
   "hint": [
-   "ends in a hook 乚; no source etymology: also"
+   "think: a snake 乚 raising its head: also"
   ]
  },
  {
@@ -2122,7 +2122,7 @@
   "say": "未",
   "ft": 0,
   "hint": [
-   "力 (strength) with two dots 丶, no source etymology: because of"
+   "think: 力 (strength) with two dots 丶 added: because of"
   ]
  },
  {
@@ -2426,7 +2426,7 @@
   "reading": "xiàng",
   "ft": 0,
   "hint": [
-   "mnemonic, no source etymology: an opening 口 in a frame, facing out: towards"
+   "think: an opening 口 in a frame, facing out: towards"
   ]
  },
  {
@@ -4199,7 +4199,8 @@
   "hint": [
    "country: treasure 玉 within a country's borders 囗",
    "home"
-  ]
+  ],
+  "hook": "country + home = nation"
  },
  {
   "id": "c0532",
@@ -4213,7 +4214,8 @@
   "hint": [
    "self: picture of a nose",
    "self: picture of a loom woven with thread"
-  ]
+  ],
+  "hook": "synonym pair: self + self = oneself"
  },
  {
   "id": "c0428",
@@ -4264,7 +4266,7 @@
   "reading": "yòng",
   "ft": 0,
   "hint": [
-   "a frame 冂 around crossing strokes, no source etymology: to use"
+   "think: a bucket 冂 with crossbars: to use"
   ]
  },
  {
@@ -4292,7 +4294,8 @@
   "hint": [
    "if: a wife 女 following her husband's words 口",
    "really: fruit 田 growing on a tree 木"
-  ]
+  ],
+  "hook": "as if + fruit = if"
  },
  {
   "id": "c0307",
@@ -4306,7 +4309,8 @@
   "hint": [
    "world: picture of three leaves on a branch",
    "realm: 田 (farm) + 介 (sound jiè)"
-  ]
+  ],
+  "hook": "generation + realm = world"
  },
  {
   "id": "c0372",
@@ -4334,7 +4338,8 @@
   "hint": [
    "to recognize: 讠 (speech) + 人 (sound rén)",
    "as"
-  ]
+  ],
+  "hook": "recognise + as = think that"
  },
  {
   "id": "c0581",
@@ -4348,7 +4353,8 @@
   "hint": [
    "to need: rain 雨 needed for crops to grow",
    "to need"
-  ]
+  ],
+  "hook": "need + essential = need"
  },
  {
   "id": "c0379",
@@ -4388,7 +4394,8 @@
   "hint": [
    "history: 厤 (calendar) + 力 (sound lì)",
    "history: a hand 乂 using a pen to record a history"
-  ]
+  ],
+  "hook": "pass through + record = history"
  },
  {
   "id": "c0415",
@@ -4400,9 +4407,10 @@
   "reading": "yīnggāi",
   "ft": 1,
   "hint": [
-   "should",
+   "should: simplified from 應: 心 (heart) + 雁 (sound yàn)",
    "should: 讠 (speech) + 亥 (sound hài)"
-  ]
+  ],
+  "hook": "should + should = ought to"
  },
  {
   "id": "c0340",
@@ -4416,7 +4424,8 @@
   "hint": [
    "that: 甘 + 一 + 八",
    "other"
-  ]
+  ],
+  "hook": "that + other = other"
  },
  {
   "id": "c0312",
@@ -4430,7 +4439,8 @@
   "hint": [
    "main: picture of a lamp with a flame",
    "essential"
-  ]
+  ],
+  "hook": "main + essential = main"
  },
  {
   "id": "c0385",
@@ -4443,8 +4453,9 @@
   "ft": 1,
   "hint": [
    "place",
-   "region"
-  ]
+   "region: think: a flag 亠 over a square plot"
+  ],
+  "hook": "ground + direction = place"
  },
  {
   "id": "c0310",
@@ -4458,7 +4469,8 @@
   "hint": [
    "for",
    "(suffix)"
-  ]
+  ],
+  "hook": "for + suffix = for the sake of"
  },
  {
   "id": "c0418",
@@ -4472,7 +4484,8 @@
   "hint": [
    "surely: 心 heart + 丿",
    "must: hair 彡 growing on the face 页"
-  ]
+  ],
+  "hook": "surely + must = have to"
  },
  {
   "id": "c0564",
@@ -4497,9 +4510,10 @@
   "reading": "fāxiàn",
   "ft": 1,
   "hint": [
-   "to show",
+   "to show: simplified from 發: feet 癶 and a bow 弓, shooting",
    "to appear: to see 见 jade 王"
-  ]
+  ],
+  "hook": "emit + appear = discover"
  },
  {
   "id": "c0311",
@@ -4514,7 +4528,8 @@
    "for",
    "what: a file of ten 十 people 亻",
    "(suffix): simplified from 麼: 麻 (sound má) + 幺 (tiny)"
-  ]
+  ],
+  "hook": "for + what = why?"
  },
  {
   "id": "c0344",
@@ -4528,7 +4543,8 @@
   "hint": [
    "to decide: 冫 ice + 夬 decisive",
    "to settle: a person 疋 settling under a roof 宀"
-  ]
+  ],
+  "hook": "decide + settle = decide"
  },
  {
   "id": "c0346",
@@ -4542,7 +4558,8 @@
   "hint": [
    "to go out",
    "to appear: to see 见 jade 王"
-  ]
+  ],
+  "hook": "go out + appear = appear"
  },
  {
   "id": "c0567",
@@ -4556,7 +4573,8 @@
   "hint": [
    "still",
    "to be"
-  ]
+  ],
+  "hook": "still + is = or, still"
  },
  {
   "id": "c0301",
@@ -4570,7 +4588,8 @@
   "hint": [
    "one",
    "kind: 木 (tree) + 羊 (sound yáng)"
-  ]
+  ],
+  "hook": "one + kind = the same"
  },
  {
   "id": "c0572",
@@ -4584,7 +4603,8 @@
   "hint": [
    "weighty: a burden carried for a thousand 千 miles 里",
    "essential"
-  ]
+  ],
+  "hook": "weighty + essential = important"
  },
  {
   "id": "c0417",
@@ -4597,8 +4617,9 @@
   "ft": 1,
   "hint": [
    "shadow: 彡 (sunlight) + 景 (sound jǐng)",
-   "echo"
-  ]
+   "echo: 口 (mouth) + 向 (sound xiàng)"
+  ],
+  "hook": "shadow + echo = influence"
  },
  {
   "id": "c0442",
@@ -4612,7 +4633,8 @@
   "hint": [
    "culture: picture of a tattooed chest, representing writing",
    "to change: 亻 man + 匕 spoon"
-  ]
+  ],
+  "hook": "writing + change = culture"
  },
  {
   "id": "c0553",
@@ -4626,7 +4648,8 @@
   "hint": [
    "to ask for",
    "to seek: 一 one + 氺"
-  ]
+  ],
+  "hook": "ask for + seek = demand"
  },
  {
   "id": "c0300",
@@ -4640,7 +4663,8 @@
   "hint": [
    "one",
    "fixed: a person 疋 settling under a roof 宀"
-  ]
+  ],
+  "hook": "one + fixed = certainly"
  },
  {
   "id": "c0305",
@@ -4652,7 +4676,7 @@
   "reading": "wàn",
   "ft": 1,
   "hint": [
-   "一 over a bent stroke, no source etymology: ten thousand"
+   "simplified from 萬, a scorpion: ten thousand"
   ]
  },
  {
@@ -4691,9 +4715,10 @@
   "reading": "guānxi",
   "ft": 1,
   "hint": [
-   "relation",
+   "relation: simplified from 關, a gate 門",
    "connection: 糸 (thread) + 丿"
-  ]
+  ],
+  "hook": "close + tie = relationship"
  },
  {
   "id": "c0460",
@@ -4707,7 +4732,8 @@
   "hint": [
    "root: 木 (tree) + 艮 (sound gěn)",
    "basis: 扌 (hand) + 居 (sound jū)"
-  ]
+  ],
+  "hook": "root + basis = according to"
  },
  {
   "id": "c0409",
@@ -4734,7 +4760,8 @@
   "hint": [
    "to wander: to swim freely 斿 through the seas 氵",
    "play: a hand 又 doing tricks with a spear 戈"
-  ]
+  ],
+  "hook": "wander + play = game"
  },
  {
   "id": "c0542",
@@ -4748,7 +4775,8 @@
   "hint": [
    "although: 口 mouth + 虫 insect",
    "so: 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "although + so = though"
  },
  {
   "id": "c0525",
@@ -4760,9 +4788,10 @@
   "reading": "érqiě",
   "ft": 1,
   "hint": [
-   "and",
+   "and: think: a beard hanging down",
    "moreover: picture of a stone altar"
-  ]
+  ],
+  "hook": "and + moreover = moreover"
  },
  {
   "id": "c0302",
@@ -4776,7 +4805,8 @@
   "hint": [
    "one",
    "straight: to look someone in the eye 目"
-  ]
+  ],
+  "hook": "one + straight = straight on, always"
  },
  {
   "id": "c0388",
@@ -4790,7 +4820,8 @@
   "hint": [
    "city wall: 土 (earth) + 成 (sound chéng)",
    "market: 亠 lid + 巾 cloth"
-  ]
+  ],
+  "hook": "city wall + market = city"
  },
  {
   "id": "c0485",
@@ -4804,7 +4835,8 @@
   "hint": [
    "special: 牛 (ox) + 寺 (sound sì)",
    "distinct"
-  ]
+  ],
+  "hook": "special + distinct = especially"
  },
  {
   "id": "c0511",
@@ -4831,7 +4863,8 @@
   "hint": [
    "to show: fur 毛 clothing 衣; a shawl or wrap",
    "to show: picture of an altar"
-  ]
+  ],
+  "hook": "show + show = express"
  },
  {
   "id": "c0336",
@@ -4843,9 +4876,10 @@
   "reading": "guānyú",
   "ft": 1,
   "hint": [
-   "to concern",
+   "to concern: simplified from 關, a gate 門",
    "on: 二 two + 亅"
-  ]
+  ],
+  "hook": "concern + about = about"
  },
  {
   "id": "c0347",
@@ -4873,7 +4907,8 @@
   "hint": [
    "new",
    "news: 耳 (ear) + 门 (sound mén)"
-  ]
+  ],
+  "hook": "new + hear = news"
  },
  {
   "id": "c0363",
@@ -4887,7 +4922,8 @@
   "hint": [
    "to take part in: 厶 + 大 + 彡 (sound shān)",
    "to add to: supporting a cause with the strength 力 of one's words 口"
-  ]
+  ],
+  "hook": "take part + add = join in"
  },
  {
   "id": "c0566",
@@ -4899,9 +4935,10 @@
   "reading": "guòqù",
   "ft": 1,
   "hint": [
-   "to pass",
+   "to pass: 辶 (walk) + 咼 (sound guō)",
    "to go away"
-  ]
+  ],
+  "hook": "pass + go = the past"
  },
  {
   "id": "c0321",
@@ -4915,7 +4952,8 @@
   "hint": [
    "meeting",
    "to discuss: 讠 (speech) + 义 (sound yì)"
-  ]
+  ],
+  "hook": "meet + discuss = meeting"
  },
  {
   "id": "c0477",
@@ -4928,8 +4966,9 @@
   "ft": 1,
   "hint": [
    "so: 灬 (fire) + 肰 (sound rán)",
-   "after"
-  ]
+   "after: think: a ruler giving orders 口, who comes after"
+  ],
+  "hook": "so + after = then"
  },
  {
   "id": "c0569",
@@ -4942,8 +4981,9 @@
   "ft": 1,
   "hint": [
    "to select: 辶 (walk) + 先 (sound xiān)",
-   "to select"
-  ]
+   "to select: simplified from 擇: 扌 (hand) + 睪 (sound yì)"
+  ],
+  "hook": "select + select = choose"
  },
  {
   "id": "c0303",
@@ -4957,7 +4997,8 @@
   "hint": [
    "one",
    "sort: using a tool 殳 to sort items on a tray 舟"
-  ]
+  ],
+  "hook": "one + sort = ordinary"
  },
  {
   "id": "c0401",
@@ -4971,7 +5012,8 @@
   "hint": [
    "to finish",
    "to accomplish: 丁 male adult + 戈 spear"
-  ]
+  ],
+  "hook": "finish + accomplish = complete"
  },
  {
   "id": "c0486",
@@ -4985,7 +5027,8 @@
   "hint": [
    "to surround: 王 (jade) + 不 (sound bù)",
    "area: 土 (earth) + 竟 (sound jìng)"
-  ]
+  ],
+  "hook": "surround + area = environment"
  },
  {
   "id": "c0416",
@@ -4997,9 +5040,10 @@
   "reading": "dāngrán",
   "ft": 1,
   "hint": [
-   "appropriate",
+   "appropriate: simplified from 當: 尚 (sound shàng) + 田 (field)",
    "so: 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "appropriate + so = of course"
  },
  {
   "id": "c0424",
@@ -5013,7 +5057,8 @@
   "hint": [
    "or: to defend yourself 口 with a spear 戈; \"or else\"",
    "(particle): 耂 old + 日 sun"
-  ]
+  ],
+  "hook": "or + particle = or"
  },
  {
   "id": "c0465",
@@ -5027,7 +5072,8 @@
   "hint": [
    "to compare",
    "to compare: 车 (cart) + 交 (sound jiāo)"
-  ]
+  ],
+  "hook": "compare + compare = rather"
  },
  {
   "id": "c0478",
@@ -5042,7 +5088,8 @@
   "hint": [
    "to photograph: 灬 (fire) + 昭 (sound zhāo)",
    "flat piece: picture of half of a tree trunk"
-  ]
+  ],
+  "hook": "photograph + flat piece = photo"
  },
  {
   "id": "c0508",
@@ -5068,9 +5115,10 @@
   "reading": "yǐhòu",
   "ft": 1,
   "hint": [
-   "(limit marker)",
-   "after"
-  ]
+   "(limit marker): think: a person 人 using a tool",
+   "after: think: a ruler giving orders 口, who comes after"
+  ],
+  "hook": "from + after = afterwards"
  },
  {
   "id": "c0323",
@@ -5096,8 +5144,9 @@
   "ft": 1,
   "hint": [
    "past: 攵 (tap) + 古 (sound gǔ)",
-   "affair"
-  ]
+   "affair: think: a hand 彐 gripping a staff 亅, busy at work"
+  ],
+  "hook": "past + affair = story"
  },
  {
   "id": "c0524",
@@ -5123,8 +5172,9 @@
   "ft": 1,
   "hint": [
    "to raise: 扌 (hand) + 舉 (sound jǔ)",
-   "to carry out"
-  ]
+   "to carry out: to take small steps 亍 with one's feet 彳"
+  ],
+  "hook": "raise + carry out = hold"
  },
  {
   "id": "c0316",
@@ -5138,7 +5188,8 @@
   "hint": [
    "clear (liǎo)",
    "to understand: to cut 刀 the horns 角 off of an ox 牛"
-  ]
+  ],
+  "hook": "clear + understand = understand"
  },
  {
   "id": "c0556",
@@ -5152,7 +5203,8 @@
   "hint": [
    "to untie: to cut 刀 the horns 角 off of an ox 牛",
    "to decide: 冫 ice + 夬 decisive"
-  ]
+  ],
+  "hook": "untie + decide = solve"
  },
  {
   "id": "c0589",
@@ -5179,7 +5231,8 @@
   "hint": [
    "its: 甘 + 一 + 八",
    "reality: 宀 roof + 头 head"
-  ]
+  ],
+  "hook": "its + reality = in fact"
  },
  {
   "id": "c0454",
@@ -5193,7 +5246,8 @@
   "hint": [
    "opportunity: a table 几 made of wood 木; 几 gives the sound",
    "moment"
-  ]
+  ],
+  "hook": "opportunity + moment = chance"
  },
  {
   "id": "c0431",
@@ -5232,8 +5286,9 @@
   "ft": 1,
   "hint": [
    "(toward sb): to stare 目 at a tree 木, meaning to observe",
-   "to believe"
-  ]
+   "to believe: 亻 man + 言 words"
+  ],
+  "hook": "toward each other + believe = trust"
  },
  {
   "id": "c0522",
@@ -5247,7 +5302,8 @@
   "hint": [
    "to tie up: 纟 (thread) + 吉 (sound jí)",
    "to bind: lumber 木 bound by rope 口"
-  ]
+  ],
+  "hook": "tie up + bind = finish"
  },
  {
   "id": "c0356",
@@ -5261,7 +5317,8 @@
   "hint": [
    "to exert: 力 (strength) + 奴 (sound nú)",
    "strength: a plow's head representing strength"
-  ]
+  ],
+  "hook": "exert + strength = try hard"
  },
  {
   "id": "c0520",
@@ -5274,8 +5331,9 @@
   "ft": 1,
   "hint": [
    "to go through: 纟 (thread) + 工 (sound gōng)",
-   "to pass"
-  ]
+   "to pass: 辶 (walk) + 咼 (sound guō)"
+  ],
+  "hook": "go through + pass = pass through"
  },
  {
   "id": "c0464",
@@ -5289,7 +5347,8 @@
   "hint": [
    "to compare",
    "to compete: 贝 (money) + 宀 (sound gài)"
-  ]
+  ],
+  "hook": "compare + compete = match"
  },
  {
   "id": "c0354",
@@ -5303,7 +5362,8 @@
   "hint": [
    "to handle: 力 (strength) + 八 (sound bā)",
    "method: the course 去 followed by a stream 氵"
-  ]
+  ],
+  "hook": "handle + method = way"
  },
  {
   "id": "c0560",
@@ -5343,7 +5403,8 @@
   "hint": [
    "to concentrate: 氵 (water) + 主 (sound zhǔ)",
    "mind: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "concentrate + mind = pay attention"
  },
  {
   "id": "c0506",
@@ -5357,7 +5418,8 @@
   "hint": [
    "to leave",
    "(away)"
-  ]
+  ],
+  "hook": "leave + away = leave"
  },
  {
   "id": "c0578",
@@ -5371,7 +5433,8 @@
   "hint": [
    "to eliminate: the waste 余 produced by a city 阝",
    "(suffix)"
-  ]
+  ],
+  "hook": "eliminate + suffix = except"
  },
  {
   "id": "c0574",
@@ -5384,8 +5447,9 @@
   "ft": 1,
   "hint": [
    "silver: 钅 (money) + 艮 (sound gěn)",
-   "firm (háng)"
-  ]
+   "firm (háng): to take small steps 亍 with one's feet 彳"
+  ],
+  "hook": "silver + firm = bank"
  },
  {
   "id": "c0585",
@@ -5399,7 +5463,8 @@
   "hint": [
    "sound: a tongue 立 forming a sound in the mouth 日",
    "music: a musical instrument with wood, strings, and a pick"
-  ]
+  ],
+  "hook": "sound + joy = music"
  },
  {
   "id": "c0369",
@@ -5413,7 +5478,8 @@
   "hint": [
    "to change: 亦 also + 又 and",
    "to change: 亻 man + 匕 spoon"
-  ]
+  ],
+  "hook": "change + change = change"
  },
  {
   "id": "c0514",
@@ -5440,7 +5506,8 @@
   "hint": [
    "other",
    "person"
-  ]
+  ],
+  "hook": "other + person = others"
  },
  {
   "id": "c0319",
@@ -5452,9 +5519,10 @@
   "reading": "yǐqián",
   "ft": 1,
   "hint": [
-   "(limit marker)",
+   "(limit marker): think: a person 人 using a tool",
    "before: 丷 + 一 + 刖"
-  ]
+  ],
+  "hook": "from + before = before"
  },
  {
   "id": "c0513",
@@ -5467,8 +5535,9 @@
   "ft": 1,
   "hint": [
    "simple: ⺮ (bamboo) + 间 (sound jiān)",
-   "single"
-  ]
+   "single: think: simplified from 單, a forked tool"
+  ],
+  "hook": "simple + single = simple"
  },
  {
   "id": "c0451",
@@ -5482,7 +5551,8 @@
   "hint": [
    "most",
    "near"
-  ]
+  ],
+  "hook": "most + near = recently"
  },
  {
   "id": "c0318",
@@ -5494,9 +5564,10 @@
   "reading": "yǐwéi",
   "ft": 1,
   "hint": [
-   "to take",
+   "to take: think: a person 人 using a tool",
    "as"
-  ]
+  ],
+  "hook": "take + as = think, wrongly"
  },
  {
   "id": "c0434",
@@ -5510,7 +5581,8 @@
   "hint": [
    "to lift: 扌 (hand) + 是 (sound shì)",
    "high"
-  ]
+  ],
+  "hook": "lift + high = raise"
  },
  {
   "id": "c0331",
@@ -5524,7 +5596,8 @@
   "hint": [
    "strong: someone 亻 who can build 建 things",
    "health: a home 广 with a servant 隶"
-  ]
+  ],
+  "hook": "strong + health = healthy"
  },
  {
   "id": "c0404",
@@ -5538,7 +5611,8 @@
   "hint": [
    "to allow: 宀 (roof) + 谷",
    "easy: 日 sun + 勿 must not"
-  ]
+  ],
+  "hook": "allow + easy = easy"
  },
  {
   "id": "c0389",
@@ -5550,9 +5624,10 @@
   "reading": "shēngyīn",
   "ft": 1,
   "hint": [
-   "sound",
+   "sound: simplified from 聲: a chime 殸 heard by the ear 耳",
    "sound: a tongue 立 forming a sound in the mouth 日"
-  ]
+  ],
+  "hook": "synonym pair: sound + sound"
  },
  {
   "id": "c0447",
@@ -5566,7 +5641,8 @@
   "hint": [
    "bright: the light of the sun 日 and moon 月",
    "clear"
-  ]
+  ],
+  "hook": "bright + clear = understand"
  },
  {
   "id": "c0517",
@@ -5580,7 +5656,8 @@
   "hint": [
    "end: 纟 (thread) + 冬 (sound dōng)",
    "at: 二 two + 亅"
-  ]
+  ],
+  "hook": "end + at = finally"
  },
  {
   "id": "c0327",
@@ -5594,7 +5671,8 @@
   "hint": [
    "to act: a person 亻 making something for the first time 乍",
    "to use"
-  ]
+  ],
+  "hook": "act + use = effect"
  },
  {
   "id": "c0345",
@@ -5608,7 +5686,8 @@
   "hint": [
    "almost",
    "(suffix): 丿 + 丷"
-  ]
+  ],
+  "hook": "almost + suffix = almost"
  },
  {
   "id": "c0324",
@@ -5648,7 +5727,8 @@
   "hint": [
    "always: many mouths 口 speaking with one mind 心",
    "to be"
-  ]
+  ],
+  "hook": "always + is = always"
  },
  {
   "id": "c0552",
@@ -5675,7 +5755,8 @@
   "hint": [
    "electricity: lightning 申 from 電 without its storm cloud 雨",
    "small thing: picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "electric + small thing = electron"
  },
  {
   "id": "c0535",
@@ -5689,7 +5770,8 @@
   "hint": [
    "segment: sections of bamboo",
    "item: picture of an eye drawn on its side"
-  ]
+  ],
+  "hook": "segment + item = programme"
  },
  {
   "id": "c0563",
@@ -5730,7 +5812,8 @@
   "hint": [
    "desire: 心 (heart) + 原 (sound yuán)",
    "wish: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "desire + wish = be willing"
  },
  {
   "id": "c0308",
@@ -5757,7 +5840,8 @@
   "hint": [
    "to move: 力 (strength) + 云",
    "thing: 牛 (ox) + 勿 (sound wù)"
-  ]
+  ],
+  "hook": "move + thing = animal"
  },
  {
   "id": "c0430",
@@ -5771,7 +5855,8 @@
   "hint": [
    "to bear: 扌 (hand) + 旦 (sound dàn)",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "bear + heart = worry"
  },
  {
   "id": "c0471",
@@ -5785,7 +5870,8 @@
   "hint": [
    "clean: 氵 (water) + 青 (sound qīng)",
    "clear: 林 forest + 疋 roll"
-  ]
+  ],
+  "hook": "clean + clear = clear"
  },
  {
   "id": "c0518",
@@ -5799,7 +5885,8 @@
   "hint": [
    "constant: 纟 (thread) + 工 (sound gōng)",
    "often: 巾 (cloth) + 尚 (sound shàng)"
-  ]
+  ],
+  "hook": "constant + often = often"
  },
  {
   "id": "c0536",
@@ -5839,7 +5926,8 @@
   "hint": [
    "body: 亻 man + 本 root",
    "to educate: a pregnant woman with a baby ⺼ in her womb"
-  ]
+  ],
+  "hook": "body + educate = sport"
  },
  {
   "id": "c0376",
@@ -5853,7 +5941,8 @@
   "hint": [
    "same: sharing a common 凡 tongue 口",
    "opinion: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "same + opinion = agree"
  },
  {
   "id": "c0463",
@@ -5906,7 +5995,8 @@
   "hint": [
    "sudden: a dog 犬 rushing out of a cave 穴",
    "(-ly suffix): 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "sudden + suffix = suddenly"
  },
  {
   "id": "c0577",
@@ -5920,7 +6010,8 @@
   "hint": [
    "nearby: 阝 (place) + 付 (sound fù)",
    "near"
-  ]
+  ],
+  "hook": "nearby + near = nearby"
  },
  {
   "id": "c0461",
@@ -5934,7 +6025,8 @@
   "hint": [
    "to check: 木 (wood) + 佥 (sound qiān)",
    "to investigate: 木 tree + 旦 dawn"
-  ]
+  ],
+  "hook": "check + investigate = inspect"
  },
  {
   "id": "c0466",
@@ -5948,7 +6040,8 @@
   "hint": [
    "water",
    "level: picture of a leveling scale"
-  ]
+  ],
+  "hook": "water + level = level"
  },
  {
   "id": "c0353",
@@ -5963,7 +6056,8 @@
    "to handle: 力 (strength) + 八 (sound bā)",
    "official business: to divide 八 what is private 厶",
    "room: 宀 (roof) + 至 (sound zhì)"
-  ]
+  ],
+  "hook": "handle + official work + room = office"
  },
  {
   "id": "c0414",
@@ -5976,8 +6070,9 @@
   "ft": 1,
   "hint": [
    "age",
-   "light"
-  ]
+   "light: 车 (cart) + 工 (sound gōng)"
+  ],
+  "hook": "age + light = young"
  },
  {
   "id": "c0439",
@@ -6005,7 +6100,8 @@
   "hint": [
    "to remember: a private 己 note 讠",
    "(verb suffix)"
-  ]
+  ],
+  "hook": "remember + suffix = remember"
  },
  {
   "id": "c0337",
@@ -6019,7 +6115,8 @@
   "hint": [
    "to concern",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "concern + heart = care about"
  },
  {
   "id": "c0360",
@@ -6046,7 +6143,8 @@
   "hint": [
    "mutual: to stare 目 at a tree 木, meaning to observe",
    "same: sharing a common 凡 tongue 口"
-  ]
+  ],
+  "hook": "mutual + same = identical"
  },
  {
   "id": "c0423",
@@ -6060,7 +6158,8 @@
   "hint": [
    "to accomplish: 丁 male adult + 戈 spear",
    "achievements: to complete 纟 one's duties 责"
-  ]
+  ],
+  "hook": "accomplish + achievement = results"
  },
  {
   "id": "c0530",
@@ -6098,9 +6197,10 @@
   "reading": "xíguàn",
   "ft": 1,
   "hint": [
-   "to practice",
+   "to practice: think: simplified from 習, wings 羽 flapping to practise",
    "habit: 忄 (heart) + 贯 (sound guàn)"
-  ]
+  ],
+  "hook": "practise + habit = be used to"
  },
  {
   "id": "c0334",
@@ -6114,7 +6214,8 @@
   "hint": [
    "public: to divide 八 what is private 厶",
    "garden: 囗 (enclosure) + 元 (sound yuán)"
-  ]
+  ],
+  "hook": "public + garden = park"
  },
  {
   "id": "c0446",
@@ -6141,7 +6242,8 @@
   "hint": [
    "to take as: 讠 (speech) + 人 (sound rén)",
    "real"
-  ]
+  ],
+  "hook": "take as + real = earnest"
  },
  {
   "id": "c0317",
@@ -6166,9 +6268,10 @@
   "reading": "xìngqù",
   "ft": 1,
   "hint": [
-   "interest (xìng)",
+   "interest (xìng): think: simplified from 興, many hands lifting together",
    "interest: 走 (walk) + 取 (sound qǔ)"
-  ]
+  ],
+  "hook": "interest + interest = interest"
  },
  {
   "id": "c0521",
@@ -6182,7 +6285,8 @@
   "hint": [
    "to tie: 纟 (thread) + 吉 (sound jí)",
    "to get married: 女 (woman) + 昏 (sound hūn)"
-  ]
+  ],
+  "hook": "tie + marry = get married"
  },
  {
   "id": "c0546",
@@ -6196,7 +6300,8 @@
   "hint": [
    "to show: fur 毛 clothing 衣; a shawl or wrap",
    "to perform: 氵 (water) + 寅 (sound yín)"
-  ]
+  ],
+  "hook": "show + perform = perform"
  },
  {
   "id": "c0314",
@@ -6208,7 +6313,7 @@
   "reading": "jiǔ",
   "ft": 1,
   "hint": [
-   "勹 (wrap) with a stroke through it, no source etymology: long time"
+   "think: 勹 (wrap) held fast by a stroke, lasting: long time"
   ]
  },
  {
@@ -6249,7 +6354,8 @@
   "hint": [
    "to feel: 宀 + 丰 + 口",
    "to fear: 忄 (heart) + 白 (sound bái)"
-  ]
+  ],
+  "hook": "feel + fear = be afraid"
  },
  {
   "id": "c0357",
@@ -6276,7 +6382,8 @@
   "hint": [
    "to meet: 辶 (walk) + 禺 (sound yú)",
    "to reach"
-  ]
+  ],
+  "hook": "meet + reach = run into"
  },
  {
   "id": "c0408",
@@ -6316,8 +6423,9 @@
   "ft": 1,
   "hint": [
    "(verb prefix): 扌 (hand) + 丁 (sound dīng)",
-   "to plan"
-  ]
+   "to plan: a bamboo ⺮ abacus 具"
+  ],
+  "hook": "verb prefix + plan = plan"
  },
  {
   "id": "c0433",
@@ -6383,7 +6491,8 @@
   "hint": [
    "how",
    "(suffix): simplified from 麼: 麻 (sound má) + 幺 (tiny)"
-  ]
+  ],
+  "hook": "how + suffix = how"
  },
  {
   "id": "c0393",
@@ -6397,7 +6506,8 @@
   "hint": [
    "great",
    "sun: the place 阝 of the sun 日"
-  ]
+  ],
+  "hook": "great + sun = sun"
  },
  {
   "id": "c0419",
@@ -6411,7 +6521,8 @@
   "hint": [
    "to forget: 心 (heart) + 亡 (sound wáng)",
    "to remember: a private 己 note 讠"
-  ]
+  ],
+  "hook": "forget + remember = forget"
  },
  {
   "id": "c0304",
@@ -6425,7 +6536,8 @@
   "hint": [
    "one",
    "border: 辶 (walk) + 臱 (sound mián)"
-  ]
+  ],
+  "hook": "one + side = at the same time"
  },
  {
   "id": "c0407",
@@ -6491,7 +6603,8 @@
   "hint": [
    "just: 刂 (knife) + 冈 (sound gāng)",
    "just"
-  ]
+  ],
+  "hook": "just + just = a moment ago"
  },
  {
   "id": "c0378",
@@ -6518,7 +6631,8 @@
   "hint": [
    "land",
    "map: a map of a district's borders 囗"
-  ]
+  ],
+  "hook": "land + map = map"
  },
  {
   "id": "c0440",
@@ -6545,7 +6659,8 @@
   "hint": [
    "to tend: 灬 (fire) + 昭 (sound zhāo)",
    "to look back: 页 (head) + 厄 (sound è)"
-  ]
+  ],
+  "hook": "tend + look back = look after"
  },
  {
   "id": "c0309",
@@ -6559,7 +6674,8 @@
   "hint": [
    "middle: a line 丨 through the middle of a box 口",
    "between: the sun 日 shining through a doorway 门"
-  ]
+  ],
+  "hook": "middle + between = middle"
  },
  {
   "id": "c0445",
@@ -6573,7 +6689,8 @@
   "hint": [
    "(with 便: convenient)",
    "convenient: 亻 man + 更 more"
-  ]
+  ],
+  "hook": "bound 方 + easy 便 = convenient"
  },
  {
   "id": "c0462",
@@ -6600,7 +6717,8 @@
   "hint": [
    "horse",
    "on"
-  ]
+  ],
+  "hook": "horse + on = at once, on horseback"
  },
  {
   "id": "c0373",
@@ -6614,7 +6732,8 @@
   "hint": [
    "-able: 丁 (vigorous) + 口 (sound kǒu)",
    "to love"
-  ]
+  ],
+  "hook": "-able + love = lovable"
  },
  {
   "id": "c0441",
@@ -6628,7 +6747,8 @@
   "hint": [
    "count: 攵 (script) + 娄 (sound lóu)",
    "(study of): a building 冖 where children 子 study"
-  ]
+  ],
+  "hook": "count + study = maths"
  },
  {
   "id": "c0374",
@@ -6642,7 +6762,8 @@
   "hint": [
    "to manage: a person speaking orders 口 and raising their arm",
    "machine: a table 几 made of wood 木; 几 gives the sound"
-  ]
+  ],
+  "hook": "manage + machine = driver"
  },
  {
   "id": "c0395",
@@ -6656,7 +6777,8 @@
   "hint": [
    "strange: a person 大 riding a horse 可",
    "unusual: 忄 heart + 圣 holy"
-  ]
+  ],
+  "hook": "strange + unusual = strange"
  },
  {
   "id": "c0476",
@@ -6670,7 +6792,8 @@
   "hint": [
    "zeal",
    "feeling: 忄 (heart) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "zeal + feeling = warm"
  },
  {
   "id": "c0545",
@@ -6684,7 +6807,8 @@
   "hint": [
    "street: 行 (walk) + 圭 (sound guī)",
    "road: 辶 (walk) + 首 (sound shǒu)"
-  ]
+  ],
+  "hook": "street + road = street"
  },
  {
   "id": "c0459",
@@ -6698,7 +6822,8 @@
   "hint": [
    "school: 木 (wood) + 交 (sound jiāo)",
    "chief (zhǎng)"
-  ]
+  ],
+  "hook": "school + chief = principal"
  },
  {
   "id": "c0467",
@@ -6723,9 +6848,10 @@
   "reading": "mǎnyì",
   "ft": 1,
   "hint": [
-   "to fill",
+   "to fill: 氵 (water) + 㒼 (sound mán)",
    "wish: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "full + wish = satisfied"
  },
  {
   "id": "c0538",
@@ -6752,7 +6878,8 @@
   "hint": [
    "ground",
    "iron: 钅 (metal) + 失 (sound shī)"
-  ]
+  ],
+  "hook": "ground + iron = subway"
  },
  {
   "id": "c0531",
@@ -6779,7 +6906,8 @@
   "hint": [
    "small",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "small + heart = careful"
  },
  {
   "id": "c0592",
@@ -6805,8 +6933,9 @@
   "ft": 1,
   "hint": [
    "same: sharing a common 凡 tongue 口",
-   "business"
-  ]
+   "business: think: a hand 彐 gripping a staff 亅, busy at work"
+  ],
+  "hook": "same + business = colleague"
  },
  {
   "id": "c0519",
@@ -6820,7 +6949,8 @@
   "hint": [
    "to manage: 纟 (thread) + 工 (sound gōng)",
    "to manage: 王 (king) + 里 (sound lǐ)"
-  ]
+  ],
+  "hook": "manage + manage = manager"
  },
  {
   "id": "c0326",
@@ -6833,8 +6963,9 @@
   "ft": 1,
   "hint": [
    "to do: a person 亻 making something for the first time 乍",
-   "work"
-  ]
+   "work: think: simplified from 業, a frame hung with bells"
+  ],
+  "hook": "do + work = homework"
  },
  {
   "id": "c0394",
@@ -6847,8 +6978,9 @@
   "ft": 2,
   "hint": [
    "head: 大 (high) + ⺀",
-   "hair"
-  ]
+   "hair: simplified from 發: feet 癶 and a bow 弓, shooting"
+  ],
+  "hook": "head + hair = hair"
  },
  {
   "id": "c0504",
@@ -6862,7 +6994,8 @@
   "hint": [
    "courtesy: 礻 (spirit) + 乚 (sound gōu)",
    "thing: 牛 (ox) + 勿 (sound wù)"
-  ]
+  ],
+  "hook": "courtesy + thing = gift"
  },
  {
   "id": "c0330",
@@ -6890,7 +7023,8 @@
    "picture: a map of a district's borders 囗",
    "book",
    "establishment: a public 官 building where food 饣 is served"
-  ]
+  ],
+  "hook": "picture + book + hall = library"
  },
  {
   "id": "c0458",
@@ -6917,7 +7051,8 @@
   "hint": [
    "to see: a man 儿 with the eye emphasized",
    "face: picture of a person's face"
-  ]
+  ],
+  "hook": "see + face = meet"
  },
  {
   "id": "c0565",
@@ -6944,7 +7079,8 @@
   "hint": [
    "week: border 冂 around land 土 with a well 口",
    "end: the top 一 of a tree 木"
-  ]
+  ],
+  "hook": "week + end = weekend"
  },
  {
   "id": "c0412",
@@ -6956,9 +7092,10 @@
   "reading": "gānjìng",
   "ft": 2,
   "hint": [
-   "dry",
+   "dry: picture of a club or axe",
    "clean: 冫 (water) + 争 (sound zhēng)"
-  ]
+  ],
+  "hook": "dry + clean = clean"
  },
  {
   "id": "c0527",
@@ -6972,7 +7109,8 @@
   "hint": [
    "sharp: 耳 (ear) + 总 (sound zǒng)",
    "bright: the light of the sun 日 and moon 月"
-  ]
+  ],
+  "hook": "sharp + bright = clever"
  },
  {
   "id": "c0410",
@@ -6986,7 +7124,8 @@
   "hint": [
    "to help: a nation's 邦 flag 巾",
    "busy"
-  ]
+  ],
+  "hook": "help + busy = help out"
  },
  {
   "id": "c0489",
@@ -7000,7 +7139,8 @@
   "hint": [
    "to produce: a shoot growing out of the soil 土",
    "anger: rising vapour"
-  ]
+  ],
+  "hook": "produce + anger = get angry"
  },
  {
   "id": "c0523",
@@ -7040,8 +7180,9 @@
   "ft": 2,
   "hint": [
    "difficult",
-   "to get through"
-  ]
+   "to get through: 辶 (walk) + 咼 (sound guō)"
+  ],
+  "hook": "difficult + get through = sad"
  },
  {
   "id": "c0435",
@@ -7094,7 +7235,8 @@
   "hint": [
    "to release",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "release + heart = be at ease"
  },
  {
   "id": "c0533",
@@ -7108,7 +7250,8 @@
   "hint": [
    "relaxed: 舍 (home) + 予 (sound yǔ)",
    "(part of 舒服 comfortable): a person 卩 putting on 又 a coat 月"
-  ]
+  ],
+  "hook": "relaxed + bound 服 = comfortable"
  },
  {
   "id": "c0358",
@@ -7121,8 +7264,9 @@
   "ft": 2,
   "hint": [
    "north: picture of two people sitting back-to-back",
-   "region"
-  ]
+   "region: think: a flag 亠 over a square plot"
+  ],
+  "hook": "north + region = the north"
  },
  {
   "id": "c0591",
@@ -7150,7 +7294,8 @@
    "one",
    "moment",
    "(suffix): picture of a child"
-  ]
+  ],
+  "hook": "one + moment + suffix = a while"
  },
  {
   "id": "c0351",
@@ -7177,7 +7322,8 @@
   "hint": [
    "neighbor: 阝 (town) + 令 (sound lìng)",
    "to live: 户 (door) + 古 (sound gǔ)"
-  ]
+  ],
+  "hook": "neighbour + live = neighbour"
  },
  {
   "id": "c0306",
@@ -7191,7 +7337,8 @@
   "hint": [
    "to get onto",
    "net: picture of a net for catching fish"
-  ]
+  ],
+  "hook": "get on + net = go online"
  },
  {
   "id": "c0484",
@@ -7205,7 +7352,8 @@
   "hint": [
    "grandfather: 父 (father) + 耶 (sound yé)",
    "grandfather: 父 (father) + 耶 (sound yé)"
-  ]
+  ],
+  "hook": "paternal grandfather, doubled"
  },
  {
   "id": "c0537",
@@ -7219,7 +7367,8 @@
   "hint": [
    "flower",
    "garden: 囗 (enclosure) + 元 (sound yuán)"
-  ]
+  ],
+  "hook": "flower + garden = garden"
  },
  {
   "id": "c0534",
@@ -7233,7 +7382,8 @@
   "hint": [
    "festival: sections of bamboo",
    "day"
-  ]
+  ],
+  "hook": "festival + day = holiday"
  },
  {
   "id": "c0402",
@@ -7247,7 +7397,8 @@
   "hint": [
    "guest: a person 各 welcomed under one's roof 宀",
    "person"
-  ]
+  ],
+  "hook": "guest + person = guest"
  },
  {
   "id": "c0515",
@@ -7274,7 +7425,8 @@
   "hint": [
    "grandmother: 女 (woman) + 乃 (sound nǎi)",
    "grandmother: 女 (woman) + 乃 (sound nǎi)"
-  ]
+  ],
+  "hook": "paternal grandmother, doubled"
  },
  {
   "id": "c0362",
@@ -7288,7 +7440,8 @@
   "hint": [
    "kitchen: 厂 (building) + 豆 (sound dòu)",
    "room: 户 (door) + 方 (sound fāng)"
-  ]
+  ],
+  "hook": "kitchen + room = kitchen"
  },
  {
   "id": "c0516",
@@ -7301,8 +7454,9 @@
   "ft": 2,
   "hint": [
    "to drill: 纟 (thread) + 柬 (sound jiǎn)",
-   "to practice"
-  ]
+   "to practice: think: simplified from 習, wings 羽 flapping to practise"
+  ],
+  "hook": "drill + practise = practise"
  },
  {
   "id": "c0555",
@@ -7330,7 +7484,8 @@
   "hint": [
    "new",
    "fresh: 鱼 (fish) + 羊 (sound yáng)"
-  ]
+  ],
+  "hook": "new + fresh = fresh"
  },
  {
   "id": "c0391",
@@ -7370,7 +7525,8 @@
   "hint": [
    "flour: picture of a person's face",
    "bun"
-  ]
+  ],
+  "hook": "flour + bun = bread"
  },
  {
   "id": "c0400",
@@ -7384,7 +7540,8 @@
   "hint": [
    "peaceful: a woman 女 safe in a house 宀",
    "still: 青 (nature) + 争 (sound zhēng)"
-  ]
+  ],
+  "hook": "peaceful + still = quiet"
  },
  {
   "id": "c0475",
@@ -7411,7 +7568,8 @@
   "hint": [
    "a quarter-year: the time for planting seeds 子 of grain 禾",
    "segment: sections of bamboo"
-  ]
+  ],
+  "hook": "quarter-year + segment = season"
  },
  {
   "id": "c0562",
@@ -7425,7 +7583,8 @@
   "hint": [
    "to jump over: 走 (run) + 召 (sound zhào)",
    "market: 亠 lid + 巾 cloth"
-  ]
+  ],
+  "hook": "beyond + market = supermarket"
  },
  {
   "id": "c0429",
@@ -7439,7 +7598,8 @@
   "hint": [
    "to defend: guarding 扌 a home 户",
    "license: 灬 (fire) + 昭 (sound zhāo)"
-  ]
+  ],
+  "hook": "defend + licence = passport"
  },
  {
   "id": "c0499",
@@ -7453,7 +7613,8 @@
   "hint": [
    "eye: 目 (eye) + 艮 (sound gěn)",
    "lens: 钅 (metal) + 竟 (sound jìng)"
-  ]
+  ],
+  "hook": "eye + lens = glasses"
  },
  {
   "id": "c0448",
@@ -7465,7 +7626,7 @@
   "reading": "chūn",
   "ft": 2,
   "hint": [
-   "日 (sun) under a top part MMAH leaves out: spring"
+   "think: sun 日 over sprouting grass: spring"
   ]
  },
  {
@@ -7480,7 +7641,8 @@
   "hint": [
    "to temper: 钅 (metal) + 段 (sound duàn)",
    "to smelt: 火 (fire) + 柬 (sound jiǎn)"
-  ]
+  ],
+  "hook": "temper + smelt = work out"
  },
  {
   "id": "c0576",
@@ -7494,7 +7656,8 @@
   "hint": [
    "(name prefix): 阝 (place) + 可 (sound kě)",
    "aunt: 女 (woman) + 夷 (sound yí)"
-  ]
+  ],
+  "hook": "name prefix + aunt = auntie"
  },
  {
   "id": "c0543",
@@ -7508,7 +7671,8 @@
   "hint": [
    "egg: 虫 (insect) + 延 (sound yán)",
    "cake: 米 (rice) + 羔 (sound gāo)"
-  ]
+  ],
+  "hook": "egg + cake = cake"
  },
  {
   "id": "c0453",
@@ -7522,7 +7686,8 @@
   "hint": [
    "to have",
    "name: a name called out 口 to hail someone at night 夕"
-  ]
+  ],
+  "hook": "have + name = famous"
  },
  {
   "id": "c0584",
@@ -7549,7 +7714,8 @@
   "hint": [
    "air: 穴 (cave) + 工 (sound gōng)",
    "to adjust (tiáo): 讠 (speech) + 周 (sound zhōu)"
-  ]
+  ],
+  "hook": "air + adjust = air conditioner"
  },
  {
   "id": "c0526",
@@ -7562,8 +7728,9 @@
   "ft": 2,
   "hint": [
    "ear: picture of an ear",
-   "earlobe"
-  ]
+   "earlobe: flowers 几 blooming on a tree 木"
+  ],
+  "hook": "ear + earlobe = ear"
  },
  {
   "id": "c0551",
@@ -7577,7 +7744,8 @@
   "hint": [
    "pants: 衤 (clothes) + 库 (sound kù)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "trousers + noun suffix = trousers"
  },
  {
   "id": "c0299",
@@ -7591,7 +7759,8 @@
   "hint": [
    "one",
    "total: two hands 八 holding one object 廾"
-  ]
+  ],
+  "hook": "one + total = altogether"
  },
  {
   "id": "c0452",
@@ -7604,8 +7773,9 @@
   "ft": 2,
   "hint": [
    "moon",
-   "bright"
-  ]
+   "bright: picture of a lit oil lamp"
+  ],
+  "hook": "moon + bright = the moon"
  },
  {
   "id": "c0483",
@@ -7619,7 +7789,8 @@
   "hint": [
    "to love",
    "to like (hào)"
-  ]
+  ],
+  "hook": "love + like = hobby"
  },
  {
   "id": "c0492",
@@ -7633,7 +7804,8 @@
   "hint": [
    "electricity: lightning 申 from 電 without its storm cloud 雨",
    "ladder: 木 (wood) + 弟 (sound dì)"
-  ]
+  ],
+  "hook": "electric + ladder = lift"
  },
  {
   "id": "c0368",
@@ -7647,7 +7819,8 @@
   "hint": [
    "uncle: the smaller 小 brother",
    "uncle: the smaller 小 brother"
-  ]
+  ],
+  "hook": "father's younger brother, doubled"
  },
  {
   "id": "c0380",
@@ -7661,7 +7834,8 @@
   "hint": [
    "beer: 口 (mouth) + 卑 (sound bēi)",
    "alcohol: a jar 酉 of wine 氵"
-  ]
+  ],
+  "hook": "beer + alcohol = beer"
  },
  {
   "id": "c0488",
@@ -7688,7 +7862,8 @@
   "hint": [
    "hat: 巾 (towel) + 冒 (sound mào)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "hat + noun suffix = hat"
  },
  {
   "id": "c0470",
@@ -7702,7 +7877,8 @@
   "hint": [
    "to wash",
    "to wash: 氵 (water) + 喿 (sound zào)"
-  ]
+  ],
+  "hook": "wash + bathe = take a bath"
  },
  {
   "id": "c0528",
@@ -7729,7 +7905,8 @@
   "hint": [
    "nose: 自 (self) + 畀 (sound bì)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "nose + noun suffix = nose"
  },
  {
   "id": "c0413",
@@ -7743,7 +7920,8 @@
   "hint": [
    "year",
    "level: 纟 (silk) + 及 (sound jí)"
-  ]
+  ],
+  "hook": "year + level = school grade"
  },
  {
   "id": "c0405",
@@ -7757,7 +7935,8 @@
   "hint": [
    "guest: a solider 兵 quartered under one's roof 宀",
    "public building: a public 官 building where food 饣 is served"
-  ]
+  ],
+  "hook": "guest + hall = hotel"
  },
  {
   "id": "c0495",
@@ -7782,9 +7961,10 @@
   "reading": "xiāngjiāo",
   "ft": 2,
   "hint": [
-   "fragrant",
+   "fragrant: a herb 禾 with a sweet smell",
    "banana: 艹 (plant) + 焦 (sound jiāo)"
-  ]
+  ],
+  "hook": "fragrant + banana = banana"
  },
  {
   "id": "c0343",
@@ -7798,7 +7978,8 @@
   "hint": [
    "ice: ice-cold冫 water 水",
    "box: ⺮ (bamboo) + 相 (sound xiāng)"
-  ]
+  ],
+  "hook": "ice + box = fridge"
  },
  {
   "id": "c0350",
@@ -7825,7 +8006,8 @@
   "hint": [
    "grapes: 艹 (plant) + 匍 (sound pú)",
    "grapes: 艹 (plant) + 匋 (sound táo)"
-  ]
+  ],
+  "hook": "bound pair; neither character means \"grape\" alone"
  },
  {
   "id": "c0503",
@@ -7865,7 +8047,8 @@
   "hint": [
    "tardy: 辶 (walk) + 尺 (sound chǐ)",
    "to arrive"
-  ]
+  ],
+  "hook": "late + arrive = be late"
  },
  {
   "id": "c0561",
@@ -7879,7 +8062,8 @@
   "hint": [
    "phrase: 讠 (words) + 司 (sound sī)",
    "words: 讠 (words) + 吾 (sound wú)"
-  ]
+  ],
+  "hook": "phrase + words = word"
  },
  {
   "id": "c0421",
@@ -7893,7 +8077,8 @@
   "hint": [
    "to sense: two hearts 心 beating together 咸",
    "(part of 感冒 cold): 目 (eye) + 冃 (sound)"
-  ]
+  ],
+  "hook": "sense + bound 冒 = catch a cold"
  },
  {
   "id": "c0449",
@@ -7908,7 +8093,8 @@
    "universal: everyone 並 under the sun 日",
    "common: 辶 (walk) + 甬 (sound yǒng)",
    "talk: a spoken 讠 tongue 舌"
-  ]
+  ],
+  "hook": "universal + common + talk = Mandarin"
  },
  {
   "id": "c0371",
@@ -7922,7 +8108,8 @@
   "hint": [
    "sentence: a phrase 勹 from the mouth 口",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "sentence + noun suffix = sentence"
  },
  {
   "id": "c0550",
@@ -7936,7 +8123,8 @@
   "hint": [
    "skirt: 衤 (clothes) + 君 (sound jūn)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "skirt + noun suffix = skirt"
  },
  {
   "id": "c0352",
@@ -7976,7 +8164,8 @@
   "hint": [
    "a bear: a bear's 能 footprints 灬",
    "cat"
-  ]
+  ],
+  "hook": "bear + cat = panda"
  },
  {
   "id": "c0586",
@@ -8002,8 +8191,9 @@
   "ft": 2,
   "hint": [
    "again: a person 亻 who goes somewhere 夂 every day 日",
-   "to study"
-  ]
+   "to study: think: simplified from 習, wings 羽 flapping to practise"
+  ],
+  "hook": "again + study = review"
  },
  {
   "id": "c0322",
@@ -8030,7 +8220,8 @@
   "hint": [
    "lining: 衤 (clothes) + 寸 (sound cùn)",
    "shirt: 衤 (clothes) + 彡 (sound shān)"
-  ]
+  ],
+  "hook": "lining + shirt = shirt"
  },
  {
   "id": "c0500",
@@ -8044,7 +8235,8 @@
   "hint": [
    "to feel (zháo)",
    "anxious: 心 (heart) + 刍 (sound chú)"
-  ]
+  ],
+  "hook": "feel + anxious = worry"
  },
  {
   "id": "c0539",
@@ -8057,8 +8249,9 @@
   "ft": 2,
   "hint": [
    "dish",
-   "list"
-  ]
+   "list: think: simplified from 單, a forked tool"
+  ],
+  "hook": "dish + list = menu"
  },
  {
   "id": "c0366",
@@ -8070,9 +8263,10 @@
   "reading": "fāshāo",
   "ft": 2,
   "hint": [
-   "to develop",
+   "to develop: simplified from 發: feet 癶 and a bow 弓, shooting",
    "fever: 火 (fire) + 尧 (sound yáo)"
-  ]
+  ],
+  "hook": "emit + burn = have a fever"
  },
  {
   "id": "c0342",
@@ -8099,7 +8293,8 @@
   "hint": [
    "tray: 皿 (dish) + 般 (sound bān)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "tray + noun suffix = plate"
  },
  {
   "id": "c0426",
@@ -8113,7 +8308,8 @@
   "hint": [
    "(verb prefix): 扌 (hand) + 丁 (sound dīng)",
    "to clean: to use 扌 a broom"
-  ]
+  ],
+  "hook": "verb prefix + sweep = sweep"
  },
  {
   "id": "c0583",
@@ -8127,7 +8323,8 @@
   "hint": [
    "flour: picture of a person's face",
    "strip"
-  ]
+  ],
+  "hook": "flour + strip = noodles"
  },
  {
   "id": "c0398",
@@ -8141,7 +8338,8 @@
   "hint": [
    "letter",
    "classic: two hands 八 holding a book"
-  ]
+  ],
+  "hook": "character + classic = dictionary"
  },
  {
   "id": "c0457",
@@ -8155,7 +8353,8 @@
   "hint": [
    "fruit: fruit 田 growing on a tree 木",
    "juice: 氵 (water) + 十 (sound shí)"
-  ]
+  ],
+  "hook": "fruit + juice = fruit juice"
  },
  {
   "id": "c0479",
@@ -8170,7 +8369,8 @@
    "to photograph: 灬 (fire) + 昭 (sound zhāo)",
    "photo (xiàng): to stare 目 at a tree 木, meaning to observe",
    "machine: a table 几 made of wood 木; 几 gives the sound"
-  ]
+  ],
+  "hook": "photograph + picture + machine = camera"
  },
  {
   "id": "c0469",
@@ -8185,7 +8385,8 @@
    "to wash",
    "hand: picture of a hand with the fingers splayed",
    "room: the sun 日 shining through a doorway 门"
-  ]
+  ],
+  "hook": "wash + hand + room = toilet"
  },
  {
   "id": "c0573",
@@ -8199,7 +8400,8 @@
   "hint": [
    "lead: 钅 (metal) + 几 (sound jǐ)",
    "pen: a bamboo rod ⺮ tipped with hair 毛"
-  ]
+  ],
+  "hook": "lead + pen = pencil"
  },
  {
   "id": "c0512",
@@ -8213,7 +8415,8 @@
   "hint": [
    "chopsticks: ⺮ (bamboo) + 快 (sound kuài)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "chopstick + noun suffix = chopsticks"
  },
  {
   "id": "c0544",
@@ -8225,10 +8428,11 @@
   "reading": "xínglixiāng",
   "ft": 2,
   "hint": [
-   "to travel",
+   "to travel: to take small steps 亍 with one's feet 彳",
    "luggage: 木 (wood) + 子 (sound zi)",
    "box: ⺮ (bamboo) + 相 (sound xiāng)"
-  ]
+  ],
+  "hook": "travel + luggage + box = suitcase"
  },
  {
   "id": "c0472",
@@ -8255,7 +8459,8 @@
   "hint": [
    "black",
    "board: 木 (wood) + 反 (sound fǎn)"
-  ]
+  ],
+  "hook": "black + board = blackboard"
  },
  {
   "id": "c0482",
@@ -8269,7 +8474,8 @@
   "hint": [
    "to climb: 爪 (claw) + 巴 (sound bā)",
    "mountain: picture of three mountain peaks"
-  ]
+  ],
+  "hook": "climb + mountain = hike"
  },
  {
   "id": "c0602",
@@ -8282,7 +8488,7 @@
   "say": "宇",
   "ft": 0,
   "hint": [
-   "一 under a bent stroke, no source etymology: and"
+   "think: a gift 一 passed between two hands: and"
   ]
  },
  {
@@ -8308,7 +8514,7 @@
   "reading": "ér",
   "ft": 0,
   "hint": [
-   "mnemonic, no source etymology: a beard hanging down: and"
+   "think: a beard hanging down: and"
   ]
  },
  {
@@ -8334,7 +8540,7 @@
   "reading": "yǐ",
   "ft": 0,
   "hint": [
-   "a left part MMAH leaves out + 人 (person): to use"
+   "think: a person 人 using a tool: to use"
   ]
  },
  {
@@ -8386,9 +8592,10 @@
   "reading": "fāzhǎn",
   "ft": 0,
   "hint": [
-   "to develop",
+   "to develop: simplified from 發: feet 癶 and a bow 弓, shooting",
    "to unfold: laying out clothes for sale in a market 尸"
-  ]
+  ],
+  "hook": "emit + unfold = develop"
  },
  {
   "id": "c1022",
@@ -8402,7 +8609,8 @@
   "hint": [
    "group: an earth 土 spirit 礻",
    "association"
-  ]
+  ],
+  "hook": "group + meeting = society"
  },
  {
   "id": "c1140",
@@ -8415,8 +8623,9 @@
   "ft": 0,
   "hint": [
    "to advance",
-   "to carry out"
-  ]
+   "to carry out: to take small steps 亍 with one's feet 彳"
+  ],
+  "hook": "advance + carry out = carry out"
  },
  {
   "id": "c1101",
@@ -8430,7 +8639,8 @@
   "hint": [
    "to calculate: 讠 (speech) + 十 (sound shí)",
    "to plan: 戈 spear + 刂 knife"
-  ]
+  ],
+  "hook": "calculate + plan = plan"
  },
  {
   "id": "c0857",
@@ -8444,7 +8654,8 @@
   "hint": [
    "to accomplish: 丁 male adult + 戈 spear",
    "to be"
-  ]
+  ],
+  "hook": "accomplish + be = become"
  },
  {
   "id": "c0760",
@@ -8458,7 +8669,8 @@
   "hint": [
    "country: treasure 玉 within a country's borders 囗",
    "inter-: 阝 (hill) + 示 (sound shì)"
-  ]
+  ],
+  "hook": "country + between = international"
  },
  {
   "id": "c0834",
@@ -8512,7 +8724,8 @@
   "hint": [
    "to employ",
    "to use"
-  ]
+  ],
+  "hook": "employ + use = use"
  },
  {
   "id": "c1055",
@@ -8526,7 +8739,8 @@
   "hint": [
    "to manage: 纟 (thread) + 工 (sound gōng)",
    "to aid: 氵 (water) + 齐 (sound qí)"
-  ]
+  ],
+  "hook": "manage + aid = economy"
  },
  {
   "id": "c0964",
@@ -8540,7 +8754,8 @@
   "hint": [
    "living: 氵 (water) + 舌 (sound shé)",
    "to move: 力 (strength) + 云"
-  ]
+  ],
+  "hook": "living + move = activity"
  },
  {
   "id": "c0849",
@@ -8554,7 +8769,8 @@
   "hint": [
    "situation: 忄 (heart) + 青 (sound qīng)",
    "condition: 冫 ice + 兄 elder brother"
-  ]
+  ],
+  "hook": "situation + condition = circumstances"
  },
  {
   "id": "c1053",
@@ -8568,7 +8784,8 @@
   "hint": [
    "to form: 纟 (thread) + 且 (sound qiě)",
    "to knit: 纟 (thread) + 只 (sound zhī)"
-  ]
+  ],
+  "hook": "form + knit = organise"
  },
  {
   "id": "c0723",
@@ -8580,9 +8797,10 @@
   "reading": "fāshēng",
   "ft": 1,
   "hint": [
-   "to emerge",
+   "to emerge: simplified from 發: feet 癶 and a bow 弓, shooting",
    "growth: a shoot growing out of the soil 土"
-  ]
+  ],
+  "hook": "emerge + grow = happen"
  },
  {
   "id": "c1062",
@@ -8596,7 +8814,8 @@
   "hint": [
    "net: picture of a net for catching fish",
    "station"
-  ]
+  ],
+  "hook": "net + station = website"
  },
  {
   "id": "c1000",
@@ -8610,7 +8829,8 @@
   "hint": [
    "to live: a shoot growing out of the soil 土",
    "to exist: 氵 (water) + 舌 (sound shé)"
-  ]
+  ],
+  "hook": "live + exist = life"
  },
  {
   "id": "c1146",
@@ -8624,7 +8844,8 @@
   "hint": [
    "to pass through: 辶 (walk) + 甬 (sound yǒng)",
    "to cross"
-  ]
+  ],
+  "hook": "pass through + cross = pass through"
  },
  {
   "id": "c0861",
@@ -8638,7 +8859,8 @@
   "hint": [
    "place: an axe 斤 swung at a door 户",
    "to have"
-  ]
+  ],
+  "hook": "that which + have = all"
  },
  {
   "id": "c0700",
@@ -8652,7 +8874,8 @@
   "hint": [
    "to cover",
    "to embrace: 扌 (hand) + 舌 (sound shé)"
-  ]
+  ],
+  "hook": "cover + embrace = include"
  },
  {
   "id": "c0672",
@@ -8666,7 +8889,8 @@
   "hint": [
    "their: 甘 + 一 + 八",
    "amidst: a line 丨 through the middle of a box 口"
-  ]
+  ],
+  "hook": "their + amidst = among them"
  },
  {
   "id": "c1126",
@@ -8680,7 +8904,8 @@
   "hint": [
    "to rise: 走 (walk) + 己 (sound jǐ)",
    "to come"
-  ]
+  ],
+  "hook": "rise + come = get up"
  },
  {
   "id": "c0601",
@@ -8694,7 +8919,8 @@
   "hint": [
    "no",
    "to exceed"
-  ]
+  ],
+  "hook": "not + exceed = but, only"
  },
  {
   "id": "c0870",
@@ -8708,7 +8934,8 @@
   "hint": [
    "ability: 扌 (hand) + 支 (sound zhī)",
    "skill: 木 tree + 丶"
-  ]
+  ],
+  "hook": "ability + skill = technology"
  },
  {
   "id": "c0891",
@@ -8722,7 +8949,8 @@
   "hint": [
    "to raise: 扌 (hand) + 是 (sound shì)",
    "to supply: a person 亻 making an offering with both hands 共"
-  ]
+  ],
+  "hook": "raise + supply = provide"
  },
  {
   "id": "c0638",
@@ -8736,7 +8964,8 @@
   "hint": [
    "any: 亻 (person) + 壬 (sound rén)",
    "what: 亻 man + 可 may"
-  ]
+  ],
+  "hook": "any + what = any"
  },
  {
   "id": "c1057",
@@ -8750,7 +8979,8 @@
   "hint": [
    "to bear (fruit): 纟 (thread) + 吉 (sound jí)",
    "result: fruit 田 growing on a tree 木"
-  ]
+  ],
+  "hook": "bear fruit + fruit = result"
  },
  {
   "id": "c0757",
@@ -8764,7 +8994,8 @@
   "hint": [
    "cause: 囗 enclosure + 大 big",
    "this: 匕 (sitting man) + 止 (sound zhǐ)"
-  ]
+  ],
+  "hook": "cause + this = therefore"
  },
  {
   "id": "c0635",
@@ -8778,7 +9009,8 @@
   "hint": [
    "to substitute for: a man 亻 caught 弋 by the passing of time",
    "to show: fur 毛 clothing 衣; a shawl or wrap"
-  ]
+  ],
+  "hook": "substitute for + show = represent"
  },
  {
   "id": "c0897",
@@ -8792,7 +9024,8 @@
   "hint": [
    "to support: a hand 又 holding a branch 十 for support",
    "to hold: 扌 (hand) + 寺 (sound sì)"
-  ]
+  ],
+  "hook": "support + hold = support"
  },
  {
   "id": "c0919",
@@ -8818,8 +9051,9 @@
   "ft": 1,
   "hint": [
    "city: 亠 lid + 巾 cloth",
-   "place"
-  ]
+   "place: 土 (earth) + 昜 (sound yáng)"
+  ],
+  "hook": "city + place = market"
  },
  {
   "id": "c0928",
@@ -8832,8 +9066,9 @@
   "ft": 1,
   "hint": [
    "most",
-   "after"
-  ]
+   "after: think: a ruler giving orders 口, who comes after"
+  ],
+  "hook": "most + after = last"
  },
  {
   "id": "c1058",
@@ -8847,7 +9082,8 @@
   "hint": [
    "to continue: 纟 (thread) + 米 (sound mǐ)",
    "continuous: 纟 (thread) + 卖 (sound mài)"
-  ]
+  ],
+  "hook": "continue + continuous = continue"
  },
  {
   "id": "c0676",
@@ -8861,7 +9097,8 @@
   "hint": [
    "inside",
    "to contain: 宀 (roof) + 谷"
-  ]
+  ],
+  "hook": "inside + contain = content"
  },
  {
   "id": "c0907",
@@ -8875,7 +9112,8 @@
   "hint": [
    "to teach",
    "to produce: a pregnant woman with a baby ⺼ in her womb"
-  ]
+  ],
+  "hook": "teach + nurture = education"
  },
  {
   "id": "c1002",
@@ -8889,7 +9127,8 @@
   "hint": [
    "cause",
    "from: 二 two + 亅"
-  ]
+  ],
+  "hook": "from + at = because of"
  },
  {
   "id": "c1088",
@@ -8903,7 +9142,8 @@
   "hint": [
    "to get: 艹 grass + 犾",
    "to get"
-  ]
+  ],
+  "hook": "get + get = obtain"
  },
  {
   "id": "c1105",
@@ -8917,7 +9157,8 @@
   "hint": [
    "(with 多: many): 讠 (speech) + 午 (sound wǔ)",
    "many"
-  ]
+  ],
+  "hook": "bound 许 + many = many"
  },
  {
   "id": "c0788",
@@ -8931,7 +9172,8 @@
   "hint": [
    "peaceful: a woman 女 safe in a house 宀",
    "intact: jade 玉 put away 入 for safe-keeping"
-  ]
+  ],
+  "hook": "peaceful + intact = safe"
  },
  {
   "id": "c1152",
@@ -8945,7 +9187,8 @@
   "hint": [
    "part: 阝 (place) + 咅 (sound pǒu)",
    "fraction"
-  ]
+  ],
+  "hook": "part + fraction = part"
  },
  {
   "id": "c0951",
@@ -8972,7 +9215,8 @@
   "hint": [
    "at (that)",
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "at that + time = at that time"
  },
  {
   "id": "c0790",
@@ -8986,7 +9230,8 @@
   "hint": [
    "to finish",
    "whole: jade 玉 put away 入 for safe-keeping"
-  ]
+  ],
+  "hook": "finish + whole = completely"
  },
  {
   "id": "c0596",
@@ -9000,7 +9245,8 @@
   "hint": [
    "one",
    "all (qiè): 刀 (knife) + 七 (sound qī)"
-  ]
+  ],
+  "hook": "one + all = everything"
  },
  {
   "id": "c1045",
@@ -9014,7 +9260,8 @@
   "hint": [
    "to manage: ⺮ (bamboo) + 官 (sound guān)",
    "to manage: 王 (king) + 里 (sound lǐ)"
-  ]
+  ],
+  "hook": "manage + manage = manage"
  },
  {
   "id": "c1104",
@@ -9028,7 +9275,8 @@
   "hint": [
    "to record: a private 己 note 讠",
    "(one who): 耂 old + 日 sun"
-  ]
+  ],
+  "hook": "record + one who = reporter"
  },
  {
   "id": "c0721",
@@ -9040,7 +9288,7 @@
   "reading": "fā",
   "ft": 1,
   "hint": [
-   "又 (hand) under a part MMAH leaves out: to send out"
+   "think: a bow 弓 shooting an arrow: to send out"
   ]
  },
  {
@@ -9069,7 +9317,8 @@
   "hint": [
    "to safeguard: 亻 (person) + 呆 (sound dāi)",
    "to defend: guarding 扌 a home 户"
-  ]
+  ],
+  "hook": "safeguard + defend = protect"
  },
  {
   "id": "c0998",
@@ -9083,7 +9332,8 @@
   "hint": [
    "extremely: 甘 sweet + 匹",
    "reach: a bird alighting on the ground 土"
-  ]
+  ],
+  "hook": "extremely + reach = even"
  },
  {
   "id": "c0962",
@@ -9097,7 +9347,8 @@
   "hint": [
    "law: the course 去 followed by a stream 氵",
    "statute: to walk 彳 as required by law 聿"
-  ]
+  ],
+  "hook": "law + statute = law"
  },
  {
   "id": "c1139",
@@ -9111,7 +9362,8 @@
   "hint": [
    "to pass",
    "process: 禾 (grain) + 呈 (sound chéng)"
-  ]
+  ],
+  "hook": "pass + process = process"
  },
  {
   "id": "c1010",
@@ -9125,7 +9377,8 @@
   "hint": [
    "straight: to look someone in the eye 目",
    "to connect"
-  ]
+  ],
+  "hook": "straight + connect = direct"
  },
  {
   "id": "c0858",
@@ -9139,7 +9392,8 @@
   "hint": [
    "to accomplish: 丁 male adult + 戈 spear",
    "achievement: results produced by capable 力 labor 工"
-  ]
+  ],
+  "hook": "accomplish + achievement = success"
  },
  {
   "id": "c0737",
@@ -9166,7 +9420,8 @@
   "hint": [
    "to receive",
    "to receive: something 冖 passed from one hand 爫 to another 又"
-  ]
+  ],
+  "hook": "receive + receive = accept"
  },
  {
   "id": "c0901",
@@ -9180,7 +9435,8 @@
   "hint": [
    "to alter: a hand with a stick 攵 disciplining a kneeling child 己",
    "to change: 亦 also + 又 and"
-  ]
+  ],
+  "hook": "alter + change = change"
  },
  {
   "id": "c0917",
@@ -9192,9 +9448,10 @@
   "reading": "fāngfǎ",
   "ft": 1,
   "hint": [
-   "way",
+   "way: think: a flag 亠 over a square plot",
    "method: the course 去 followed by a stream 氵"
-  ]
+  ],
+  "hook": "way + method = method"
  },
  {
   "id": "c0918",
@@ -9206,9 +9463,10 @@
   "reading": "fāngmiàn",
   "ft": 1,
   "hint": [
-   "side",
+   "side: think: a flag 亠 over a square plot",
    "aspect: picture of a person's face"
-  ]
+  ],
+  "hook": "side + aspect = aspect"
  },
  {
   "id": "c1012",
@@ -9234,9 +9492,10 @@
   "reading": "zhuānyè",
   "ft": 1,
   "hint": [
-   "specialized",
-   "profession"
-  ]
+   "specialized: think: simplified from 專, a hand 寸 winding a spindle",
+   "profession: think: simplified from 業, a frame hung with bells"
+  ],
+  "hook": "specialised + profession = major"
  },
  {
   "id": "c0639",
@@ -9250,7 +9509,8 @@
   "hint": [
    "duty: 亻 (person) + 壬 (sound rén)",
    "task: 夂 to go + 力 strength"
-  ]
+  ],
+  "hook": "duty + task = task"
  },
  {
   "id": "c0712",
@@ -9264,7 +9524,8 @@
   "hint": [
    "source: 厂 (cliff) + 泉 (sound quán)",
    "cause: 囗 enclosure + 大 big"
-  ]
+  ],
+  "hook": "source + cause = reason"
  },
  {
   "id": "c1025",
@@ -9278,7 +9539,8 @@
   "hint": [
    "field: a hand measuring 斗 grain 禾",
    "(study of): a building 冖 where children 子 study"
-  ]
+  ],
+  "hook": "field + study = science"
  },
  {
   "id": "c1098",
@@ -9292,7 +9554,8 @@
   "hint": [
    "rules: 见 (observe) + 夫 (sound fū)",
    "to fix: a person 疋 settling under a roof 宀"
-  ]
+  ],
+  "hook": "rules + fix = stipulate"
  },
  {
   "id": "c0854",
@@ -9306,7 +9569,8 @@
   "hint": [
    "to affect: two hearts 心 beating together 咸",
    "to feel: 见 (see) + ⺍ (sound)"
-  ]
+  ],
+  "hook": "affect + feel = feeling"
  },
  {
   "id": "c1077",
@@ -9320,7 +9584,8 @@
   "hint": [
    "can",
    "strength: a plow's head representing strength"
-  ]
+  ],
+  "hook": "can + strength = ability"
  },
  {
   "id": "c1084",
@@ -9334,7 +9599,8 @@
   "hint": [
    "art: 艹 (grass) + 乙 (sound yǐ)",
    "skill: 木 tree + 丶"
-  ]
+  ],
+  "hook": "art + skill = art"
  },
  {
   "id": "c1091",
@@ -9362,7 +9628,8 @@
   "hint": [
    "to jump over: 走 (run) + 召 (sound zhào)",
    "to pass"
-  ]
+  ],
+  "hook": "jump over + pass = exceed"
  },
  {
   "id": "c1141",
@@ -9389,7 +9656,8 @@
   "hint": [
    "real",
    "true: a foot 止 stopping in the right place 一"
-  ]
+  ],
+  "hook": "real + true = genuine"
  },
  {
   "id": "c1118",
@@ -9403,7 +9671,8 @@
   "hint": [
    "to investigate (diào): 讠 (speech) + 周 (sound zhōu)",
    "to investigate: 木 tree + 旦 dawn"
-  ]
+  ],
+  "hook": "investigate + investigate = investigate"
  },
  {
   "id": "c0605",
@@ -9417,7 +9686,8 @@
   "hint": [
    "age: picture of three leaves on a branch",
    "period: 纟 (thread) + 己 (sound jǐ)"
-  ]
+  ],
+  "hook": "age + period = century"
  },
  {
   "id": "c0608",
@@ -9431,7 +9701,8 @@
   "hint": [
    "strict: 亚 Asia + 厂 cliff",
    "weighty: a burden carried for a thousand 千 miles 里"
-  ]
+  ],
+  "hook": "strict + weighty = serious"
  },
  {
   "id": "c0772",
@@ -9445,7 +9716,8 @@
   "hint": [
    "to increase: 土 (earth) + 曾 (sound céng)",
    "to add to: supporting a cause with the strength 力 of one's words 口"
-  ]
+  ],
+  "hook": "increase + add = increase"
  },
  {
   "id": "c0822",
@@ -9459,7 +9731,8 @@
   "hint": [
    "also: two men standing side-by-side",
    "moreover: picture of a stone altar"
-  ]
+  ],
+  "hook": "also + moreover = and"
  },
  {
   "id": "c0726",
@@ -9473,7 +9746,8 @@
   "hint": [
    "to receive: something 冖 passed from one hand 爫 to another 又",
    "to reach"
-  ]
+  ],
+  "hook": "receive + reach = receive"
  },
  {
   "id": "c0733",
@@ -9501,7 +9775,8 @@
   "hint": [
    "foundation: 土 (earth) + 其 (sound qí)",
    "foundation stone: 石 (stone) + 出 (sound chū)"
-  ]
+  ],
+  "hook": "foundation + foundation stone = base"
  },
  {
   "id": "c1120",
@@ -9515,7 +9790,8 @@
   "hint": [
    "to bear: a person carrying a lot of money 贝",
    "one's responsibility: money 贝 that must be repaid"
-  ]
+  ],
+  "hook": "bear + responsibility = be responsible"
  },
  {
   "id": "c0729",
@@ -9529,7 +9805,8 @@
   "hint": [
    "only",
    "to need"
-  ]
+  ],
+  "hook": "only + need = as long as"
  },
  {
   "id": "c0719",
@@ -9543,7 +9820,8 @@
   "hint": [
    "against: a hand 又 held up against a cliff 厂",
    "facing"
-  ]
+  ],
+  "hook": "against + facing = oppose"
  },
  {
   "id": "c0773",
@@ -9557,7 +9835,8 @@
   "hint": [
    "to increase: 土 (earth) + 曾 (sound céng)",
    "to grow (zhǎng)"
-  ]
+  ],
+  "hook": "increase + grow = grow"
  },
  {
   "id": "c0882",
@@ -9584,7 +9863,8 @@
   "hint": [
    "to experience: 纟 (thread) + 工 (sound gōng)",
    "to test: 马 (horse) + 佥 (sound qiān)"
-  ]
+  ],
+  "hook": "experience + test = experience"
  },
  {
   "id": "c1113",
@@ -9598,7 +9878,8 @@
   "hint": [
    "words: 讠 (words) + 吾 (sound wú)",
    "words: a tongue sticking out of a mouth 口"
-  ]
+  ],
+  "hook": "words + words = language"
  },
  {
   "id": "c0637",
@@ -9612,7 +9893,8 @@
   "hint": [
    "price: 亻 + 介 (sound jiè)",
    "standard: 木 (wood) + 各 (sound gè)"
-  ]
+  ],
+  "hook": "price + standard = price"
  },
  {
   "id": "c0935",
@@ -9626,7 +9908,8 @@
   "hint": [
    "clause",
    "item"
-  ]
+  ],
+  "hook": "clause + item = condition"
  },
  {
   "id": "c0940",
@@ -9640,7 +9923,8 @@
   "hint": [
    "mark: 木 (wood) + 票 (sound piào)",
    "standard: 冫 (water in a spirit level) + 隹 (sound zhuī)"
-  ]
+  ],
+  "hook": "mark + standard = standard"
  },
  {
   "id": "c1115",
@@ -9654,7 +9938,8 @@
   "hint": [
    "to speak: 讠 (speech) + 兑 (sound duì)",
    "clear: the light of the sun 日 and moon 月"
-  ]
+  ],
+  "hook": "speak + clear = explain"
  },
  {
   "id": "c0732",
@@ -9668,7 +9953,8 @@
   "hint": [
    "but: 丁 (vigorous) + 口 (sound kǒu)",
    "to be"
-  ]
+  ],
+  "hook": "but + is = but"
  },
  {
   "id": "c0952",
@@ -9682,7 +9968,8 @@
   "hint": [
    "mother: a mother's breasts",
    "parent: a tree bearing fruit 立"
-  ]
+  ],
+  "hook": "mother + parent = mother"
  },
  {
   "id": "c1074",
@@ -9696,7 +9983,8 @@
   "hint": [
    "to connect: 耳 (ear) + 关 (sound guān)",
    "connection: 糸 (thread) + 丿"
-  ]
+  ],
+  "hook": "connect + connection = contact"
  },
  {
   "id": "c1100",
@@ -9710,7 +9998,8 @@
   "hint": [
    "to guard: 言 (speech) + 敬 (sound jìng)",
    "to examine: 宀 (roof) + 祭 (sound jì)"
-  ]
+  ],
+  "hook": "guard + examine = police"
  },
  {
   "id": "c0597",
@@ -9724,7 +10013,8 @@
   "hint": [
    "no",
    "only: 亻 (person) + 又"
-  ]
+  ],
+  "hook": "not + only = not only"
  },
  {
   "id": "c0742",
@@ -9736,9 +10026,10 @@
   "reading": "hòulái",
   "ft": 1,
   "hint": [
-   "after",
+   "after: think: a ruler giving orders 口, who comes after",
    "to come"
-  ]
+  ],
+  "hook": "after + come = later"
  },
  {
   "id": "c0851",
@@ -9752,7 +10043,8 @@
   "hint": [
    "opinion: 心 (heart) + 音 (sound yīn)",
    "view: a man 儿 with the eye emphasized"
-  ]
+  ],
+  "hook": "opinion + view = opinion"
  },
  {
   "id": "c1099",
@@ -9766,7 +10058,8 @@
   "hint": [
    "to explain: to cut 刀 the horns 角 off of an ox 牛",
    "to explain: 釆 (collect) + 睪 (sound yì)"
-  ]
+  ],
+  "hook": "explain + explain = explain"
  },
  {
   "id": "c0986",
@@ -9780,7 +10073,8 @@
   "hint": [
    "father: a hand 乂 holding an axe 八",
    "parent: a tree bearing fruit 立"
-  ]
+  ],
+  "hook": "father + parent = father"
  },
  {
   "id": "c1103",
@@ -9794,7 +10088,8 @@
   "hint": [
    "to discuss: to ask 讠 for something 寸",
    "debate: speech 讠 that explains the logic 仑"
-  ]
+  ],
+  "hook": "discuss + debate = discuss"
  },
  {
   "id": "c1107",
@@ -9808,7 +10103,8 @@
   "hint": [
    "to prove: to speak 讠 the truth 正",
    "clear: the light of the sun 日 and moon 月"
-  ]
+  ],
+  "hook": "prove + clear = prove"
  },
  {
   "id": "c0667",
@@ -9822,7 +10118,8 @@
   "hint": [
    "whole: jade 玉 put away 入 for safe-keeping",
    "part: 阝 (place) + 咅 (sound pǒu)"
-  ]
+  ],
+  "hook": "whole + part = all"
  },
  {
   "id": "c0835",
@@ -9836,7 +10133,8 @@
   "hint": [
    "at (that)",
    "place"
-  ]
+  ],
+  "hook": "at that + place = local"
  },
  {
   "id": "c1081",
@@ -9850,7 +10148,8 @@
   "hint": [
    "self: picture of a nose",
    "so: 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "self + so = nature"
  },
  {
   "id": "c0765",
@@ -9864,7 +10163,8 @@
   "hint": [
    "hard: 又 and + 土 soil",
    "to hold: 扌 (hand) + 寺 (sound sì)"
-  ]
+  ],
+  "hook": "hard + hold = persist"
  },
  {
   "id": "c1087",
@@ -9878,7 +10178,8 @@
   "hint": [
    "bounds: 艹 (plant) + 氾 (sound fàn)",
    "to surround: 囗 (enclosure) + 韦 (sound wéi)"
-  ]
+  ],
+  "hook": "bounds + surround = scope"
  },
  {
   "id": "c0648",
@@ -9892,7 +10193,8 @@
   "hint": [
    "precedent: 亻 (person) + 列 (sound liè)",
    "as: a wife 女 following her husband's words 口"
-  ]
+  ],
+  "hook": "precedent + as = for example"
  },
  {
   "id": "c0669",
@@ -9906,7 +10208,8 @@
   "hint": [
    "shared: two hands 八 holding one object 廾",
    "same: sharing a common 凡 tongue 口"
-  ]
+  ],
+  "hook": "shared + same = common"
  },
  {
   "id": "c0949",
@@ -9920,7 +10223,8 @@
   "hint": [
    "proper: a foot 止 stopping in the right place 一",
    "style: a craftsman using an awl 弋 and a measuring square 工"
-  ]
+  ],
+  "hook": "proper + style = formal"
  },
  {
   "id": "c0955",
@@ -9934,7 +10238,8 @@
   "hint": [
    "citizens: an eye 巳 pierced by a dagger 戈, an old mark of slavery",
    "race: a group of people that swear by 矢 a single flag 方"
-  ]
+  ],
+  "hook": "citizens + race = ethnic group"
  },
  {
   "id": "c1052",
@@ -9948,7 +10253,8 @@
   "hint": [
    "to form: 纟 (thread) + 且 (sound qiě)",
    "to become: 丁 male adult + 戈 spear"
-  ]
+  ],
+  "hook": "form + become = make up"
  },
  {
   "id": "c0650",
@@ -9962,7 +10268,8 @@
   "hint": [
    "to safeguard: 亻 (person) + 呆 (sound dāi)",
    "to prove: to speak 讠 the truth 正"
-  ]
+  ],
+  "hook": "safeguard + prove = guarantee"
  },
  {
   "id": "c0764",
@@ -9990,7 +10297,8 @@
   "hint": [
    "real: 宀 roof + 头 head",
    "occasion: 阝 (hill) + 示 (sound shì)"
-  ]
+  ],
+  "hook": "real + occasion = actual"
  },
  {
   "id": "c0957",
@@ -10002,9 +10310,10 @@
   "reading": "yǒngyuǎn",
   "ft": 1,
   "hint": [
-   "long",
+   "long: think: a stream with side branches, flowing on forever",
    "far"
-  ]
+  ],
+  "hook": "long + far = forever"
  },
  {
   "id": "c0972",
@@ -10018,7 +10327,8 @@
   "hint": [
    "news: 氵 (water) + 肖 (sound xiào)",
    "news: to breathe (life, 心) through one's nose 自"
-  ]
+  ],
+  "hook": "news + news = news"
  },
  {
   "id": "c0983",
@@ -10032,7 +10342,8 @@
   "hint": [
    "so: 灬 (fire) + 肰 (sound rán)",
    "but"
-  ]
+  ],
+  "hook": "so + but = however"
  },
  {
   "id": "c1049",
@@ -10046,7 +10357,8 @@
   "hint": [
    "essence: 米 (grain) + 青 (sound qīng)",
    "spirit: 礻 (spirit) + 申 (sound shēn)"
-  ]
+  ],
+  "hook": "essence + spirit = spirit"
  },
  {
   "id": "c1069",
@@ -10060,7 +10372,8 @@
   "hint": [
    "to examine: 耂 (old) + 丂 (sound kǎo)",
    "to ponder: a tiger 虍 striking fear into the heart 心"
-  ]
+  ],
+  "hook": "examine + ponder = consider"
  },
  {
   "id": "c1156",
@@ -10074,7 +10387,8 @@
   "hint": [
    "weighty: a burden carried for a thousand 千 miles 里",
    "point"
-  ]
+  ],
+  "hook": "weighty + point = key point"
  },
  {
   "id": "c0665",
@@ -10086,9 +10400,10 @@
   "reading": "miǎnfèi",
   "ft": 1,
   "hint": [
-   "to spare",
+   "to spare: think: a person slipping out of a hat or cloak",
    "expenses: 贝 (money) + 弗 (sound fú)"
-  ]
+  ],
+  "hook": "spare + expenses = free of charge"
  },
  {
   "id": "c0727",
@@ -10102,7 +10417,8 @@
   "hint": [
    "another: 口 mouth + 力 strength",
    "outside"
-  ]
+  ],
+  "hook": "another + outside = in addition"
  },
  {
   "id": "c0630",
@@ -10129,7 +10445,8 @@
   "hint": [
    "ten",
    "parts"
-  ]
+  ],
+  "hook": "ten + parts = very"
  },
  {
   "id": "c0914",
@@ -10143,7 +10460,8 @@
   "hint": [
    "writing: picture of a tattooed chest, representing writing",
    "chapter: the ten 十 movements of a piece of music 音"
-  ]
+  ],
+  "hook": "writing + chapter = article"
  },
  {
   "id": "c0999",
@@ -10157,7 +10475,8 @@
   "hint": [
    "life: a shoot growing out of the soil 土",
    "life: an order 令 given by mouth 口"
-  ]
+  ],
+  "hook": "life + life = life"
  },
  {
   "id": "c0622",
@@ -10171,7 +10490,8 @@
   "hint": [
    "Asia: picture of a cross-shaped house or temple",
    "continent: a state 州 surrounded by water 氵"
-  ]
+  ],
+  "hook": "Asia + continent = Asia"
  },
  {
   "id": "c0713",
@@ -10185,7 +10505,8 @@
   "hint": [
    "source: 厂 (cliff) + 泉 (sound quán)",
    "since"
-  ]
+  ],
+  "hook": "source + since = originally"
  },
  {
   "id": "c0878",
@@ -10212,7 +10533,8 @@
   "hint": [
    "to agree to: to stop 止 flexing one's muscles ⺼",
    "fixed: a person 疋 settling under a roof 宀"
-  ]
+  ],
+  "hook": "agree + fixed = definitely"
  },
  {
   "id": "c0832",
@@ -10226,7 +10548,8 @@
   "hint": [
    "to pull: to pull back a bow's 弓 drawstring 丨",
    "to rise: 走 (walk) + 己 (sound jǐ)"
-  ]
+  ],
+  "hook": "pull + rise = cause"
  },
  {
   "id": "c1009",
@@ -10240,7 +10563,8 @@
   "hint": [
    "eye: picture of an eye drawn on its side",
    "target (dì)"
-  ]
+  ],
+  "hook": "eye + target = purpose"
  },
  {
   "id": "c1020",
@@ -10254,7 +10578,8 @@
   "hint": [
    "certain: 石 (stone) + 角 (sound jiǎo)",
    "real: 宀 roof + 头 head"
-  ]
+  ],
+  "hook": "certain + real = indeed"
  },
  {
   "id": "c1155",
@@ -10268,7 +10593,8 @@
   "hint": [
    "again (chóng): a burden carried for a thousand 千 miles 里",
    "new"
-  ]
+  ],
+  "hook": "again + new = anew"
  },
  {
   "id": "c1073",
@@ -10281,8 +10607,9 @@
   "ft": 1,
   "hint": [
    "duty: 耳 (ear) + 只 (sound zhī)",
-   "business"
-  ]
+   "business: think: simplified from 業, a frame hung with bells"
+  ],
+  "hook": "duty + business = occupation"
  },
  {
   "id": "c0618",
@@ -10296,7 +10623,8 @@
   "hint": [
    "also",
    "perhaps: 讠 (speech) + 午 (sound wǔ)"
-  ]
+  ],
+  "hook": "also + perhaps = perhaps"
  },
  {
   "id": "c1162",
@@ -10310,7 +10638,8 @@
   "hint": [
    "to examine: 门 gate + 兑 cash",
    "to read out"
-  ]
+  ],
+  "hook": "examine + read aloud = read"
  },
  {
   "id": "c0806",
@@ -10324,7 +10653,8 @@
   "hint": [
    "small",
    "talk: 讠 (speech) + 兑 (sound duì)"
-  ]
+  ],
+  "hook": "small + talk = novel"
  },
  {
   "id": "c0993",
@@ -10338,7 +10668,8 @@
   "hint": [
    "current: to see 见 jade 王",
    "era: a man 亻 caught 弋 by the passing of time"
-  ]
+  ],
+  "hook": "current + era = modern"
  },
  {
   "id": "c0996",
@@ -10352,7 +10683,8 @@
   "hint": [
    "reason: 王 (king) + 里 (sound lǐ)",
    "to understand: to cut 刀 the horns 角 off of an ox 牛"
-  ]
+  ],
+  "hook": "reason + understand = comprehend"
  },
  {
   "id": "c1015",
@@ -10366,7 +10698,8 @@
   "hint": [
    "to know: 口 (mouth) + 矢 (sound shǐ)",
    "knowledge: 讠 (speech) + 只 (sound zhī)"
-  ]
+  ],
+  "hook": "know + knowledge = knowledge"
  },
  {
   "id": "c1119",
@@ -10393,7 +10726,8 @@
   "hint": [
    "one's responsibility: money 贝 that must be repaid",
    "duty: 亻 (person) + 壬 (sound rén)"
-  ]
+  ],
+  "hook": "responsibility + duty = responsibility"
  },
  {
   "id": "c0682",
@@ -10407,7 +10741,8 @@
   "hint": [
    "to decrease: 冫 (ice) + 咸 (sound xián)",
    "few"
-  ]
+  ],
+  "hook": "decrease + few = reduce"
  },
  {
   "id": "c0873",
@@ -10421,7 +10756,8 @@
   "hint": [
    "to report: a hand 扌 cuffing 又 a criminal 卩, representing sentencing",
    "to say: 辶 (walk) + 首 (sound shǒu)"
-  ]
+  ],
+  "hook": "report + say = report news"
  },
  {
   "id": "c0929",
@@ -10435,7 +10771,8 @@
   "hint": [
    "most",
    "good"
-  ]
+  ],
+  "hook": "most + good = best"
  },
  {
   "id": "c1054",
@@ -10449,7 +10786,8 @@
   "hint": [
    "to experience: 纟 (thread) + 工 (sound gōng)",
    "to go through: 厤 (calendar) + 力 (sound lì)"
-  ]
+  ],
+  "hook": "experience + go through = experience"
  },
  {
   "id": "c1082",
@@ -10463,7 +10801,8 @@
   "hint": [
    "reach: a bird alighting on the ground 土",
    "few"
-  ]
+  ],
+  "hook": "reach + few = at least"
  },
  {
   "id": "c0631",
@@ -10477,7 +10816,8 @@
   "hint": [
    "yet: 乃 (then) + 亻 (sound rén)",
    "so: 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "yet + so = still"
  },
  {
   "id": "c1027",
@@ -10491,7 +10831,8 @@
   "hint": [
    "to store up: 禾 (grain) + 只 (sound zhī)",
    "extremely"
-  ]
+  ],
+  "hook": "store up + extremely = active"
  },
  {
   "id": "c0677",
@@ -10505,7 +10846,8 @@
   "hint": [
    "agriculture: picture of tilling the field with a hoe",
    "village: 木 (tree) + 寸 (sound cùn)"
-  ]
+  ],
+  "hook": "agriculture + village = countryside"
  },
  {
   "id": "c0692",
@@ -10518,8 +10860,9 @@
   "ft": 1,
   "hint": [
    "to reach",
-   "bottom"
-  ]
+   "bottom: 广 (building) + 氐 (sound dī)"
+  ],
+  "hook": "reach + bottom = after all"
  },
  {
   "id": "c0784",
@@ -10533,7 +10876,8 @@
   "hint": [
    "quite",
    "to resemble"
-  ]
+  ],
+  "hook": "quite + resemble = seem"
  },
  {
   "id": "c0808",
@@ -10547,7 +10891,8 @@
   "hint": [
    "especially: 丶 + 尢 (sound yóu)",
    "(adverb suffix): 甘 + 一 + 八"
-  ]
+  ],
+  "hook": "especially + suffix = especially"
  },
  {
   "id": "c0809",
@@ -10561,7 +10906,8 @@
   "hint": [
    "to the utmost (jǐn): 尺 ruler + ⺀ ice",
    "to mind: ⺮ (bamboo) + 官 (sound guān)"
-  ]
+  ],
+  "hook": "to the utmost + mind = although"
  },
  {
   "id": "c0707",
@@ -10575,7 +10921,8 @@
   "hint": [
    "even: a hungry person卩 kneeling over food",
    "(with 即: even if)"
-  ]
+  ],
+  "hook": "even + cause = even if"
  },
  {
   "id": "c0810",
@@ -10589,7 +10936,8 @@
   "hint": [
    "labor: picture of a spade or other workman's tool",
    "tool: two hands 八 writing on a tablet 目"
-  ]
+  ],
+  "hook": "labor + tool = tool"
  },
  {
   "id": "c0921",
@@ -10603,7 +10951,8 @@
   "hint": [
    "not to have",
    "to discuss: speech 讠 that explains the logic 仑"
-  ]
+  ],
+  "hook": "not have + discuss = no matter"
  },
  {
   "id": "c0948",
@@ -10617,7 +10966,8 @@
   "hint": [
    "proper: a foot 止 stopping in the right place 一",
    "normal: 巾 (cloth) + 尚 (sound shàng)"
-  ]
+  ],
+  "hook": "proper + normal = normal"
  },
  {
   "id": "c1044",
@@ -10644,7 +10994,8 @@
   "hint": [
    "limit: 阝 (place) + 艮 (sound gěn)",
    "to restrict: 刂 (knife) + 巾 (sound jīn)"
-  ]
+  ],
+  "hook": "limit + restrict = restrict"
  },
  {
   "id": "c0625",
@@ -10656,9 +11007,10 @@
   "reading": "jiāotōng",
   "ft": 1,
   "hint": [
-   "to connect",
+   "to connect: a person with crossed (intersecting) legs",
    "to pass through: 辶 (walk) + 甬 (sound yǒng)"
-  ]
+  ],
+  "hook": "connect + pass through = traffic"
  },
  {
   "id": "c0710",
@@ -10672,7 +11024,8 @@
   "hint": [
    "press: soil 土 crushed under pressure 厂",
    "strength: a plow's head representing strength"
-  ]
+  ],
+  "hook": "press + strength = pressure"
  },
  {
   "id": "c0916",
@@ -10684,9 +11037,10 @@
   "reading": "fāngxiàng",
   "ft": 1,
   "hint": [
-   "direction",
+   "direction: think: a flag 亠 over a square plot",
    "towards"
-  ]
+  ],
+  "hook": "direction + towards = direction"
  },
  {
   "id": "c0614",
@@ -10700,7 +11054,8 @@
   "hint": [
    "to raise: 扌 (hand) + 舉 (sound jǔ)",
    "to run: 力 (strength) + 八 (sound bā)"
-  ]
+  ],
+  "hook": "raise + run = hold"
  },
  {
   "id": "c0624",
@@ -10712,9 +11067,10 @@
   "reading": "jiāoliú",
   "ft": 1,
   "hint": [
-   "to exchange",
+   "to exchange: a person with crossed (intersecting) legs",
    "to flow: 氵 (water) + 㐬 (sound liú)"
-  ]
+  ],
+  "hook": "exchange + flow = exchange"
  },
  {
   "id": "c0646",
@@ -10728,7 +11084,8 @@
   "hint": [
    "to write: a person 亻 making something for the first time 乍",
    "(one who): 耂 old + 日 sun"
-  ]
+  ],
+  "hook": "write + one who = author"
  },
  {
   "id": "c0693",
@@ -10742,7 +11099,8 @@
   "hint": [
    "to manufacture: 刂 (knife) + 巾 (sound jīn)",
    "to build: 辶 (walk) + 告 (sound gào)"
-  ]
+  ],
+  "hook": "manufacture + build = make"
  },
  {
   "id": "c0950",
@@ -10756,7 +11114,8 @@
   "hint": [
    "correct: a foot 止 stopping in the right place 一",
    "certain: 石 (stone) + 角 (sound jiǎo)"
-  ]
+  ],
+  "hook": "correct + certain = correct"
  },
  {
   "id": "c1144",
@@ -10770,7 +11129,8 @@
   "hint": [
    "step by step: 辶 (walk) + 豕 (sound shǐ)",
    "gradually: 氵 (water) + 斩 (sound zhǎn)"
-  ]
+  ],
+  "hook": "step by step + gradually = gradually"
  },
  {
   "id": "c0662",
@@ -10784,7 +11144,8 @@
   "hint": [
    "child: picture of a child",
    "child: a child standing 立 in the village 里"
-  ]
+  ],
+  "hook": "child + child = children"
  },
  {
   "id": "c0663",
@@ -10798,7 +11159,8 @@
   "hint": [
    "to grant: 厶 private + 儿 son",
    "to consent: 讠 (speech) + 午 (sound wǔ)"
-  ]
+  ],
+  "hook": "grant + consent = permit"
  },
  {
   "id": "c0782",
@@ -10812,7 +11174,8 @@
   "hint": [
    "to lose: something 丿 falling from a hand 夫",
    "failure: 攵 (rap) + 贝 (sound bèi)"
-  ]
+  ],
+  "hook": "lose + fail = fail"
  },
  {
   "id": "c0906",
@@ -10826,7 +11189,8 @@
   "hint": [
    "to teach",
    "to instruct: 扌 (hand) + 受 (sound shòu)"
-  ]
+  ],
+  "hook": "teach + instruct = professor"
  },
  {
   "id": "c1122",
@@ -10840,7 +11204,8 @@
   "hint": [
    "nature: 贝 (shell) + 十 (sound shí)",
    "amount: 里 (unit) + 旦 (sound dàn)"
-  ]
+  ],
+  "hook": "nature + amount = quality"
  },
  {
   "id": "c0759",
@@ -10852,9 +11217,10 @@
   "reading": "kùnnan",
   "ft": 1,
   "hint": [
-   "in distress",
+   "in distress: a fence 囗 built around a tree 木",
    "difficult"
-  ]
+  ],
+  "hook": "distress + difficult = difficulty"
  },
  {
   "id": "c0825",
@@ -10868,7 +11234,8 @@
   "hint": [
    "broad: a lean-to 厂, suggesting a building",
    "to announce: to speak 口 with the force of an ox 牛"
-  ]
+  ],
+  "hook": "broad + announce = advertisement"
  },
  {
   "id": "c0844",
@@ -10882,7 +11249,8 @@
   "hint": [
    "manner: 心 (heart) + 太 (sound tài)",
    "manner: twenty 廿 people 又 meeting inside a building 广 to deliberate"
-  ]
+  ],
+  "hook": "manner + manner = attitude"
  },
  {
   "id": "c0909",
@@ -10896,7 +11264,8 @@
   "hint": [
    "number: 攵 (script) + 娄 (sound lóu)",
    "symbol"
-  ]
+  ],
+  "hook": "number + symbol = digit"
  },
  {
   "id": "c1003",
@@ -10910,7 +11279,8 @@
   "hint": [
    "to declare: picture of a bolt of lightning",
    "to ask"
-  ]
+  ],
+  "hook": "declare + ask = apply"
  },
  {
   "id": "c1184",
@@ -10924,7 +11294,8 @@
   "hint": [
    "head: a deer's head 自 adorned with antlers 丷",
    "first"
-  ]
+  ],
+  "hook": "head + first = first of all"
  },
  {
   "id": "c0706",
@@ -10938,7 +11309,8 @@
   "hint": [
    "dangerous: a person 㔾 at the edge of a cliff 厃",
    "danger: 阝 (hill) + 佥 (sound qiān)"
-  ]
+  ],
+  "hook": "dangerous + danger = danger"
  },
  {
   "id": "c0879",
@@ -10952,7 +11324,8 @@
   "hint": [
    "to refuse: 扌 (hand) + 巨 (sound jù)",
    "to break off: 纟 (thread) + 色 (sound sè)"
-  ]
+  ],
+  "hook": "refuse + break off = refuse"
  },
  {
   "id": "c1148",
@@ -10966,7 +11339,8 @@
   "hint": [
    "prompt: 辶 (walk) + 束 (sound shù)",
    "rate: twenty 廿 people 又 meeting inside a building 广 to deliberate"
-  ]
+  ],
+  "hook": "prompt + rate = speed"
  },
  {
   "id": "c0910",
@@ -10980,7 +11354,8 @@
   "hint": [
    "count: 攵 (script) + 娄 (sound lóu)",
    "measure: 里 (unit) + 旦 (sound dàn)"
-  ]
+  ],
+  "hook": "count + measure = quantity"
  },
  {
   "id": "c1065",
@@ -11007,7 +11382,8 @@
   "hint": [
    "difficult",
    "to say: 辶 (walk) + 首 (sound shǒu)"
-  ]
+  ],
+  "hook": "difficult + say = could it be"
  },
  {
   "id": "c0600",
@@ -11021,7 +11397,8 @@
   "hint": [
    "no",
    "to mind: ⺮ (bamboo) + 官 (sound guān)"
-  ]
+  ],
+  "hook": "not + mind = no matter"
  },
  {
   "id": "c0668",
@@ -11035,7 +11412,8 @@
   "hint": [
    "metric: to divide 八 what is private 厶",
    "li (half a km)"
-  ]
+  ],
+  "hook": "metric + li = kilometre"
  },
  {
   "id": "c0746",
@@ -11062,7 +11440,8 @@
   "hint": [
    "real: 宀 roof + 头 head",
    "to exist"
-  ]
+  ],
+  "hook": "real + exist = really"
  },
  {
   "id": "c0839",
@@ -11076,7 +11455,8 @@
   "hint": [
    "law: to walk 彳 as required by law 聿",
    "professional: to skillfully wield 帀 a knife 刂"
-  ]
+  ],
+  "hook": "law + professional = lawyer"
  },
  {
   "id": "c0902",
@@ -11090,7 +11470,8 @@
   "hint": [
    "to put",
    "to abandon: two hands 廾 discarding a dead, swaddled baby 亠厶"
-  ]
+  ],
+  "hook": "put + abandon = give up"
  },
  {
   "id": "c0620",
@@ -11104,7 +11485,8 @@
   "hint": [
    "at: 二 two + 亅",
    "this"
-  ]
+  ],
+  "hook": "at + this = thereupon"
  },
  {
   "id": "c0855",
@@ -11118,7 +11500,8 @@
   "hint": [
    "to feel: two hearts 心 beating together 咸",
    "to thank: 讠 (speech) + 射 (sound shè)"
-  ]
+  ],
+  "hook": "feel + thank = thank"
  },
  {
   "id": "c0660",
@@ -11132,7 +11515,8 @@
   "hint": [
    "to suspend: 亻 (person) + 亭 (sound tíng)",
    "to stop: picture of a foot"
-  ]
+  ],
+  "hook": "suspend + stop = stop"
  },
  {
   "id": "c0869",
@@ -11146,7 +11530,8 @@
   "hint": [
    "to criticize: 扌 (hand) + 比 (sound bǐ)",
    "to appraise: 讠 (speech) + 平 (sound píng)"
-  ]
+  ],
+  "hook": "criticise + appraise = criticise"
  },
  {
   "id": "c0884",
@@ -11160,7 +11545,8 @@
   "hint": [
    "according to: 扌 (hand) + 安 (sound ān)",
    "in line with: 灬 (fire) + 昭 (sound zhāo)"
-  ]
+  ],
+  "hook": "according to + in line with = according to"
  },
  {
   "id": "c0905",
@@ -11174,7 +11560,8 @@
   "hint": [
    "result: 攵 (strike) + 交 (sound jiāo)",
    "result: fruit 田 growing on a tree 木"
-  ]
+  ],
+  "hook": "result + result = effect"
  },
  {
   "id": "c0953",
@@ -11187,8 +11574,9 @@
   "ft": 1,
   "hint": [
    "to finish: 十 (complete) + 比 (sound bǐ)",
-   "studies"
-  ]
+   "studies: think: simplified from 業, a frame hung with bells"
+  ],
+  "hook": "finish + studies = graduate"
  },
  {
   "id": "c0611",
@@ -11201,8 +11589,9 @@
   "ft": 1,
   "hint": [
    "abundant: picture of an ear of grass",
-   "rich"
-  ]
+   "rich: 宀 (roof) + 畐 (sound fú)"
+  ],
+  "hook": "abundant + rich = rich"
  },
  {
   "id": "c0657",
@@ -11216,7 +11605,8 @@
   "hint": [
    "worth: 亻 (person) + 直 (sound zhí)",
    "to get"
-  ]
+  ],
+  "hook": "worth + get = be worth"
  },
  {
   "id": "c0658",
@@ -11244,7 +11634,8 @@
   "hint": [
    "to follow: to walk 迶 to the city 阝; to follow a path",
    "(verb suffix)"
-  ]
+  ],
+  "hook": "follow + verb suffix = along with"
  },
  {
   "id": "c0789",
@@ -11258,7 +11649,8 @@
   "hint": [
    "to place: a woman 女 safe in a house 宀",
    "to line up: 扌 (hand) + 非 (sound fēi)"
-  ]
+  ],
+  "hook": "place + line up = arrange"
  },
  {
   "id": "c0899",
@@ -11270,9 +11662,10 @@
   "reading": "shōurù",
   "ft": 1,
   "hint": [
-   "to receive",
+   "to receive: 攵 (hand) + 丩 (sound jiū)",
    "to enter: an arrow indicating \"enter\""
-  ]
+  ],
+  "hook": "receive + enter = income"
  },
  {
   "id": "c0931",
@@ -11286,7 +11679,8 @@
   "hint": [
    "origin",
    "since"
-  ]
+  ],
+  "hook": "origin + since = originally"
  },
  {
   "id": "c0670",
@@ -11300,7 +11694,8 @@
   "hint": [
    "to close",
    "bolt: 钅 (metal) + 建 (sound jiàn)"
-  ]
+  ],
+  "hook": "close + bolt = key"
  },
  {
   "id": "c0837",
@@ -11327,7 +11722,8 @@
   "hint": [
    "to expand: 广 (wide) + 扌 (sound shǒu)",
    "big"
-  ]
+  ],
+  "hook": "expand + big = enlarge"
  },
  {
   "id": "c0941",
@@ -11341,7 +11737,8 @@
   "hint": [
    "form: 木 (tree) + 羊 (sound yáng)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "form + noun suffix = appearance"
  },
  {
   "id": "c1142",
@@ -11355,7 +11752,8 @@
   "hint": [
    "match: 辶 (walk) + 舌 (sound shé)",
    "to fit: 亼 to assemble + 口 mouth"
-  ]
+  ],
+  "hook": "match + fit = suit"
  },
  {
   "id": "c0763",
@@ -11369,7 +11767,8 @@
   "hint": [
    "earth",
    "ball: 王 (jade) + 求 (sound qiú)"
-  ]
+  ],
+  "hook": "earth + ball = the earth"
  },
  {
   "id": "c0943",
@@ -11396,7 +11795,8 @@
   "hint": [
    "to make known: 艹 (plant) + 者 (sound zhě)",
    "name: a name called out 口 to hail someone at night 夕"
-  ]
+  ],
+  "hook": "make known + name = famous"
  },
  {
   "id": "c1145",
@@ -11410,7 +11810,8 @@
   "hint": [
    "to communicate: 辶 (walk) + 甬 (sound yǒng)",
    "to inform: 口 (mouth) + 矢 (sound shǐ)"
-  ]
+  ],
+  "hook": "communicate + inform = notify"
  },
  {
   "id": "c0604",
@@ -11422,9 +11823,10 @@
   "reading": "zhuānmén",
   "ft": 1,
   "hint": [
-   "concentrated",
+   "concentrated: think: simplified from 專, a hand 寸 winding a spindle",
    "field"
-  ]
+  ],
+  "hook": "concentrated + field = specially"
  },
  {
   "id": "c0775",
@@ -11438,7 +11840,8 @@
   "hint": [
    "double: a person 亻 who goes somewhere 夂 every day 日",
    "mix: 九 nine + 木 tree"
-  ]
+  ],
+  "hook": "double + mixed = complicated"
  },
  {
   "id": "c1125",
@@ -11465,7 +11868,8 @@
   "hint": [
    "to invite: 辶 (foot) + 敫 (sound jiǎo)",
    "to ask"
-  ]
+  ],
+  "hook": "invite + ask = invite"
  },
  {
   "id": "c0743",
@@ -11479,7 +11883,8 @@
   "hint": [
    "no: 不 (no) + 口 (sound kǒu)",
    "then: laws inscribed 刂 on a slate 贝"
-  ]
+  ],
+  "hook": "no + then = otherwise"
  },
  {
   "id": "c0933",
@@ -11493,7 +11898,8 @@
   "hint": [
    "various: 九 nine + 木 tree",
    "record: the mind 心 of a scholar 士"
-  ]
+  ],
+  "hook": "various + record = magazine"
  },
  {
   "id": "c0934",
@@ -11507,7 +11913,8 @@
   "hint": [
    "timber: 木 (wood) + 才 (sound cái)",
    "ingredients: a hand measuring 斗 a cup of rice 米"
-  ]
+  ],
+  "hook": "timber + ingredients = material"
  },
  {
   "id": "c1192",
@@ -11521,7 +11928,8 @@
   "hint": [
    "to rouse: 壴 (drum) + 支 (sound zhī)",
    "to encourage: 力 (strength) + 厉 (sound lì)"
-  ]
+  ],
+  "hook": "rouse + encourage = encourage"
  },
  {
   "id": "c0642",
@@ -11535,7 +11943,8 @@
   "hint": [
    "superior: 亻 (person) + 尤 (sound yóu)",
    "elegant: 禾 (flower) + 乃"
-  ]
+  ],
+  "hook": "superior + elegant = outstanding"
  },
  {
   "id": "c0689",
@@ -11549,7 +11958,8 @@
   "hint": [
    "just: 刂 (knife) + 冈 (sound gāng)",
    "just: 刂 (knife) + 冈 (sound gāng)"
-  ]
+  ],
+  "hook": "just + just = just now"
  },
  {
   "id": "c0988",
@@ -11563,7 +11973,8 @@
   "hint": [
    "special: 牛 (ox) + 寺 (sound sì)",
    "point"
-  ]
+  ],
+  "hook": "special + point = feature"
  },
  {
   "id": "c1063",
@@ -11577,7 +11988,8 @@
   "hint": [
    "beautiful: a person 大 wearing an elegant crown 羊",
    "beautiful: the antlers of a deer"
-  ]
+  ],
+  "hook": "beautiful + beautiful = beautiful"
  },
  {
   "id": "c1106",
@@ -11591,7 +12003,8 @@
   "hint": [
    "to visit: 讠 (speech) + 方 (sound fāng)",
    "to ask"
-  ]
+  ],
+  "hook": "visit + ask = visit"
  },
  {
   "id": "c1130",
@@ -11605,7 +12018,8 @@
   "hint": [
    "distance: 足 (foot) + 巨 (sound jù)",
    "to part from"
-  ]
+  ],
+  "hook": "distance + part from = distance"
  },
  {
   "id": "c1157",
@@ -11619,7 +12033,8 @@
   "hint": [
    "to value: a burden carried for a thousand 千 miles 里",
    "to regard: 见 (see) + 礻 (sound shì)"
-  ]
+  ],
+  "hook": "value + regard = value"
  },
  {
   "id": "c1172",
@@ -11646,7 +12061,8 @@
   "hint": [
    "food: picture of a dish of food with a lid on top",
    "product: something that everyone is talking 口 about"
-  ]
+  ],
+  "hook": "food + product = food"
  },
  {
   "id": "c0664",
@@ -11672,8 +12088,9 @@
   "ft": 1,
   "hint": [
    "extensive: 十 (ten) + 尃 (sound fū)",
-   "scholar"
-  ]
+   "scholar: think: an axe-head, the mark of a man of rank"
+  ],
+  "hook": "extensive + scholar = doctor of philosophy"
  },
  {
   "id": "c1067",
@@ -11686,8 +12103,9 @@
   "ft": 1,
   "hint": [
    "to translate: 羽 (wings) + 番 (sound fān)",
-   "to translate"
-  ]
+   "to translate: simplified from 譯: 讠 (speech) + 睪 (sound yì)"
+  ],
+  "hook": "translate + translate = translate"
  },
  {
   "id": "c1094",
@@ -11701,7 +12119,8 @@
   "hint": [
    "to show: fur 毛 clothing 衣; a shawl or wrap",
    "to reach: 辶 (to walk) + 大 (sound dà)"
-  ]
+  ],
+  "hook": "show + reach = express"
  },
  {
   "id": "c0610",
@@ -11715,7 +12134,8 @@
   "hint": [
    "Chinese: a line 丨 through the middle of a box 口",
    "writing: picture of a tattooed chest, representing writing"
-  ]
+  ],
+  "hook": "Chinese + writing = Chinese"
  },
  {
   "id": "c1190",
@@ -11729,7 +12149,8 @@
   "hint": [
    "high",
    "level: 纟 (silk) + 及 (sound jí)"
-  ]
+  ],
+  "hook": "high + level = advanced"
  },
  {
   "id": "c0645",
@@ -11743,7 +12164,8 @@
   "hint": [
    "to estimate: 亻 (person) + 古 (sound gǔ)",
    "to reckon: 讠 (speech) + 十 (sound shí)"
-  ]
+  ],
+  "hook": "estimate + reckon = estimate"
  },
  {
   "id": "c1035",
@@ -11757,7 +12179,8 @@
   "hint": [
    "to compete: to stand up 立 to a foe 兄",
    "to dispute: two hands and 彐 fighting over 亅"
-  ]
+  ],
+  "hook": "compete + dispute = compete"
  },
  {
   "id": "c1050",
@@ -11769,9 +12192,10 @@
   "reading": "jǐnzhāng",
   "ft": 1,
   "hint": [
-   "tense",
+   "tense: simplified from 緊: 臤 (firm) + 糸 (thread)",
    "to stretch"
-  ]
+  ],
+  "hook": "tense + stretch = nervous"
  },
  {
   "id": "c0640",
@@ -11798,7 +12222,8 @@
   "hint": [
    "to sort: a place 匸 under a lord's control 乂",
    "to distinguish"
-  ]
+  ],
+  "hook": "sort + distinguish = difference"
  },
  {
   "id": "c0720",
@@ -11812,7 +12237,8 @@
   "hint": [
    "reverse: a hand 又 held up against a cliff 厂",
    "to reflect: 日 (sun) + 央 (sound yāng)"
-  ]
+  ],
+  "hook": "reverse + reflect = reflect"
  },
  {
   "id": "c0745",
@@ -11826,7 +12252,8 @@
   "hint": [
    "to inhale: 口 (mouth) + 及 (sound jí)",
    "to pull: to pull back a bow's 弓 drawstring 丨"
-  ]
+  ],
+  "hook": "inhale + pull = attract"
  },
  {
   "id": "c0886",
@@ -11853,7 +12280,8 @@
   "hint": [
    "to correspond to: ⺮ (bamboo) + 付 (sound fù)",
    "to fit: 亼 to assemble + 口 mouth"
-  ]
+  ],
+  "hook": "correspond + fit = match"
  },
  {
   "id": "c1097",
@@ -11867,7 +12295,8 @@
   "hint": [
    "to observe: to see 见 again 又",
    "multitude: three people 人 representing a crowd"
-  ]
+  ],
+  "hook": "observe + multitude = audience"
  },
  {
   "id": "c1164",
@@ -11881,7 +12310,8 @@
   "hint": [
    "to descend: 阝 (hill) + 夅 (sound jiàng)",
    "low"
-  ]
+  ],
+  "hook": "descend + low = lower"
  },
  {
   "id": "c0684",
@@ -11895,7 +12325,8 @@
   "hint": [
    "to go out",
    "to set off"
-  ]
+  ],
+  "hook": "go out + set off = set off"
  },
  {
   "id": "c0724",
@@ -11922,7 +12353,8 @@
   "hint": [
    "to harbor: 忄 (heart) + 不 (sound bù)",
    "to doubt: an old man walking 疋 while holding 匕 a cane 矢"
-  ]
+  ],
+  "hook": "harbour + doubt = doubt"
  },
  {
   "id": "c0632",
@@ -11936,7 +12368,8 @@
   "hint": [
    "from",
    "since"
-  ]
+  ],
+  "hook": "from + since = all along"
  },
  {
   "id": "c0780",
@@ -11950,7 +12383,8 @@
   "hint": [
    "big",
    "about: 纟 (thread) + 勺"
-  ]
+  ],
+  "hook": "big + about = about"
  },
  {
   "id": "c0881",
@@ -11977,7 +12411,8 @@
   "hint": [
    "to restrict: 示 (altar) + 林 (sound lín)",
    "to stop: picture of a foot"
-  ]
+  ],
+  "hook": "restrict + stop = forbid"
  },
  {
   "id": "c1189",
@@ -12017,7 +12452,8 @@
   "hint": [
    "to love",
    "emotion: 忄 (heart) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "love + emotion = romantic love"
  },
  {
   "id": "c0607",
@@ -12031,7 +12467,8 @@
   "hint": [
    "strict: 亚 Asia + 厂 cliff",
    "standard: 木 (wood) + 各 (sound gè)"
-  ]
+  ],
+  "hook": "strict + standard = strict"
  },
  {
   "id": "c0779",
@@ -12045,7 +12482,8 @@
   "hint": [
    "big",
    "generally: 木 (tree) + 既 (sound jì)"
-  ]
+  ],
+  "hook": "big + generally = roughly"
  },
  {
   "id": "c0805",
@@ -12059,7 +12497,8 @@
   "hint": [
    "to honor: a hand 寸 making an offering of wine 酋",
    "to value: a burden carried for a thousand 千 miles 里"
-  ]
+  ],
+  "hook": "honour + value = respect"
  },
  {
   "id": "c0898",
@@ -12085,8 +12524,9 @@
   "ft": 1,
   "hint": [
    "widespread: everyone 並 under the sun 日",
-   "everywhere"
-  ]
+   "everywhere: 辶 (walk) + 扁 (sound biǎn)"
+  ],
+  "hook": "widespread + everywhere = universal"
  },
  {
   "id": "c0690",
@@ -12099,8 +12539,9 @@
   "ft": 1,
   "hint": [
    "to judge: 刂 (knife) + 半 (sound bàn)",
-   "to decide"
-  ]
+   "to decide: simplified from 斷: an axe 斤 cutting threads"
+  ],
+  "hook": "judge + decide = judge"
  },
  {
   "id": "c0826",
@@ -12114,7 +12555,8 @@
   "hint": [
    "broad: a lean-to 厂, suggesting a building",
    "to broadcast: to sow seeds 番 by hand 扌"
-  ]
+  ],
+  "hook": "broad + broadcast = broadcast"
  },
  {
   "id": "c0889",
@@ -12167,7 +12609,8 @@
   "hint": [
    "to move: 力 (strength) + 云",
    "to act: a person 亻 making something for the first time 乍"
-  ]
+  ],
+  "hook": "move + act = movement"
  },
  {
   "id": "c0838",
@@ -12181,7 +12624,8 @@
   "hint": [
    "(part of 往往 often)",
    "(part of 往往 often)"
-  ]
+  ],
+  "hook": "go + go = often"
  },
  {
   "id": "c0612",
@@ -12195,7 +12639,8 @@
   "hint": [
    "master: picture of a lamp with a flame",
    "to move: 力 (strength) + 云"
-  ]
+  ],
+  "hook": "master + move = take initiative"
  },
  {
   "id": "c0623",
@@ -12235,7 +12680,8 @@
   "hint": [
    "age",
    "age: 齿 (age) + 令 (sound lìng)"
-  ]
+  ],
+  "hook": "age + age = age"
  },
  {
   "id": "c0885",
@@ -12262,7 +12708,8 @@
   "hint": [
    "forest: many trees 木 forming a forest",
    "forest: two trees 木 representing a forest"
-  ]
+  ],
+  "hook": "forest + forest = forest"
  },
  {
   "id": "c0978",
@@ -12276,7 +12723,8 @@
   "hint": [
    "to perform: 氵 (water) + 寅 (sound yín)",
    "member: 贝 (money) + 口"
-  ]
+  ],
+  "hook": "perform + member = actor"
  },
  {
   "id": "c0823",
@@ -12290,7 +12738,8 @@
   "hint": [
    "fortune: two men, one alive 土 and one dead 干; the living one is lucky",
    "happiness: 礻 (spirit) + 畐 (sound fú)"
-  ]
+  ],
+  "hook": "fortune + happiness = happiness"
  },
  {
   "id": "c0977",
@@ -12304,7 +12753,8 @@
   "hint": [
    "to perform: 氵 (water) + 寅 (sound yín)",
    "to go out"
-  ]
+  ],
+  "hook": "perform + go out = performance"
  },
  {
   "id": "c1036",
@@ -12318,7 +12768,8 @@
   "hint": [
    "unexpectedly: a person 儿 finishing a musical piece 音",
    "(-ly suffix): 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "unexpectedly + suffix = unexpectedly"
  },
  {
   "id": "c0930",
@@ -12332,7 +12783,8 @@
   "hint": [
    "to have",
    "interest: 走 (walk) + 取 (sound qǔ)"
-  ]
+  ],
+  "hook": "have + interest = interesting"
  },
  {
   "id": "c1143",
@@ -12345,8 +12797,9 @@
   "ft": 1,
   "hint": [
    "match: 辶 (walk) + 舌 (sound shé)",
-   "to respond"
-  ]
+   "to respond: simplified from 應: 心 (heart) + 雁 (sound yàn)"
+  ],
+  "hook": "match + respond = adapt"
  },
  {
   "id": "c0749",
@@ -12360,7 +12813,8 @@
   "hint": [
    "we: 口 (mouth) + 自 (sound zì)",
    "(plural): 亻 (people) + 门 (sound mén)"
-  ]
+  ],
+  "hook": "we + plural mark = we, including you"
  },
  {
   "id": "c0828",
@@ -12387,7 +12841,8 @@
   "hint": [
    "since: a person 旡 turning away from food",
    "so: 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "since + so = since"
  },
  {
   "id": "c1046",
@@ -12427,7 +12882,8 @@
   "hint": [
    "head: a deer's head 自 adorned with antlers 丷",
    "capital (dū)"
-  ]
+  ],
+  "hook": "head + capital = capital city"
  },
  {
   "id": "c0621",
@@ -12441,7 +12897,8 @@
   "hint": [
    "mutually: two hooks hooking eachother",
    "each other: to stare 目 at a tree 木, meaning to observe"
-  ]
+  ],
+  "hook": "mutually + each other = each other"
  },
  {
   "id": "c0629",
@@ -12456,7 +12913,8 @@
    "person",
    "citizens: an eye 巳 pierced by a dagger 戈, an old mark of slavery",
    "currency: bills written on silk 巾"
-  ]
+  ],
+  "hook": "people + citizens + currency = renminbi"
  },
  {
   "id": "c0686",
@@ -12470,7 +12928,8 @@
   "hint": [
    "to go out",
    "born: a shoot growing out of the soil 土"
-  ]
+  ],
+  "hook": "go out + born = be born"
  },
  {
   "id": "c0853",
@@ -12484,7 +12943,8 @@
   "hint": [
    "to feel: two hearts 心 beating together 咸",
    "emotion: 忄 (heart) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "feel + emotion = emotion"
  },
  {
   "id": "c0959",
@@ -12498,7 +12958,8 @@
   "hint": [
    "filthy: 氵 (water) + 亏 (sound kuī)",
    "dye: water and wine mixed in a wooden 木 bowl"
-  ]
+  ],
+  "hook": "filthy + dye = pollute"
  },
  {
   "id": "c1030",
@@ -12512,7 +12973,8 @@
   "hint": [
    "to dig into: 穴 (cave) + 九 (sound jiǔ)",
    "to the end: a person 儿 finishing a musical piece 音"
-  ]
+  ],
+  "hook": "dig into + to the end = after all"
  },
  {
   "id": "c1042",
@@ -12526,7 +12988,8 @@
   "hint": [
    "answer: ⺮ bamboo + 合 to combine",
    "file: 木 (wood) + 安 (sound ān)"
-  ]
+  ],
+  "hook": "answer + file = answer"
  },
  {
   "id": "c1111",
@@ -12540,7 +13003,8 @@
   "hint": [
    "complete: 讠 (speech) + 羊 (sound yáng)",
    "fine: 纟 (silk) + 田 (sound tián)"
-  ]
+  ],
+  "hook": "complete + fine = detailed"
  },
  {
   "id": "c0716",
@@ -12552,9 +13016,10 @@
   "reading": "jíshí",
   "ft": 1,
   "hint": [
-   "in time",
+   "in time: a hand 又 reaching a person 人 from behind",
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "in time + time = timely"
  },
  {
   "id": "c0762",
@@ -12568,7 +13033,8 @@
   "hint": [
    "place",
    "location: 土 (earth) + 止 (sound zhǐ)"
-  ]
+  ],
+  "hook": "place + location = address"
  },
  {
   "id": "c0811",
@@ -12582,7 +13048,8 @@
   "hint": [
    "labor: picture of a spade or other workman's tool",
    "wealth: 贝 (money) + 次 (sound cì)"
-  ]
+  ],
+  "hook": "labor + wealth = wages"
  },
  {
   "id": "c0831",
@@ -12622,7 +13089,8 @@
   "hint": [
    "overall: many mouths 口 speaking with one mind 心",
    "to conclude: 纟 (thread) + 吉 (sound jí)"
-  ]
+  ],
+  "hook": "overall + conclude = sum up"
  },
  {
   "id": "c0859",
@@ -12636,7 +13104,8 @@
   "hint": [
    "to accomplish: 丁 male adult + 戈 spear",
    "ripe: 灬 (fire) + 孰 (sound shú)"
-  ]
+  ],
+  "hook": "accomplish + ripe = mature"
  },
  {
   "id": "c0946",
@@ -12650,7 +13119,8 @@
   "hint": [
    "plant: 木 (tree) + 直 (sound zhí)",
    "thing: 牛 (ox) + 勿 (sound wù)"
-  ]
+  ],
+  "hook": "plant + thing = plant"
  },
  {
   "id": "c1013",
@@ -12664,7 +13134,8 @@
   "hint": [
    "to see",
    "way: the course 去 followed by a stream 氵"
-  ]
+  ],
+  "hook": "see + way = view"
  },
  {
   "id": "c1102",
@@ -12678,7 +13149,8 @@
   "hint": [
    "to incur: to ask 讠 for something 寸",
    "to dislike: 厂 (cliff) + 犬 (sound quǎn)"
-  ]
+  ],
+  "hook": "incur + dislike = dislike"
  },
  {
   "id": "c1174",
@@ -12692,7 +13164,8 @@
   "hint": [
    "smooth: 页 (head) + 川 (sound chuān)",
    "advantage: harvesting 刂 grain 禾"
-  ]
+  ],
+  "hook": "smooth + advantage = smooth"
  },
  {
   "id": "c1191",
@@ -12706,7 +13179,8 @@
   "hint": [
    "(with 烦: trouble): hemp plants 林 growing in a greenhouse 广",
    "to bother: 火 (fire) + 页 (sound yè)"
-  ]
+  ],
+  "hook": "bound 麻 + bother = trouble"
  },
  {
   "id": "c0709",
@@ -12720,7 +13194,8 @@
   "hint": [
    "severe: 厂 cliff + 万 ten thousand",
    "harm: 宀 + 丰 + 口"
-  ]
+  ],
+  "hook": "severe + harm = fierce"
  },
  {
   "id": "c0747",
@@ -12734,7 +13209,8 @@
   "hint": [
    "around: border 冂 around land 土 with a well 口",
    "to surround: 囗 (enclosure) + 韦 (sound wéi)"
-  ]
+  ],
+  "hook": "around + surround = surroundings"
  },
  {
   "id": "c0893",
@@ -12747,8 +13223,9 @@
   "ft": 1,
   "hint": [
    "to hold in the hand: 扌 (hand) + 是 (sound shì)",
-   "to wake up"
-  ]
+   "to wake up: 酉 (wine) + 星 (sound xīng)"
+  ],
+  "hook": "hold + wake up = remind"
  },
  {
   "id": "c0925",
@@ -12762,7 +13239,8 @@
   "hint": [
    "temporary: 日 (sun) + 斩 (sound zhǎn)",
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "temporary + time = temporarily"
  },
  {
   "id": "c0990",
@@ -12815,7 +13293,8 @@
   "hint": [
    "science: 王 (king) + 里 (sound lǐ)",
    "to think"
-  ]
+  ],
+  "hook": "reason + think = ideal"
  },
  {
   "id": "c1090",
@@ -12843,7 +13322,8 @@
   "hint": [
    "to reach",
    "place: to go somewhere 夂 and put down a flag 卜"
-  ]
+  ],
+  "hook": "reach + place = everywhere"
  },
  {
   "id": "c1017",
@@ -12896,7 +13376,8 @@
   "hint": [
    "air: 穴 (cave) + 工 (sound gōng)",
    "air: rising vapour"
-  ]
+  ],
+  "hook": "air + air = air"
  },
  {
   "id": "c1133",
@@ -12936,7 +13417,8 @@
   "hint": [
    "to trust",
    "to rely on: 亻 (person) + 壬 (sound rén)"
-  ]
+  ],
+  "hook": "trust + rely on = trust"
  },
  {
   "id": "c0801",
@@ -12950,7 +13432,8 @@
   "hint": [
    "facing",
    "talk: a spoken 讠 tongue 舌"
-  ]
+  ],
+  "hook": "facing + talk = dialogue"
  },
  {
   "id": "c0971",
@@ -12964,7 +13447,8 @@
   "hint": [
    "sea: 氵 (water) + 每 (sound měi)",
    "ocean: 氵 (water) + 羊 (sound yáng)"
-  ]
+  ],
+  "hook": "sea + ocean = ocean"
  },
  {
   "id": "c1109",
@@ -12991,7 +13475,8 @@
   "hint": [
    "good",
    "point: to go somewhere 夂 and put down a flag 卜"
-  ]
+  ],
+  "hook": "good + point = benefit"
  },
  {
   "id": "c0860",
@@ -13018,7 +13503,8 @@
   "hint": [
    "to flow: 氵 (water) + 㐬 (sound liú)",
    "to walk"
-  ]
+  ],
+  "hook": "flow + walk = popular"
  },
  {
   "id": "c0705",
@@ -13032,7 +13518,8 @@
   "hint": [
    "imprint: a hand stamping a seal 卩",
    "image: ⺈ + 口 + 豕 (boar)"
-  ]
+  ],
+  "hook": "imprint + image = impression"
  },
  {
   "id": "c0731",
@@ -13046,7 +13533,8 @@
   "hint": [
    "-able: 丁 (vigorous) + 口 (sound kǒu)",
    "pity: to feel 忄 for the past 昔"
-  ]
+  ],
+  "hook": "-able + pity = a pity"
  },
  {
   "id": "c0804",
@@ -13060,7 +13548,8 @@
   "hint": [
    "the future: going to bed 丬 at night 夕, a predictable future",
    "to come"
-  ]
+  ],
+  "hook": "the future + come = future"
  },
  {
   "id": "c1166",
@@ -13085,9 +13574,10 @@
   "reading": "xīngfèn",
   "ft": 2,
   "hint": [
-   "to rise (xīng)",
+   "to rise (xīng): think: simplified from 興, many hands lifting together",
    "to arouse: a man 大 working on the farm 田"
-  ]
+  ],
+  "hook": "rise + arouse = excited"
  },
  {
   "id": "c0984",
@@ -13101,7 +13591,8 @@
   "hint": [
    "familiar: 灬 (fire) + 孰 (sound shú)",
    "to know: 心 (mind) + 釆 (sound biàn)"
-  ]
+  ],
+  "hook": "familiar + know = familiar"
  },
  {
   "id": "c1006",
@@ -13115,7 +13606,8 @@
   "hint": [
    "skin: picture of a hand using a tool to strip the hide from a carcass",
    "skin: ⺼ (flesh) + 夫 (sound fū)"
-  ]
+  ],
+  "hook": "skin + skin = skin"
  },
  {
   "id": "c0599",
@@ -13130,7 +13622,8 @@
    "no",
    "may (dé)",
    "no"
-  ]
+  ],
+  "hook": "not + may + not = have to"
  },
  {
   "id": "c0652",
@@ -13144,7 +13637,8 @@
   "hint": [
    "to trust",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "trust + heart = confidence"
  },
  {
   "id": "c0755",
@@ -13171,7 +13665,8 @@
   "hint": [
    "to lose: something 丿 falling from a hand 夫",
    "hope: a king 王 gazing at the moon 月"
-  ]
+  ],
+  "hook": "lose + hope = disappointed"
  },
  {
   "id": "c0841",
@@ -13185,7 +13680,8 @@
   "hint": [
    "heart: picture of a heart",
    "emotion: 忄 (heart) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "heart + emotion = mood"
  },
  {
   "id": "c0956",
@@ -13199,7 +13695,8 @@
   "hint": [
    "air: rising vapour",
    "season: 亻 (person) + 矦 (sound hóu)"
-  ]
+  ],
+  "hook": "air + season = climate"
  },
  {
   "id": "c0970",
@@ -13213,7 +13710,8 @@
   "hint": [
    "wasteful: 氵 (water) + 良 (sound liáng)",
    "to spend: 贝 (money) + 弗 (sound fú)"
-  ]
+  ],
+  "hook": "wasteful + spend = waste"
  },
  {
   "id": "c1134",
@@ -13227,7 +13725,8 @@
   "hint": [
    "light",
    "loose: 木 (tree) + 公 (sound gōng)"
-  ]
+  ],
+  "hook": "light + loose = relaxed"
  },
  {
   "id": "c0598",
@@ -13241,7 +13740,8 @@
   "hint": [
    "no",
    "only: 亻 + 旦 (sound dàn)"
-  ]
+  ],
+  "hook": "not + only = not only"
  },
  {
   "id": "c0680",
@@ -13255,7 +13755,8 @@
   "hint": [
    "accurate: 冫 (water in a spirit level) + 隹 (sound zhuī)",
    "certain: 石 (stone) + 角 (sound jiǎo)"
-  ]
+  ],
+  "hook": "accurate + certain = accurate"
  },
  {
   "id": "c0730",
@@ -13269,7 +13770,8 @@
   "hint": [
    "-able: 丁 (vigorous) + 口 (sound kǒu)",
    "to pity: 忄 (heart) + 令 (sound lìng)"
-  ]
+  ],
+  "hook": "-able + pity = pitiful"
  },
  {
   "id": "c0756",
@@ -13283,7 +13785,8 @@
   "hint": [
    "back",
    "to remember: 忄 (heart) + 乙 (sound yǐ)"
-  ]
+  ],
+  "hook": "back + remember = recall"
  },
  {
   "id": "c0795",
@@ -13310,7 +13813,8 @@
   "hint": [
    "mutually: to stare 目 at a tree 木, meaning to observe",
    "reverse: a hand 又 held up against a cliff 厂"
-  ]
+  ],
+  "hook": "mutually + reverse = opposite"
  },
  {
   "id": "c0739",
@@ -13324,7 +13828,8 @@
   "hint": [
    "to fit: 亼 to assemble + 口 mouth",
    "suitable: 辶 (walk) + 舌 (sound shé)"
-  ]
+  ],
+  "hook": "fit + suitable = suitable"
  },
  {
   "id": "c0771",
@@ -13351,7 +13856,8 @@
   "hint": [
    "neat: 敕 (order) + 正 (sound zhèng)",
    "to put in order: 王 (king) + 里 (sound lǐ)"
-  ]
+  ],
+  "hook": "neat + put in order = tidy up"
  },
  {
   "id": "c1167",
@@ -13365,7 +13871,8 @@
   "hint": [
    "to follow: to walk 迶 to the city 阝; to follow a path",
    "convenient: 亻 man + 更 more"
-  ]
+  ],
+  "hook": "follow + convenient = as you like"
  },
  {
   "id": "c0655",
@@ -13392,7 +13899,8 @@
   "hint": [
    "secret: a silent 宓 mountain 山",
    "number: 石 (stone) + 马 (sound mǎ)"
-  ]
+  ],
+  "hook": "secret + number = password"
  },
  {
   "id": "c0980",
@@ -13419,7 +13927,8 @@
   "hint": [
    "number",
    "number: 石 (stone) + 马 (sound mǎ)"
-  ]
+  ],
+  "hook": "number + number = number"
  },
  {
   "id": "c1150",
@@ -13433,7 +13942,8 @@
   "hint": [
    "to say: 辶 (walk) + 首 (sound shǒu)",
    "apology: 欠 (lack) + 兼 (sound jiān)"
-  ]
+  ],
+  "hook": "say + apology = apologise"
  },
  {
   "id": "c1163",
@@ -13447,7 +13957,8 @@
   "hint": [
    "sun: the place 阝 of the sun 日",
    "light"
-  ]
+  ],
+  "hook": "sun + light = sunshine"
  },
  {
   "id": "c0846",
@@ -13461,7 +13972,8 @@
   "hint": [
    "nature: 忄 (heart) + 生 (sound shēng)",
    "pattern: 木 (wood) + 各 (sound gè)"
-  ]
+  ],
+  "hook": "nature + pattern = personality"
  },
  {
   "id": "c0892",
@@ -13475,7 +13987,8 @@
   "hint": [
    "to hold in the hand: 扌 (hand) + 是 (sound shì)",
    "earlier: 丷 + 一 + 刖"
-  ]
+  ],
+  "hook": "hold + earlier = in advance"
  },
  {
   "id": "c0748",
@@ -13489,7 +14002,8 @@
   "hint": [
    "taste: 口 (mouth) + 未 (sound wèi)",
    "(part of 味道 flavor): 辶 (walk) + 首 (sound shǒu)"
-  ]
+  ],
+  "hook": "taste + bound 道 = flavour"
  },
  {
   "id": "c0974",
@@ -13503,7 +14017,8 @@
   "hint": [
    "warm: 氵 (water) + 昷 (sound wēn)",
    "degree: twenty 廿 people 又 meeting inside a building 广 to deliberate"
-  ]
+  ],
+  "hook": "warm + degree = temperature"
  },
  {
   "id": "c0687",
@@ -13515,7 +14030,7 @@
   "reading": "dāo",
   "ft": 2,
   "hint": [
-   "mnemonic, no source etymology: a curved blade: knife"
+   "think: a curved blade: knife"
   ]
  },
  {
@@ -13530,7 +14045,8 @@
   "hint": [
    "thousand",
    "ten thousand"
-  ]
+  ],
+  "hook": "thousand + ten thousand = be sure to"
  },
  {
   "id": "c0813",
@@ -13545,7 +14061,8 @@
    "difference",
    "no",
    "many"
-  ]
+  ],
+  "hook": "difference + not + many = almost"
  },
  {
   "id": "c0942",
@@ -13572,7 +14089,8 @@
   "hint": [
    "to chat: 耳 (ear) + 卯 (sound mǎo)",
    "sky: the heavens 一 above a man 大"
-  ]
+  ],
+  "hook": "chat + sky = chat"
  },
  {
   "id": "c1176",
@@ -13586,7 +14104,8 @@
   "hint": [
    "to call on: 页 (head) + 厄 (sound è)",
    "guest: a person 各 welcomed under one's roof 宀"
-  ]
+  ],
+  "hook": "call on + guest = customer"
  },
  {
   "id": "c0654",
@@ -13613,7 +14132,8 @@
   "hint": [
    "(with 细: careful): a person 亻 keeping watch over a child 子",
    "fine: 纟 (silk) + 田 (sound tián)"
-  ]
+  ],
+  "hook": "bound 仔 + fine = careful"
  },
  {
   "id": "c0845",
@@ -13627,7 +14147,8 @@
   "hint": [
    "sex: 忄 (heart) + 生 (sound shēng)",
    "to leave"
-  ]
+  ],
+  "hook": "sex + distinguish = gender"
  },
  {
   "id": "c1019",
@@ -13654,7 +14175,8 @@
   "hint": [
    "fearful: 心 (heart) + 巩 (sound gǒng)",
    "to fear: 忄 (heart) + 白 (sound bái)"
-  ]
+  ],
+  "hook": "fearful + fear = I'm afraid"
  },
  {
   "id": "c1131",
@@ -13681,7 +14203,8 @@
   "hint": [
    "ordinary: picture of a leveling scale",
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "ordinary + time = usually"
  },
  {
   "id": "c0979",
@@ -13695,7 +14218,8 @@
   "hint": [
    "to arouse: 氵 (water) + 敫 (sound jiǎo)",
    "to move: 力 (strength) + 云"
-  ]
+  ],
+  "hook": "arouse + move = excited"
  },
  {
   "id": "c1048",
@@ -13709,7 +14233,8 @@
   "hint": [
    "excellent: 米 (grain) + 青 (sound qīng)",
    "brilliant: 彡 (hair) + 采 (sound cǎi)"
-  ]
+  ],
+  "hook": "excellent + brilliant = brilliant"
  },
  {
   "id": "c0915",
@@ -13749,7 +14274,8 @@
   "hint": [
    "haughty: a proud 乔 horse 马",
    "proud: 亻 (person) + 敖 (sound áo)"
-  ]
+  ],
+  "hook": "haughty + proud = proud"
  },
  {
   "id": "c0699",
@@ -13763,7 +14289,8 @@
   "hint": [
    "brave: 力 (strength) + 甬 (sound yǒng)",
    "to dare"
-  ]
+  ],
+  "hook": "brave + dare = brave"
  },
  {
   "id": "c0895",
@@ -13790,7 +14317,8 @@
   "hint": [
    "to buy: 贝 (money) + 勾 (sound gōu)",
    "thing: 牛 (ox) + 勿 (sound wù)"
-  ]
+  ],
+  "hook": "buy + thing = shopping"
  },
  {
   "id": "c1028",
@@ -13804,7 +14332,8 @@
   "hint": [
    "to store up: 禾 (grain) + 只 (sound zhī)",
    "to accumulate (lěi)"
-  ]
+  ],
+  "hook": "store up + pile = accumulate"
  },
  {
   "id": "c0827",
@@ -13844,7 +14373,8 @@
   "hint": [
    "to substitute for: a man 亻 caught 弋 by the passing of time",
    "to replace: one man 夫 replacing another"
-  ]
+  ],
+  "hook": "substitute + replace = replace"
  },
  {
   "id": "c0666",
@@ -13858,7 +14388,8 @@
   "hint": [
    "to enter: an arrow indicating \"enter\"",
    "entrance"
-  ]
+  ],
+  "hook": "enter + mouth = entrance"
  },
  {
   "id": "c0904",
@@ -13872,7 +14403,8 @@
   "hint": [
    "on purpose: 攵 (tap) + 古 (sound gǔ)",
    "intention: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "on purpose + intention = deliberately"
  },
  {
   "id": "c0715",
@@ -13886,7 +14418,8 @@
   "hint": [
    "to take part in: 厶 + 大 + 彡 (sound shān)",
    "to observe: to see 见 again 又"
-  ]
+  ],
+  "hook": "take part + observe = visit"
  },
  {
   "id": "c0783",
@@ -13900,7 +14433,8 @@
   "hint": [
    "prize: 大 (big) + 丬 (sound qiáng)",
    "money: picture of a cast-iron bell"
-  ]
+  ],
+  "hook": "prize + money = bonus"
  },
  {
   "id": "c0871",
@@ -13913,8 +14447,9 @@
   "ft": 2,
   "hint": [
    "to defend: guarding 扌 a home 户",
-   "(skilled person)"
-  ]
+   "(skilled person): think: an axe-head, the mark of a man of rank"
+  ],
+  "hook": "defend + skilled person = nurse"
  },
  {
   "id": "c0923",
@@ -13928,7 +14463,8 @@
   "hint": [
    "sun",
    "record: a private 己 note 讠"
-  ]
+  ],
+  "hook": "sun + record = diary"
  },
  {
   "id": "c1016",
@@ -13943,7 +14479,8 @@
    "to research: 石 (stone) + 开 (sound kāi)",
    "to investigate: 穴 (cave) + 九 (sound jiǔ)",
    "student: a shoot growing out of the soil 土"
-  ]
+  ],
+  "hook": "research + investigate + student = postgraduate"
  },
  {
   "id": "c1186",
@@ -13970,7 +14507,8 @@
   "hint": [
    "that: 甘 + 一 + 八",
    "next in sequence"
-  ]
+  ],
+  "hook": "that + next = secondly"
  },
  {
   "id": "c0717",
@@ -13984,7 +14522,8 @@
   "hint": [
    "friend: two hands 又 joined, representing friendship",
    "good"
-  ]
+  ],
+  "hook": "friend + good = friendly"
  },
  {
   "id": "c0752",
@@ -14011,7 +14550,8 @@
   "hint": [
    "to touch: two hearts 心 beating together 咸",
    "to move: 力 (strength) + 云"
-  ]
+  ],
+  "hook": "touch + move = moved"
  },
  {
   "id": "c0939",
@@ -14025,7 +14565,8 @@
   "hint": [
    "really: fruit 田 growing on a tree 木",
    "so: 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "really + so = as expected"
  },
  {
   "id": "c0688",
@@ -14039,7 +14580,8 @@
   "hint": [
    "part",
    "of"
-  ]
+  ],
+  "hook": "part + of = fraction marker"
  },
  {
   "id": "c0718",
@@ -14053,7 +14595,8 @@
   "hint": [
    "friend: two hands 又 joined, representing friendship",
    "friendship: fitting 宜 speech 讠"
-  ]
+  ],
+  "hook": "friend + friendship = friendship"
  },
  {
   "id": "c0850",
@@ -14067,7 +14610,8 @@
   "hint": [
    "pleasant: 忄 (heart) + 俞 (sound yú)",
    "pleased"
-  ]
+  ],
+  "hook": "pleasant + pleased = cheerful"
  },
  {
   "id": "c0947",
@@ -14081,7 +14625,8 @@
   "hint": [
    "just: a foot 止 stopping in the right place 一",
    "good"
-  ]
+  ],
+  "hook": "just + good = just right"
  },
  {
   "id": "c0728",
@@ -14095,7 +14640,8 @@
   "hint": [
    "only",
    "good"
-  ]
+  ],
+  "hook": "only + good = have to"
  },
  {
   "id": "c0833",
@@ -14123,7 +14669,8 @@
   "hint": [
    "to laugh",
    "talk: a spoken 讠 tongue 舌"
-  ]
+  ],
+  "hook": "laugh + talk = joke"
  },
  {
   "id": "c1161",
@@ -14137,7 +14684,8 @@
   "hint": [
    "long",
    "large river: 氵 (water) + 工 (sound gōng)"
-  ]
+  ],
+  "hook": "long + large river = Yangtze"
  },
  {
   "id": "c0694",
@@ -14164,7 +14712,8 @@
   "hint": [
    "unrestrained: 氵 (water) + 良 (sound liáng)",
    "free: 氵 (water) + 曼 (sound màn)"
-  ]
+  ],
+  "hook": "unrestrained + free = romantic"
  },
  {
   "id": "c0989",
@@ -14178,7 +14727,8 @@
   "hint": [
    "lion: 犭 (animal) + 师 (sound shī)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "lion + noun suffix = lion"
  },
  {
   "id": "c0644",
@@ -14192,7 +14742,8 @@
   "hint": [
    "to injure: 亻 man + 力 strength",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "injure + heart = heartbroken"
  },
  {
   "id": "c0661",
@@ -14206,7 +14757,8 @@
   "hint": [
    "occasionally: 亻 (person) + 禺 (sound yú)",
    "(suffix): ⺈ + 小 small"
-  ]
+  ],
+  "hook": "occasionally + suffix = occasionally"
  },
  {
   "id": "c0872",
@@ -14220,7 +14772,8 @@
   "hint": [
    "to report: a hand 扌 cuffing 又 a criminal 卩, representing sentencing",
    "name: a name called out 口 to hail someone at night 夕"
-  ]
+  ],
+  "hook": "report + name = sign up"
  },
  {
   "id": "c0920",
@@ -14234,7 +14787,8 @@
   "hint": [
    "not to have",
    "(part of 无聊 bored): 耳 (ear) + 卯 (sound mǎo)"
-  ]
+  ],
+  "hook": "not have + bound 聊 = bored"
  },
  {
   "id": "c0938",
@@ -14248,7 +14802,8 @@
   "hint": [
    "extremely",
    "(adverb suffix): 甘 + 一 + 八"
-  ]
+  ],
+  "hook": "extremely + suffix = extremely"
  },
  {
   "id": "c1005",
@@ -14262,7 +14817,8 @@
   "hint": [
    "to stay",
    "to study: a building 冖 where children 子 study"
-  ]
+  ],
+  "hook": "stay + study = study abroad"
  },
  {
   "id": "c1086",
@@ -14289,7 +14845,8 @@
   "hint": [
    "wind: 几 small table + 乂 to govern",
    "scenery: the sun 日 rising over a city 京"
-  ]
+  ],
+  "hook": "wind + scenery = scenery"
  },
  {
   "id": "c1181",
@@ -14303,7 +14860,8 @@
   "hint": [
    "to swallow: 饣 (food) + 欠 (sound qiàn)",
    "ingredients: a hand measuring 斗 a cup of rice 米"
-  ]
+  ],
+  "hook": "swallow + ingredients = drink"
  },
  {
   "id": "c0740",
@@ -14317,7 +14875,8 @@
   "hint": [
    "same: sharing a common 凡 tongue 口",
    "feeling: 忄 (heart) + 青 (sound qīng)"
-  ]
+  ],
+  "hook": "same + feeling = sympathise"
  },
  {
   "id": "c0796",
@@ -14343,8 +14902,9 @@
   "ft": 2,
   "hint": [
    "great: like a sheet 页 of stone 石",
-   "scholar"
-  ]
+   "scholar: think: an axe-head, the mark of a man of rank"
+  ],
+  "hook": "great + scholar = master's degree"
  },
  {
   "id": "c1132",
@@ -14371,7 +14931,8 @@
   "hint": [
    "toilsome: picture of a hot iron used to brand prisoners and slaves",
    "bitter"
-  ]
+  ],
+  "hook": "toilsome + bitter = hard work"
  },
  {
   "id": "c1171",
@@ -14385,7 +14946,8 @@
   "hint": [
    "to gather: birds 隹 flocking on a tree 木",
    "to join: 亼 to assemble + 口 mouth"
-  ]
+  ],
+  "hook": "gather + join = assemble"
  },
  {
   "id": "c0738",
@@ -14399,7 +14961,8 @@
   "hint": [
    "to match: 亼 to assemble + 口 mouth",
    "standard: 木 (wood) + 各 (sound gè)"
-  ]
+  ],
+  "hook": "match + standard = qualified"
  },
  {
   "id": "c0867",
@@ -14454,7 +15017,8 @@
    "to open",
    "to play",
    "to laugh"
-  ]
+  ],
+  "hook": "open + play + laugh = joke"
  },
  {
   "id": "c1043",
@@ -14468,7 +15032,8 @@
   "hint": [
    "to sign: ⺮ (bamboo) + 佥 (sound qiān)",
    "certificate: to speak 讠 the truth 正"
-  ]
+  ],
+  "hook": "sign + certificate = visa"
  },
  {
   "id": "c1059",
@@ -14482,7 +15047,8 @@
   "hint": [
    "to lack: 缶 (jar) + 夬 (sound guài)",
    "few"
-  ]
+  ],
+  "hook": "lack + few = lack"
  },
  {
   "id": "c0880",
@@ -14496,7 +15062,8 @@
   "hint": [
    "to summon: a call 召 to arms 扌",
    "to employ: 耳 (ear) + 甹 (sound pīng)"
-  ]
+  ],
+  "hook": "summon + employ = recruit"
  },
  {
   "id": "c0896",
@@ -14523,7 +15090,8 @@
   "hint": [
    "along: 页 (head) + 川 (sound chuān)",
    "order: 广 (wide) + 予 (sound yǔ)"
-  ]
+  ],
+  "hook": "along + order = sequence"
  },
  {
   "id": "c0628",
@@ -14537,7 +15105,8 @@
   "hint": [
    "relatives: a tree bearing fruit 立",
    "relative: a younger brother 尗 killed in a war"
-  ]
+  ],
+  "hook": "relatives + relative = relative"
  },
  {
   "id": "c0641",
@@ -14551,7 +15120,8 @@
   "hint": [
    "superior: 亻 (person) + 尤 (sound yóu)",
    "point"
-  ]
+  ],
+  "hook": "superior + point = strong point"
  },
  {
   "id": "c0741",
@@ -14563,9 +15133,10 @@
   "reading": "hòuhuǐ",
   "ft": 2,
   "hint": [
-   "after",
+   "after: think: a ruler giving orders 口, who comes after",
    "to regret: 忄 (heart) + 每 (sound měi)"
-  ]
+  ],
+  "hook": "after + regret = regret"
  },
  {
   "id": "c0798",
@@ -14592,7 +15163,8 @@
   "hint": [
    "cold",
    "still: 青 (nature) + 争 (sound zhēng)"
-  ]
+  ],
+  "hook": "cold + still = calm"
  },
  {
   "id": "c0887",
@@ -14606,7 +15178,8 @@
   "hint": [
    "row: 扌 (hand) + 非 (sound fēi)",
    "a line: 刂 (line) + 歹"
-  ]
+  ],
+  "hook": "row + line = arrange in order"
  },
  {
   "id": "c0927",
@@ -14633,7 +15206,8 @@
   "hint": [
    "to navigate: 舟 (ship) + 亢 (sound kàng)",
    "scheduled run"
-  ]
+  ],
+  "hook": "navigate + scheduled run = flight"
  },
  {
   "id": "c1060",
@@ -14647,7 +15221,8 @@
   "hint": [
    "to lack: 缶 (jar) + 夬 (sound guài)",
    "point"
-  ]
+  ],
+  "hook": "lack + point = weakness"
  },
  {
   "id": "c1007",
@@ -14687,7 +15262,8 @@
   "hint": [
    "opposite",
    "side: picture of a person's face"
-  ]
+  ],
+  "hook": "opposite + side = opposite"
  },
  {
   "id": "c0653",
@@ -14702,7 +15278,8 @@
    "to trust",
    "to use",
    "card: a card squeezed between 上 and"
-  ]
+  ],
+  "hook": "trust + use + card = credit card"
  },
  {
   "id": "c0761",
@@ -14729,7 +15306,8 @@
   "hint": [
    "teacher: to skillfully wield 帀 a knife 刂",
    "tutor: someone 亻 who lectures 尃"
-  ]
+  ],
+  "hook": "teacher + tutor = master"
  },
  {
   "id": "c0876",
@@ -14743,7 +15321,8 @@
   "hint": [
    "to hold",
    "deficient: 欠 (lack) + 兼 (sound jiān)"
-  ]
+  ],
+  "hook": "hold + deficient = sorry"
  },
  {
   "id": "c1071",
@@ -14757,7 +15336,8 @@
   "hint": [
    "to resist: 而 and + 寸 inch",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "resist + heart = patience"
  },
  {
   "id": "c1127",
@@ -14771,7 +15351,8 @@
   "hint": [
    "to rise: 走 (walk) + 己 (sound jǐ)",
    "to fly: picture of a bird flapping its wings"
-  ]
+  ],
+  "hook": "rise + fly = take off"
  },
  {
   "id": "c1075",
@@ -14785,7 +15366,8 @@
   "hint": [
    "belly: ⺼ (flesh) + 土 (sound tǔ)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "belly + noun suffix = belly"
  },
  {
   "id": "c1051",
@@ -14799,7 +15381,8 @@
   "hint": [
    "agreement: 纟 (thread) + 勺",
    "to meet"
-  ]
+  ],
+  "hook": "agreement + meet = date"
  },
  {
   "id": "c0786",
@@ -14813,7 +15396,8 @@
   "hint": [
    "grandchild: a chain of descent 子",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "grandchild + noun suffix = grandson"
  },
  {
   "id": "c0981",
@@ -14827,7 +15411,8 @@
   "hint": [
    "to bother: 火 (fire) + 页 (sound yè)",
    "angry: 忄 (heart) + 亠 + 凶"
-  ]
+  ],
+  "hook": "bother + angry = annoyed"
  },
  {
   "id": "c1029",
@@ -14841,7 +15426,8 @@
   "hint": [
    "somewhat: resembling 肖 grain 禾",
    "small: 彳 + 山 + 兀 + 攵"
-  ]
+  ],
+  "hook": "somewhat + small = slightly"
  },
  {
   "id": "c1068",
@@ -14855,7 +15441,8 @@
   "hint": [
    "(noun prefix)",
    "tiger: a tiger 虍 standing on a rock 几"
-  ]
+  ],
+  "hook": "prefix + tiger = tiger"
  },
  {
   "id": "c0627",
@@ -14882,7 +15469,8 @@
   "hint": [
    "(with 谅: to forgive): 厂 (cliff) + 泉 (sound quán)",
    "to excuse: 讠 (speech) + 京 (sound jīng)"
-  ]
+  ],
+  "hook": "bound 原 + excuse = forgive"
  },
  {
   "id": "c0777",
@@ -14897,7 +15485,8 @@
    "big",
    "envoy",
    "establishment: a public 官 building where food 饣 is served"
-  ]
+  ],
+  "hook": "big + envoy + hall = embassy"
  },
  {
   "id": "c0829",
@@ -14911,7 +15500,8 @@
   "hint": [
    "seat",
    "seat"
-  ]
+  ],
+  "hook": "seat + seat = seat"
  },
  {
   "id": "c0725",
@@ -14926,7 +15516,8 @@
    "to receive: something 冖 passed from one hand 爫 to another 又",
    "no",
    "able (liǎo)"
-  ]
+  ],
+  "hook": "receive + not + able = can't stand"
  },
  {
   "id": "c0758",
@@ -14953,7 +15544,8 @@
   "hint": [
    "to receive",
    "to tidy up: to gather 合 things in one's hands 扌"
-  ]
+  ],
+  "hook": "receive + tidy up = tidy up"
  },
  {
   "id": "c1026",
@@ -14993,7 +15585,8 @@
   "hint": [
    "long",
    "wall: 土 (earth) + 成 (sound chéng)"
-  ]
+  ],
+  "hook": "long + wall = Great Wall"
  },
  {
   "id": "c1173",
@@ -15007,7 +15600,8 @@
   "hint": [
    "along: 页 (head) + 川 (sound chuān)",
    "convenient: 亻 man + 更 more"
-  ]
+  ],
+  "hook": "along + convenient = in passing"
  },
  {
   "id": "c0613",
@@ -15021,7 +15615,8 @@
   "hint": [
    "main: picture of a lamp with a flame",
    "idea: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "main + idea = idea"
  },
  {
   "id": "c0812",
@@ -15036,7 +15631,8 @@
    "(sound qiǎo): 工 (work) + 丂 (sound kǎo)",
    "(sound kè): a weapon 十 used to subdue a beast 兄",
    "(sound lì): a plow's head representing strength"
-  ]
+  ],
+  "hook": "think: qiǎo-kè-lì sounds like \"chocolate\""
  },
  {
   "id": "c0824",
@@ -15050,7 +15646,8 @@
   "hint": [
    "(sound yōu): small niches 幺 in the mountainside 山",
    "(sound mò): picture of a dog watching in the dark"
-  ]
+  ],
+  "hook": "think: yōumò sounds like \"humor\""
  },
  {
   "id": "c0842",
@@ -15064,7 +15661,8 @@
   "hint": [
    "suddenly: 心 (heart) + 勿 (sound wù)",
    "(-ly suffix): 灬 (fire) + 肰 (sound rán)"
-  ]
+  ],
+  "hook": "suddenly + suffix = suddenly"
  },
  {
   "id": "c1158",
@@ -15078,7 +15676,8 @@
   "hint": [
    "key: 钅 (metal) + 月 (sound yuè)",
    "(part of 钥匙 key): 匕 (spoon) + 是 (sound shì)"
-  ]
+  ],
+  "hook": "bound pair; neither character means \"key\" alone"
  },
  {
   "id": "c0961",
@@ -15092,7 +15691,8 @@
   "hint": [
    "(sound shā): 氵 (water) + 少 (sound shǎo)",
    "(sound fā)"
-  ]
+  ],
+  "hook": "think: shāfā sounds like \"sofa\""
  },
  {
   "id": "c1021",
@@ -15106,7 +15706,8 @@
   "hint": [
    "courtesy: 礻 (spirit) + 乚 (sound gōu)",
    "countenance: a beast's 豸 appearance 皃"
-  ]
+  ],
+  "hook": "courtesy + countenance = politeness"
  },
  {
   "id": "c1080",
@@ -15120,7 +15721,8 @@
   "hint": [
    "temper: ⺼ (flesh) + 卑 (sound bēi)",
    "mood: rising vapour"
-  ]
+  ],
+  "hook": "temper + mood = temper"
  },
  {
   "id": "c0711",
@@ -15147,7 +15749,8 @@
   "hint": [
    "mirror: 钅 (metal) + 竟 (sound jìng)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "mirror + noun suffix = mirror"
  },
  {
   "id": "c0778",
@@ -15161,7 +15764,8 @@
   "hint": [
    "big",
    "man: a man 大 wearing a coming-of-age hairpin 一"
-  ]
+  ],
+  "hook": "big + man = doctor"
  },
  {
   "id": "c0815",
@@ -15188,7 +15792,8 @@
   "hint": [
    "error: 讠 (speech) + 吴 (sound wú)",
    "to understand"
-  ]
+  ],
+  "hook": "error + understand = misunderstand"
  },
  {
   "id": "c1149",
@@ -15229,7 +15834,8 @@
   "hint": [
    "to pray for",
    "to congratulate: to add 加 to someone else's fortune 贝"
-  ]
+  ],
+  "hook": "pray for + congratulate = congratulate"
  },
  {
   "id": "c1085",
@@ -15243,7 +15849,8 @@
   "hint": [
    "to save: sections of bamboo",
    "to restrain: 纟 (thread) + 勺"
-  ]
+  ],
+  "hook": "save + restrain = economise"
  },
  {
   "id": "c0819",
@@ -15257,7 +15864,8 @@
   "hint": [
    "dry",
    "arid: 火 (fire) + 喿 (sound zào)"
-  ]
+  ],
+  "hook": "dry + arid = dry"
  },
  {
   "id": "c0695",
@@ -15271,7 +15879,8 @@
   "hint": [
    "strength: a plow's head representing strength",
    "energy: rising vapour"
-  ]
+  ],
+  "hook": "strength + energy = strength"
  },
  {
   "id": "c0744",
@@ -15298,7 +15907,8 @@
   "hint": [
    "(verb prefix): 扌 (hand) + 丁 (sound dīng)",
    "to dress up: 扌 (hand) + 分 (sound fēn)"
-  ]
+  ],
+  "hook": "verb prefix + dress up = dress up"
  },
  {
   "id": "c0936",
@@ -15312,8 +15922,9 @@
   "hint": [
    "to come",
    "no",
-   "to reach"
-  ]
+   "to reach: a hand 又 reaching a person 人 from behind"
+  ],
+  "hook": "come + not + reach = too late"
  },
  {
   "id": "c1034",
@@ -15327,7 +15938,8 @@
   "hint": [
    "window: 穴 (hole) + 囱 (sound cōng)",
    "door: picture of a door swinging on its hinge"
-  ]
+  ],
+  "hook": "window + door = window"
  },
  {
   "id": "c1110",
@@ -15341,7 +15953,8 @@
   "hint": [
    "honest: 讠 (speech) + 成 (sound chéng)",
    "real: 宀 roof + 头 head"
-  ]
+  ],
+  "hook": "honest + real = honest"
  },
  {
   "id": "c1169",
@@ -15355,7 +15968,8 @@
   "hint": [
    "difficult",
    "to bear: something 冖 passed from one hand 爫 to another 又"
-  ]
+  ],
+  "hook": "difficult + bear = unwell"
  },
  {
   "id": "c0754",
@@ -15369,7 +15983,8 @@
   "hint": [
    "to consult: 冏 (bright) + 章 (sound zhāng)",
    "to measure (liáng): 里 (unit) + 旦 (sound dàn)"
-  ]
+  ],
+  "hook": "consult + measure = talk over"
  },
  {
   "id": "c1112",
@@ -15383,7 +15998,8 @@
   "hint": [
    "words: 讠 (words) + 吾 (sound wú)",
    "rule: the course 去 followed by a stream 氵"
-  ]
+  ],
+  "hook": "words + rule = grammar"
  },
  {
   "id": "c1008",
@@ -15397,7 +16013,8 @@
   "hint": [
    "small box or case: 皿 (container) + 合 (sound hé)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "box + noun suffix = box"
  },
  {
   "id": "c0683",
@@ -15411,7 +16028,8 @@
   "hint": [
    "to decrease: 冫 (ice) + 咸 (sound xián)",
    "fat: ⺼ (flesh) + 巴 (sound bā)"
-  ]
+  ],
+  "hook": "decrease + fat = lose weight"
  },
  {
   "id": "c0794",
@@ -15425,7 +16043,8 @@
   "hint": [
    "home",
    "utensil: two hands 八 writing on a tablet 目"
-  ]
+  ],
+  "hook": "home + utensil = furniture"
  },
  {
   "id": "c0911",
@@ -15452,7 +16071,8 @@
   "hint": [
    "to raise: 儿 (child) + 羊 (sound yáng)",
    "to accomplish: 丁 male adult + 戈 spear"
-  ]
+  ],
+  "hook": "raise + accomplish = form a habit"
  },
  {
   "id": "c0874",
@@ -15479,7 +16099,8 @@
   "hint": [
    "to push",
    "late: 辶 (walk) + 尺 (sound chǐ)"
-  ]
+  ],
+  "hook": "push + late = postpone"
  },
  {
   "id": "c1064",
@@ -15493,7 +16114,8 @@
   "hint": [
    "to envy: someone who has a whole row 次 of sheep 羊",
    "to admire: ⺗ (heart) + 莫 (sound mò)"
-  ]
+  ],
+  "hook": "envy + admire = envy"
  },
  {
   "id": "c0982",
@@ -15507,7 +16129,8 @@
   "hint": [
    "to warm up",
    "lively: as busy as the market 市 gate 门"
-  ]
+  ],
+  "hook": "warm up + lively = lively"
  },
  {
   "id": "c0992",
@@ -15521,7 +16144,8 @@
   "hint": [
    "monkey: 犭 (animal) + 侯 (sound hóu)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "monkey + noun suffix = monkey"
  },
  {
   "id": "c0617",
@@ -15535,7 +16159,8 @@
   "hint": [
    "ride: two feet 北 climbing a beanstalk 禾",
    "to ride"
-  ]
+  ],
+  "hook": "ride + ride = ride"
  },
  {
   "id": "c0862",
@@ -15549,7 +16174,8 @@
   "hint": [
    "(verb prefix): 扌 (hand) + 丁 (sound dīng)",
    "print: a hand stamping a seal 卩"
-  ]
+  ],
+  "hook": "verb prefix + print = print"
  },
  {
   "id": "c1078",
@@ -15577,7 +16203,8 @@
   "hint": [
    "table: fur 毛 clothing 衣; a shawl or wrap",
    "grid: 木 (wood) + 各 (sound gè)"
-  ]
+  ],
+  "hook": "table + grid = form"
  },
  {
   "id": "c0877",
@@ -15591,7 +16218,8 @@
   "hint": [
    "to draw out: 扌 (hand) + 由 (sound yóu)",
    "smoke: 火 (fire) + 因 (sound yīn)"
-  ]
+  ],
+  "hook": "draw out + smoke = smoke"
  },
  {
   "id": "c1137",
@@ -15618,7 +16246,8 @@
   "hint": [
    "(verb prefix): 扌 (hand) + 丁 (sound dīng)",
    "to poke: 扌 (hand) + 尤 (sound yóu)"
-  ]
+  ],
+  "hook": "verb prefix + poke = disturb"
  },
  {
   "id": "c0736",
@@ -15632,7 +16261,8 @@
   "hint": [
    "to suffer",
    "to frighten: 忄 (heart) + 京 (sound jīng)"
-  ]
+  ],
+  "hook": "suffer + frighten = be surprised"
  },
  {
   "id": "c0787",
@@ -15645,8 +16275,9 @@
   "ft": 2,
   "hint": [
    "orphaned: 子 (child) + 瓜 (sound guā)",
-   "single"
-  ]
+   "single: think: simplified from 單, a forked tool"
+  ],
+  "hook": "orphaned + single = lonely"
  },
  {
   "id": "c0856",
@@ -15674,7 +16305,8 @@
    "pen: a bamboo rod ⺮ tipped with hair 毛",
    "to note: a private 己 note 讠",
    "book"
-  ]
+  ],
+  "hook": "pen + note + book = notebook"
  },
  {
   "id": "c1108",
@@ -15688,7 +16320,8 @@
   "hint": [
    "phrase: 讠 (words) + 司 (sound sī)",
    "classic: two hands 八 holding a book"
-  ]
+  ],
+  "hook": "phrase + classic = dictionary"
  },
  {
   "id": "c0965",
@@ -15702,7 +16335,8 @@
   "hint": [
    "lively: 氵 (water) + 舌 (sound shé)",
    "(with 活: lively): to send forth 发 water 氵"
-  ]
+  ],
+  "hook": "lively + bound 泼 = lively"
  },
  {
   "id": "c1061",
@@ -15716,7 +16350,8 @@
   "hint": [
    "net: picture of a net for catching fish",
    "ball: 王 (jade) + 求 (sound qiú)"
-  ]
+  ],
+  "hook": "net + ball = tennis"
  },
  {
   "id": "c0793",
@@ -15730,7 +16365,8 @@
   "hint": [
    "to feel: 宀 + 丰 + 口",
    "shame: an ugly 丑 sheep 羊"
-  ]
+  ],
+  "hook": "feel + shame = shy"
  },
  {
   "id": "c0840",
@@ -15744,7 +16380,8 @@
   "hint": [
    "to get",
    "wish: 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "get + wish = pleased with oneself"
  },
  {
   "id": "c1040",
@@ -15772,7 +16409,8 @@
    "to make",
    "(with 意: business): a shoot growing out of the soil 土",
    "(with 生: business): 心 (heart) + 音 (sound yīn)"
-  ]
+  ],
+  "hook": "make + business + bound 意 = do business"
  },
  {
   "id": "c0679",
@@ -15786,7 +16424,8 @@
   "hint": [
    "accurate: 冫 (water in a spirit level) + 隹 (sound zhuī)",
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "accurate + time = on time"
  },
  {
   "id": "c0908",
@@ -15800,7 +16439,8 @@
   "hint": [
    "to stroll: a hand 攵 tossing seeds from a basket",
    "step: putting one foot 止 in front of the other"
-  ]
+  ],
+  "hook": "stroll + step = take a walk"
  },
  {
   "id": "c0696",
@@ -15815,7 +16455,8 @@
    "to add to: supporting a cause with the strength 力 of one's words 口",
    "oil: 氵 (water) + 由 (sound yóu)",
    "station"
-  ]
+  ],
+  "hook": "add + oil + station = petrol station"
  },
  {
   "id": "c0750",
@@ -15829,7 +16470,8 @@
   "hint": [
    "to cough: 口 (mouth) + 亥 (sound hài)",
    "to gargle: 口 (mouth) + 欶 (sound shuò)"
-  ]
+  ],
+  "hook": "cough + gargle = cough"
  },
  {
   "id": "c1147",
@@ -15869,7 +16511,8 @@
   "hint": [
    "socks: 衤 (clothes) + 末 (sound mò)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "socks + noun suffix = socks"
  },
  {
   "id": "c0685",
@@ -15883,7 +16526,8 @@
   "hint": [
    "to go out",
    "errand (chāi)"
-  ]
+  ],
+  "hook": "go out + errand = business trip"
  },
  {
   "id": "c0894",
@@ -15897,7 +16541,8 @@
   "hint": [
    "to grasp: 扌 (hand) + 屋 (sound wū)",
    "hand: picture of a hand with the fingers splayed"
-  ]
+  ],
+  "hook": "grasp + hand = shake hands"
  },
  {
   "id": "c0967",
@@ -15911,7 +16556,8 @@
   "hint": [
    "to flow: 氵 (water) + 㐬 (sound liú)",
    "tears: water 氵 from the eyes 目"
-  ]
+  ],
+  "hook": "flow + tears = shed tears"
  },
  {
   "id": "c0697",
@@ -15925,7 +16571,8 @@
   "hint": [
    "to add to: supporting a cause with the strength 力 of one's words 口",
    "work shift"
-  ]
+  ],
+  "hook": "add + shift = work overtime"
  },
  {
   "id": "c0803",
@@ -15939,7 +16586,8 @@
   "hint": [
    "to direct: a hand 寸 pointing the way to someplace 巳",
    "tour: to swim freely 斿 through the seas 氵"
-  ]
+  ],
+  "hook": "direct + tour = tour guide"
  },
  {
   "id": "c0883",
@@ -15953,7 +16601,8 @@
   "hint": [
    "according to: 扌 (hand) + 安 (sound ān)",
    "time: 日 (day) + 寸, simplified from 時 (sound 寺)"
-  ]
+  ],
+  "hook": "according to + time = on time"
  },
  {
   "id": "c1092",
@@ -15967,7 +16616,8 @@
   "hint": [
    "to show: fur 毛 clothing 衣; a shawl or wrap",
    "to praise: 扌 (hand) + 昜 (sound yáng)"
-  ]
+  ],
+  "hook": "show + praise = praise"
  },
  {
   "id": "c0643",
@@ -15981,7 +16631,8 @@
   "hint": [
    "to pass on: 亻 (people) + 专 (sound zhuān)",
    "true image"
-  ]
+  ],
+  "hook": "pass on + true image = fax"
  },
  {
   "id": "c0954",
@@ -15995,7 +16646,8 @@
   "hint": [
    "hair: 乇 + 一 one",
    "cloth: picture of a curtain or towel hanging from a rack"
-  ]
+  ],
+  "hook": "hair + cloth = towel"
  },
  {
   "id": "c1183",
@@ -16009,7 +16661,8 @@
   "hint": [
    "rice-cake: 饣 (food) + 并 (sound bìng)",
    "dry"
-  ]
+  ],
+  "hook": "rice-cake + dry = biscuit"
  },
  {
   "id": "c0734",
@@ -16023,7 +16676,8 @@
   "hint": [
    "leaf: 口 mouth + 十 ten",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "leaf + noun suffix = leaf"
  },
  {
   "id": "c0751",
@@ -16050,8 +16704,9 @@
   "hint": [
    "to come",
    "(can)",
-   "to reach"
-  ]
+   "to reach: a hand 又 reaching a person 人 from behind"
+  ],
+  "hook": "come + can + reach = in time"
  },
  {
   "id": "c1193",
@@ -16065,7 +16720,8 @@
   "hint": [
    "to beat: 壴 (drum) + 支 (sound zhī)",
    "palm: 手 (hand) + 尚 (sound shàng)"
-  ]
+  ],
+  "hook": "beat + palm = clap"
  },
  {
   "id": "c1129",
@@ -16091,8 +16747,9 @@
   "ft": 2,
   "hint": [
    "neat: 敕 (order) + 正 (sound zhèng)",
-   "even"
-  ]
+   "even: think: simplified from 齊, ears of grain standing level"
+  ],
+  "hook": "neat + even = tidy"
  },
  {
   "id": "c0997",
@@ -16106,7 +16763,8 @@
   "hint": [
    "bottle: 瓦 (pottery) + 并 (sound bìng)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "bottle + noun suffix = bottle"
  },
  {
   "id": "c0626",
@@ -16120,7 +16778,8 @@
   "hint": [
    "capital city: picture of a capital building on a hill",
    "theatrical plays: 刂 (knife) + 居 (sound jū)"
-  ]
+  ],
+  "hook": "capital + theatre = Beijing opera"
  },
  {
   "id": "c0932",
@@ -16173,7 +16832,8 @@
   "hint": [
    "wet: 氵 (water) + 显 (sound xiǎn)",
    "moist: 氵 (water) + 闰 (sound rùn)"
-  ]
+  ],
+  "hook": "wet + moist = moist"
  },
  {
   "id": "c0963",
@@ -16188,7 +16848,8 @@
    "to wash",
    "clothes: picture of a woman's dress",
    "machine: a table 几 made of wood 木; 几 gives the sound"
-  ]
+  ],
+  "hook": "wash + clothes + machine = washing machine"
  },
  {
   "id": "c1066",
@@ -16203,7 +16864,8 @@
    "feather: picture of two feathers or wings",
    "hair: 乇 + 一 one",
    "ball: 王 (jade) + 求 (sound qiú)"
-  ]
+  ],
+  "hook": "feather + hair + ball = badminton"
  },
  {
   "id": "c0766",
@@ -16218,7 +16880,8 @@
    "garbage: 土 (earth) + 立 (sound lì)",
    "garbage: 土 (earth) + 及 (sound jí)",
    "bucket: 木 (wood) + 甬 (sound yǒng)"
-  ]
+  ],
+  "hook": "garbage + garbage + bucket = rubbish bin"
  },
  {
   "id": "c1116",
@@ -16232,7 +16895,8 @@
   "hint": [
    "to ask",
    "leave (jià)"
-  ]
+  ],
+  "hook": "ask + leave = ask for leave"
  },
  {
   "id": "c0609",
@@ -16246,7 +16910,8 @@
   "hint": [
    "stature",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "stature + noun suffix = height"
  },
  {
   "id": "c0966",
@@ -16260,7 +16925,8 @@
   "hint": [
    "to flow: 氵 (water) + 㐬 (sound liú)",
    "smooth: harvesting 刂 grain 禾"
-  ]
+  ],
+  "hook": "flow + smooth = fluent"
  },
  {
   "id": "c1182",
@@ -16274,7 +16940,8 @@
   "hint": [
    "stuffed dumplings: 饣 (food) + 交 (sound jiāo)",
    "(noun suffix): picture of a child in a wrap, with outstretched arms but bundled legs"
-  ]
+  ],
+  "hook": "dumpling + noun suffix = dumpling"
  },
  {
   "id": "c0987",
@@ -16286,9 +16953,10 @@
   "reading": "yágāo",
   "ft": 2,
   "hint": [
-   "tooth",
+   "tooth: picture of interlocking teeth",
    "paste: ⺼ (flesh) + 高 (sound gāo)"
-  ]
+  ],
+  "hook": "tooth + paste = toothpaste"
  },
  {
   "id": "c1117",
@@ -16302,7 +16970,8 @@
   "hint": [
    "to ask",
    "guest: a person 各 welcomed under one's roof 宀"
-  ]
+  ],
+  "hook": "ask + guest = treat a guest"
  },
  {
   "id": "c1096",
@@ -16317,7 +16986,8 @@
    "west",
    "red",
    "persimmon: 木 (tree) + 市 (sound shì)"
-  ]
+  ],
+  "hook": "west + red + persimmon = tomato"
  },
  {
   "id": "c0616",
@@ -16332,7 +17002,8 @@
    "(sound pīng): a ball bouncing back and forth",
    "(sound pāng): a ball bouncing back and forth",
    "ball: 王 (jade) + 求 (sound qiú)"
-  ]
+  ],
+  "hook": "think: pīng-pāng imitates the ball bouncing; + ball"
  },
  {
   "id": "c0866",
@@ -16346,7 +17017,8 @@
   "hint": [
    "to give (a shot): 扌 (hand) + 丁 (sound dīng)",
    "needle: a metal 钅 pin 十"
-  ]
+  ],
+  "hook": "give + needle = get an injection"
  },
  {
   "id": "c0865",
@@ -16360,7 +17032,8 @@
   "hint": [
    "to make: 扌 (hand) + 丁 (sound dīng)",
    "discount: a hand 扌 wielding an axe 斤"
-  ]
+  ],
+  "hook": "make + discount = discount"
  },
  {
   "id": "c0769",
@@ -16375,7 +17048,8 @@
    "plastic: 土 (earth) + 朔 (sound shuò)",
    "material: a hand measuring 斗 a cup of rice 米",
    "bag: 衣 (clothes) + 代 (sound dài)"
-  ]
+  ],
+  "hook": "plastic + material + bag = plastic bag"
  },
  {
   "id": "c0926",
@@ -16389,7 +17063,8 @@
   "hint": [
    "warm: 日 (sun) + 爰 (sound yuán)",
    "mild"
-  ]
+  ],
+  "hook": "warm + mild = warm"
  },
  {
   "id": "c0774",
@@ -16403,7 +17078,8 @@
   "hint": [
    "copy: a person 亻 who goes somewhere 夂 every day 日",
    "print: a hand stamping a seal 卩"
-  ]
+  ],
+  "hook": "copy + print = photocopy"
  },
  {
   "id": "c0994",
@@ -16417,7 +17093,8 @@
   "hint": [
    "to tidy: 王 (king) + 里 (sound lǐ)",
    "hair"
-  ]
+  ],
+  "hook": "tidy + hair = get a haircut"
  },
  {
   "id": "c0681",
@@ -16431,7 +17108,8 @@
   "hint": [
    "cool: 冫 (ice) + 京 (sound jīng)",
    "pleasant"
-  ]
+  ],
+  "hook": "cool + pleasant = pleasantly cool"
  },
  {
   "id": "c0753",
@@ -16446,7 +17124,8 @@
    "to sell: a street vendor talks 口 incessantly, like a bird 隹",
    "products: 贝 (money) + 化 (sound huà)",
    "staff: 贝 (money) + 口"
-  ]
+  ],
+  "hook": "sell + goods + staff = shop assistant"
  },
  {
   "id": "c0799",
@@ -16458,9 +17137,10 @@
   "reading": "hánjià",
   "ft": 2,
   "hint": [
-   "chilly",
+   "chilly: a person 人 in a house 宀 wrapped in straw 艹 against ice 冫",
    "vacation (jià)"
-  ]
+  ],
+  "hook": "chilly + vacation = winter break"
  },
  {
   "id": "c0768",
@@ -16474,7 +17154,8 @@
   "hint": [
    "to block: 土 (earth) + 者 (sound zhě)",
    "vehicle: picture of a cart with two wheels, seen from above"
-  ]
+  ],
+  "hook": "block + vehicle = traffic jam"
  },
  {
   "id": "c1047",
@@ -16488,7 +17169,8 @@
   "hint": [
    "rough: 米 (grain) + 且 (sound qiě)",
    "heart: picture of a heart"
-  ]
+  ],
+  "hook": "rough + heart = careless"
  },
  {
   "id": "c1187",
@@ -16502,7 +17184,8 @@
   "hint": [
    "(with 虎: careless)",
    "(with 马: careless): a tiger 虍 standing on a rock 几"
-  ]
+  ],
+  "hook": "bound pair; neither character means \"careless\" alone"
  },
  {
   "id": "c0818",
@@ -16516,7 +17199,8 @@
   "hint": [
    "dry",
    "cup: 木 (tree) + 不 (sound bù)"
-  ]
+  ],
+  "hook": "dry + cup = cheers"
  },
  {
   "id": "c0770",
@@ -16530,7 +17214,8 @@
   "hint": [
    "to fill: 土 (earth) + 真 (sound zhēn)",
    "blank (kòng): 穴 (cave) + 工 (sound gōng)"
-  ]
+  ],
+  "hook": "fill + blank = fill in the blank"
  },
  {
   "id": "c0903",
@@ -16545,7 +17230,8 @@
    "to put",
    "summer: 日 (sun) + 者 (sound zhě)",
    "vacation (jià)"
-  ]
+  ],
+  "hook": "put + summer + vacation = begin summer break"
  },
  {
   "id": "c1178",
@@ -16558,7 +17244,8 @@
   "ft": 2,
   "hint": [
    "in advance: 页 (page) + 予 (sound yǔ)",
-   "to study"
-  ]
+   "to study: think: simplified from 習, wings 羽 flapping to practise"
+  ],
+  "hook": "in advance + study = preview a lesson"
  }
 ]
