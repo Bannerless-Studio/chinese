@@ -46,9 +46,10 @@ pack and validated against the vocabulary by `tools/check_sentences.py`
 sentences in `data/hsk_patterns.js` (27 HSK 2-4 patterns, drilled as cloze)
 are hand-authored the same way and checked by `tools/check_patterns.py`.
 
-The example-sentence corpus has not yet been screened by the shared
-sensitive-content filter used in the other language repos; tracked as an
-open item in `TODO.md`.
+Both checkers also apply the shared sensitive-content filter used in the
+other language repos (loaded from the engine's packbuilder, plus Chinese
+terms). Sexual content and violence appear at HSK 4 at most, and abuse or
+self-harm content does not appear at all.
 
 ## Credits
 

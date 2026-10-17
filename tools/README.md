@@ -19,8 +19,10 @@ repo's `data/`, not corpus-mined at build time.
 - `check_sentences.py` — validates `data/hsk_sentences.js` (hand-authored,
   not generated) against `data/hsk_vocab.json`: segmentation, a pinyin
   cross-check (with documented tone-sandhi exceptions for 不/一), no
-  duplicate sentences, per-level length limits, and >=70% vocabulary
-  coverage. It also resolves `SENTENCE_EXTRA` compounds (e.g. 春天, built
+  duplicate sentences, per-level length limits, >=70% vocabulary
+  coverage, and the packbuilder's three-tier sensitive-content screen
+  (term lists loaded from `engine/tools/packbuilder/langs/base.py`, so the
+  submodule must be initialized). It also resolves `SENTENCE_EXTRA` compounds (e.g. 春天, built
   from the VOCAB word 春 plus a bound suffix that isn't its own VOCAB
   entry) against their declared `base` word. Run with
   `python3 tools/check_sentences.py`.

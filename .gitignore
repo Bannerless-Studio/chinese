@@ -5,3 +5,7 @@ hsk_characters.html
 shots*/
 .venv/
 .cache/
+.claude/settings.local.json
+*__pycache__/*
+
+EXPLAIN _BN.md

@@ -13,6 +13,15 @@ Checks:
 4. Length limits: lv 1-2 sentences 3-12 characters (excluding punctuation),
    lv 3-4 sentences up to 16 characters.
 5. Vocabulary coverage: >= 70% of VOCAB words must appear in at least one sentence.
+6. Sensitive-content screening, the same three tiers the shared packbuilder
+   applies to every other language pack (vocab-engine
+   tools/packbuilder/langs/base.py and qa/check.py), with Chinese terms added:
+   a. drop-all: a sentence whose zh or en matches DROP_ALL_EN/DROP_ALL_ZH
+      (rape, sexual or child abuse, suicide, self-harm) may not ship at any level;
+   b. sensitive: a sentence whose zh or en matches SENSITIVE_EN/SENSITIVE_ZH
+      (sexual content, violence, profanity) may only be top level (lv 4);
+   c. gloss: a VOCAB word below lv 4 may not carry an English sense matching
+      SENSITIVE_GLOSS_EN or the shared word ceiling (WORD_CEILING_EN).
 
 EXTRA compound whitelist
 ------------------------
@@ -30,6 +39,7 @@ EXTRA token contributes its base word's level, not a new one, since it is
 not new vocabulary being taught, just a natural surface form of a taught
 morpheme). Every EXTRA base is validated against VOCAB at check time.
 """
+import importlib.util
 import json
 import re
 import sys
@@ -78,6 +88,48 @@ EXTRA = {
     "那些": {"py": "nàxiē", "base": "那"},
 }
 
+TOP_LEVEL = 4
+
+# The English term lists are loaded from the engine, not copied, so this pack
+# follows the cross-pack content policy whenever the submodule is bumped.
+# This file is the engine's own entry point for zh (no packbuilder spec builds
+# this pack), so a missing submodule must fail rather than skip screening.
+BASE_PY = ROOT / "engine" / "tools" / "packbuilder" / "langs" / "base.py"
+
+# Hanzi have no word boundaries, so every term is a substring that cannot
+# occur inside an unrelated common word. 死 is deliberately absent: 累死了,
+# 饿死了 ("exhausted", "starving") are everyday intensifiers.
+DROP_ALL_ZH = (r"强奸|性侵|性虐待|猥亵|乱伦|恋童|虐待儿童|"
+               r"自杀|自残|轻生|割腕|上吊")
+SENSITIVE_ZH = (r"杀|死人|尸体|枪|子弹|炸弹|流血|鲜血|酷刑|"
+                r"性交|做爱|色情|裸体|妓女|卖淫|嫖|毒品|吸毒|"
+                r"他妈的|操你|傻逼")
+
+
+def load_content_filters():
+    if not BASE_PY.exists():
+        sys.exit(f"check_sentences: {BASE_PY.relative_to(ROOT)} not found; "
+                 "run `git submodule update --init` (needed for content screening)")
+    spec = importlib.util.spec_from_file_location("packbuilder_langs_base", BASE_PY)
+    base = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(base)
+    drop_all = base.drop_all_re(DROP_ALL_ZH)
+    sensitive = re.compile(r"(?:" + SENSITIVE_ZH + r")|(?<![A-Za-z])(?:"
+                           + base.SENSITIVE_EN + r")(?![A-Za-z])", re.I)
+    gloss = re.compile(r"\b(" + base.SENSITIVE_GLOSS_EN + r")\b", re.I)
+    return drop_all, sensitive, gloss, base.make_word_ceiling_re()
+
+
+def content_error(zh, en, lv, drop_all_re, sensitive_re):
+    hit = drop_all_re.search(zh) or drop_all_re.search(en)
+    if hit:
+        return f"drop-all content {hit.group(0)!r}: may not ship at any level"
+    if lv != TOP_LEVEL:
+        hit = sensitive_re.search(zh) or sensitive_re.search(en)
+        if hit:
+            return f"sensitive content {hit.group(0)!r}: only allowed at lv{TOP_LEVEL}, is lv{lv}"
+    return None
+
 
 def strip_punct(s):
     return PUNCT_RE.sub("", s)
@@ -102,6 +154,7 @@ def load_sentences():
 def main():
     vocab = load_vocab()
     sentences = load_sentences()
+    drop_all_re, sensitive_re, gloss_re, ceiling_re = load_content_filters()
 
     errors = []
     warnings = []
@@ -117,6 +170,19 @@ def main():
             errors.append(
                 f"EXTRA[{token!r}]: base {info['base']!r} not in VOCAB"
             )
+
+    # Word levels are fixed by the official HSK list, so a hit here is fixed by
+    # choosing another sense in tools/build_vocab.py, not by moving the word.
+    for w, entry in vocab.items():
+        if entry["lv"] == TOP_LEVEL:
+            continue
+        for kind, rx in (("sensitive gloss", gloss_re), ("word ceiling gloss", ceiling_re)):
+            m = rx.search(entry["en"])
+            if m:
+                errors.append(
+                    f"VOCAB {w!r} (lv{entry['lv']}): {kind} {m.group(0)!r} below lv{TOP_LEVEL} in {entry['en']!r}"
+                )
+                break
 
     def resolve(w):
         """Return (pinyin, level) for a word, checking VOCAB then EXTRA.
@@ -149,6 +215,10 @@ def main():
         if zh in zh_seen:
             errors.append(f"{label}: duplicate zh")
         zh_seen.add(zh)
+
+        err = content_error(zh, en, lv, drop_all_re, sensitive_re)
+        if err:
+            errors.append(f"{label}: {err}")
 
         # segmentation check
         joined = "".join(words)

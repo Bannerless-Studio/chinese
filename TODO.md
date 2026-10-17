@@ -34,6 +34,18 @@ were never routed through the packbuilder. `tools/check_sentences.py` exists
 but has no sensitive-content checks (verified 2026-09-26: no `sensitive`/
 `SENSITIVE`/`drop_all_levels` hits). Add the same three-tier screening there.
 
+DONE 2026-10-09: `tools/check_sentences.py` check 6 loads `SENSITIVE_EN`,
+`SENSITIVE_GLOSS_EN`, `drop_all_re` and `make_word_ceiling_re` from
+`engine/tools/packbuilder/langs/base.py` (not copied, so they follow the
+cross-pack policy on every engine bump) and adds Chinese terms
+(`DROP_ALL_ZH`, `SENSITIVE_ZH`; no bare 死, which is an everyday intensifier
+in 累死了). Tiers: (a) drop-all sentence at any level, (b) sensitive sentence
+below lv 4, (c) VOCAB gloss below lv 4 matching the gloss or word-ceiling
+regex. `tools/check_patterns.py` applies (a) and (b) to pattern sentences.
+Result on the current data: 0 hits (the only gloss matches, 性别 "sex" and
+血 "blood", are lv 4). A missing submodule fails the check rather than
+skipping the screen.
+
 ### Browser smoke script
 Other language repos have a Playwright smoke script that seeds progress and
 walks Today/Learn/Read/Test at 390px (`../italian/.cache/live/check.js`).
